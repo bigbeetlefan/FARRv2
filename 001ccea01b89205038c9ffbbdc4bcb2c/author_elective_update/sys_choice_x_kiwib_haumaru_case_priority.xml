@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="priority" table="x_kiwib_haumaru_case" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>priority</element>
+            <name>x_kiwib_haumaru_case</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+            <sys_created_on>2020-12-09 20:58:57</sys_created_on>
+            <sys_id>164b16a81b0d205038c9ffbbdc4bcb75</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>priority</sys_name>
+            <sys_package display_value="Pae Haumaru" source="x_kiwib_haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Pae Haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_scope>
+            <sys_update_name>sys_choice_x_kiwib_haumaru_case_priority</sys_update_name>
+            <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+            <sys_updated_on>2020-12-09 20:58:57</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>priority</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>1 - Critical</label>
+            <language>en</language>
+            <name>x_kiwib_haumaru_case</name>
+            <sequence>0</sequence>
+            <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+            <sys_created_on>2020-12-09 20:58:57</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>da4b16a81b0d205038c9ffbbdc4bcb74</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+            <sys_updated_on>2020-12-09 20:58:57</sys_updated_on>
+            <value>1</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>priority</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>2 - High</label>
+            <language>en</language>
+            <name>x_kiwib_haumaru_case</name>
+            <sequence>1</sequence>
+            <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+            <sys_created_on>2020-12-09 20:58:58</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>9e4b16a81b0d205038c9ffbbdc4bcb87</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+            <sys_updated_on>2020-12-09 20:58:58</sys_updated_on>
+            <value>2</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>priority</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>3 - Moderate</label>
+            <language>en</language>
+            <name>x_kiwib_haumaru_case</name>
+            <sequence>2</sequence>
+            <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+            <sys_created_on>2020-12-09 20:58:58</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>924b16a81b0d205038c9ffbbdc4bcb8e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+            <sys_updated_on>2020-12-09 20:58:58</sys_updated_on>
+            <value>3</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>priority</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>4 - Low</label>
+            <language>en</language>
+            <name>x_kiwib_haumaru_case</name>
+            <sequence>3</sequence>
+            <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+            <sys_created_on>2020-12-09 20:58:58</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>964b16a81b0d205038c9ffbbdc4bcb94</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+            <sys_updated_on>2020-12-09 20:58:58</sys_updated_on>
+            <value>4</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

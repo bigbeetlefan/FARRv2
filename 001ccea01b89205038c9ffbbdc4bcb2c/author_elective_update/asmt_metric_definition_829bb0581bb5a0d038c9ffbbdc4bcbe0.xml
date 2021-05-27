@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="asmt_metric_definition">
+    <asmt_metric_definition action="DELETE">
+        <display>Role play</display>
+        <metric display_value="L2-Q3">069bb0581bb5a0d038c9ffbbdc4bcbdb</metric>
+        <normalization_input>0</normalization_input>
+        <order/>
+        <selected_image/>
+        <sys_class_name>asmt_metric_definition</sys_class_name>
+        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+        <sys_created_on>2021-01-15 02:09:30</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>829bb0581bb5a0d038c9ffbbdc4bcbe0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Role play</sys_name>
+        <sys_package display_value="Haumaru" source="x_kiwib_haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_scope>
+        <sys_update_name>asmt_metric_definition_829bb0581bb5a0d038c9ffbbdc4bcbe0</sys_update_name>
+        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+        <sys_updated_on>2021-01-15 02:09:30</sys_updated_on>
+        <unselected_image/>
+        <value>3000</value>
+    </asmt_metric_definition>
+    <sys_translated_text action="DELETE" query="documentkey=829bb0581bb5a0d038c9ffbbdc4bcbe0"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Pae Haumaru">001ccea01b89205038c9ffbbdc4bcb2c</application>
+        <file_path/>
+        <instance_id>5eff1e92db012f4c0e785d00cf961905</instance_id>
+        <instance_name>kiwibankdev</instance_name>
+        <name>asmt_metric_definition_829bb0581bb5a0d038c9ffbbdc4bcbe0</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="asmt_metric_definition"><asmt_metric_definition action="INSERT_OR_UPDATE"><display>Role play</display><metric display_value="L2-Q3">069bb0581bb5a0d038c9ffbbdc4bcbdb</metric><normalization_input>0</normalization_input><order/><selected_image/><sys_class_name>asmt_metric_definition</sys_class_name><sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by><sys_created_on>2021-01-15 02:09:30</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>829bb0581bb5a0d038c9ffbbdc4bcbe0</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Role play</sys_name><sys_package display_value="Haumaru" source="x_kiwib_haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_package><sys_policy/><sys_scope display_value="Haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_scope><sys_update_name>asmt_metric_definition_829bb0581bb5a0d038c9ffbbdc4bcbe0</sys_update_name><sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by><sys_updated_on>2021-01-15 02:09:30</sys_updated_on><unselected_image/><value>3000</value></asmt_metric_definition><sys_translated_text action="delete_multiple" query="documentkey=829bb0581bb5a0d038c9ffbbdc4bcbe0"/></record_update>]]></payload>
+        <payload_hash>-1019110899</payload_hash>
+        <record_name>Role play</record_name>
+        <reverted_from/>
+        <source>b1138c8b1b4a2450533e0dc8ec4bcbdc</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+        <sys_created_on>2021-02-04 21:22:21</sys_created_on>
+        <sys_id>20438ccb1b4a2450533e0dc8ec4bcb2a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1776eecafa60000001</sys_recorded_at>
+        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+        <sys_updated_on>2021-02-04 21:22:21</sys_updated_on>
+        <type>Assessment Metric Definition</type>
+        <update_guid>ec438ccb514a245072962be7f5644e29</update_guid>
+        <update_guid_history>ec438ccb514a245072962be7f5644e29:-1019110899</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Role play">cb0ad2201bdee490533e0dc8ec4bcb0c</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+        <sys_created_on>2021-02-10 00:12:02</sys_created_on>
+        <sys_db_object display_value="" name="asmt_metric_definition">asmt_metric_definition</sys_db_object>
+        <sys_id>73cbbcf04b344bce9df7bc054fe860a9</sys_id>
+        <sys_metadata>829bb0581bb5a0d038c9ffbbdc4bcbe0</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Role play</sys_name>
+        <sys_package display_value="Pae Haumaru" source="x_kiwib_haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Pae Haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_scope>
+        <sys_scope_delete display_value="">02f82d1e9f0948b0802900399bacbfa4</sys_scope_delete>
+        <sys_update_name>asmt_metric_definition_829bb0581bb5a0d038c9ffbbdc4bcbe0</sys_update_name>
+        <sys_update_version display_value="asmt_metric_definition_829bb0581bb5a0d038c9ffbbdc4bcbe0">20438ccb1b4a2450533e0dc8ec4bcb2a</sys_update_version>
+        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+        <sys_updated_on>2021-02-10 00:12:02</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

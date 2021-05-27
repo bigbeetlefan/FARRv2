@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="remediation_task_type" label="Remediation Task Type" language="en" table="x_kiwib_haumaru_remediation_task">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>remediation_task_type</element>
+            <help/>
+            <hint/>
+            <label>Remediation Task Type</label>
+            <language>en</language>
+            <name>x_kiwib_haumaru_remediation_task</name>
+            <plural>Remediation Task Types</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+            <sys_created_on>2021-04-20 01:58:54</sys_created_on>
+            <sys_id>cd38467a1ba36c10533e0dc8ec4bcb2a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Remediation Task Type</sys_name>
+            <sys_package display_value="Pae Haumaru" source="x_kiwib_haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Pae Haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_scope>
+            <sys_update_name>sys_documentation_x_kiwib_haumaru_remediation_task_remediation_task_type_en</sys_update_name>
+            <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+            <sys_updated_on>2021-04-20 01:58:54</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

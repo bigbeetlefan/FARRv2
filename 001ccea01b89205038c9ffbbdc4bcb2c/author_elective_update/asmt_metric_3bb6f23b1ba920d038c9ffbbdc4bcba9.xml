@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="asmt_metric">
+    <asmt_metric action="DELETE">
+        <active>true</active>
+        <add_info_label>Additional Information</add_info_label>
+        <allow_add_info>false</allow_add_info>
+        <allow_not_applicable>false</allow_not_applicable>
+        <auto_gen>false</auto_gen>
+        <category display_value="Advisor Assessment Group 1">c68b1f681b45605038c9ffbbdc4bcb17</category>
+        <cond_question>always</cond_question>
+        <condition/>
+        <context/>
+        <correct_answer/>
+        <correct_answer_checkbox>1</correct_answer_checkbox>
+        <correct_answer_choice/>
+        <correct_answer_template/>
+        <correct_answer_yesno>1</correct_answer_yesno>
+        <datatype>choice</datatype>
+        <default_value_field/>
+        <depends_on/>
+        <description/>
+        <details/>
+        <displayed_when>4f0b2a3f1b6920d038c9ffbbdc4bcbef</displayed_when>
+        <displayed_when_checkbox>1</displayed_when_checkbox>
+        <displayed_when_template/>
+        <displayed_when_yesno>1</displayed_when_yesno>
+        <duration/>
+        <field_validation/>
+        <mandatory>true</mandatory>
+        <max>0</max>
+        <max_weight/>
+        <method>assessment</method>
+        <metric_type display_value="Advisor Assessment">dc5b17681b45605038c9ffbbdc4bcb5a</metric_type>
+        <min>0</min>
+        <name>L2-Q2</name>
+        <order>100</order>
+        <plugin/>
+        <question>Information recorded in wrong place on customer record</question>
+        <randomize_answers>false</randomize_answers>
+        <read_only>false</read_only>
+        <reference_table/>
+        <scale>high</scale>
+        <scored>false</scored>
+        <script><![CDATA[// The following variables are available:  // - primary: contains the sys_id of the assessable object to be evaluated  // - string_result: the script sets the display string value for this metric to this variable  // - actual_result: the script sets the actual value for this metric to this variable  // - scaled_result: the script sets the scaled value (used in calculations) for this metric to this variable  //  // For example: // var gr = new GlideRecord('cmdb_ci'); // gr.addQuery('manufacturer', primary); // gr.query(); // actual_result = gr.getRowCount(); // string_result = actual_result + ''; // if (actual_result &gt; 100) scaled_result = 5; // else scaled_result = 1;]]></script>
+        <source_field/>
+        <string_option>short</string_option>
+        <sys_class_name>asmt_metric</sys_class_name>
+        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+        <sys_created_on>2021-01-13 21:53:07</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>3bb6f23b1ba920d038c9ffbbdc4bcba9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>L2-Q2</sys_name>
+        <sys_package display_value="Haumaru" source="x_kiwib_haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_scope>
+        <sys_update_name>asmt_metric_3bb6f23b1ba920d038c9ffbbdc4bcba9</sys_update_name>
+        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+        <sys_updated_on>2021-01-13 21:53:07</sys_updated_on>
+        <template/>
+        <weight>10</weight>
+    </asmt_metric>
+    <sys_translated_text action="DELETE" query="documentkey=3bb6f23b1ba920d038c9ffbbdc4bcba9"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Pae Haumaru">001ccea01b89205038c9ffbbdc4bcb2c</application>
+        <file_path/>
+        <instance_id>910d105cdb0c801049eac59705961931</instance_id>
+        <instance_name>kiwibankdev2</instance_name>
+        <name>asmt_metric_3bb6f23b1ba920d038c9ffbbdc4bcba9</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="asmt_metric"&gt;&lt;asmt_metric action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;add_info_label&gt;Additional Information&lt;/add_info_label&gt;&lt;allow_add_info&gt;false&lt;/allow_add_info&gt;&lt;allow_not_applicable&gt;false&lt;/allow_not_applicable&gt;&lt;auto_gen&gt;false&lt;/auto_gen&gt;&lt;category display_value="Advisor Assessment Group 1"&gt;c68b1f681b45605038c9ffbbdc4bcb17&lt;/category&gt;&lt;cond_question&gt;always&lt;/cond_question&gt;&lt;condition/&gt;&lt;context/&gt;&lt;correct_answer/&gt;&lt;correct_answer_checkbox&gt;1&lt;/correct_answer_checkbox&gt;&lt;correct_answer_choice/&gt;&lt;correct_answer_template/&gt;&lt;correct_answer_yesno&gt;1&lt;/correct_answer_yesno&gt;&lt;datatype&gt;choice&lt;/datatype&gt;&lt;default_value_field/&gt;&lt;depends_on/&gt;&lt;description/&gt;&lt;details/&gt;&lt;displayed_when&gt;4f0b2a3f1b6920d038c9ffbbdc4bcbef&lt;/displayed_when&gt;&lt;displayed_when_checkbox&gt;1&lt;/displayed_when_checkbox&gt;&lt;displayed_when_template/&gt;&lt;displayed_when_yesno&gt;1&lt;/displayed_when_yesno&gt;&lt;duration/&gt;&lt;field_validation/&gt;&lt;mandatory&gt;true&lt;/mandatory&gt;&lt;max&gt;0&lt;/max&gt;&lt;max_weight/&gt;&lt;method&gt;assessment&lt;/method&gt;&lt;metric_type display_value="Advisor Assessment"&gt;dc5b17681b45605038c9ffbbdc4bcb5a&lt;/metric_type&gt;&lt;min&gt;0&lt;/min&gt;&lt;name&gt;L2-Q2&lt;/name&gt;&lt;order&gt;100&lt;/order&gt;&lt;plugin/&gt;&lt;question&gt;Information recorded in wrong place on customer record&lt;/question&gt;&lt;randomize_answers&gt;false&lt;/randomize_answers&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;reference_table/&gt;&lt;scale&gt;high&lt;/scale&gt;&lt;scored&gt;false&lt;/scored&gt;&lt;script&gt;&lt;![CDATA[// The following variables are available:  // - primary: contains the sys_id of the assessable object to be evaluated  // - string_result: the script sets the display string value for this metric to this variable  // - actual_result: the script sets the actual value for this metric to this variable  // - scaled_result: the script sets the scaled value (used in calculations) for this metric to this variable  //  // For example: // var gr = new GlideRecord('cmdb_ci'); // gr.addQuery('manufacturer', primary); // gr.query(); // actual_result = gr.getRowCount(); // string_result = actual_result + ''; // if (actual_result &amp;gt; 100) scaled_result = 5; // else scaled_result = 1;]]&gt;&lt;/script&gt;&lt;source_field/&gt;&lt;string_option&gt;short&lt;/string_option&gt;&lt;sys_class_name&gt;asmt_metric&lt;/sys_class_name&gt;&lt;sys_created_by&gt;Bing.Liu@kiwibank.co.nz&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-01-13 21:53:07&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;3bb6f23b1ba920d038c9ffbbdc4bcba9&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;L2-Q2&lt;/sys_name&gt;&lt;sys_package display_value="Haumaru" source="x_kiwib_haumaru"&gt;001ccea01b89205038c9ffbbdc4bcb2c&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Haumaru"&gt;001ccea01b89205038c9ffbbdc4bcb2c&lt;/sys_scope&gt;&lt;sys_update_name&gt;asmt_metric_3bb6f23b1ba920d038c9ffbbdc4bcba9&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;Bing.Liu@kiwibank.co.nz&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-01-13 21:53:07&lt;/sys_updated_on&gt;&lt;template/&gt;&lt;weight&gt;10&lt;/weight&gt;&lt;/asmt_metric&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=3bb6f23b1ba920d038c9ffbbdc4bcba9"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1343881016</payload_hash>
+        <record_name>L2-Q2</record_name>
+        <reverted_from/>
+        <source>52e0596e1bc1601038c9ffbbdc4bcbad</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+        <sys_created_on>2021-01-14 00:11:42</sys_created_on>
+        <sys_id>b6071f7b1b2d20d038c9ffbbdc4bcb21</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>176fe3bd4b70000001</sys_recorded_at>
+        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+        <sys_updated_on>2021-01-14 00:11:42</sys_updated_on>
+        <type>Assessment Metric</type>
+        <update_guid>3057fa7b90a920d002c57c9d92aee9ca</update_guid>
+        <update_guid_history>3057fa7b90a920d002c57c9d92aee9ca:-383994917,3057fa7b90a920d002c57c9d92aee9ca:-383994917</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">e258dfbb1b2d20d038c9ffbbdc4bcbe6</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+        <sys_created_on>2021-01-14 00:17:25</sys_created_on>
+        <sys_db_object display_value="" name="asmt_metric">asmt_metric</sys_db_object>
+        <sys_id>05d4b9deab59400085c0b255a4ee0900</sys_id>
+        <sys_metadata>3bb6f23b1ba920d038c9ffbbdc4bcba9</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>L2-Q2</sys_name>
+        <sys_package display_value="Pae Haumaru" source="x_kiwib_haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Pae Haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_scope>
+        <sys_scope_delete display_value="">02f82d1e9f0948b0802900399bacbfa4</sys_scope_delete>
+        <sys_update_name>asmt_metric_3bb6f23b1ba920d038c9ffbbdc4bcba9</sys_update_name>
+        <sys_update_version display_value="asmt_metric_3bb6f23b1ba920d038c9ffbbdc4bcba9">b6071f7b1b2d20d038c9ffbbdc4bcb21</sys_update_version>
+        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+        <sys_updated_on>2021-01-14 00:17:25</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

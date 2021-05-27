@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_declarative_action_assignment">
+    <sys_declarative_action_assignment action="INSERT_OR_UPDATE">
+        <action/>
+        <action_attributes>{}</action_attributes>
+        <action_name>survey viewer</action_name>
+        <action_payload/>
+        <action_type>type</action_type>
+        <active>true</active>
+        <button_type>primary</button_type>
+        <client_action/>
+        <client_conditions/>
+        <client_conditions_on_fields/>
+        <confirmation_message/>
+        <confirmation_required>false</confirmation_required>
+        <create_access>false</create_access>
+        <declarative_action_render_mode/>
+        <declarative_action_type>action_component</declarative_action_type>
+        <delete_access>false</delete_access>
+        <dependency/>
+        <description/>
+        <design_icon display_value="checklist-fill">checklist_fill</design_icon>
+        <enabled>true</enabled>
+        <field_name/>
+        <field_type>glide_date</field_type>
+        <form_fields_required>false</form_fields_required>
+        <form_position>contexual_sidebar</form_position>
+        <group/>
+        <group_by>false</group_by>
+        <icon/>
+        <label>Advisor Assessment</label>
+        <model display_value="Form">360935e9534723003eddddeeff7b127d</model>
+        <model_conditions table="var__m_sys_declarative_action_model_field_360935e9534723003eddddeeff7b127d">isNewRecord=false^EQ<item endquery="false" field="isNewRecord" goto="false" newquery="false" operator="=" or="false" value="false"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </model_conditions>
+        <model_field_required/>
+        <order>100</order>
+        <payload_map/>
+        <read_access>false</read_access>
+        <record_conditions table="x_kiwib_haumaru_case">category!=exception^EQ<item display_value="Exception" endquery="false" field="category" goto="false" newquery="false" operator="!=" or="false" value="exception"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </record_conditions>
+        <record_selection_required>false</record_selection_required>
+        <required_roles/>
+        <requires_value>false</requires_value>
+        <script_condition/>
+        <server_script/>
+        <specificity>22</specificity>
+        <sys_class_name>sys_declarative_action_assignment</sys_class_name>
+        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+        <sys_created_on>2020-12-17 03:48:07</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>57393ff6dbc5a810ac891505059619a1</sys_id>
+        <sys_mod_count>15</sys_mod_count>
+        <sys_name>survey viewer</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Pae Haumaru" source="x_kiwib_haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pae Haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_scope>
+        <sys_update_name>sys_declarative_action_assignment_57393ff6dbc5a810ac891505059619a1</sys_update_name>
+        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+        <sys_updated_on>2021-02-02 21:00:40</sys_updated_on>
+        <table>x_kiwib_haumaru_case</table>
+        <tooltip/>
+        <ui_component display_value="kiwib-survey-viewer">149492a863502053c83969836e20ec79</ui_component>
+        <view/>
+        <workspace display_value="Rae Haumaru">06b693321bc1241038c9ffbbdc4bcb4a</workspace>
+        <write_access>false</write_access>
+    </sys_declarative_action_assignment>
+</record_update>

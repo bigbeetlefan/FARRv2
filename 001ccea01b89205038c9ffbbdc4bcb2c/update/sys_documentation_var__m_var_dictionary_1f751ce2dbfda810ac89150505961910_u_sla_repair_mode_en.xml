@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="u_sla_repair_mode" label="SLA Repair Mode" language="en" table="var__m_var_dictionary_1f751ce2dbfda810ac89150505961910">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>u_sla_repair_mode</element>
+            <help/>
+            <hint/>
+            <label>SLA Repair Mode</label>
+            <language>en</language>
+            <name>var__m_var_dictionary_1f751ce2dbfda810ac89150505961910</name>
+            <plural>SLA Repair Mode</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+            <sys_created_on>2021-01-21 23:11:52</sys_created_on>
+            <sys_id>9c161c66dbfda810ac89150505961912</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>SLA Repair Mode</sys_name>
+            <sys_package display_value="Pae Haumaru" source="x_kiwib_haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Pae Haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_scope>
+            <sys_update_name>sys_documentation_var__m_var_dictionary_1f751ce2dbfda810ac89150505961910_u_sla_repair_mode_en</sys_update_name>
+            <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+            <sys_updated_on>2021-01-21 23:11:52</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

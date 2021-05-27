@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" extends="task" label="Supervision Case" max_length="40" name="x_kiwib_haumaru_case" sizeclass="12019" text_index="true" type="collection">
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Advice given" max_length="40" name="advice_given" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Yes" sequence="0" value="yes"/>
+                <element inactive_on_update="false" label="No" sequence="1" value="no"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Team member" mandatory="true" max_length="32" name="advisor" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Category" max_length="40" name="category" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Supervision" sequence="10" value="supervision"/>
+                <element inactive_on_update="false" label="Exception" sequence="20" value="exception"/>
+            </choice>
+        </element>
+        <element label="Closed date time" max_length="40" name="closed_date_time" type="glide_date_time"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Closure reason" max_length="40" name="closure_code" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Not required" sequence="1" value="not_required"/>
+                <element inactive_on_update="false" label="Not suitable" sequence="2" value="not_suitable"/>
+                <element inactive_on_update="false" label="Case completed" sequence="3" value="case_completed"/>
+                <element inactive_on_update="false" label="Auto close" sequence="10" value="auto_close"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Closure notes" max_length="4000" name="closure_notes" type="string"/>
+        <element label="Customer access number" max_length="40" name="customer_access_number" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Remediation reason" max_length="40" name="exception_reason" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Not qualified for advice giving" sequence="10" value="not_qualified"/>
+                <element inactive_on_update="false" label="Not nominated representative" sequence="20" value="not_nominated"/>
+            </choice>
+        </element>
+        <element label="Interaction date time" max_length="40" name="interaction_date_time" type="glide_date_time"/>
+        <element label="Interaction ID" max_length="40" name="interaction_id" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Interaction type" max_length="40" name="interaction_type" type="choice">
+            <choice>
+                <element inactive="true" inactive_on_update="true" label="In person" sequence="0" value="in person"/>
+                <element inactive_on_update="false" label="Person to person voice" sequence="0" value="person_to_person"/>
+                <element inactive="true" inactive_on_update="true" label="Person to person digital channels" sequence="1" value="digital_channels"/>
+                <element inactive="true" inactive_on_update="true" label="Voice" sequence="1" value="voice"/>
+                <element inactive="true" inactive_on_update="true" label="Branch walkins" sequence="2" value="walkins"/>
+                <element inactive="true" inactive_on_update="true" label="Document mail out" sequence="2" value="document"/>
+                <element inactive="true" inactive_on_update="true" label="Online tool" sequence="3" value="online_tool"/>
+                <element inactive="true" inactive_on_update="true" label="Tool (Digital)" sequence="3" value="tool"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Review method" max_length="40" name="method" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Real time" sequence="0" value="real_time"/>
+                <element inactive_on_update="false" label="Retrospective" sequence="1" value="retrospective"/>
+                <element inactive_on_update="false" label="Role play" sequence="3" value="role_play"/>
+                <element inactive="true" inactive_on_update="true" label="Training assessment" sequence="6" value="training_assessment"/>
+                <element inactive_on_update="false" label="Other" sequence="8" value="other"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Number of remediation tasks" max_length="40" name="number_of_remediation_tasks" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" label="Other method" max_length="1000" name="other_method" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Product category" max_length="40" name="product" type="choice">
+            <choice>
+                <element inactive="true" inactive_on_update="true" label="Investment and Savings" sequence="0" value="investment_and_savings"/>
+                <element inactive_on_update="false" label="Transactional" sequence="1" value="transactional"/>
+                <element inactive_on_update="false" label="Saving" sequence="2" value="saving"/>
+                <element inactive_on_update="false" label="Overdraft" sequence="3" value="overdraft"/>
+                <element inactive_on_update="false" label="Credit card" sequence="4" value="credit_card"/>
+                <element inactive_on_update="false" label="Personal loan" sequence="5" value="personal_loan"/>
+                <element inactive_on_update="false" label="Insurance" sequence="6" value="insurance"/>
+                <element inactive_on_update="false" label="Home loan" sequence="7" value="home_loan"/>
+                <element inactive_on_update="false" label="KiwiSaver" sequence="8" value="kiwisaver"/>
+            </choice>
+        </element>
+        <element choice="1" label="Review outcome" max_length="40" name="review_outcome" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Advice not given" sequence="1" value="advice_not_given"/>
+                <element inactive_on_update="false" label="Advice given" sequence="5" value="advice_given"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Sales channel" max_length="40" name="sales_channel" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Call centre" sequence="10" value="call_centre"/>
+                <element inactive_on_update="false" label="Branch" sequence="20" value="branch"/>
+                <element inactive_on_update="false" label="MMM" sequence="30" value="mmm"/>
+                <element inactive_on_update="false" label="BB" sequence="40" value="bb"/>
+                <element inactive_on_update="false" label="Document" sequence="50" value="document"/>
+                <element inactive_on_update="false" label="Digital" sequence="60" value="digital"/>
+                <element inactive_on_update="false" label="EO" sequence="70" value="eo"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" dependent="category" dependent_on_field="category" label="Sub category" max_length="40" name="sub_category" type="string" use_dependent_field="true">
+            <choice>
+                <element dependent_value="supervision" inactive_on_update="false" label="Standard" sequence="0" value="standard"/>
+                <element dependent_value="supervision" inactive_on_update="false" label="Negative assurance" sequence="5" value="negative_assurance"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Supervision type" max_length="40" name="supervision_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="People Advisory" sequence="10" value="people_advisory"/>
+                <element inactive_on_update="false" label="Exception" sequence="20" value="exception"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="advisor"/>
+        </index>
+        <index name="index2">
+            <element name="interaction_id"/>
+        </index>
+    </element>
+</database>

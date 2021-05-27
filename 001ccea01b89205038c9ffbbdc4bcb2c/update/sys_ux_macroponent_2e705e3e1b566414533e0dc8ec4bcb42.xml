@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_macroponent">
+    <sys_ux_macroponent action="INSERT_OR_UPDATE">
+        <associated_types/>
+        <component_dependencies/>
+        <composition>[ {
+  "elementId" : "ckliimlswxaaaaaaccddbhhffffctujjjgx",
+  "elementLabel" : "Data Visualization",
+  "propertyValues" : {
+    "label" : "Available Cases",
+    "chartType" : "single_score",
+    "dataConfigurations" : "[{\"aggregate_function\":\"COUNT\",\"filter_query\":\"active=true^assigned_toDYNAMIC90d1921e5f510100a9ad2572f2b477fe\",\"show_other\":true,\"start_time\":\"P3M\",\"source_type\":\"table\",\"source_id\":\"x_kiwib_haumaru_case\"}]",
+    "styleConfigurations" : "{\"width\":\"auto\",\"height\":\"auto\",\"showDataLabels\":false,\"dataLabelConfig\":{}}",
+    "isRealtime" : false,
+    "variant" : "auto",
+    "border" : true,
+    "refreshInterval" : "",
+    "kpiDetailsNavigation" : false
+  },
+  "slot" : "ckl8mlswx00033b75xouoz9hz",
+  "definition" : {
+    "id" : "67cf18a377c70010cb834a2a6910619a",
+    "type" : "MACROPONENT"
+  },
+  "overrides" : null
+}, {
+  "elementId" : "ckliimmddlyaaaaaahhddbhhffbnanmatl",
+  "elementLabel" : "Data Visualization",
+  "propertyValues" : {
+    "label" : "Open Remediation Tasks",
+    "chartType" : "single_score",
+    "dataConfigurations" : "[{\"aggregate_function\":\"COUNT\",\"filter_query\":\"active=true^assigned_toDYNAMIC90d1921e5f510100a9ad2572f2b477fe\",\"show_other\":true,\"start_time\":\"P3M\",\"source_type\":\"table\",\"source_id\":\"x_kiwib_haumaru_remediation_task\"}]",
+    "styleConfigurations" : "{\"width\":\"auto\",\"height\":\"auto\",\"showDataLabels\":false,\"dataLabelConfig\":{}}",
+    "isRealtime" : false,
+    "variant" : "auto",
+    "border" : true,
+    "refreshInterval" : "",
+    "kpiDetailsNavigation" : false
+  },
+  "slot" : "ckl8mm3ly00083b75149dm635",
+  "definition" : {
+    "id" : "67cf18a377c70010cb834a2a6910619a",
+    "type" : "MACROPONENT"
+  },
+  "overrides" : null
+}, {
+  "elementId" : "ckliimwtsgaaaaaaddddbhhfffbhhzaaeekff",
+  "elementLabel" : "Data Visualization",
+  "propertyValues" : {
+    "label" : "Available Team Member Cases",
+    "chartType" : "bar",
+    "dataConfigurations" : "[{\"aggregate_function\":\"COUNT\",\"filter_query\":\"active=true\",\"group_by\":\"advisor\",\"number_of_groups\":10,\"show_other\":true,\"start_time\":\"P3M\",\"source_type\":\"table\",\"source_id\":\"x_kiwib_haumaru_case\"}]",
+    "styleConfigurations" : "{\"width\":\"auto\",\"height\":\"auto\",\"showDataLabels\":false,\"xAxisConfig\":{},\"yAxisConfig\":{},\"dataLabelConfig\":{},\"hideRegister\":false,\"registerConfig\":{\"legendOnly\":true},\"registerPosition\":\"bottom\"}",
+    "variant" : "auto",
+    "border" : true,
+    "refreshInterval" : "",
+    "kpiDetailsNavigation" : false,
+    "isRealtime" : "false"
+  },
+  "slot" : "ckl8mwtsh00043b759tkt4mqt",
+  "definition" : {
+    "id" : "67cf18a377c70010cb834a2a6910619a",
+    "type" : "MACROPONENT"
+  },
+  "overrides" : null
+}, {
+  "elementId" : "ckliinbbjjggaaaaaaaiiddbhhffffazbvxiid",
+  "elementLabel" : "Data Visualization",
+  "propertyValues" : {
+    "label" : "Completed Team Member Cases Month To Date",
+    "chartType" : "bar",
+    "dataConfigurations" : "[{\"aggregate_function\":\"COUNT\",\"filter_query\":\"active=false^closed_date_timeONThis month@javascript:gs.beginningOfThisMonth()@javascript:gs.endOfThisMonth()\",\"group_by\":\"advisor\",\"number_of_groups\":10,\"show_other\":true,\"start_time\":\"P3M\",\"source_type\":\"table\",\"source_id\":\"x_kiwib_haumaru_case\"}]",
+    "styleConfigurations" : "{\"width\":\"auto\",\"height\":\"auto\",\"showDataLabels\":false,\"xAxisConfig\":{},\"yAxisConfig\":{},\"dataLabelConfig\":{},\"hideRegister\":false,\"registerConfig\":{\"legendOnly\":true},\"registerPosition\":\"bottom\"}",
+    "variant" : "auto",
+    "border" : true,
+    "refreshInterval" : "",
+    "kpiDetailsNavigation" : false,
+    "isRealtime" : "false"
+  },
+  "slot" : "ckl8n196b00093b7533nr1t08",
+  "definition" : {
+    "id" : "67cf18a377c70010cb834a2a6910619a",
+    "type" : "MACROPONENT"
+  },
+  "overrides" : null
+}, {
+  "elementId" : "ckliineehjggaaaaaacddbhhffddhaaffhggph",
+  "elementLabel" : "Data Visualization",
+  "propertyValues" : {
+    "label" : "Completed Team Member Cases Last Month",
+    "chartType" : "bar",
+    "dataConfigurations" : "[{\"aggregate_function\":\"COUNT\",\"filter_query\":\"active=false^closed_date_timeONLast month@javascript:gs.beginningOfLastMonth()@javascript:gs.endOfLastMonth()\",\"group_by\":\"advisor\",\"number_of_groups\":10,\"show_other\":true,\"start_time\":\"P3M\",\"source_type\":\"table\",\"source_id\":\"x_kiwib_haumaru_case\"}]",
+    "styleConfigurations" : "{\"width\":\"auto\",\"height\":\"auto\",\"showDataLabels\":false,\"xAxisConfig\":{},\"yAxisConfig\":{},\"dataLabelConfig\":{},\"hideRegister\":false,\"registerConfig\":{\"legendOnly\":true},\"registerPosition\":\"bottom\"}",
+    "variant" : "auto",
+    "border" : true,
+    "refreshInterval" : "",
+    "kpiDetailsNavigation" : false,
+    "isRealtime" : "false"
+  },
+  "slot" : "ckl8n4hj7000d3b752kg7zq8i",
+  "definition" : {
+    "id" : "67cf18a377c70010cb834a2a6910619a",
+    "type" : "MACROPONENT"
+  },
+  "overrides" : null
+} ]</composition>
+        <data/>
+        <events/>
+        <extends display_value="Landing Page Template">19be392623033300f4b4c50947bf65ba</extends>
+        <interactions/>
+        <layout>{
+  "default" : {
+    "type" : "rowColumn",
+    "root" : {"type":"column","id":"ckl8mwtsi00063b75gpiov4ag","size":"12","rows":[{"type":"row","id":"ckl8mlswx00043b754jimm0eu","columns":[{"type":"column","id":"ckl8mlswx00053b75wdp5tqzf","slotName":"ckl8mlswx00033b75xouoz9hz","size":"6"},{"type":"column","id":"ckl8mm3lz00093b75bvz0cron","slotName":"ckl8mm3ly00083b75149dm635","size":"6"}]},{"type":"row","id":"ckl8mwtsi00053b7519b94kks","slotName":"ckl8mwtsh00043b759tkt4mqt"},{"type":"row","id":"ckl8n196b000a3b75anmkq5hh","slotName":"ckl8n196b00093b7533nr1t08"},{"type":"row","slotName":"ckl8n4hj7000d3b752kg7zq8i","id":"ckl8n4hj7000e3b75hypn5pk4"}]},
+    "items" : null,
+    "rules" : null,
+    "styles" : null
+  }
+}</layout>
+        <macroponent_dependencies/>
+        <name>Home Page</name>
+        <props/>
+        <root_component/>
+        <root_component_config/>
+        <schema_version>1.0.0</schema_version>
+        <sys_class_name>sys_ux_macroponent</sys_class_name>
+        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+        <sys_created_on>2021-02-16 23:16:34</sys_created_on>
+        <sys_id>2e705e3e1b566414533e0dc8ec4bcb42</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>Home Page</sys_name>
+        <sys_package display_value="Pae Haumaru" source="x_kiwib_haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pae Haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_scope>
+        <sys_update_name>sys_ux_macroponent_2e705e3e1b566414533e0dc8ec4bcb42</sys_update_name>
+        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+        <sys_updated_on>2021-03-31 20:24:41</sys_updated_on>
+    </sys_ux_macroponent>
+</record_update>

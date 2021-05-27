@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="asmt_metric_definition">
+    <asmt_metric_definition action="DELETE">
+        <display>Opportunity for improvement</display>
+        <metric display_value="L1-Q7">4e9bf0581bb5a0d038c9ffbbdc4bcb21</metric>
+        <normalization_input>0</normalization_input>
+        <order/>
+        <selected_image/>
+        <sys_class_name>asmt_metric_definition</sys_class_name>
+        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+        <sys_created_on>2021-01-15 02:09:31</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>5a9bf0581bb5a0d038c9ffbbdc4bcb44</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Opportunity for improvement</sys_name>
+        <sys_package display_value="Haumaru" source="x_kiwib_haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_scope>
+        <sys_update_name>asmt_metric_definition_5a9bf0581bb5a0d038c9ffbbdc4bcb44</sys_update_name>
+        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+        <sys_updated_on>2021-01-15 02:09:31</sys_updated_on>
+        <unselected_image/>
+        <value>2</value>
+    </asmt_metric_definition>
+    <sys_translated_text action="DELETE" query="documentkey=5a9bf0581bb5a0d038c9ffbbdc4bcb44"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Pae Haumaru">001ccea01b89205038c9ffbbdc4bcb2c</application>
+        <file_path/>
+        <instance_id>5eff1e92db012f4c0e785d00cf961905</instance_id>
+        <instance_name>kiwibankdev</instance_name>
+        <name>asmt_metric_definition_5a9bf0581bb5a0d038c9ffbbdc4bcb44</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="asmt_metric_definition"><asmt_metric_definition action="INSERT_OR_UPDATE"><display>Opportunity for improvement</display><metric display_value="L1-Q7">4e9bf0581bb5a0d038c9ffbbdc4bcb21</metric><normalization_input>0</normalization_input><order/><selected_image/><sys_class_name>asmt_metric_definition</sys_class_name><sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by><sys_created_on>2021-01-15 02:09:31</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>5a9bf0581bb5a0d038c9ffbbdc4bcb44</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Opportunity for improvement</sys_name><sys_package display_value="Haumaru" source="x_kiwib_haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_package><sys_policy/><sys_scope display_value="Haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_scope><sys_update_name>asmt_metric_definition_5a9bf0581bb5a0d038c9ffbbdc4bcb44</sys_update_name><sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by><sys_updated_on>2021-01-15 02:09:31</sys_updated_on><unselected_image/><value>2</value></asmt_metric_definition><sys_translated_text action="delete_multiple" query="documentkey=5a9bf0581bb5a0d038c9ffbbdc4bcb44"/></record_update>]]></payload>
+        <payload_hash>-321979453</payload_hash>
+        <record_name>Opportunity for improvement</record_name>
+        <reverted_from/>
+        <source>b1138c8b1b4a2450533e0dc8ec4bcbdc</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+        <sys_created_on>2021-02-04 21:22:19</sys_created_on>
+        <sys_id>48434ccb1b4a2450533e0dc8ec4bcb4d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1776eeca84d0000001</sys_recorded_at>
+        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+        <sys_updated_on>2021-02-04 21:22:19</sys_updated_on>
+        <type>Assessment Metric Definition</type>
+        <update_guid>08434ccb8a4a2450eec30d2452f5104d</update_guid>
+        <update_guid_history>08434ccb8a4a2450eec30d2452f5104d:-321979453</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Opportunity for improvement">be6996ac1b9ee490533e0dc8ec4bcbba</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+        <sys_created_on>2021-02-10 00:09:17</sys_created_on>
+        <sys_db_object display_value="" name="asmt_metric_definition">asmt_metric_definition</sys_db_object>
+        <sys_id>7e952876da9e44c7aff7b77385530ef9</sys_id>
+        <sys_metadata>5a9bf0581bb5a0d038c9ffbbdc4bcb44</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Opportunity for improvement</sys_name>
+        <sys_package display_value="Pae Haumaru" source="x_kiwib_haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Pae Haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_scope>
+        <sys_scope_delete display_value="">02f82d1e9f0948b0802900399bacbfa4</sys_scope_delete>
+        <sys_update_name>asmt_metric_definition_5a9bf0581bb5a0d038c9ffbbdc4bcb44</sys_update_name>
+        <sys_update_version display_value="asmt_metric_definition_5a9bf0581bb5a0d038c9ffbbdc4bcb44">48434ccb1b4a2450533e0dc8ec4bcb4d</sys_update_version>
+        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+        <sys_updated_on>2021-02-10 00:09:17</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

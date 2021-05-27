@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_transform_script">
+    <sys_transform_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <map display_value="Supervision case import transform">a2e638e6db35e810ac891505059619a8</map>
+        <order>100</order>
+        <script><![CDATA[(function runTransformScript(source, map, log, target /*undefined onStart*/ ) {
+
+	// Add your code here
+	// get the last history record
+	var htry = new GlideRecord('sys_import_set_run');
+	htry.addQuery('set', import_set.sys_id);
+	htry.orderByDesc('completed');
+	htry.setLimit(1);
+	htry.query();
+	if(htry.next()){
+		gs.eventQueue('x_kiwib_haumaru.case_import_finished', htry, import_set.sys_id, map.sys_id);
+	}
+
+})(source, map, log, target);]]></script>
+        <sys_class_name>sys_transform_script</sys_class_name>
+        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+        <sys_created_on>2021-01-22 02:45:45</sys_created_on>
+        <sys_id>0895c1eadbf5e810ac89150505961935</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>onComplete</sys_name>
+        <sys_package display_value="Pae Haumaru" source="x_kiwib_haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pae Haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_scope>
+        <sys_update_name>sys_transform_script_0895c1eadbf5e810ac89150505961935</sys_update_name>
+        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+        <sys_updated_on>2021-01-22 02:45:45</sys_updated_on>
+        <when>onComplete</when>
+    </sys_transform_script>
+</record_update>

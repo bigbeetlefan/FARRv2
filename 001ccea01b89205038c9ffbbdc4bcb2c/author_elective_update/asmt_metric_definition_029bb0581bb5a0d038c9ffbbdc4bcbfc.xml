@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="asmt_metric_definition">
+    <asmt_metric_definition action="DELETE">
+        <display>No explanation on different risk profile  </display>
+        <metric display_value="L2-Q2">429bb0581bb5a0d038c9ffbbdc4bcbf2</metric>
+        <normalization_input>0</normalization_input>
+        <order/>
+        <selected_image/>
+        <sys_class_name>asmt_metric_definition</sys_class_name>
+        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+        <sys_created_on>2021-01-15 02:09:30</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>029bb0581bb5a0d038c9ffbbdc4bcbfc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>No explanation on different risk profile  </sys_name>
+        <sys_package display_value="Haumaru" source="x_kiwib_haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_scope>
+        <sys_update_name>asmt_metric_definition_029bb0581bb5a0d038c9ffbbdc4bcbfc</sys_update_name>
+        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+        <sys_updated_on>2021-01-15 02:09:30</sys_updated_on>
+        <unselected_image/>
+        <value>2121</value>
+    </asmt_metric_definition>
+    <sys_translated_text action="DELETE" query="documentkey=029bb0581bb5a0d038c9ffbbdc4bcbfc"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Pae Haumaru">001ccea01b89205038c9ffbbdc4bcb2c</application>
+        <file_path/>
+        <instance_id>5eff1e92db012f4c0e785d00cf961905</instance_id>
+        <instance_name>kiwibankdev</instance_name>
+        <name>asmt_metric_definition_029bb0581bb5a0d038c9ffbbdc4bcbfc</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="asmt_metric_definition"><asmt_metric_definition action="INSERT_OR_UPDATE"><display>No explanation on different risk profile  </display><metric display_value="L2-Q2">429bb0581bb5a0d038c9ffbbdc4bcbf2</metric><normalization_input>0</normalization_input><order/><selected_image/><sys_class_name>asmt_metric_definition</sys_class_name><sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by><sys_created_on>2021-01-15 02:09:30</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>029bb0581bb5a0d038c9ffbbdc4bcbfc</sys_id><sys_mod_count>0</sys_mod_count><sys_name>No explanation on different risk profile  </sys_name><sys_package display_value="Haumaru" source="x_kiwib_haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_package><sys_policy/><sys_scope display_value="Haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_scope><sys_update_name>asmt_metric_definition_029bb0581bb5a0d038c9ffbbdc4bcbfc</sys_update_name><sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by><sys_updated_on>2021-01-15 02:09:30</sys_updated_on><unselected_image/><value>2121</value></asmt_metric_definition><sys_translated_text action="delete_multiple" query="documentkey=029bb0581bb5a0d038c9ffbbdc4bcbfc"/></record_update>]]></payload>
+        <payload_hash>-1673415311</payload_hash>
+        <record_name>No explanation on different risk profile  </record_name>
+        <reverted_from/>
+        <source>b1138c8b1b4a2450533e0dc8ec4bcbdc</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+        <sys_created_on>2021-02-04 21:22:15</sys_created_on>
+        <sys_id>c333c8cb1b4a2450533e0dc8ec4bcb6a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1776eec99a80000001</sys_recorded_at>
+        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+        <sys_updated_on>2021-02-04 21:22:15</sys_updated_on>
+        <type>Assessment Metric Definition</type>
+        <update_guid>8333c8cbe94a2450e32495328709736a</update_guid>
+        <update_guid_history>8333c8cbe94a2450e32495328709736a:-1673415311</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="No explanation on different risk profile  ">4f0ad2201bdee490533e0dc8ec4bcb30</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+        <sys_created_on>2021-02-10 00:12:02</sys_created_on>
+        <sys_db_object display_value="" name="asmt_metric_definition">asmt_metric_definition</sys_db_object>
+        <sys_id>3845d5665c2644ec986d388f0a45e590</sys_id>
+        <sys_metadata>029bb0581bb5a0d038c9ffbbdc4bcbfc</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>No explanation on different risk profile  </sys_name>
+        <sys_package display_value="Pae Haumaru" source="x_kiwib_haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Pae Haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_scope>
+        <sys_scope_delete display_value="">02f82d1e9f0948b0802900399bacbfa4</sys_scope_delete>
+        <sys_update_name>asmt_metric_definition_029bb0581bb5a0d038c9ffbbdc4bcbfc</sys_update_name>
+        <sys_update_version display_value="asmt_metric_definition_029bb0581bb5a0d038c9ffbbdc4bcbfc">c333c8cb1b4a2450533e0dc8ec4bcb6a</sys_update_version>
+        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+        <sys_updated_on>2021-02-10 00:12:02</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

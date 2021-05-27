@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>action_status</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>(KB) Moderation outcome Required</name>
+        <order/>
+        <script><![CDATA[function onSubmit() {
+   //Type appropriate comment here, and begin script below
+	if(g_form.getValue('state') == '3' && g_form.getValue('remediation_action') == '7'){
+		g_form.setMandatory('moderation_outcome', true);
+		if(g_form.getValue('moderation_outcome') == ''){
+			return false;			
+		}
+	}
+   
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+        <sys_created_on>2021-05-14 03:36:23</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>c9a34a261bc83850533e0dc8ec4bcb6d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>(KB) Moderation outcome Required</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Pae Haumaru" source="x_kiwib_haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pae Haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_scope>
+        <sys_update_name>sys_script_client_c9a34a261bc83850533e0dc8ec4bcb6d</sys_update_name>
+        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+        <sys_updated_on>2021-05-14 03:36:23</sys_updated_on>
+        <table>x_kiwib_haumaru_remediation_task</table>
+        <type>onSubmit</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

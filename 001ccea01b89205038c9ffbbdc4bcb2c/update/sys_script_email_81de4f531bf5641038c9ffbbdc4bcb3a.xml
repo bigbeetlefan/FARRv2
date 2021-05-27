@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_email">
+    <sys_script_email action="INSERT_OR_UPDATE">
+        <name>kb_supervision_import_set</name>
+        <new_lines_to_html>false</new_lines_to_html>
+        <script><![CDATA[(function runMailScript(/* GlideRecord */ current, /* TemplatePrinter */ template,
+          /* Optional EmailOutbound */ email, /* Optional GlideRecord */ email_action,
+          /* Optional GlideRecord */ event) {
+
+          // Add your code here
+	var table_name = current.set.table_name;
+    var instance_name = gs.getProperty("instance_name");
+    var set = current.set;
+    var set_number = current.set.number;
+	var link = "https://" + instance_name + ".service-now.com/" + table_name + "_list.do?sysparm_query=sys_import_set=" + set;
+	
+	template.print('<a href="' + link + '">');   
+    template.print(gs.getMessage('Take me to detailed report'));
+    template.print('</a>');
+	
+
+})(current, template, email, email_action, event);]]></script>
+        <sys_class_name>sys_script_email</sys_class_name>
+        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+        <sys_created_on>2021-01-24 20:37:25</sys_created_on>
+        <sys_id>81de4f531bf5641038c9ffbbdc4bcb3a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>kb_supervision_import_set</sys_name>
+        <sys_package display_value="Pae Haumaru" source="x_kiwib_haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pae Haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_scope>
+        <sys_update_name>sys_script_email_81de4f531bf5641038c9ffbbdc4bcb3a</sys_update_name>
+        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+        <sys_updated_on>2021-01-24 20:37:25</sys_updated_on>
+    </sys_script_email>
+</record_update>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_kiwib_haumaru_case</collection>
+        <condition>(new global.AssessmentUtils().conditionCheck(current, 'method=retrospective^assigned_to!=cc1e0231db107300642533f43a9619fd^ORassigned_to!=986b737adb67a700642533f43a96199d^stateCHANGESTO1^category=supervision^sub_category!=negative_assurance^EQ'))</condition>
+        <description/>
+        <execute_function>true</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Auto assessment business rule</name>
+        <order>300</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[function onAsync(current){ 
+ (new sn_assessment_core.AssessmentCreation()).conditionTrigger(current, '72992a6c1b522890533e0dc8ec4bcb30'); 
+ }]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+        <sys_created_on>2021-02-10 01:22:15</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>6b1aeeec1b522890533e0dc8ec4bcbc1</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Auto assessment business rule</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Pae Haumaru" source="x_kiwib_haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pae Haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_scope>
+        <sys_update_name>sys_script_6b1aeeec1b522890533e0dc8ec4bcbc1</sys_update_name>
+        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+        <sys_updated_on>2021-03-09 22:19:35</sys_updated_on>
+        <template/>
+        <when>async</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=6b1aeeec1b522890533e0dc8ec4bcbc1"/>
+</record_update>

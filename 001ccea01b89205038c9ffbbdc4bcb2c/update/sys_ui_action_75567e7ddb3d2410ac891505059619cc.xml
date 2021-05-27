@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_action">
+    <sys_ui_action action="INSERT_OR_UPDATE">
+        <action_name>sysverb_update</action_name>
+        <active>true</active>
+        <client>true</client>
+        <client_script_v2><![CDATA[function onClick(g_form) {
+	
+	var ga = new GlideAjax("x_kiwib_haumaru.KBHaumaruAjax");
+	ga.addParam('sysparm_name', 'remediatSurvey');
+	ga.addParam('sysparm_caseid', g_form.getUniqueValue());
+	ga.getXMLAnswer(function(response) {
+		if(response === 'false' || response === false ){
+			g_modal.alert('Please submit answers to all of the Advisor Assessment questions before selecting the "Assess case" button.');
+		}else{
+			g_form.setValue('state', '2');
+			g_form.save();
+		}
+	});
+	
+}]]></client_script_v2>
+        <comments/>
+        <condition>current.state == '1' &amp;&amp; !(current.isNewRecord() &amp;&amp; !current.canCreate()) &amp;&amp; current.canWrite()</condition>
+        <form_action>true</form_action>
+        <form_button>true</form_button>
+        <form_button_v2>true</form_button_v2>
+        <form_context_menu>false</form_context_menu>
+        <form_link>false</form_link>
+        <form_menu_button_v2>false</form_menu_button_v2>
+        <form_style>primary</form_style>
+        <hint/>
+        <isolate_script>false</isolate_script>
+        <list_action>false</list_action>
+        <list_banner_button>false</list_banner_button>
+        <list_button>false</list_button>
+        <list_choice>false</list_choice>
+        <list_context_menu>false</list_context_menu>
+        <list_link>false</list_link>
+        <list_save_with_form_button>false</list_save_with_form_button>
+        <list_style/>
+        <messages/>
+        <name>Assess case</name>
+        <onclick>confirmAssessmentCompletion()</onclick>
+        <order>10</order>
+        <script><![CDATA[function confirmAssessmentCompletion(){
+
+	var ga = new GlideAjax("x_kiwib_haumaru.KBHaumaruAjax");
+	ga.addParam('sysparm_name', 'remediatSurvey');
+	ga.addParam('sysparm_caseid', g_form.getUniqueValue());
+	ga.getXMLAnswer(function(response) {
+		if(response === 'false' || response === false ){
+			callModal();
+		}else{
+			g_form.setValue("state", '2');
+			gsftSubmit(null, g_form.getFormElement(), 'sysverb_update_and_stay');
+		}
+	});
+
+	function callModal(){
+		var dialog = new GlideModal('', false, 'modal-sm');
+		dialog.setSize(400,500);
+		dialog.setTitle('Alert');
+		dialog.renderWithContent('<div style="padding:40px 15px;"><h4>Please submit answers to all of the Advisor Assessment questions before selecting the "Assess case" button.</h4></div>');
+
+	}
+
+}]]></script>
+        <show_insert>true</show_insert>
+        <show_multiple_update>false</show_multiple_update>
+        <show_query>false</show_query>
+        <show_update>true</show_update>
+        <sys_class_name>sys_ui_action</sys_class_name>
+        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+        <sys_created_on>2021-01-20 02:56:41</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>75567e7ddb3d2410ac891505059619cc</sys_id>
+        <sys_mod_count>94</sys_mod_count>
+        <sys_name>Assess case</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Pae Haumaru" source="x_kiwib_haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pae Haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_scope>
+        <sys_update_name>sys_ui_action_75567e7ddb3d2410ac891505059619cc</sys_update_name>
+        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+        <sys_updated_on>2021-02-17 02:53:32</sys_updated_on>
+        <table>x_kiwib_haumaru_case</table>
+        <ui11_compatible>true</ui11_compatible>
+        <ui16_compatible>false</ui16_compatible>
+    </sys_ui_action>
+</record_update>

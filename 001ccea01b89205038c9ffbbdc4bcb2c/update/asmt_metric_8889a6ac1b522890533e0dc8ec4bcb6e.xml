@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="asmt_metric">
+    <asmt_metric action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <add_info_label>Additional Information</add_info_label>
+        <allow_add_info>false</allow_add_info>
+        <allow_not_applicable>false</allow_not_applicable>
+        <auto_gen>false</auto_gen>
+        <category display_value="Question 10">3779a6ac1b522890533e0dc8ec4bcb66</category>
+        <cond_question>always</cond_question>
+        <condition/>
+        <context/>
+        <correct_answer/>
+        <correct_answer_checkbox>1</correct_answer_checkbox>
+        <correct_answer_choice/>
+        <correct_answer_template/>
+        <correct_answer_yesno>1</correct_answer_yesno>
+        <datatype>string</datatype>
+        <default_value_field/>
+        <depends_on display_value="L2-Q3">4489a6ac1b522890533e0dc8ec4bcba0</depends_on>
+        <description/>
+        <details/>
+        <displayed_when>8889a6ac1b522890533e0dc8ec4bcbb1</displayed_when>
+        <displayed_when_checkbox>1</displayed_when_checkbox>
+        <displayed_when_template/>
+        <displayed_when_yesno>1</displayed_when_yesno>
+        <duration/>
+        <field_validation/>
+        <mandatory>true</mandatory>
+        <max>10</max>
+        <max_weight/>
+        <method>assessment</method>
+        <metric_type display_value="Advisor Assessment">941cf8581bb5a0d038c9ffbbdc4bcb5e</metric_type>
+        <min>0</min>
+        <name>L3-Q3</name>
+        <order>100</order>
+        <plugin/>
+        <question>Other</question>
+        <randomize_answers>false</randomize_answers>
+        <read_only>false</read_only>
+        <reference_table/>
+        <scale>high</scale>
+        <scored>false</scored>
+        <script><![CDATA[// The following variables are available:  // - primary: contains the sys_id of the assessable object to be evaluated  // - string_result: the script sets the display string value for this metric to this variable  // - actual_result: the script sets the actual value for this metric to this variable  // - scaled_result: the script sets the scaled value (used in calculations) for this metric to this variable  //  // For example: // var gr = new GlideRecord('cmdb_ci'); // gr.addQuery('manufacturer', primary); // gr.query(); // actual_result = gr.getRowCount(); // string_result = actual_result + ''; // if (actual_result &gt; 100) scaled_result = 5; // else scaled_result = 1;]]></script>
+        <source_field/>
+        <string_option>multiline</string_option>
+        <sys_class_name>asmt_metric</sys_class_name>
+        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+        <sys_created_on>2021-02-10 01:19:33</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>8889a6ac1b522890533e0dc8ec4bcb6e</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>L3-Q3</sys_name>
+        <sys_package display_value="Pae Haumaru" source="x_kiwib_haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pae Haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_scope>
+        <sys_update_name>asmt_metric_8889a6ac1b522890533e0dc8ec4bcb6e</sys_update_name>
+        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+        <sys_updated_on>2021-02-24 00:39:27</sys_updated_on>
+        <template/>
+        <weight>10</weight>
+    </asmt_metric>
+    <sys_translated_text action="delete_multiple" query="documentkey=8889a6ac1b522890533e0dc8ec4bcb6e"/>
+</record_update>

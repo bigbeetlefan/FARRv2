@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action">
+    <sys_ui_policy_action action="INSERT_OR_UPDATE">
+        <cleared>false</cleared>
+        <disabled>true</disabled>
+        <field>remediation_action</field>
+        <mandatory>ignore</mandatory>
+        <sys_class_name>sys_ui_policy_action</sys_class_name>
+        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+        <sys_created_on>2021-05-19 22:02:46</sys_created_on>
+        <sys_id>b6c1f79c1b14fc90533e0dc8ec4bcb5a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>remediation_action</sys_name>
+        <sys_package display_value="Pae Haumaru" source="x_kiwib_haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pae Haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_scope>
+        <sys_update_name>sys_ui_policy_action_b6c1f79c1b14fc90533e0dc8ec4bcb5a</sys_update_name>
+        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+        <sys_updated_on>2021-05-19 22:02:46</sys_updated_on>
+        <table>x_kiwib_haumaru_remediation_task</table>
+        <ui_policy display_value="(KB) Read only field for remediation action">e311b71c1b14fc90533e0dc8ec4bcbfc</ui_policy>
+        <visible>ignore</visible>
+    </sys_ui_policy_action>
+</record_update>

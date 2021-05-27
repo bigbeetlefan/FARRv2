@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="asmt_metric_definition">
+    <asmt_metric_definition action="INSERT_OR_UPDATE">
+        <display>Standard met</display>
+        <metric display_value="L1-Q10">1a29ee2c1b522890533e0dc8ec4bcbe0</metric>
+        <normalization_input>0</normalization_input>
+        <order/>
+        <selected_image/>
+        <sys_class_name>asmt_metric_definition</sys_class_name>
+        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+        <sys_created_on>2021-02-10 01:18:04</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>5629ee2c1b522890533e0dc8ec4bcbef</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Standard met</sys_name>
+        <sys_package display_value="Pae Haumaru" source="x_kiwib_haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pae Haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_scope>
+        <sys_update_name>asmt_metric_definition_5629ee2c1b522890533e0dc8ec4bcbef</sys_update_name>
+        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+        <sys_updated_on>2021-02-10 01:18:04</sys_updated_on>
+        <unselected_image/>
+        <value>1</value>
+    </asmt_metric_definition>
+    <sys_translated_text action="delete_multiple" query="documentkey=5629ee2c1b522890533e0dc8ec4bcbef"/>
+</record_update>

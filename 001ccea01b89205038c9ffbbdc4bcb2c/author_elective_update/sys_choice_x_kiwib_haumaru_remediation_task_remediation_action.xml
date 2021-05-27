@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="remediation_action" table="x_kiwib_haumaru_remediation_task" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>remediation_action</element>
+            <name>x_kiwib_haumaru_remediation_task</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+            <sys_created_on>2020-12-13 23:39:45</sys_created_on>
+            <sys_id>27c011ae1bc1601038c9ffbbdc4bcbbe</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>remediation_action</sys_name>
+            <sys_package display_value="Pae Haumaru" source="x_kiwib_haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Pae Haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_scope>
+            <sys_update_name>sys_choice_x_kiwib_haumaru_remediation_task_remediation_action</sys_update_name>
+            <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+            <sys_updated_on>2020-12-13 23:39:45</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>1</dependent_value>
+            <element>remediation_action</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Provide coaching</label>
+            <language>en</language>
+            <name>x_kiwib_haumaru_remediation_task</name>
+            <sequence>0</sequence>
+            <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+            <sys_created_on>2020-12-13 23:39:45</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>687623351b416c5038c9ffbbdc4bcb37</sys_id>
+            <sys_mod_count>9</sys_mod_count>
+            <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+            <sys_updated_on>2021-05-19 21:40:48</sys_updated_on>
+            <value>1</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>1</dependent_value>
+            <element>remediation_action</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Customer action required</label>
+            <language>en</language>
+            <name>x_kiwib_haumaru_remediation_task</name>
+            <sequence>1</sequence>
+            <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+            <sys_created_on>2020-12-13 23:39:45</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a47623351b416c5038c9ffbbdc4bcb3e</sys_id>
+            <sys_mod_count>4</sys_mod_count>
+            <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+            <sys_updated_on>2021-05-19 21:33:52</sys_updated_on>
+            <value>2</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>1</dependent_value>
+            <element>remediation_action</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Inform the nominated rep./Correct  customer record</label>
+            <language>en</language>
+            <name>x_kiwib_haumaru_remediation_task</name>
+            <sequence>2</sequence>
+            <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+            <sys_created_on>2020-12-13 23:39:45</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e87623351b416c5038c9ffbbdc4bcb44</sys_id>
+            <sys_mod_count>5</sys_mod_count>
+            <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+            <sys_updated_on>2021-05-19 21:33:56</sys_updated_on>
+            <value>3</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>1</dependent_value>
+            <element>remediation_action</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Discuss with nominated rep.</label>
+            <language>en</language>
+            <name>x_kiwib_haumaru_remediation_task</name>
+            <sequence>3</sequence>
+            <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+            <sys_created_on>2020-12-13 23:39:45</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>207623351b416c5038c9ffbbdc4bcb4b</sys_id>
+            <sys_mod_count>5</sys_mod_count>
+            <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+            <sys_updated_on>2021-05-19 21:33:59</sys_updated_on>
+            <value>4</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>1</dependent_value>
+            <element>remediation_action</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Provide refresher training</label>
+            <language>en</language>
+            <name>x_kiwib_haumaru_remediation_task</name>
+            <sequence>4</sequence>
+            <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+            <sys_created_on>2020-12-13 23:39:45</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>647623351b416c5038c9ffbbdc4bcb51</sys_id>
+            <sys_mod_count>4</sys_mod_count>
+            <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+            <sys_updated_on>2021-05-19 21:34:03</sys_updated_on>
+            <value>5</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>2</dependent_value>
+            <element>remediation_action</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Check the checker</label>
+            <language>en</language>
+            <name>x_kiwib_haumaru_remediation_task</name>
+            <sequence>5</sequence>
+            <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+            <sys_created_on>2021-05-02 23:38:31</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>545f1c4b1b3fe450533e0dc8ec4bcbf0</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+            <sys_updated_on>2021-05-06 21:11:24</sys_updated_on>
+            <value>6</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>2</dependent_value>
+            <element>remediation_action</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Supervision  moderation</label>
+            <language>en</language>
+            <name>x_kiwib_haumaru_remediation_task</name>
+            <sequence>6</sequence>
+            <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+            <sys_created_on>2021-05-06 21:10:48</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f23960d81bc8f490533e0dc8ec4bcb5d</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+            <sys_updated_on>2021-05-06 21:11:52</sys_updated_on>
+            <value>7</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

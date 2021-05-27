@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action">
+    <sys_ui_policy_action action="DELETE">
+        <cleared>true</cleared>
+        <disabled>ignore</disabled>
+        <field>reivew_outcome</field>
+        <mandatory>true</mandatory>
+        <sys_class_name>sys_ui_policy_action</sys_class_name>
+        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+        <sys_created_on>2021-03-09 22:18:25</sys_created_on>
+        <sys_id>387c82e11b762050533e0dc8ec4bcb9e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>reivew_outcome</sys_name>
+        <sys_package display_value="Rae Haumaru" source="x_kiwib_haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Rae Haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_scope>
+        <sys_update_name>sys_ui_policy_action_387c82e11b762050533e0dc8ec4bcb9e</sys_update_name>
+        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+        <sys_updated_on>2021-03-09 22:18:25</sys_updated_on>
+        <table>x_kiwib_haumaru_case</table>
+        <ui_policy display_value="(KB) Review outcome visibility">563c86a11b762050533e0dc8ec4bcb62</ui_policy>
+        <visible>true</visible>
+    </sys_ui_policy_action>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Pae Haumaru">001ccea01b89205038c9ffbbdc4bcb2c</application>
+        <file_path/>
+        <instance_id>5eff1e92db012f4c0e785d00cf961905</instance_id>
+        <instance_name>kiwibankdev</instance_name>
+        <name>sys_ui_policy_action_387c82e11b762050533e0dc8ec4bcb9e</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action"><sys_ui_policy_action action="INSERT_OR_UPDATE"><cleared>true</cleared><disabled>ignore</disabled><field>reivew_outcome</field><mandatory>true</mandatory><sys_class_name>sys_ui_policy_action</sys_class_name><sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by><sys_created_on>2021-03-09 22:18:25</sys_created_on><sys_id>387c82e11b762050533e0dc8ec4bcb9e</sys_id><sys_mod_count>0</sys_mod_count><sys_name>reivew_outcome</sys_name><sys_package display_value="Rae Haumaru" source="x_kiwib_haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_package><sys_policy/><sys_scope display_value="Rae Haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_scope><sys_update_name>sys_ui_policy_action_387c82e11b762050533e0dc8ec4bcb9e</sys_update_name><sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by><sys_updated_on>2021-03-09 22:18:25</sys_updated_on><table>x_kiwib_haumaru_case</table><ui_policy display_value="(KB) Review outcome visibility">563c86a11b762050533e0dc8ec4bcb62</ui_policy><visible>true</visible></sys_ui_policy_action></record_update>]]></payload>
+        <payload_hash>2003577420</payload_hash>
+        <record_name>reivew_outcome</record_name>
+        <reverted_from/>
+        <source>43b404c31b8a2450533e0dc8ec4bcbd6</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+        <sys_created_on>2021-03-09 22:18:25</sys_created_on>
+        <sys_id>3f8c4ae11b762050533e0dc8ec4bcb0c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1781911e32a0000001</sys_recorded_at>
+        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+        <sys_updated_on>2021-03-09 22:18:25</sys_updated_on>
+        <type>UI Policy Action</type>
+        <update_guid>378c4ae1fb762050b16183c96e51520c</update_guid>
+        <update_guid_history>378c4ae1fb762050b16183c96e51520c:2003577420</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+        <sys_created_on>2021-03-09 22:28:20</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_policy_action">sys_ui_policy_action</sys_db_object>
+        <sys_id>2a12252c456343bca09b9588ad13e484</sys_id>
+        <sys_metadata>387c82e11b762050533e0dc8ec4bcb9e</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>reivew_outcome</sys_name>
+        <sys_package display_value="Pae Haumaru" source="x_kiwib_haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_package>
+        <sys_parent display_value="(KB) Review outcome visibility">563c86a11b762050533e0dc8ec4bcb62</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Pae Haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_scope>
+        <sys_scope_delete display_value="">02f82d1e9f0948b0802900399bacbfa4</sys_scope_delete>
+        <sys_update_name>sys_ui_policy_action_387c82e11b762050533e0dc8ec4bcb9e</sys_update_name>
+        <sys_update_version display_value="sys_ui_policy_action_387c82e11b762050533e0dc8ec4bcb9e">3f8c4ae11b762050533e0dc8ec4bcb0c</sys_update_version>
+        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+        <sys_updated_on>2021-03-09 22:28:20</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

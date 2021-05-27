@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="sub_category" label="Sub category" language="en" table="x_kiwib_haumaru_case">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>sub_category</element>
+            <help/>
+            <hint/>
+            <label>Sub category</label>
+            <language>en</language>
+            <name>x_kiwib_haumaru_case</name>
+            <plural>Sub categories</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+            <sys_created_on>2020-12-09 20:58:56</sys_created_on>
+            <sys_id>97c011ae1bc1601038c9ffbbdc4bcb35</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Sub category</sys_name>
+            <sys_package display_value="Pae Haumaru" source="x_kiwib_haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Pae Haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_scope>
+            <sys_update_name>sys_documentation_x_kiwib_haumaru_case_sub_category_en</sys_update_name>
+            <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+            <sys_updated_on>2020-12-09 20:58:56</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

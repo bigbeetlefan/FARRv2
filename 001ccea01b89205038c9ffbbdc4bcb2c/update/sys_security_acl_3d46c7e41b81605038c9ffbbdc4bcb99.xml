@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl">
+    <sys_security_acl action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <admin_overrides>true</admin_overrides>
+        <advanced>true</advanced>
+        <condition/>
+        <description>Allow write for records in x_kiwib_haumaru_case, for users with role snc_internal, and if the ACL script returns true.</description>
+        <name>x_kiwib_haumaru_case</name>
+        <operation display_value="write">write</operation>
+        <script><![CDATA[answer = false;
+if(current.isNewRecord()){
+	answer = true;
+}else if(gs.hasRole('x_kiwib_haumaru.haumaru_admin')){
+	answer = true;	 
+}else{	
+	var _res = new KBHaumaruUtil().inReportingLine(current.assigned_to.toString());
+	if(_res){
+		answer = true;
+	}
+}]]></script>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+        <sys_created_on>2020-12-10 00:07:39</sys_created_on>
+        <sys_id>3d46c7e41b81605038c9ffbbdc4bcb99</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name>x_kiwib_haumaru_case</sys_name>
+        <sys_package display_value="Pae Haumaru" source="x_kiwib_haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pae Haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_scope>
+        <sys_update_name>sys_security_acl_3d46c7e41b81605038c9ffbbdc4bcb99</sys_update_name>
+        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+        <sys_updated_on>2021-05-11 02:28:41</sys_updated_on>
+        <type display_value="record">record</type>
+    </sys_security_acl>
+</record_update>

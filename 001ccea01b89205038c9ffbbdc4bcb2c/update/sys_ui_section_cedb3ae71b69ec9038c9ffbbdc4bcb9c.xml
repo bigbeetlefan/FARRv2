@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="Activity" section_id="cedb3ae71b69ec9038c9ffbbdc4bcb9c" sys_domain="global" table="x_kiwib_haumaru_remediation_task" version="3" view="workspace">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>activity.xml</element>
+            <position>0</position>
+            <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+            <sys_created_on>2021-01-18 23:05:20</sys_created_on>
+            <sys_id>9fc7f4e5db356010ac89150505961905</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter display_value="Activities (filtered)">444ea5c6bf310100e628555b3f0739d6</sys_ui_formatter>
+            <sys_ui_section caption="Activity" display_value="Activity" name="x_kiwib_haumaru_remediation_task" sys_domain="global" view="09c1d05edb2133005f19446b3a961945">cedb3ae71b69ec9038c9ffbbdc4bcb9c</sys_ui_section>
+            <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+            <sys_updated_on>2021-01-18 23:05:20</sys_updated_on>
+            <sys_user/>
+            <type>formatter</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>comments</element>
+            <position>1</position>
+            <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+            <sys_created_on>2021-01-18 23:05:20</sys_created_on>
+            <sys_id>97c7f4e5db356010ac89150505961906</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Activity" display_value="Activity" name="x_kiwib_haumaru_remediation_task" sys_domain="global" view="09c1d05edb2133005f19446b3a961945">cedb3ae71b69ec9038c9ffbbdc4bcb9c</sys_ui_section>
+            <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+            <sys_updated_on>2021-01-18 23:05:20</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Activity</caption>
+            <header>false</header>
+            <name>x_kiwib_haumaru_remediation_task</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+            <sys_created_on>2021-01-13 03:34:23</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>cedb3ae71b69ec9038c9ffbbdc4bcb9c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_kiwib_haumaru_remediation_task</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Pae Haumaru" source="x_kiwib_haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Pae Haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_scope>
+            <sys_update_name>sys_ui_section_cedb3ae71b69ec9038c9ffbbdc4bcb9c</sys_update_name>
+            <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+            <sys_updated_on>2021-01-13 03:34:23</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Workspace" name="workspace">09c1d05edb2133005f19446b3a961945</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

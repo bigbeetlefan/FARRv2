@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_page_property">
+    <sys_ux_page_property action="INSERT_OR_UPDATE">
+        <choices/>
+        <description>Exclude/include user preferences in workspace chrome.</description>
+        <name>ws_active_user_pref</name>
+        <page display_value="Haumaru">8eb693321bc1241038c9ffbbdc4bcb4a</page>
+        <suffix/>
+        <sys_class_name>sys_ux_page_property</sys_class_name>
+        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+        <sys_created_on>2020-12-17 01:04:58</sys_created_on>
+        <sys_id>42b693321bc1241038c9ffbbdc4bcb53</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>ws_active_user_pref</sys_name>
+        <sys_package display_value="Pae Haumaru" source="x_kiwib_haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pae Haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_scope>
+        <sys_update_name>sys_ux_page_property_42b693321bc1241038c9ffbbdc4bcb53</sys_update_name>
+        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+        <sys_updated_on>2020-12-17 01:04:58</sys_updated_on>
+        <type>boolean</type>
+        <unique_name>x_kiwib_haumaru.ws_active_user_pref</unique_name>
+        <value>true</value>
+    </sys_ux_page_property>
+    <sys_translated_text action="delete_multiple" query="documentkey=42b693321bc1241038c9ffbbdc4bcb53"/>
+</record_update>

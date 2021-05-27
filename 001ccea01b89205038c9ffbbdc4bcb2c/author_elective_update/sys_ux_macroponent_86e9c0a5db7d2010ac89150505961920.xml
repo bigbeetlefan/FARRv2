@@ -1,0 +1,529 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_macroponent">
+    <sys_ux_macroponent action="DELETE">
+        <associated_types/>
+        <component_dependencies/>
+        <composition>[ {
+  "elementId" : "ckkddaaddlguaaaaaaeeddbhhffjjvddwddaaew",
+  "elementLabel" : "Container",
+  "propertyValues" : {
+    "label" : "",
+    "bare" : false,
+    "type" : "default",
+    "border" : false,
+    "canCollapse" : false,
+    "collapsed" : false,
+    "bgvar" : ""
+  },
+  "slot" : "ckk303lgu00053b75gw5fviy3",
+  "definition" : {
+    "id" : "80653115e23949b501e719ae9b0b42a6",
+    "type" : "MACROPONENT"
+  },
+  "overrides" : {
+    "layout" : {
+      "default" : {
+        "type" : "rowColumn",
+        "root" : {"type":"column","id":"ckk304gqe000f3b75qci9waza","size":"12","rows":[{"type":"row","id":"ckk303ooz00083b755q4h4tnl","columns":[{"type":"column","id":"ckk30dde900063b75auv33ukw","slotName":"ckk30dde800053b75q1x3uy8n","size":"6"},{"type":"column","id":"ckk30dmp9000d3b75vmrp7bpk","slotName":"ckk30dmp9000c3b75iz7752ds","size":"6"}]},{"type":"row","id":"ckk30dskw000k3b753u9sy9i1","slotName":"ckk30dskw000j3b75x08sn1hv"}]},
+        "items" : null,
+        "rules" : null,
+        "styles" : null
+      }
+    },
+    "composition" : [ {
+      "elementId" : "ckkddaaddehhaaaaaaeeddbhhffccggyddjjpmu",
+      "elementLabel" : "Container",
+      "propertyValues" : {
+        "label" : "",
+        "bare" : false,
+        "type" : "default",
+        "bgvar" : "",
+        "border" : false,
+        "canCollapse" : false,
+        "collapsed" : false
+      },
+      "slot" : "ckk30dde800053b75q1x3uy8n",
+      "definition" : {
+        "id" : "80653115e23949b501e719ae9b0b42a6",
+        "type" : "MACROPONENT"
+      },
+      "overrides" : {
+        "layout" : {
+          "default" : {
+            "type" : "rowColumn",
+            "root" : {"type":"row","id":"ckk30dgh600083b752h0f3b1x","columns":[{"type":"column","id":"ckk314vup000l3b754n7y6ku9","slotName":"ckk314vuo000k3b75fb5i8dos","size":"12"}]},
+            "items" : null,
+            "rules" : null,
+            "styles" : null
+          }
+        },
+        "composition" : [ {
+          "elementId" : "ckkddbbeevunaaaaaajddbhhffaafroxhhpgg",
+          "elementLabel" : "Data Visualization",
+          "propertyValues" : {
+            "label" : "Open Cases Assigned to Me",
+            "chartType" : "single_score",
+            "dataConfigurations" : "[{\"aggregate_function\":\"COUNT\",\"filter_query\":\"assigned_toDYNAMIC90d1921e5f510100a9ad2572f2b477fe^stateIN1,2,3\",\"show_other\":true,\"start_time\":\"P3M\",\"source_type\":\"table\",\"source_id\":\"x_kiwib_haumaru_case\"}]",
+            "styleConfigurations" : "{\"width\":\"auto\",\"height\":\"auto\",\"showDataLabels\":false,\"dataLabelConfig\":{}}",
+            "isRealtime" : false,
+            "variant" : "auto",
+            "border" : false,
+            "refreshInterval" : "",
+            "kpiDetailsNavigation" : false
+          },
+          "slot" : "ckk314vuo000k3b75fb5i8dos",
+          "definition" : {
+            "id" : "67cf18a377c70010cb834a2a6910619a",
+            "type" : "MACROPONENT"
+          },
+          "overrides" : null
+        } ]
+      }
+    }, {
+      "elementId" : "ckkddaadmpiiaaaaaabddbhhffwyddnmyjjp",
+      "elementLabel" : "Container",
+      "propertyValues" : {
+        "label" : "",
+        "bare" : false,
+        "type" : "default",
+        "bgvar" : "",
+        "border" : false,
+        "canCollapse" : false,
+        "collapsed" : false
+      },
+      "slot" : "ckk30dmp9000c3b75iz7752ds",
+      "definition" : {
+        "id" : "80653115e23949b501e719ae9b0b42a6",
+        "type" : "MACROPONENT"
+      },
+      "overrides" : {
+        "layout" : {
+          "default" : {
+            "type" : "rowColumn",
+            "root" : {"type":"row","columns":[{"type":"column","slotName":"ckk319w6u000t3b751ddgy5jx","size":"12","rows":[],"id":"ckk319w6u000v3b75kbb03voi"}],"id":"ckk319w6u000u3b758mbkt24c"},
+            "items" : null,
+            "rules" : null,
+            "styles" : null
+          }
+        },
+        "composition" : [ {
+          "elementId" : "ckkddbbjjwggtaaaaaasddbhhffeqwybjvp",
+          "elementLabel" : "Data Visualization",
+          "propertyValues" : {
+            "label" : "Open Tasks Assigned to Me",
+            "chartType" : "single_score",
+            "dataConfigurations" : "[{\"aggregate_function\":\"COUNT\",\"filter_query\":\"stateIN0,1,2^supervisorDYNAMIC90d1921e5f510100a9ad2572f2b477fe\",\"show_other\":true,\"start_time\":\"P3M\",\"source_type\":\"table\",\"source_id\":\"x_kiwib_haumaru_remediation_task\"}]",
+            "styleConfigurations" : "{\"width\":\"auto\",\"height\":\"auto\",\"showDataLabels\":false,\"dataLabelConfig\":{}}",
+            "isRealtime" : false,
+            "variant" : "auto",
+            "border" : false,
+            "refreshInterval" : "",
+            "kpiDetailsNavigation" : false
+          },
+          "slot" : "ckk319w6u000t3b751ddgy5jx",
+          "definition" : {
+            "id" : "67cf18a377c70010cb834a2a6910619a",
+            "type" : "MACROPONENT"
+          },
+          "overrides" : null
+        } ]
+      }
+    }, {
+      "elementId" : "ckkddaadskvaaaaaaiddbhhffixggfccciigg",
+      "elementLabel" : "Container",
+      "propertyValues" : {
+        "label" : "",
+        "bare" : false,
+        "type" : "default",
+        "bgvar" : "",
+        "border" : false,
+        "canCollapse" : false,
+        "collapsed" : false
+      },
+      "slot" : "ckk30dskw000j3b75x08sn1hv",
+      "definition" : {
+        "id" : "80653115e23949b501e719ae9b0b42a6",
+        "type" : "MACROPONENT"
+      },
+      "overrides" : {
+        "layout" : {
+          "default" : {
+            "type" : "rowColumn",
+            "root" : {"type":"row","columns":[{"type":"column","slotName":"ckk2zt9j100043b75a8muteym","size":"12","rows":[],"id":"ckk30dukz000n3b75oevsh5o4"}],"id":"ckk30dukz000m3b75sktigfhe"},
+            "items" : null,
+            "rules" : null,
+            "styles" : null
+          }
+        },
+        "composition" : [ {
+          "elementId" : "ckkccztjjjaaaaaaaaddddbhhffeqthhtjgr",
+          "elementLabel" : "Data Visualization",
+          "propertyValues" : {
+            "label" : "My Team's Open Cases",
+            "chartType" : "column",
+            "dataConfigurations" : "[{\"aggregate_function\":\"COUNT\",\"trend_field\":\"activity_due\",\"trend_interval\":\"date\",\"filter_query\":\"stateIN1,2,3\",\"group_by\":\"advisor\",\"number_of_groups\":10,\"show_other\":true,\"start_time\":\"P3M\",\"source_type\":\"table\",\"source_id\":\"x_kiwib_haumaru_case\"}]",
+            "styleConfigurations" : "{\"width\":\"auto\",\"height\":\"auto\",\"showDataLabels\":false,\"xAxisConfig\":{},\"yAxisConfig\":{},\"dataLabelConfig\":{\"type\":\"peakValley\"},\"hideRegister\":false,\"registerConfig\":{\"legendOnly\":true},\"registerPosition\":\"bottom\"}",
+            "variant" : "auto",
+            "border" : false,
+            "refreshInterval" : "",
+            "kpiDetailsNavigation" : false
+          },
+          "slot" : "ckk2zt9j100043b75a8muteym",
+          "definition" : {
+            "id" : "67cf18a377c70010cb834a2a6910619a",
+            "type" : "MACROPONENT"
+          },
+          "overrides" : null
+        } ]
+      }
+    } ]
+  }
+}, {
+  "elementId" : "ckkddaaihhjjiaaaaaaeeddbhhffqnfheehaaff",
+  "elementLabel" : "Container",
+  "propertyValues" : {
+    "label" : "",
+    "bare" : false,
+    "type" : "default",
+    "bgvar" : "",
+    "border" : false,
+    "canCollapse" : false,
+    "collapsed" : false
+  },
+  "slot" : "ckk30i79j00053b75rp6wq285",
+  "definition" : {
+    "id" : "80653115e23949b501e719ae9b0b42a6",
+    "type" : "MACROPONENT"
+  },
+  "overrides" : {
+    "layout" : {
+      "default" : {
+        "type" : "rowColumn",
+        "root" : {"type":"column","id":"ckk30inuh000b3b75obntp2h1","size":"12","rows":[{"type":"row","id":"ckk30jitk000g3b75srgrdjh1","slotName":"ckk30jitk000f3b752elqae5k"}]},
+        "items" : null,
+        "rules" : null,
+        "styles" : null
+      }
+    },
+    "composition" : [ {
+      "elementId" : "ckkddaajitjaaaaaaeddbhhffiibrcciixup",
+      "elementLabel" : "Heading",
+      "propertyValues" : {
+        "label" : "My Dashboard",
+        "variant" : "header-primary",
+        "wontWrap" : false,
+        "hasNoMargin" : false
+      },
+      "slot" : "ckk30jitk000f3b752elqae5k",
+      "definition" : {
+        "id" : "1f6e0643eca7a637e36bd7833549ec9e",
+        "type" : "MACROPONENT"
+      },
+      "overrides" : null
+    } ]
+  }
+} ]</composition>
+        <data/>
+        <events/>
+        <extends display_value="Landing Page Template">19be392623033300f4b4c50947bf65ba</extends>
+        <interactions/>
+        <layout>{
+  "default" : {
+    "type" : "rowColumn",
+    "root" : {"type":"column","id":"ckk2zt9j200063b751efwv6ad","size":"12","rows":[{"type":"row","id":"ckk30i79k00063b75udyreu53","slotName":"ckk30i79j00053b75rp6wq285"},{"type":"row","slotName":"ckk303lgu00053b75gw5fviy3","id":"ckk30ie1f00083b75qbazufa6"}]},
+    "items" : null,
+    "rules" : null,
+    "styles" : null
+  }
+}</layout>
+        <macroponent_dependencies/>
+        <name>Home page</name>
+        <props/>
+        <root_component/>
+        <root_component_config/>
+        <schema_version>1.0.0</schema_version>
+        <sys_class_name>sys_ux_macroponent</sys_class_name>
+        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+        <sys_created_on>2021-01-18 19:44:50</sys_created_on>
+        <sys_id>86e9c0a5db7d2010ac89150505961920</sys_id>
+        <sys_mod_count>15</sys_mod_count>
+        <sys_name>Home page</sys_name>
+        <sys_package display_value="Haumaru" source="x_kiwib_haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_scope>
+        <sys_update_name>sys_ux_macroponent_86e9c0a5db7d2010ac89150505961920</sys_update_name>
+        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+        <sys_updated_on>2021-01-18 20:45:12</sys_updated_on>
+    </sys_ux_macroponent>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Pae Haumaru">001ccea01b89205038c9ffbbdc4bcb2c</application>
+        <file_path/>
+        <instance_id>910d105cdb0c801049eac59705961931</instance_id>
+        <instance_name>kiwibankdev2</instance_name>
+        <name>sys_ux_macroponent_86e9c0a5db7d2010ac89150505961920</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_macroponent"><sys_ux_macroponent action="INSERT_OR_UPDATE"><associated_types/><component_dependencies/><composition>[ {
+  "elementId" : "ckkddaaddlguaaaaaaeeddbhhffjjvddwddaaew",
+  "elementLabel" : "Container",
+  "propertyValues" : {
+    "label" : "",
+    "bare" : false,
+    "type" : "default",
+    "border" : false,
+    "canCollapse" : false,
+    "collapsed" : false,
+    "bgvar" : ""
+  },
+  "slot" : "ckk303lgu00053b75gw5fviy3",
+  "definition" : {
+    "id" : "80653115e23949b501e719ae9b0b42a6",
+    "type" : "MACROPONENT"
+  },
+  "overrides" : {
+    "layout" : {
+      "default" : {
+        "type" : "rowColumn",
+        "root" : {"type":"column","id":"ckk304gqe000f3b75qci9waza","size":"12","rows":[{"type":"row","id":"ckk303ooz00083b755q4h4tnl","columns":[{"type":"column","id":"ckk30dde900063b75auv33ukw","slotName":"ckk30dde800053b75q1x3uy8n","size":"6"},{"type":"column","id":"ckk30dmp9000d3b75vmrp7bpk","slotName":"ckk30dmp9000c3b75iz7752ds","size":"6"}]},{"type":"row","id":"ckk30dskw000k3b753u9sy9i1","slotName":"ckk30dskw000j3b75x08sn1hv"}]},
+        "items" : null,
+        "rules" : null,
+        "styles" : null
+      }
+    },
+    "composition" : [ {
+      "elementId" : "ckkddaaddehhaaaaaaeeddbhhffccggyddjjpmu",
+      "elementLabel" : "Container",
+      "propertyValues" : {
+        "label" : "",
+        "bare" : false,
+        "type" : "default",
+        "bgvar" : "",
+        "border" : false,
+        "canCollapse" : false,
+        "collapsed" : false
+      },
+      "slot" : "ckk30dde800053b75q1x3uy8n",
+      "definition" : {
+        "id" : "80653115e23949b501e719ae9b0b42a6",
+        "type" : "MACROPONENT"
+      },
+      "overrides" : {
+        "layout" : {
+          "default" : {
+            "type" : "rowColumn",
+            "root" : {"type":"row","id":"ckk30dgh600083b752h0f3b1x","columns":[{"type":"column","id":"ckk314vup000l3b754n7y6ku9","slotName":"ckk314vuo000k3b75fb5i8dos","size":"12"}]},
+            "items" : null,
+            "rules" : null,
+            "styles" : null
+          }
+        },
+        "composition" : [ {
+          "elementId" : "ckkddbbeevunaaaaaajddbhhffaafroxhhpgg",
+          "elementLabel" : "Data Visualization",
+          "propertyValues" : {
+            "label" : "Open Cases Assigned to Me",
+            "chartType" : "single_score",
+            "dataConfigurations" : "[{\"aggregate_function\":\"COUNT\",\"filter_query\":\"assigned_toDYNAMIC90d1921e5f510100a9ad2572f2b477fe^stateIN1,2,3\",\"show_other\":true,\"start_time\":\"P3M\",\"source_type\":\"table\",\"source_id\":\"x_kiwib_haumaru_case\"}]",
+            "styleConfigurations" : "{\"width\":\"auto\",\"height\":\"auto\",\"showDataLabels\":false,\"dataLabelConfig\":{}}",
+            "isRealtime" : false,
+            "variant" : "auto",
+            "border" : false,
+            "refreshInterval" : "",
+            "kpiDetailsNavigation" : false
+          },
+          "slot" : "ckk314vuo000k3b75fb5i8dos",
+          "definition" : {
+            "id" : "67cf18a377c70010cb834a2a6910619a",
+            "type" : "MACROPONENT"
+          },
+          "overrides" : null
+        } ]
+      }
+    }, {
+      "elementId" : "ckkddaadmpiiaaaaaabddbhhffwyddnmyjjp",
+      "elementLabel" : "Container",
+      "propertyValues" : {
+        "label" : "",
+        "bare" : false,
+        "type" : "default",
+        "bgvar" : "",
+        "border" : false,
+        "canCollapse" : false,
+        "collapsed" : false
+      },
+      "slot" : "ckk30dmp9000c3b75iz7752ds",
+      "definition" : {
+        "id" : "80653115e23949b501e719ae9b0b42a6",
+        "type" : "MACROPONENT"
+      },
+      "overrides" : {
+        "layout" : {
+          "default" : {
+            "type" : "rowColumn",
+            "root" : {"type":"row","columns":[{"type":"column","slotName":"ckk319w6u000t3b751ddgy5jx","size":"12","rows":[],"id":"ckk319w6u000v3b75kbb03voi"}],"id":"ckk319w6u000u3b758mbkt24c"},
+            "items" : null,
+            "rules" : null,
+            "styles" : null
+          }
+        },
+        "composition" : [ {
+          "elementId" : "ckkddbbjjwggtaaaaaasddbhhffeqwybjvp",
+          "elementLabel" : "Data Visualization",
+          "propertyValues" : {
+            "label" : "Open Tasks Assigned to Me",
+            "chartType" : "single_score",
+            "dataConfigurations" : "[{\"aggregate_function\":\"COUNT\",\"filter_query\":\"stateIN0,1,2^supervisorDYNAMIC90d1921e5f510100a9ad2572f2b477fe\",\"show_other\":true,\"start_time\":\"P3M\",\"source_type\":\"table\",\"source_id\":\"x_kiwib_haumaru_remediation_task\"}]",
+            "styleConfigurations" : "{\"width\":\"auto\",\"height\":\"auto\",\"showDataLabels\":false,\"dataLabelConfig\":{}}",
+            "isRealtime" : false,
+            "variant" : "auto",
+            "border" : false,
+            "refreshInterval" : "",
+            "kpiDetailsNavigation" : false
+          },
+          "slot" : "ckk319w6u000t3b751ddgy5jx",
+          "definition" : {
+            "id" : "67cf18a377c70010cb834a2a6910619a",
+            "type" : "MACROPONENT"
+          },
+          "overrides" : null
+        } ]
+      }
+    }, {
+      "elementId" : "ckkddaadskvaaaaaaiddbhhffixggfccciigg",
+      "elementLabel" : "Container",
+      "propertyValues" : {
+        "label" : "",
+        "bare" : false,
+        "type" : "default",
+        "bgvar" : "",
+        "border" : false,
+        "canCollapse" : false,
+        "collapsed" : false
+      },
+      "slot" : "ckk30dskw000j3b75x08sn1hv",
+      "definition" : {
+        "id" : "80653115e23949b501e719ae9b0b42a6",
+        "type" : "MACROPONENT"
+      },
+      "overrides" : {
+        "layout" : {
+          "default" : {
+            "type" : "rowColumn",
+            "root" : {"type":"row","columns":[{"type":"column","slotName":"ckk2zt9j100043b75a8muteym","size":"12","rows":[],"id":"ckk30dukz000n3b75oevsh5o4"}],"id":"ckk30dukz000m3b75sktigfhe"},
+            "items" : null,
+            "rules" : null,
+            "styles" : null
+          }
+        },
+        "composition" : [ {
+          "elementId" : "ckkccztjjjaaaaaaaaddddbhhffeqthhtjgr",
+          "elementLabel" : "Data Visualization",
+          "propertyValues" : {
+            "label" : "My Team's Open Cases",
+            "chartType" : "column",
+            "dataConfigurations" : "[{\"aggregate_function\":\"COUNT\",\"trend_field\":\"activity_due\",\"trend_interval\":\"date\",\"filter_query\":\"stateIN1,2,3\",\"group_by\":\"advisor\",\"number_of_groups\":10,\"show_other\":true,\"start_time\":\"P3M\",\"source_type\":\"table\",\"source_id\":\"x_kiwib_haumaru_case\"}]",
+            "styleConfigurations" : "{\"width\":\"auto\",\"height\":\"auto\",\"showDataLabels\":false,\"xAxisConfig\":{},\"yAxisConfig\":{},\"dataLabelConfig\":{\"type\":\"peakValley\"},\"hideRegister\":false,\"registerConfig\":{\"legendOnly\":true},\"registerPosition\":\"bottom\"}",
+            "variant" : "auto",
+            "border" : false,
+            "refreshInterval" : "",
+            "kpiDetailsNavigation" : false
+          },
+          "slot" : "ckk2zt9j100043b75a8muteym",
+          "definition" : {
+            "id" : "67cf18a377c70010cb834a2a6910619a",
+            "type" : "MACROPONENT"
+          },
+          "overrides" : null
+        } ]
+      }
+    } ]
+  }
+}, {
+  "elementId" : "ckkddaaihhjjiaaaaaaeeddbhhffqnfheehaaff",
+  "elementLabel" : "Container",
+  "propertyValues" : {
+    "label" : "",
+    "bare" : false,
+    "type" : "default",
+    "bgvar" : "",
+    "border" : false,
+    "canCollapse" : false,
+    "collapsed" : false
+  },
+  "slot" : "ckk30i79j00053b75rp6wq285",
+  "definition" : {
+    "id" : "80653115e23949b501e719ae9b0b42a6",
+    "type" : "MACROPONENT"
+  },
+  "overrides" : {
+    "layout" : {
+      "default" : {
+        "type" : "rowColumn",
+        "root" : {"type":"column","id":"ckk30inuh000b3b75obntp2h1","size":"12","rows":[{"type":"row","id":"ckk30jitk000g3b75srgrdjh1","slotName":"ckk30jitk000f3b752elqae5k"}]},
+        "items" : null,
+        "rules" : null,
+        "styles" : null
+      }
+    },
+    "composition" : [ {
+      "elementId" : "ckkddaajitjaaaaaaeddbhhffiibrcciixup",
+      "elementLabel" : "Heading",
+      "propertyValues" : {
+        "label" : "My Dashboard",
+        "variant" : "header-primary",
+        "wontWrap" : false,
+        "hasNoMargin" : false
+      },
+      "slot" : "ckk30jitk000f3b752elqae5k",
+      "definition" : {
+        "id" : "1f6e0643eca7a637e36bd7833549ec9e",
+        "type" : "MACROPONENT"
+      },
+      "overrides" : null
+    } ]
+  }
+} ]</composition><data/><events/><extends display_value="Landing Page Template">19be392623033300f4b4c50947bf65ba</extends><interactions/><layout>{
+  "default" : {
+    "type" : "rowColumn",
+    "root" : {"type":"column","id":"ckk2zt9j200063b751efwv6ad","size":"12","rows":[{"type":"row","id":"ckk30i79k00063b75udyreu53","slotName":"ckk30i79j00053b75rp6wq285"},{"type":"row","slotName":"ckk303lgu00053b75gw5fviy3","id":"ckk30ie1f00083b75qbazufa6"}]},
+    "items" : null,
+    "rules" : null,
+    "styles" : null
+  }
+}</layout><macroponent_dependencies/><name>Home page</name><props/><root_component/><root_component_config/><schema_version>1.0.0</schema_version><sys_class_name>sys_ux_macroponent</sys_class_name><sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by><sys_created_on>2021-01-18 19:44:50</sys_created_on><sys_id>86e9c0a5db7d2010ac89150505961920</sys_id><sys_mod_count>15</sys_mod_count><sys_name>Home page</sys_name><sys_package display_value="Haumaru" source="x_kiwib_haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_package><sys_policy/><sys_scope display_value="Haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_scope><sys_update_name>sys_ux_macroponent_86e9c0a5db7d2010ac89150505961920</sys_update_name><sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by><sys_updated_on>2021-01-18 20:45:12</sys_updated_on></sys_ux_macroponent></record_update>]]></payload>
+        <payload_hash>-1198919563</payload_hash>
+        <record_name>Home page</record_name>
+        <reverted_from/>
+        <source>52e0596e1bc1601038c9ffbbdc4bcbad</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+        <sys_created_on>2021-01-18 20:45:12</sys_created_on>
+        <sys_id>a2b754eddbfd2010ac8915050596197e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>177173e92260000001</sys_recorded_at>
+        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+        <sys_updated_on>2021-01-18 20:45:12</sys_updated_on>
+        <type>UX Macroponent Definition</type>
+        <update_guid>2ab754edacfd2010318d9781e907ec7d</update_guid>
+        <update_guid_history>2ab754edacfd2010318d9781e907ec7d:-1198919563,8767d8adeafd2010e61b74dfe8fd4836:36194021,e9861c2dc8fd2010f9fc5dcbf205f4a0:-1531190592,2ce5d4e971fd2010cc7e2d3c7b6757ae:1224830678,743218a987bd2010bcccc4a0be5c4f53:-1805954718,67e150a9f4bd2010a5247a2604e91d4c:-145732631,2b119429b5bd2010ae204c7f222c449f:-1221578412,b6af84658bbd2010374117d5c0dcb2db:2065872104,a76f4c2514bd20106450fad1e7320f91:-757259286,fc3e8c2132bd201079e9422569a9f1b4:263079884,8edd44ed917d20101c15ca791e9d96c7:1732189676,c8accc2d8a7d2010d0be353421d8cdd8:-2090222626,6c9c8c2d617d20109c9a459c7878e2ee:1227705697,32bb84a9487d2010ceb529643207f4ee:-2010683024,8d3a4ca5267d20108d3fa200d16f35bb:-506980144,dee9c0a5217d2010bf8b0228e2f1de22:-1240894183</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+        <sys_created_on>2021-01-20 22:56:13</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_macroponent">sys_ux_macroponent</sys_db_object>
+        <sys_id>07e925225d0341608bfd618e6dde8400</sys_id>
+        <sys_metadata>86e9c0a5db7d2010ac89150505961920</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Home page</sys_name>
+        <sys_package display_value="Pae Haumaru" source="x_kiwib_haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Pae Haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_scope>
+        <sys_scope_delete display_value="">02f82d1e9f0948b0802900399bacbfa4</sys_scope_delete>
+        <sys_update_name>sys_ux_macroponent_86e9c0a5db7d2010ac89150505961920</sys_update_name>
+        <sys_update_version display_value="sys_ux_macroponent_86e9c0a5db7d2010ac89150505961920">a2b754eddbfd2010ac8915050596197e</sys_update_version>
+        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+        <sys_updated_on>2021-01-20 22:56:13</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

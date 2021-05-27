@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>asmt_metric_result</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition table="asmt_metric_result">instance.state=complete^instance.metric_type=941cf8581bb5a0d038c9ffbbdc4bcb5e^ORinstance.metric_type=dc5b17681b45605038c9ffbbdc4bcb5a^instance.trigger_tableSTARTSWITHx_kiwib_haumaru_case^EQ<item display_value="complete" endquery="false" field="instance.state" goto="false" newquery="false" operator="=" or="false" value="complete"/>
+            <item display_table="asmt_metric_type" display_value="Advisor Assessment" endquery="false" field="instance.metric_type" goto="false" newquery="false" operator="=" or="false" value="941cf8581bb5a0d038c9ffbbdc4bcb5e"/>
+            <item display_table="asmt_metric_type" display_value="Advisor Assessment" endquery="false" field="instance.metric_type" goto="false" newquery="false" operator="=" or="true" value="dc5b17681b45605038c9ffbbdc4bcb5a"/>
+            <item endquery="false" field="instance.trigger_table" goto="false" newquery="false" operator="STARTSWITH" or="false" value="x_kiwib_haumaru_case"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>(KB) Copy haumaru survey result</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+
+	// Add your code here
+	var res = new GlideRecord('x_kiwib_haumaru_haumaru_result');
+	res.initialize();
+	res.question = current.metric;
+	res.metric_result = current.sys_id;
+	res.customer_case = current.instance.task_id;
+	res.insert();
+
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+        <sys_created_on>2021-04-08 23:08:16</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>7395341f1b1b2818533e0dc8ec4bcba4</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>(KB) Copy haumaru survey result</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Pae Haumaru" source="x_kiwib_haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pae Haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_scope>
+        <sys_update_name>sys_script_7395341f1b1b2818533e0dc8ec4bcba4</sys_update_name>
+        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+        <sys_updated_on>2021-05-07 01:33:01</sys_updated_on>
+        <template/>
+        <when>after</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=7395341f1b1b2818533e0dc8ec4bcba4"/>
+</record_update>

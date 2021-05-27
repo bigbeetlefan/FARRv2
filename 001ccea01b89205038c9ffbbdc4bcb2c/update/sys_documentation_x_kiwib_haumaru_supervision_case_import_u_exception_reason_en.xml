@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="u_exception_reason" label="Exception Reason" language="en" table="x_kiwib_haumaru_supervision_case_import">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>u_exception_reason</element>
+            <help/>
+            <hint/>
+            <label>Exception Reason</label>
+            <language>en</language>
+            <name>x_kiwib_haumaru_supervision_case_import</name>
+            <plural>Exception Reasons</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+            <sys_created_on>2021-01-22 01:32:20</sys_created_on>
+            <sys_id>7d36f02adb35e810ac891505059619fd</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Exception Reason</sys_name>
+            <sys_package display_value="Pae Haumaru" source="x_kiwib_haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Pae Haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_scope>
+            <sys_update_name>sys_documentation_x_kiwib_haumaru_supervision_case_import_u_exception_reason_en</sys_update_name>
+            <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+            <sys_updated_on>2021-01-22 01:32:20</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

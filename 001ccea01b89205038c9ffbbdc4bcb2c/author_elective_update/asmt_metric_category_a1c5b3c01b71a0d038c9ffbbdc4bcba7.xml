@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="asmt_metric_category">
+    <asmt_metric_category action="DELETE">
+        <create_stakeholders>false</create_stakeholders>
+        <description/>
+        <details/>
+        <filter table="asmt_metric_type">sys_id=dc5b17681b45605038c9ffbbdc4bcb5a^EQ<item endquery="false" field="sys_id" goto="false" newquery="false" operator="=" or="false" value="dc5b17681b45605038c9ffbbdc4bcb5a"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter>
+        <metric_type display_value="Advisor Assessment">dc5b17681b45605038c9ffbbdc4bcb5a</metric_type>
+        <name>Question 3</name>
+        <order>3</order>
+        <qb_evaluation_method/>
+        <roles/>
+        <scoring_type>percent</scoring_type>
+        <sys_class_name>asmt_metric_category</sys_class_name>
+        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+        <sys_created_on>2021-01-14 21:04:33</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>a1c5b3c01b71a0d038c9ffbbdc4bcba7</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name>Question 3</sys_name>
+        <sys_package display_value="Haumaru" source="x_kiwib_haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_scope>
+        <sys_update_name>asmt_metric_category_a1c5b3c01b71a0d038c9ffbbdc4bcba7</sys_update_name>
+        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+        <sys_updated_on>2021-01-14 22:35:15</sys_updated_on>
+        <table>asmt_metric_type</table>
+        <total_metrics>7</total_metrics>
+        <weight>10</weight>
+    </asmt_metric_category>
+    <sys_translated_text action="DELETE" query="documentkey=a1c5b3c01b71a0d038c9ffbbdc4bcba7"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Pae Haumaru">001ccea01b89205038c9ffbbdc4bcb2c</application>
+        <file_path/>
+        <instance_id>5eff1e92db012f4c0e785d00cf961905</instance_id>
+        <instance_name>kiwibankdev</instance_name>
+        <name>asmt_metric_category_a1c5b3c01b71a0d038c9ffbbdc4bcba7</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="asmt_metric_category"><asmt_metric_category action="INSERT_OR_UPDATE"><create_stakeholders>false</create_stakeholders><description/><details/><filter table="asmt_metric_type">sys_id=dc5b17681b45605038c9ffbbdc4bcb5a^EQ<item endquery="false" field="sys_id" goto="false" newquery="false" operator="=" or="false" value="dc5b17681b45605038c9ffbbdc4bcb5a"/><item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/></filter><metric_type display_value="Advisor Assessment">dc5b17681b45605038c9ffbbdc4bcb5a</metric_type><name>Question 3</name><order>3</order><qb_evaluation_method/><roles/><scoring_type>percent</scoring_type><sys_class_name>asmt_metric_category</sys_class_name><sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by><sys_created_on>2021-01-14 21:04:33</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>a1c5b3c01b71a0d038c9ffbbdc4bcba7</sys_id><sys_mod_count>9</sys_mod_count><sys_name>Question 3</sys_name><sys_package display_value="Haumaru" source="x_kiwib_haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_package><sys_policy/><sys_scope display_value="Haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_scope><sys_update_name>asmt_metric_category_a1c5b3c01b71a0d038c9ffbbdc4bcba7</sys_update_name><sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by><sys_updated_on>2021-01-14 22:35:15</sys_updated_on><table>asmt_metric_type</table><total_metrics>7</total_metrics><weight>10</weight></asmt_metric_category><sys_translated_text action="delete_multiple" query="documentkey=a1c5b3c01b71a0d038c9ffbbdc4bcba7"/></record_update>]]></payload>
+        <payload_hash>-1858252187</payload_hash>
+        <record_name>Question 3</record_name>
+        <reverted_from/>
+        <source>b1138c8b1b4a2450533e0dc8ec4bcbdc</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+        <sys_created_on>2021-02-04 21:22:14</sys_created_on>
+        <sys_id>763388cb1b4a2450533e0dc8ec4bcbfe</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1776eec96020000001</sys_recorded_at>
+        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+        <sys_updated_on>2021-02-04 21:22:14</sys_updated_on>
+        <type>Metric Category</type>
+        <update_guid>363388cb084a2450a5650183b5130cfe</update_guid>
+        <update_guid_history>363388cb084a2450a5650183b5130cfe:-1858252187</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Question 3">f850aa601b122890533e0dc8ec4bcba8</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+        <sys_created_on>2021-02-10 00:39:28</sys_created_on>
+        <sys_db_object display_value="" name="asmt_metric_category">asmt_metric_category</sys_db_object>
+        <sys_id>1a178e7c520f4b7884ac3cefbd7b1440</sys_id>
+        <sys_metadata>a1c5b3c01b71a0d038c9ffbbdc4bcba7</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Question 3</sys_name>
+        <sys_package display_value="Pae Haumaru" source="x_kiwib_haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Pae Haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_scope>
+        <sys_scope_delete display_value="">02f82d1e9f0948b0802900399bacbfa4</sys_scope_delete>
+        <sys_update_name>asmt_metric_category_a1c5b3c01b71a0d038c9ffbbdc4bcba7</sys_update_name>
+        <sys_update_version display_value="asmt_metric_category_a1c5b3c01b71a0d038c9ffbbdc4bcba7">763388cb1b4a2450533e0dc8ec4bcbfe</sys_update_version>
+        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+        <sys_updated_on>2021-02-10 00:39:28</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

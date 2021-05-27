@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_push_notif_app_install">
+    <sys_push_notif_app_install action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <last_registered_on>2021-03-15 18:40:02</last_registered_on>
+        <sys_class_name>sys_push_notif_app_install</sys_class_name>
+        <sys_created_by>Dominic.Bing@kiwibank.co.nz</sys_created_by>
+        <sys_created_on>2021-03-09 01:53:21</sys_created_on>
+        <sys_id>da243d51db766c1022483a83e29619f3</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>A7D20D0805C3496F2560844D95B9F6AB723B73D03FEF6640B0504B335F84E3F7</sys_name>
+        <sys_package display_value="Pae Haumaru" source="x_kiwib_haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_package>
+        <sys_policy/>
+        <sys_push_application_id display_value="ServiceNow Mobile Application">05ed2fb177002300258da2e2c81061c2</sys_push_application_id>
+        <sys_push_platform_id display_value="Apple">20e71f30ff0002009738ffffffffff6b</sys_push_platform_id>
+        <sys_scope display_value="Pae Haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_scope>
+        <sys_update_name>sys_push_notif_app_install_da243d51db766c1022483a83e29619f3</sys_update_name>
+        <sys_updated_by>Dominic.Bing@kiwibank.co.nz</sys_updated_by>
+        <sys_updated_on>2021-03-15 18:40:03</sys_updated_on>
+        <sys_user_id display_value="Dominic Bing">b4bec6bddb9073005f19446b3a961967</sys_user_id>
+        <token>A7D20D0805C3496F2560844D95B9F6AB723B73D03FEF6640B0504B335F84E3F7</token>
+    </sys_push_notif_app_install>
+</record_update>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_uib_toolbox_component">
+    <sys_uib_toolbox_component action="INSERT_OR_UPDATE">
+        <description>A description of my component</description>
+        <icon>document-outline</icon>
+        <label>My Component</label>
+        <macroponent display_value="My Component">19a8cacf3fee59dc89f11dc8cfade1bc</macroponent>
+        <sys_class_name>sys_uib_toolbox_component</sys_class_name>
+        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+        <sys_created_on>2021-02-16 01:43:36</sys_created_on>
+        <sys_id>689a6eb8125714cc94a87ecc1c2f2b41</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>My Component</sys_name>
+        <sys_package display_value="Pae Haumaru" source="x_kiwib_haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pae Haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_scope>
+        <sys_update_name>sys_uib_toolbox_component_689a6eb8125714cc94a87ecc1c2f2b41</sys_update_name>
+        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+        <sys_updated_on>2021-02-16 01:43:36</sys_updated_on>
+    </sys_uib_toolbox_component>
+</record_update>

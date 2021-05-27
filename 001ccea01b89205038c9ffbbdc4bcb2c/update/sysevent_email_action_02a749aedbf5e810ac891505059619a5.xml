@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sysevent_email_action">
+    <sysevent_email_action action="INSERT_OR_UPDATE">
+        <action_insert>true</action_insert>
+        <action_update>false</action_update>
+        <active>true</active>
+        <advanced_condition/>
+        <affected_field_on_event/>
+        <category display_value="Haumaru" name="Haumaru">0471106edbbda810ac89150505961909</category>
+        <collection>sys_import_set_run</collection>
+        <condition/>
+        <content_type>text/html</content_type>
+        <default_interval/>
+        <description/>
+        <digest_from/>
+        <digest_html/>
+        <digest_reply_to/>
+        <digest_separator_html><![CDATA[<p><br /></p>
+<hr />
+<p><br /></p>]]></digest_separator_html>
+        <digest_separator_text><![CDATA[\n--------------------------------------------------------------------------------\n]]></digest_separator_text>
+        <digest_subject/>
+        <digest_template/>
+        <digest_text/>
+        <digestable>false</digestable>
+        <event_name>x_kiwib_haumaru.case_import_finished</event_name>
+        <event_parm_1>false</event_parm_1>
+        <event_parm_2>false</event_parm_2>
+        <exclude_delegates>false</exclude_delegates>
+        <force_delivery>false</force_delivery>
+        <from/>
+        <generation_type>event</generation_type>
+        <importance/>
+        <include_attachments>false</include_attachments>
+        <item>event.parm1</item>
+        <item_table/>
+        <mandatory>false</mandatory>
+        <message/>
+        <message_html><![CDATA[<p><span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">The following is the analysis of the recent data upload:</span></p>
+<p><span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;"><strong>Started:</strong> ${sys_created_on}</span></p>
+<p><span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;"><strong>Completed:</strong> ${completed}</span></p>
+<p><span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;"><strong>Run time:</strong> ${run_time}</span></p>
+<table style="border-collapse: collapse; width: 100%; height: 91px;" border="1">
+<tbody>
+<tr style="height: 13px;">
+<td style="width: 50%; height: 13px;"><span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;"><strong>Operation</strong></span></td>
+<td style="width: 50%; height: 13px;"><span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;"><strong>Rows&nbsp;</strong></span></td>
+</tr>
+<tr style="height: 13px;">
+<td style="width: 50%; height: 13px;"><span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">Inserts</span></td>
+<td style="width: 50%; height: 13px;"><span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">${inserts}</span></td>
+</tr>
+<tr style="height: 13px;">
+<td style="width: 50%; height: 13px;"><span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">Updates</span></td>
+<td style="width: 50%; height: 13px;"><span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">${updates}</span></td>
+</tr>
+<tr style="height: 13px;">
+<td style="width: 50%; height: 13px;"><span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">Ignored</span></td>
+<td style="width: 50%; height: 13px;"><span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">${ignored}</span></td>
+</tr>
+<tr style="height: 13px;">
+<td style="width: 50%; height: 13px;"><span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">Skipped</span></td>
+<td style="width: 50%; height: 13px;"><span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">${skipped}</span></td>
+</tr>
+<tr style="height: 13px;">
+<td style="width: 50%; height: 13px;"><span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">Errors</span></td>
+<td style="width: 50%; height: 13px;"><span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">${errors}</span></td>
+</tr>
+<tr style="height: 13px;">
+<td style="width: 50%; height: 13px;"><span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">Total</span></td>
+<td style="width: 50%; height: 13px;"><span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">${total}</span></td>
+</tr>
+</tbody>
+</table>
+<p><span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">${mail_script:kb_supervision_import_set}</span></p>
+<p><span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;">Please ensure that you review and take action against any operations above marked as Ignored, Skipped or Errors.</span></p>]]></message_html>
+        <message_list/>
+        <message_text/>
+        <name>(KB) Supervision case import finished</name>
+        <omit_watermark>true</omit_watermark>
+        <order>100</order>
+        <push_message_only>false</push_message_only>
+        <recipient_fields/>
+        <recipient_groups name="Pae Haumaru Admin">49f143cfdb1ee8504ecc0af6f396196b</recipient_groups>
+        <recipient_users/>
+        <reply_to/>
+        <send_self>true</send_self>
+        <sms_alternate/>
+        <style/>
+        <subject>Customer case import summary - ${sys_created_on}</subject>
+        <subscribable>false</subscribable>
+        <sys_class_name>sysevent_email_action</sys_class_name>
+        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+        <sys_created_on>2021-01-22 02:48:32</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>02a749aedbf5e810ac891505059619a5</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>(KB) Supervision case import finished</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Pae Haumaru" source="x_kiwib_haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pae Haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_scope>
+        <sys_update_name>sysevent_email_action_02a749aedbf5e810ac891505059619a5</sys_update_name>
+        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+        <sys_updated_on>2021-02-18 01:11:15</sys_updated_on>
+        <sys_version>2</sys_version>
+        <template display_value="(KB) User Email Template">077ab71a1b352c1038c9ffbbdc4bcb25</template>
+        <type>email</type>
+        <weight>0</weight>
+    </sysevent_email_action>
+</record_update>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="closure_code" table="x_kiwib_haumaru_remediation_task" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>closure_code</element>
+            <name>x_kiwib_haumaru_remediation_task</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+            <sys_created_on>2020-12-14 02:36:42</sys_created_on>
+            <sys_id>e7c011ae1bc1601038c9ffbbdc4bcbb9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>closure_code</sys_name>
+            <sys_package display_value="Pae Haumaru" source="x_kiwib_haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Pae Haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_scope>
+            <sys_update_name>sys_choice_x_kiwib_haumaru_remediation_task_closure_code</sys_update_name>
+            <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+            <sys_updated_on>2020-12-14 02:36:42</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>closure_code</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Completed</label>
+            <language>en</language>
+            <name>x_kiwib_haumaru_remediation_task</name>
+            <sequence>0</sequence>
+            <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+            <sys_created_on>2020-12-14 02:36:42</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>64fe04021bc56c5038c9ffbbdc4bcbdc</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+            <sys_updated_on>2020-12-14 02:36:42</sys_updated_on>
+            <value>completed</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>closure_code</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Cancelled</label>
+            <language>en</language>
+            <name>x_kiwib_haumaru_remediation_task</name>
+            <sequence>1</sequence>
+            <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+            <sys_created_on>2020-12-14 02:36:42</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>64fe04021bc56c5038c9ffbbdc4bcbe3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+            <sys_updated_on>2020-12-14 02:36:42</sys_updated_on>
+            <value>cancelled</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

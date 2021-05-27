@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="asmt_metric_definition">
+    <asmt_metric_definition action="DELETE">
+        <display>Customer not eligible for product offered </display>
+        <metric display_value="L2-Q2">389b70581bb5a0d038c9ffbbdc4bcbd0</metric>
+        <normalization_input>0</normalization_input>
+        <order/>
+        <selected_image/>
+        <sys_class_name>asmt_metric_definition</sys_class_name>
+        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+        <sys_created_on>2021-01-15 02:09:26</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>c19b70581bb5a0d038c9ffbbdc4bcbf1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Customer not eligible for product offered </sys_name>
+        <sys_package display_value="Haumaru" source="x_kiwib_haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_scope>
+        <sys_update_name>asmt_metric_definition_c19b70581bb5a0d038c9ffbbdc4bcbf1</sys_update_name>
+        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+        <sys_updated_on>2021-01-15 02:09:26</sys_updated_on>
+        <unselected_image/>
+        <value>5531</value>
+    </asmt_metric_definition>
+    <sys_translated_text action="DELETE" query="documentkey=c19b70581bb5a0d038c9ffbbdc4bcbf1"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Pae Haumaru">001ccea01b89205038c9ffbbdc4bcb2c</application>
+        <file_path/>
+        <instance_id>5eff1e92db012f4c0e785d00cf961905</instance_id>
+        <instance_name>kiwibankdev</instance_name>
+        <name>asmt_metric_definition_c19b70581bb5a0d038c9ffbbdc4bcbf1</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="asmt_metric_definition"><asmt_metric_definition action="INSERT_OR_UPDATE"><display>Customer not eligible for product offered </display><metric display_value="L2-Q2">389b70581bb5a0d038c9ffbbdc4bcbd0</metric><normalization_input>0</normalization_input><order/><selected_image/><sys_class_name>asmt_metric_definition</sys_class_name><sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by><sys_created_on>2021-01-15 02:09:26</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>c19b70581bb5a0d038c9ffbbdc4bcbf1</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Customer not eligible for product offered </sys_name><sys_package display_value="Haumaru" source="x_kiwib_haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_package><sys_policy/><sys_scope display_value="Haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_scope><sys_update_name>asmt_metric_definition_c19b70581bb5a0d038c9ffbbdc4bcbf1</sys_update_name><sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by><sys_updated_on>2021-01-15 02:09:26</sys_updated_on><unselected_image/><value>5531</value></asmt_metric_definition><sys_translated_text action="delete_multiple" query="documentkey=c19b70581bb5a0d038c9ffbbdc4bcbf1"/></record_update>]]></payload>
+        <payload_hash>-1464928451</payload_hash>
+        <record_name>Customer not eligible for product offered </record_name>
+        <reverted_from/>
+        <source>b1138c8b1b4a2450533e0dc8ec4bcbdc</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+        <sys_created_on>2021-02-04 21:22:24</sys_created_on>
+        <sys_id>9d43cccb1b4a2450533e0dc8ec4bcbda</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1776eecba920000001</sys_recorded_at>
+        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+        <sys_updated_on>2021-02-04 21:22:24</sys_updated_on>
+        <type>Assessment Metric Definition</type>
+        <update_guid>5d43cccb984a2450d2bc6e053a6f72da</update_guid>
+        <update_guid_history>5d43cccb984a2450d2bc6e053a6f72da:-1464928451</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Customer not eligible for product offered ">4dc596e01b9ee490533e0dc8ec4bcbe7</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+        <sys_created_on>2021-02-09 23:53:20</sys_created_on>
+        <sys_db_object display_value="" name="asmt_metric_definition">asmt_metric_definition</sys_db_object>
+        <sys_id>37decf3dafc144a48ddf7ab66a224910</sys_id>
+        <sys_metadata>c19b70581bb5a0d038c9ffbbdc4bcbf1</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Customer not eligible for product offered </sys_name>
+        <sys_package display_value="Pae Haumaru" source="x_kiwib_haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Pae Haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_scope>
+        <sys_scope_delete display_value="">02f82d1e9f0948b0802900399bacbfa4</sys_scope_delete>
+        <sys_update_name>asmt_metric_definition_c19b70581bb5a0d038c9ffbbdc4bcbf1</sys_update_name>
+        <sys_update_version display_value="asmt_metric_definition_c19b70581bb5a0d038c9ffbbdc4bcbf1">9d43cccb1b4a2450533e0dc8ec4bcbda</sys_update_version>
+        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+        <sys_updated_on>2021-02-09 23:53:20</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

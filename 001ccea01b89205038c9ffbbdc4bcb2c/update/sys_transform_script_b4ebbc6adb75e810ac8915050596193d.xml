@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_transform_script">
+    <sys_transform_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <map display_value="Supervision case import transform">a2e638e6db35e810ac891505059619a8</map>
+        <order>100</order>
+        <script><![CDATA[(function runTransformScript(source, map, log, target /*undefined onStart*/ ) {
+
+	// Add your code here
+	if(source.u_interaction_id == ''){
+		ignore = true;
+		status_message = "Invalided interaction ID. Status: Ignore.";
+		error = true;
+		error_message = "Invalided interaction ID. Status: Ignore.";
+	}else{
+		var superCase = new GlideRecord('x_kiwib_haumaru_case');
+		superCase.addQuery('interaction_id', source.u_interaction_id);
+		superCase.query();
+		if(superCase.next()){
+			ignore = true;
+		}		
+	}
+
+})(source, map, log, target);]]></script>
+        <sys_class_name>sys_transform_script</sys_class_name>
+        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+        <sys_created_on>2021-01-22 01:59:52</sys_created_on>
+        <sys_id>b4ebbc6adb75e810ac8915050596193d</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>onBefore</sys_name>
+        <sys_package display_value="Pae Haumaru" source="x_kiwib_haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pae Haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_scope>
+        <sys_update_name>sys_transform_script_b4ebbc6adb75e810ac8915050596193d</sys_update_name>
+        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+        <sys_updated_on>2021-02-12 01:14:25</sys_updated_on>
+        <when>onBefore</when>
+    </sys_transform_script>
+</record_update>

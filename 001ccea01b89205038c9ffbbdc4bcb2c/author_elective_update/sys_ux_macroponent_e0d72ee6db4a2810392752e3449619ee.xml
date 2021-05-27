@@ -1,0 +1,572 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_macroponent">
+    <sys_ux_macroponent action="DELETE">
+        <associated_types/>
+        <category>page</category>
+        <component_dependencies/>
+        <composition>[ {
+  "elementId" : "stylized_container_1",
+  "elementLabel" : "Stylized Container 1",
+  "propertyValues" : {
+    "label" : "",
+    "bare" : false,
+    "type" : "default",
+    "bgvar" : null,
+    "border" : false,
+    "canCollapse" : false,
+    "collapsed" : false,
+    "size" : "",
+    "disableDismiss" : false,
+    "defer" : false,
+    "collapseButtonTooltipContent" : "Collapse container to hide contents",
+    "expandButtonTooltipContent" : "Expand container to show contents"
+  },
+  "eventMappings" : [ ],
+  "slot" : "default-slot",
+  "definition" : {
+    "id" : "80653115e23949b501e719ae9b0b42a6",
+    "type" : "MACROPONENT"
+  },
+  "overrides" : {
+    "composition" : [ {
+      "elementId" : "data_visualization_1",
+      "elementLabel" : "Data visualization 1",
+      "propertyValues" : {
+        "label" : "My open cases",
+        "chartType" : "single_score",
+        "dataConfigurations" : "[{\"__viz_config_id\":\"dGFibGV4X2tpd2liX2hhdW1hcnVfY2FzZTE2MTIzODI3MjQxOTM=\",\"__viz_config_label\":\"Supervision Case\",\"aggregate_function\":\"COUNT\",\"filter_query\":\"state=2^ORstate=0^ORstate=1\",\"display_zero\":true,\"source_type\":\"table\",\"source_id\":\"x_kiwib_haumaru_case\"}]",
+        "styleConfigurations" : "{\"width\":\"auto\",\"height\":\"auto\",\"showDataLabels\":false,\"dataLabelConfig\":{\"align\":\"middle\",\"collisions\":\"hide\",\"stacked\":\"individual\",\"valueType\":\"both\"}}",
+        "isRealtime" : false,
+        "showRealtimeIndicator" : "",
+        "variant" : "auto",
+        "border" : true,
+        "refreshInterval" : "",
+        "kpiDetailsNavigation" : false,
+        "followFilters" : true,
+        "hideFiltersInfo" : false,
+        "filterConfigurations" : "@state.parFilters",
+        "hideHeader" : false,
+        "refreshFrequency" : ""
+      },
+      "eventMappings" : [ ],
+      "slot" : "ckkpv0sxj000v3b83ss40dne6",
+      "definition" : {
+        "id" : "67cf18a377c70010cb834a2a6910619a",
+        "type" : "MACROPONENT"
+      },
+      "overrides" : null,
+      "isHidden" : {
+        "type" : "JSON_LITERAL",
+        "value" : false
+      },
+      "isNonDestructive" : false,
+      "styles" : { }
+    } ],
+    "layout" : {
+      "default" : {
+        "children" : null,
+        "items" : null,
+        "root" : {"type":"row","columns":[{"type":"column","slotName":"ckkpv0sxj000v3b83ss40dne6","size":"12","rows":[],"id":"ckkpv0sxj000x3b83n7d5cgx9"}],"id":"ckkpv0sxj000w3b83rty9lhr6"},
+        "rules" : null,
+        "styles" : null,
+        "templateId" : null,
+        "type" : "rowColumn"
+      }
+    }
+  },
+  "isHidden" : {
+    "type" : "JSON_LITERAL",
+    "value" : false
+  },
+  "isNonDestructive" : false,
+  "styles" : {
+    "width" : "100%"
+  }
+}, {
+  "elementId" : "stylized_container_2",
+  "elementLabel" : "Stylized Container 2",
+  "propertyValues" : {
+    "label" : "",
+    "bare" : false,
+    "type" : "default",
+    "bgvar" : null,
+    "border" : false,
+    "canCollapse" : false,
+    "collapsed" : false,
+    "size" : "",
+    "disableDismiss" : false,
+    "defer" : false,
+    "collapseButtonTooltipContent" : "Collapse container to hide contents",
+    "expandButtonTooltipContent" : "Expand container to show contents"
+  },
+  "eventMappings" : [ ],
+  "slot" : "ckkpv1okp00103b83owtu5ylm",
+  "definition" : {
+    "id" : "80653115e23949b501e719ae9b0b42a6",
+    "type" : "MACROPONENT"
+  },
+  "overrides" : {
+    "composition" : [ {
+      "elementId" : "data_visualization_2",
+      "elementLabel" : "Data visualization 2",
+      "propertyValues" : {
+        "label" : "My open tasks",
+        "chartType" : "single_score",
+        "dataConfigurations" : "[{\"__viz_config_id\":\"dGFibGV4X2tpd2liX2hhdW1hcnVfcmVtZWRpYXRpb25fdGFzazE2MTIzODI3OTE4MjE=\",\"__viz_config_label\":\"Remediation Task\",\"aggregate_function\":\"COUNT\",\"filter_query\":\"state=0^ORstate=1\",\"display_zero\":true,\"source_type\":\"table\",\"source_id\":\"x_kiwib_haumaru_remediation_task\"}]",
+        "styleConfigurations" : "{\"width\":\"auto\",\"height\":\"auto\",\"showDataLabels\":false,\"dataLabelConfig\":{\"align\":\"middle\",\"collisions\":\"hide\",\"stacked\":\"individual\",\"valueType\":\"both\"}}",
+        "isRealtime" : false,
+        "showRealtimeIndicator" : "",
+        "variant" : "auto",
+        "border" : true,
+        "refreshInterval" : "",
+        "kpiDetailsNavigation" : false,
+        "followFilters" : true,
+        "hideFiltersInfo" : false,
+        "filterConfigurations" : "@state.parFilters",
+        "hideHeader" : false,
+        "refreshFrequency" : ""
+      },
+      "eventMappings" : [ ],
+      "slot" : "ckkpv2k2l00153b83keg2534e",
+      "definition" : {
+        "id" : "67cf18a377c70010cb834a2a6910619a",
+        "type" : "MACROPONENT"
+      },
+      "overrides" : null,
+      "isHidden" : {
+        "type" : "JSON_LITERAL",
+        "value" : false
+      },
+      "isNonDestructive" : false,
+      "styles" : { }
+    } ],
+    "layout" : {
+      "default" : {
+        "children" : null,
+        "items" : null,
+        "root" : {"type":"row","columns":[{"type":"column","slotName":"ckkpv2k2l00153b83keg2534e","size":"12","rows":[],"id":"ckkpv2k2l00173b83yyg317zv"}],"id":"ckkpv2k2l00163b83w04l7xws"},
+        "rules" : null,
+        "styles" : null,
+        "templateId" : null,
+        "type" : "rowColumn"
+      }
+    }
+  },
+  "isHidden" : {
+    "type" : "JSON_LITERAL",
+    "value" : false
+  },
+  "isNonDestructive" : false,
+  "styles" : {
+    "width" : "100%"
+  }
+}, {
+  "elementId" : "stylized_container_3",
+  "elementLabel" : "Stylized Container 3",
+  "propertyValues" : {
+    "label" : "",
+    "bare" : false,
+    "type" : "default",
+    "bgvar" : null,
+    "border" : false,
+    "canCollapse" : false,
+    "collapsed" : false,
+    "size" : "",
+    "disableDismiss" : false,
+    "defer" : false,
+    "collapseButtonTooltipContent" : "Collapse container to hide contents",
+    "expandButtonTooltipContent" : "Expand container to show contents"
+  },
+  "eventMappings" : [ ],
+  "slot" : "ckkpv3d1r001a3b833aawcbnm",
+  "definition" : {
+    "id" : "80653115e23949b501e719ae9b0b42a6",
+    "type" : "MACROPONENT"
+  },
+  "overrides" : {
+    "composition" : [ {
+      "elementId" : "data_visualization_3",
+      "elementLabel" : "Data visualization 3",
+      "propertyValues" : {
+        "label" : "Team members' open cases",
+        "chartType" : "bar",
+        "dataConfigurations" : "[{\"__viz_config_id\":\"dGFibGV4X2tpd2liX2hhdW1hcnVfY2FzZTE2MTIzODI4MzUyNjY=\",\"__viz_config_label\":\"Supervision Case\",\"aggregate_function\":\"COUNT\",\"filter_query\":\"state=0^ORstate=1^ORstate=2\",\"group_by\":\"assigned_to\",\"number_of_groups\":10,\"display_zero\":true,\"source_type\":\"table\",\"source_id\":\"x_kiwib_haumaru_case\"}]",
+        "styleConfigurations" : "{\"width\":\"auto\",\"height\":\"auto\",\"showDataLabels\":false,\"xAxisConfig\":{},\"yAxisConfig\":{},\"dataLabelConfig\":{\"align\":\"middle\",\"collisions\":\"hide\",\"stacked\":\"individual\",\"valueType\":\"both\"},\"hideRegister\":false,\"registerConfig\":{\"legendOnly\":true},\"registerPosition\":\"bottom\"}",
+        "isRealtime" : "",
+        "showRealtimeIndicator" : "",
+        "variant" : "auto",
+        "border" : true,
+        "refreshInterval" : "",
+        "kpiDetailsNavigation" : false,
+        "followFilters" : true,
+        "hideFiltersInfo" : false,
+        "filterConfigurations" : "@state.parFilters",
+        "hideHeader" : false,
+        "refreshFrequency" : ""
+      },
+      "eventMappings" : [ ],
+      "slot" : "ckkpv3f7s001g3b83zoocufxh",
+      "definition" : {
+        "id" : "67cf18a377c70010cb834a2a6910619a",
+        "type" : "MACROPONENT"
+      },
+      "overrides" : null,
+      "isHidden" : {
+        "type" : "JSON_LITERAL",
+        "value" : false
+      },
+      "isNonDestructive" : false,
+      "styles" : { }
+    } ],
+    "layout" : {
+      "default" : {
+        "children" : null,
+        "items" : null,
+        "root" : {"type":"row","columns":[{"type":"column","slotName":"ckkpv3f7s001g3b83zoocufxh","size":"12","rows":[],"id":"ckkpv3f7s001i3b83myqlpxbu"}],"id":"ckkpv3f7s001h3b83bui0bt1f"},
+        "rules" : null,
+        "styles" : null,
+        "templateId" : null,
+        "type" : "rowColumn"
+      }
+    }
+  },
+  "isHidden" : {
+    "type" : "JSON_LITERAL",
+    "value" : false
+  },
+  "isNonDestructive" : false,
+  "styles" : {
+    "width" : "100%"
+  }
+} ]</composition>
+        <da_relay_models/>
+        <data>[ ]</data>
+        <dispatched_events/>
+        <events/>
+        <extends display_value="Page Template">19be392623033300f4b4c50947bf65ba</extends>
+        <handled_events/>
+        <interactions/>
+        <interfaces/>
+        <internal_event_mappings>{ }</internal_event_mappings>
+        <layout>{
+  "default" : {
+    "children" : null,
+    "items" : null,
+    "root" : {"id":"ckkpv3d1r001c3b837tgdyxbq","type":"column","rows":[{"type":"row","id":"ckkpuzzk000023b8329d89qe2","columns":[{"type":"column","id":"ckkpuzzk000013b831c2ciwr4","slotName":"default-slot","size":"6"},{"type":"column","id":"ckkpv1okp00113b836f0pa7nl","slotName":"ckkpv1okp00103b83owtu5ylm","size":"6"}]},{"type":"row","id":"ckkpv3d1r001b3b83ixxxiimf","slotName":"ckkpv3d1r001a3b833aawcbnm"}],"size":"12"},
+    "rules" : null,
+    "styles" : null,
+    "templateId" : null,
+    "type" : "rowColumn"
+  }
+}</layout>
+        <macroponent_dependencies/>
+        <name>Home page</name>
+        <props>[ ]</props>
+        <required_translations>[{"message":"Team members' open cases","comment":""},{"message":"My open tasks","comment":""},{"message":"My open cases","comment":""}]</required_translations>
+        <root_component/>
+        <root_component_config>{ }</root_component_config>
+        <root_component_definition/>
+        <schema_version>1.0.0</schema_version>
+        <state_properties>[ ]</state_properties>
+        <sys_class_name>sys_ux_macroponent</sys_class_name>
+        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+        <sys_created_on>2021-02-03 20:04:22</sys_created_on>
+        <sys_id>e0d72ee6db4a2810392752e3449619ee</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Home page</sys_name>
+        <sys_package display_value="Haumaru" source="x_kiwib_haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_scope>
+        <sys_update_name>sys_ux_macroponent_e0d72ee6db4a2810392752e3449619ee</sys_update_name>
+        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+        <sys_updated_on>2021-02-03 20:08:28</sys_updated_on>
+    </sys_ux_macroponent>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Pae Haumaru">001ccea01b89205038c9ffbbdc4bcb2c</application>
+        <file_path/>
+        <instance_id>5eff1e92db012f4c0e785d00cf961905</instance_id>
+        <instance_name>kiwibankdev</instance_name>
+        <name>sys_ux_macroponent_e0d72ee6db4a2810392752e3449619ee</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_macroponent"><sys_ux_macroponent action="INSERT_OR_UPDATE"><associated_types/><category>page</category><component_dependencies/><composition>[ {
+  "elementId" : "stylized_container_1",
+  "elementLabel" : "Stylized Container 1",
+  "propertyValues" : {
+    "label" : "",
+    "bare" : false,
+    "type" : "default",
+    "bgvar" : null,
+    "border" : false,
+    "canCollapse" : false,
+    "collapsed" : false,
+    "size" : "",
+    "disableDismiss" : false,
+    "defer" : false,
+    "collapseButtonTooltipContent" : "Collapse container to hide contents",
+    "expandButtonTooltipContent" : "Expand container to show contents"
+  },
+  "eventMappings" : [ ],
+  "slot" : "default-slot",
+  "definition" : {
+    "id" : "80653115e23949b501e719ae9b0b42a6",
+    "type" : "MACROPONENT"
+  },
+  "overrides" : {
+    "composition" : [ {
+      "elementId" : "data_visualization_1",
+      "elementLabel" : "Data visualization 1",
+      "propertyValues" : {
+        "label" : "My open cases",
+        "chartType" : "single_score",
+        "dataConfigurations" : "[{\"__viz_config_id\":\"dGFibGV4X2tpd2liX2hhdW1hcnVfY2FzZTE2MTIzODI3MjQxOTM=\",\"__viz_config_label\":\"Supervision Case\",\"aggregate_function\":\"COUNT\",\"filter_query\":\"state=2^ORstate=0^ORstate=1\",\"display_zero\":true,\"source_type\":\"table\",\"source_id\":\"x_kiwib_haumaru_case\"}]",
+        "styleConfigurations" : "{\"width\":\"auto\",\"height\":\"auto\",\"showDataLabels\":false,\"dataLabelConfig\":{\"align\":\"middle\",\"collisions\":\"hide\",\"stacked\":\"individual\",\"valueType\":\"both\"}}",
+        "isRealtime" : false,
+        "showRealtimeIndicator" : "",
+        "variant" : "auto",
+        "border" : true,
+        "refreshInterval" : "",
+        "kpiDetailsNavigation" : false,
+        "followFilters" : true,
+        "hideFiltersInfo" : false,
+        "filterConfigurations" : "@state.parFilters",
+        "hideHeader" : false,
+        "refreshFrequency" : ""
+      },
+      "eventMappings" : [ ],
+      "slot" : "ckkpv0sxj000v3b83ss40dne6",
+      "definition" : {
+        "id" : "67cf18a377c70010cb834a2a6910619a",
+        "type" : "MACROPONENT"
+      },
+      "overrides" : null,
+      "isHidden" : {
+        "type" : "JSON_LITERAL",
+        "value" : false
+      },
+      "isNonDestructive" : false,
+      "styles" : { }
+    } ],
+    "layout" : {
+      "default" : {
+        "children" : null,
+        "items" : null,
+        "root" : {"type":"row","columns":[{"type":"column","slotName":"ckkpv0sxj000v3b83ss40dne6","size":"12","rows":[],"id":"ckkpv0sxj000x3b83n7d5cgx9"}],"id":"ckkpv0sxj000w3b83rty9lhr6"},
+        "rules" : null,
+        "styles" : null,
+        "templateId" : null,
+        "type" : "rowColumn"
+      }
+    }
+  },
+  "isHidden" : {
+    "type" : "JSON_LITERAL",
+    "value" : false
+  },
+  "isNonDestructive" : false,
+  "styles" : {
+    "width" : "100%"
+  }
+}, {
+  "elementId" : "stylized_container_2",
+  "elementLabel" : "Stylized Container 2",
+  "propertyValues" : {
+    "label" : "",
+    "bare" : false,
+    "type" : "default",
+    "bgvar" : null,
+    "border" : false,
+    "canCollapse" : false,
+    "collapsed" : false,
+    "size" : "",
+    "disableDismiss" : false,
+    "defer" : false,
+    "collapseButtonTooltipContent" : "Collapse container to hide contents",
+    "expandButtonTooltipContent" : "Expand container to show contents"
+  },
+  "eventMappings" : [ ],
+  "slot" : "ckkpv1okp00103b83owtu5ylm",
+  "definition" : {
+    "id" : "80653115e23949b501e719ae9b0b42a6",
+    "type" : "MACROPONENT"
+  },
+  "overrides" : {
+    "composition" : [ {
+      "elementId" : "data_visualization_2",
+      "elementLabel" : "Data visualization 2",
+      "propertyValues" : {
+        "label" : "My open tasks",
+        "chartType" : "single_score",
+        "dataConfigurations" : "[{\"__viz_config_id\":\"dGFibGV4X2tpd2liX2hhdW1hcnVfcmVtZWRpYXRpb25fdGFzazE2MTIzODI3OTE4MjE=\",\"__viz_config_label\":\"Remediation Task\",\"aggregate_function\":\"COUNT\",\"filter_query\":\"state=0^ORstate=1\",\"display_zero\":true,\"source_type\":\"table\",\"source_id\":\"x_kiwib_haumaru_remediation_task\"}]",
+        "styleConfigurations" : "{\"width\":\"auto\",\"height\":\"auto\",\"showDataLabels\":false,\"dataLabelConfig\":{\"align\":\"middle\",\"collisions\":\"hide\",\"stacked\":\"individual\",\"valueType\":\"both\"}}",
+        "isRealtime" : false,
+        "showRealtimeIndicator" : "",
+        "variant" : "auto",
+        "border" : true,
+        "refreshInterval" : "",
+        "kpiDetailsNavigation" : false,
+        "followFilters" : true,
+        "hideFiltersInfo" : false,
+        "filterConfigurations" : "@state.parFilters",
+        "hideHeader" : false,
+        "refreshFrequency" : ""
+      },
+      "eventMappings" : [ ],
+      "slot" : "ckkpv2k2l00153b83keg2534e",
+      "definition" : {
+        "id" : "67cf18a377c70010cb834a2a6910619a",
+        "type" : "MACROPONENT"
+      },
+      "overrides" : null,
+      "isHidden" : {
+        "type" : "JSON_LITERAL",
+        "value" : false
+      },
+      "isNonDestructive" : false,
+      "styles" : { }
+    } ],
+    "layout" : {
+      "default" : {
+        "children" : null,
+        "items" : null,
+        "root" : {"type":"row","columns":[{"type":"column","slotName":"ckkpv2k2l00153b83keg2534e","size":"12","rows":[],"id":"ckkpv2k2l00173b83yyg317zv"}],"id":"ckkpv2k2l00163b83w04l7xws"},
+        "rules" : null,
+        "styles" : null,
+        "templateId" : null,
+        "type" : "rowColumn"
+      }
+    }
+  },
+  "isHidden" : {
+    "type" : "JSON_LITERAL",
+    "value" : false
+  },
+  "isNonDestructive" : false,
+  "styles" : {
+    "width" : "100%"
+  }
+}, {
+  "elementId" : "stylized_container_3",
+  "elementLabel" : "Stylized Container 3",
+  "propertyValues" : {
+    "label" : "",
+    "bare" : false,
+    "type" : "default",
+    "bgvar" : null,
+    "border" : false,
+    "canCollapse" : false,
+    "collapsed" : false,
+    "size" : "",
+    "disableDismiss" : false,
+    "defer" : false,
+    "collapseButtonTooltipContent" : "Collapse container to hide contents",
+    "expandButtonTooltipContent" : "Expand container to show contents"
+  },
+  "eventMappings" : [ ],
+  "slot" : "ckkpv3d1r001a3b833aawcbnm",
+  "definition" : {
+    "id" : "80653115e23949b501e719ae9b0b42a6",
+    "type" : "MACROPONENT"
+  },
+  "overrides" : {
+    "composition" : [ {
+      "elementId" : "data_visualization_3",
+      "elementLabel" : "Data visualization 3",
+      "propertyValues" : {
+        "label" : "Team members' open cases",
+        "chartType" : "bar",
+        "dataConfigurations" : "[{\"__viz_config_id\":\"dGFibGV4X2tpd2liX2hhdW1hcnVfY2FzZTE2MTIzODI4MzUyNjY=\",\"__viz_config_label\":\"Supervision Case\",\"aggregate_function\":\"COUNT\",\"filter_query\":\"state=0^ORstate=1^ORstate=2\",\"group_by\":\"assigned_to\",\"number_of_groups\":10,\"display_zero\":true,\"source_type\":\"table\",\"source_id\":\"x_kiwib_haumaru_case\"}]",
+        "styleConfigurations" : "{\"width\":\"auto\",\"height\":\"auto\",\"showDataLabels\":false,\"xAxisConfig\":{},\"yAxisConfig\":{},\"dataLabelConfig\":{\"align\":\"middle\",\"collisions\":\"hide\",\"stacked\":\"individual\",\"valueType\":\"both\"},\"hideRegister\":false,\"registerConfig\":{\"legendOnly\":true},\"registerPosition\":\"bottom\"}",
+        "isRealtime" : "",
+        "showRealtimeIndicator" : "",
+        "variant" : "auto",
+        "border" : true,
+        "refreshInterval" : "",
+        "kpiDetailsNavigation" : false,
+        "followFilters" : true,
+        "hideFiltersInfo" : false,
+        "filterConfigurations" : "@state.parFilters",
+        "hideHeader" : false,
+        "refreshFrequency" : ""
+      },
+      "eventMappings" : [ ],
+      "slot" : "ckkpv3f7s001g3b83zoocufxh",
+      "definition" : {
+        "id" : "67cf18a377c70010cb834a2a6910619a",
+        "type" : "MACROPONENT"
+      },
+      "overrides" : null,
+      "isHidden" : {
+        "type" : "JSON_LITERAL",
+        "value" : false
+      },
+      "isNonDestructive" : false,
+      "styles" : { }
+    } ],
+    "layout" : {
+      "default" : {
+        "children" : null,
+        "items" : null,
+        "root" : {"type":"row","columns":[{"type":"column","slotName":"ckkpv3f7s001g3b83zoocufxh","size":"12","rows":[],"id":"ckkpv3f7s001i3b83myqlpxbu"}],"id":"ckkpv3f7s001h3b83bui0bt1f"},
+        "rules" : null,
+        "styles" : null,
+        "templateId" : null,
+        "type" : "rowColumn"
+      }
+    }
+  },
+  "isHidden" : {
+    "type" : "JSON_LITERAL",
+    "value" : false
+  },
+  "isNonDestructive" : false,
+  "styles" : {
+    "width" : "100%"
+  }
+} ]</composition><da_relay_models/><data>[ ]</data><dispatched_events/><events/><extends display_value="Page Template">19be392623033300f4b4c50947bf65ba</extends><handled_events/><interactions/><interfaces/><internal_event_mappings>{ }</internal_event_mappings><layout>{
+  "default" : {
+    "children" : null,
+    "items" : null,
+    "root" : {"id":"ckkpv3d1r001c3b837tgdyxbq","type":"column","rows":[{"type":"row","id":"ckkpuzzk000023b8329d89qe2","columns":[{"type":"column","id":"ckkpuzzk000013b831c2ciwr4","slotName":"default-slot","size":"6"},{"type":"column","id":"ckkpv1okp00113b836f0pa7nl","slotName":"ckkpv1okp00103b83owtu5ylm","size":"6"}]},{"type":"row","id":"ckkpv3d1r001b3b83ixxxiimf","slotName":"ckkpv3d1r001a3b833aawcbnm"}],"size":"12"},
+    "rules" : null,
+    "styles" : null,
+    "templateId" : null,
+    "type" : "rowColumn"
+  }
+}</layout><macroponent_dependencies/><name>Home page</name><props>[ ]</props><required_translations>[{"message":"Team members' open cases","comment":""},{"message":"My open tasks","comment":""},{"message":"My open cases","comment":""}]</required_translations><root_component/><root_component_config>{ }</root_component_config><root_component_definition/><schema_version>1.0.0</schema_version><state_properties>[ ]</state_properties><sys_class_name>sys_ux_macroponent</sys_class_name><sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by><sys_created_on>2021-02-03 20:04:22</sys_created_on><sys_id>e0d72ee6db4a2810392752e3449619ee</sys_id><sys_mod_count>1</sys_mod_count><sys_name>Home page</sys_name><sys_package display_value="Haumaru" source="x_kiwib_haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_package><sys_policy/><sys_scope display_value="Haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_scope><sys_update_name>sys_ux_macroponent_e0d72ee6db4a2810392752e3449619ee</sys_update_name><sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by><sys_updated_on>2021-02-03 20:08:28</sys_updated_on></sys_ux_macroponent></record_update>]]></payload>
+        <payload_hash>-2044801291</payload_hash>
+        <record_name>Home page</record_name>
+        <reverted_from/>
+        <source>b1138c8b1b4a2450533e0dc8ec4bcbdc</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+        <sys_created_on>2021-02-04 21:23:48</sys_created_on>
+        <sys_id>bd9304031b8a2450533e0dc8ec4bcbe9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1776eee03a30000001</sys_recorded_at>
+        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+        <sys_updated_on>2021-02-04 21:23:48</sys_updated_on>
+        <type>UX Macroponent Definition</type>
+        <update_guid>7d9304030f8a2450a0c0019cc3269be9</update_guid>
+        <update_guid_history>7d9304030f8a2450a0c0019cc3269be9:-2044801291</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+        <sys_created_on>2021-02-05 00:27:25</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_macroponent">sys_ux_macroponent</sys_db_object>
+        <sys_id>34bf07191c55423899b0ae0fbd1b3040</sys_id>
+        <sys_metadata>e0d72ee6db4a2810392752e3449619ee</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Home page</sys_name>
+        <sys_package display_value="Pae Haumaru" source="x_kiwib_haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Pae Haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_scope>
+        <sys_scope_delete display_value="">02f82d1e9f0948b0802900399bacbfa4</sys_scope_delete>
+        <sys_update_name>sys_ux_macroponent_e0d72ee6db4a2810392752e3449619ee</sys_update_name>
+        <sys_update_version display_value="sys_ux_macroponent_e0d72ee6db4a2810392752e3449619ee">bd9304031b8a2450533e0dc8ec4bcbe9</sys_update_version>
+        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+        <sys_updated_on>2021-02-05 00:27:25</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

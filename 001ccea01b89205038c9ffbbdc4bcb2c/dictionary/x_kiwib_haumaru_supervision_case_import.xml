@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="sys_import_set_row" label="Supervision Case Import" max_length="40" name="x_kiwib_haumaru_supervision_case_import" sizeclass="0" type="collection">
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Access Number" label="Access Number" max_length="40" name="u_access_number" type="integer"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Advice Given" label="Advice Given" max_length="40" name="u_advice_given" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Category" label="Category" max_length="40" name="u_category" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Employee Name" label="Employee Name" max_length="40" name="u_employee_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Employee Number" label="Employee Number" max_length="40" name="u_employee_number" type="integer"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Exception Reason" label="Exception Reason" max_length="40" name="u_exception_reason" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Interaction DateTime" label="Interaction DateTime" max_length="40" name="u_interaction_datetime" type="glide_date_time"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Interaction ID" label="Interaction ID" max_length="40" name="u_interaction_id" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Interaction Notes" label="Interaction Notes" max_length="724" name="u_interaction_notes" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Interaction Type" label="Interaction Type" max_length="40" name="u_interaction_type" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Method" label="Method" max_length="40" name="u_method" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Product Category" label="Product Category" max_length="40" name="u_product_category" type="string"/>
+        <element label="Reviewer" max_length="20" name="u_reviewer" type="integer"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=SubDivision Name" label="SubDivision Name" max_length="40" name="u_subdivision_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Sub Category" label="Sub Category" max_length="139" name="u_sub_category" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Team Name" label="Team Name" max_length="40" name="u_team_name" type="string"/>
+    </element>
+</database>

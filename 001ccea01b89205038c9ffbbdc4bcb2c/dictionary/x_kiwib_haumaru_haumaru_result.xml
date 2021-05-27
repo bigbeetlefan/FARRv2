@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Haumaru Result" max_length="40" name="x_kiwib_haumaru_haumaru_result" sizeclass="12488" type="collection">
+        <element label="Answer" max_length="254" name="answer" type="string"/>
+        <element default="current.answer" label="Answer choice" max_length="32" name="answer_choice" reference="asmt_metric_definition" reference_qual="sys_scope=001ccea01b89205038c9ffbbdc4bcb2c^EQ" reference_qual_condition="sys_scope=001ccea01b89205038c9ffbbdc4bcb2c^EQ" type="reference"/>
+        <element label="Answer value" max_length="40" name="answer_value" type="string"/>
+        <element label="Category" max_length="250" name="category" type="string"/>
+        <element label="Customer Case" max_length="32" name="customer_case" reference="x_kiwib_haumaru_case" type="reference"/>
+        <element label="Instance" max_length="32" name="instance" reference="asmt_assessment_instance" type="reference"/>
+        <element label="Metric Result" max_length="32" name="metric_result" reference="asmt_metric_result" type="reference"/>
+        <element label="Product Category" max_length="250" name="product_category" type="string"/>
+        <element label="Question" max_length="32" name="question" reference="asmt_metric" type="reference"/>
+        <element label="Question Category" max_length="250" name="question_category" type="string"/>
+        <element label="Question wording" max_length="254" name="question_wording" type="string"/>
+        <element label="Reviewer" max_length="32" name="reviewer" reference="sys_user" type="reference"/>
+        <element label="Review method" max_length="250" name="review_method" type="string"/>
+        <element label="Sub category" max_length="250" name="sub_category" type="string"/>
+        <element label="Team member" max_length="32" name="team_member" reference="sys_user" type="reference"/>
+        <index name="index">
+            <element name="customer_case"/>
+        </index>
+        <index name="index2">
+            <element name="instance"/>
+        </index>
+        <index name="index3">
+            <element name="question"/>
+        </index>
+        <index name="index4">
+            <element name="metric_result"/>
+        </index>
+        <index name="index5">
+            <element name="team_member"/>
+        </index>
+        <index name="index6">
+            <element name="reviewer"/>
+        </index>
+        <index name="index7">
+            <element name="answer_choice"/>
+        </index>
+    </element>
+</database>

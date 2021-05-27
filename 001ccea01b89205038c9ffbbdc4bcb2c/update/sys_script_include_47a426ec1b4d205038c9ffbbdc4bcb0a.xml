@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_kiwib_haumaru.KBHaumaruUtil</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>KBHaumaruUtil</name>
+        <script><![CDATA[var KBHaumaruUtil = Class.create();
+KBHaumaruUtil.prototype = {
+	initialize: function() {
+		this.MAX_LEVEL = "10";
+	},
+
+	inReportingLine: function(userId){
+		var currentUserId = gs.getUserID();	
+		var res = false;
+
+		if(userId){
+			//If current user is the same user as tested user.
+			if(userId === currentUserId){
+				res = true;
+				return res;
+			}
+
+			var userGr = new GlideRecord('sys_user');
+			userGr.get(userId);
+			var i;
+			var mgrPath = [];	
+
+			for(i = 0; i<this.MAX_LEVEL; i++){
+				mgrPath.push('manager');				
+				var lineManager = this._getNestedProperty(mgrPath, userGr);		
+				if(lineManager && lineManager.toString() === currentUserId){
+					res = true;
+					break;					
+				}
+			}
+		}
+		return res;		
+	},
+	
+	getSearchQueryString: function(userId){
+		var allDirectReports = [];
+		if(userId){
+			allDirectReports.push(userId);
+		}else{
+			allDirectReports.push(gs.getUserID());
+		}		
+		var currentLevel = allDirectReports;		
+		var i;			
+		//var qryStr = 'assigned_to='+ gs.getUserID();
+		//var userGr = gs.getUser();
+		
+		for(i=0; i<this.MAX_LEVEL; i++){
+			var _directReports = [];
+			var userGr = new GlideRecord('sys_user');
+			userGr.addQuery('manager', 'IN', currentLevel.toString());
+			userGr.query();
+			while(userGr.next()){
+				var userID = userGr.sys_id.toString();
+				allDirectReports.push(userID);
+				_directReports.push(userID);			
+			}
+			currentLevel = _directReports;
+			if(currentLevel.length < 1){
+				break;
+			}
+			
+		}
+		
+		return 'assigned_toIN' + allDirectReports.toString();
+// 		return "assigned_to=9278605edbd0f3005f19446b3a961981^^ORsupervisor=84cecabddb9073005f19446b3a96194a";
+// 		stateIN1,2,3,7
+	},
+	
+	getTaskSearchQueryString: function(userId){
+		var allDirectReports = [];
+		if(userId){
+			allDirectReports.push(userId);
+		}else{
+			allDirectReports.push(gs.getUserID());
+		}		
+		var currentLevel = allDirectReports;		
+		var i;			
+		//var qryStr = 'assigned_to='+ gs.getUserID();
+		//var userGr = gs.getUser();
+		
+		for(i=0; i<this.MAX_LEVEL; i++){
+			var _directReports = [];
+			var userGr = new GlideRecord('sys_user');
+			userGr.addQuery('manager', 'IN', currentLevel.toString());
+			userGr.query();
+			while(userGr.next()){
+				var userID = userGr.sys_id.toString();
+				allDirectReports.push(userID);
+				_directReports.push(userID);			
+			}
+			currentLevel = _directReports;
+			if(currentLevel.length < 1){
+				break;
+			}
+			
+		}
+		
+		//return 'supervisor=' + allDirectReports.toString();
+		return 'assigned_toIN' + allDirectReports.toString() + '^ORsupervisorIN' + allDirectReports.toString();
+// 		return "assigned_to=9278605edbd0f3005f19446b3a961981^ORsupervisor=84cecabddb9073005f19446b3a96194a";
+// 		stateIN1,2,3,7
+	},
+	
+	hasCheckTheChecker: function(caseId){		
+		var astm = new GlideRecord('x_kiwib_haumaru_remediation_task');
+		astm.addQuery('parent', caseId);
+		astm.addQuery('remediation_task_type', '2');
+		astm.query();
+		if(astm.next()){
+			return true;
+		}
+		return false;
+	},
+	
+
+	getAllSurveyAnswers: function(instanceId){
+		var allAnswers = {
+			firstLevel : [],
+			otherLevel : []
+		};
+		
+		var answers = new GlideRecord('asmt_assessment_instance_question'); //asmt_assessment_instance_question
+		answers.addQuery('instance', instanceId);
+		var answers2 = answers.addQuery('value', '!=', '');
+		answers2.addOrCondition('string_value', '!=', '');
+		answers.orderBy('metric.category.order');
+		answers.query();
+		while(answers.next()){
+			var _answers = {};
+			_answers.question = answers.metric.question.toString();
+			_answers.string_value = answers.string_value.toString();
+			_answers.actual_value = answers.value.toString();
+			_answers.metric = answers.metric.toString();			
+			_answers.parent = answers.metric.depends_on.toString();
+			_answers.category = answers.category.name;
+			var qResult = new GlideRecord('asmt_metric_result');
+			qResult.addQuery('instance_question', answers.sys_id.toString());
+			qResult.query();
+			if(qResult.next()){
+				_answers.string_value = qResult.string_value.toString();
+			}
+			if(!answers.metric.depends_on){
+				allAnswers.firstLevel.push(_answers);
+			}else{
+				allAnswers.otherLevel.push(_answers);
+			}
+		}		
+		return allAnswers;
+	},
+	
+	startWorkflow: function(workflowName, current) {
+		var wfg = new global.Workflow();
+		wfg.startFlow(wfg.getWorkflowFromName(workflowName), current, current.operation(), {});
+	},	
+
+	_getNestedProperty: function(pathAry, obj){
+
+		var length = pathAry.length,
+			i,
+			property = obj;
+
+		for ( i = 0; i < length; i++ ) {
+			property = property[pathAry[i]];
+		}
+
+		return property;
+	},
+
+	type: 'KBHaumaruUtil'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+        <sys_created_on>2020-12-09 21:40:33</sys_created_on>
+        <sys_id>47a426ec1b4d205038c9ffbbdc4bcb0a</sys_id>
+        <sys_mod_count>55</sys_mod_count>
+        <sys_name>KBHaumaruUtil</sys_name>
+        <sys_package display_value="Pae Haumaru" source="x_kiwib_haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Pae Haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_scope>
+        <sys_update_name>sys_script_include_47a426ec1b4d205038c9ffbbdc4bcb0a</sys_update_name>
+        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+        <sys_updated_on>2021-05-05 20:16:00</sys_updated_on>
+    </sys_script_include>
+</record_update>

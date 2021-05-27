@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="asmt_metric_definition">
+    <asmt_metric_definition action="INSERT_OR_UPDATE">
+        <display>Not Satisfactory</display>
+        <metric display_value="L1-Q3">5f4cf4981bb5a0d038c9ffbbdc4bcb15</metric>
+        <normalization_input>3</normalization_input>
+        <order/>
+        <selected_image/>
+        <sys_class_name>asmt_metric_definition</sys_class_name>
+        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+        <sys_created_on>2021-01-15 02:12:36</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>534cf4981bb5a0d038c9ffbbdc4bcb25</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Not Satisfactory</sys_name>
+        <sys_package display_value="Pae Haumaru" source="x_kiwib_haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pae Haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_scope>
+        <sys_update_name>asmt_metric_definition_534cf4981bb5a0d038c9ffbbdc4bcb25</sys_update_name>
+        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+        <sys_updated_on>2021-01-15 03:25:56</sys_updated_on>
+        <unselected_image/>
+        <value>3</value>
+    </asmt_metric_definition>
+    <sys_translated_text action="delete_multiple" query="documentkey=534cf4981bb5a0d038c9ffbbdc4bcb25"/>
+</record_update>

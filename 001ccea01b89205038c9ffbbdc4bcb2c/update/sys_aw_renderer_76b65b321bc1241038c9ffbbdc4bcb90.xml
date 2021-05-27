@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_aw_renderer">
+    <sys_aw_renderer action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <custom_renderer display_value="sn-kpi-details">83cf0f8b463bf6bebf4b746923ed321f</custom_renderer>
+        <custom_renderer_tag>sn-kpi-details</custom_renderer_tag>
+        <macroponent/>
+        <module_flag>false</module_flag>
+        <renderer_type/>
+        <sys_class_name>sys_aw_renderer</sys_class_name>
+        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+        <sys_created_on>2020-12-17 01:05:02</sys_created_on>
+        <sys_id>76b65b321bc1241038c9ffbbdc4bcb90</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Pae Haumaru" source="x_kiwib_haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pae Haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_scope>
+        <sys_update_name>sys_aw_renderer_76b65b321bc1241038c9ffbbdc4bcb90</sys_update_name>
+        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+        <sys_updated_on>2020-12-17 01:05:02</sys_updated_on>
+        <table/>
+        <type_ext display_value="sn-kpi-details-renderer">55857ace5f530010ed3926e6ee731377</type_ext>
+        <workspace_config display_value="Rae Haumaru">06b693321bc1241038c9ffbbdc4bcb4a</workspace_config>
+        <workspace_module/>
+    </sys_aw_renderer>
+</record_update>

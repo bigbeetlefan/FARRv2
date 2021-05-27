@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="asmt_condition">
+    <asmt_condition action="DELETE">
+        <active>true</active>
+        <assessment display_value="Advisor Assessment">dc5b17681b45605038c9ffbbdc4bcb5a</assessment>
+        <assessment_record/>
+        <assessment_record_field/>
+        <business_rule display_value="Auto assessment business rule">e2e97f6c1b49605038c9ffbbdc4bcbd6</business_rule>
+        <condition table="x_kiwib_haumaru_case">stateCHANGESTO2^EQ<item display_value="In progress" endquery="false" field="state" goto="false" newquery="false" operator="CHANGESTO" or="false" value="2"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <description/>
+        <duration/>
+        <percent_random>100</percent_random>
+        <related_field_1/>
+        <related_field_2/>
+        <related_field_3/>
+        <related_field_4/>
+        <sys_class_name>asmt_condition</sys_class_name>
+        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+        <sys_created_on>2020-12-10 03:52:24</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>9579b3601b89605038c9ffbbdc4bcb79</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="Haumaru" source="x_kiwib_haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_scope>
+        <sys_update_name>asmt_condition_9579b3601b89605038c9ffbbdc4bcb79</sys_update_name>
+        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+        <sys_updated_on>2021-01-12 22:57:46</sys_updated_on>
+        <table>x_kiwib_haumaru_case</table>
+        <trigger_random>false</trigger_random>
+        <user_field>assigned_to</user_field>
+    </asmt_condition>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Pae Haumaru">001ccea01b89205038c9ffbbdc4bcb2c</application>
+        <file_path/>
+        <instance_id>910d105cdb0c801049eac59705961931</instance_id>
+        <instance_name>kiwibankdev2</instance_name>
+        <name>asmt_condition_9579b3601b89605038c9ffbbdc4bcb79</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="asmt_condition"><asmt_condition action="INSERT_OR_UPDATE"><active>true</active><assessment display_value="Advisor Assessment">dc5b17681b45605038c9ffbbdc4bcb5a</assessment><assessment_record/><assessment_record_field/><business_rule display_value="Auto assessment business rule">e2e97f6c1b49605038c9ffbbdc4bcbd6</business_rule><condition table="x_kiwib_haumaru_case">stateCHANGESTO2^EQ<item display_value="In progress" endquery="false" field="state" goto="false" newquery="false" operator="CHANGESTO" or="false" value="2"/><item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/></condition><description/><duration/><percent_random>100</percent_random><related_field_1/><related_field_2/><related_field_3/><related_field_4/><sys_class_name>asmt_condition</sys_class_name><sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by><sys_created_on>2020-12-10 03:52:24</sys_created_on><sys_domain>global</sys_domain><sys_id>9579b3601b89605038c9ffbbdc4bcb79</sys_id><sys_mod_count>7</sys_mod_count><sys_name/><sys_overrides/><sys_package display_value="Haumaru" source="x_kiwib_haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_package><sys_policy/><sys_scope display_value="Haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_scope><sys_update_name>asmt_condition_9579b3601b89605038c9ffbbdc4bcb79</sys_update_name><sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by><sys_updated_on>2021-01-12 22:57:46</sys_updated_on><table>x_kiwib_haumaru_case</table><trigger_random>false</trigger_random><user_field>assigned_to</user_field></asmt_condition></record_update>]]></payload>
+        <payload_hash>-2012733978</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>52e0596e1bc1601038c9ffbbdc4bcbad</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+        <sys_created_on>2021-01-12 22:57:47</sys_created_on>
+        <sys_id>4e8c3d2f1b25ec9038c9ffbbdc4bcbd1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>176f8d1cade0000001</sys_recorded_at>
+        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+        <sys_updated_on>2021-01-12 22:57:47</sys_updated_on>
+        <type>Trigger Condition</type>
+        <update_guid>c28c3d2f0725ec902e4ec8ce5584acd1</update_guid>
+        <update_guid_history>c28c3d2f0725ec902e4ec8ce5584acd1:-2012733978,c7199c6cf811ec10cf7d17114a35bea1:-374512144,e774d8283111ec10223ac673cca4d6b3:-764330496,2dd055aef8c16010c1d46daf9307831d:1215177621</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">7c5b451c1bf5a0d038c9ffbbdc4bcbab</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+        <sys_created_on>2021-01-15 03:18:14</sys_created_on>
+        <sys_db_object display_value="" name="asmt_condition">asmt_condition</sys_db_object>
+        <sys_id>00b54202bc7c4a4e80849e740c5a3069</sys_id>
+        <sys_metadata>9579b3601b89605038c9ffbbdc4bcb79</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Pae Haumaru" source="x_kiwib_haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_package>
+        <sys_parent display_value="Supervision Case">d3c0dd6e1bc1601038c9ffbbdc4bcbd7</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Pae Haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_scope>
+        <sys_scope_delete display_value="">02f82d1e9f0948b0802900399bacbfa4</sys_scope_delete>
+        <sys_update_name>asmt_condition_9579b3601b89605038c9ffbbdc4bcb79</sys_update_name>
+        <sys_update_version display_value="asmt_condition_9579b3601b89605038c9ffbbdc4bcb79">4e8c3d2f1b25ec9038c9ffbbdc4bcbd1</sys_update_version>
+        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+        <sys_updated_on>2021-01-15 03:18:14</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

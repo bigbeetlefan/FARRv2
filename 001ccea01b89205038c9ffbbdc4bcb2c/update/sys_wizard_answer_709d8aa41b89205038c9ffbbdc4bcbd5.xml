@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_wizard_answer">
+    <sys_wizard_answer action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <answer>New Supervision Case</answer>
+        <button_label/>
+        <dependent_value/>
+        <element/>
+        <name>Supervision Case</name>
+        <next_question/>
+        <order>100</order>
+        <payload_name/>
+        <question display_value="Task" name="Task">3b456e56db012300642533f43a9619e0</question>
+        <roles/>
+        <script/>
+        <sys_class_name>sys_wizard_answer</sys_class_name>
+        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+        <sys_created_on>2020-12-09 19:59:04</sys_created_on>
+        <sys_id>709d8aa41b89205038c9ffbbdc4bcbd5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Supervision Case</sys_name>
+        <sys_package display_value="Pae Haumaru" source="x_kiwib_haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pae Haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_scope>
+        <sys_update_name>sys_wizard_answer_709d8aa41b89205038c9ffbbdc4bcbd5</sys_update_name>
+        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+        <sys_updated_on>2020-12-09 19:59:04</sys_updated_on>
+        <table/>
+        <target_url>x_kiwib_haumaru_case.do</target_url>
+        <type>1</type>
+    </sys_wizard_answer>
+</record_update>

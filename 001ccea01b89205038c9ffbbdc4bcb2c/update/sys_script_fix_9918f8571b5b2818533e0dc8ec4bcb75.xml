@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_fix">
+    <sys_script_fix action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <before>false</before>
+        <description/>
+        <flush_cache>false</flush_cache>
+        <name>(BL) Generate survey result to past case</name>
+        <record_for_rollback>false</record_for_rollback>
+        <run_once>true</run_once>
+        <script><![CDATA[var mRes = new GlideRecord('asmt_metric_result');
+mRes.addEncodedQuery('instance.metric_type=941cf8581bb5a0d038c9ffbbdc4bcb5e^ORinstance.metric_type=dc5b17681b45605038c9ffbbdc4bcb5a^instance.state=complete');
+//mRes.addEncodedQuery('instance=211ab8db1b5b2818533e0dc8ec4bcbda');
+mRes.query();
+
+while(mRes.next()){
+	var nGr = new GlideRecord('x_kiwib_haumaru_haumaru_result');
+	nGr.initialize();
+	nGr.instance = mRes.instance;
+	nGr.metric_result = mRes.sys_id;
+	nGr.customer_case = mRes.instance.task_id;
+	nGr.question = mRes.metric;
+	nGr.insert();
+	
+}]]></script>
+        <sys_class_name>sys_script_fix</sys_class_name>
+        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+        <sys_created_on>2021-04-08 23:13:06</sys_created_on>
+        <sys_id>9918f8571b5b2818533e0dc8ec4bcb75</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>(BL) Generate survey result to past case</sys_name>
+        <sys_package display_value="Pae Haumaru" source="x_kiwib_haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pae Haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_scope>
+        <sys_update_name>sys_script_fix_9918f8571b5b2818533e0dc8ec4bcb75</sys_update_name>
+        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+        <sys_updated_on>2021-04-11 23:05:49</sys_updated_on>
+        <unloadable>false</unloadable>
+    </sys_script_fix>
+</record_update>

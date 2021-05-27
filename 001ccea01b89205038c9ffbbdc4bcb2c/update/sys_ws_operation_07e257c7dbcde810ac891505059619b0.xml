@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_operation">
+    <sys_ws_operation action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <consumes>application/json,application/xml,text/xml</consumes>
+        <consumes_customized>false</consumes_customized>
+        <default_operation_uri/>
+        <enforce_acl>cf9d01d3e73003009d6247e603f6a990</enforce_acl>
+        <http_method>GET</http_method>
+        <name>getSurveyObj</name>
+        <operation_script><![CDATA[(function process(/*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
+
+    // implement resource here
+	var surveyId = request.queryParams.surveyid;	//e74761e61b85601038c9ffbbdc4bcbc0  request.queryParams.surveyid;
+	var sp = new x_kiwib_haumaru.HaumaruSurveyAPI();
+	var dt = sp.loadSurvey2(surveyId);	
+	response.setContentType("application/json");
+	response.setBody(dt);
+	return response;
+
+})(request, response);]]></operation_script>
+        <operation_uri>/api/x_kiwib_haumaru/haumaru_survey</operation_uri>
+        <produces>application/json,application/xml,text/xml</produces>
+        <produces_customized>false</produces_customized>
+        <relative_path>/</relative_path>
+        <request_example/>
+        <requires_acl_authorization>false</requires_acl_authorization>
+        <requires_authentication>true</requires_authentication>
+        <requires_snc_internal_role>true</requires_snc_internal_role>
+        <short_description/>
+        <sys_class_name>sys_ws_operation</sys_class_name>
+        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+        <sys_created_on>2020-12-17 19:27:51</sys_created_on>
+        <sys_id>07e257c7dbcde810ac891505059619b0</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>getSurveyObj</sys_name>
+        <sys_package display_value="Pae Haumaru" source="x_kiwib_haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pae Haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_scope>
+        <sys_update_name>sys_ws_operation_07e257c7dbcde810ac891505059619b0</sys_update_name>
+        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+        <sys_updated_on>2020-12-22 00:12:27</sys_updated_on>
+        <web_service_definition display_value="Haumaru Survey">65825f87dbcde810ac8915050596198c</web_service_definition>
+        <web_service_version/>
+    </sys_ws_operation>
+</record_update>

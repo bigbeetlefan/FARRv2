@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_list parent="" relationship="" sys_domain="global" table="x_kiwib_haumaru_case" version="2" view="">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>number</element>
+            <list_id display_value="x_kiwib_haumaru_case" element="NULL" name="x_kiwib_haumaru_case" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">f9ea32b11bfae050533e0dc8ec4bcbff</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+            <sys_created_on>2021-03-10 20:19:22</sys_created_on>
+            <sys_id>bdea72b11bfae050533e0dc8ec4bcb00</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+            <sys_updated_on>2021-03-10 20:19:22</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>advisor</element>
+            <list_id display_value="x_kiwib_haumaru_case" element="NULL" name="x_kiwib_haumaru_case" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">f9ea32b11bfae050533e0dc8ec4bcbff</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+            <sys_created_on>2021-03-10 20:19:22</sys_created_on>
+            <sys_id>b5ea72b11bfae050533e0dc8ec4bcb01</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+            <sys_updated_on>2021-03-10 20:19:22</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>product</element>
+            <list_id display_value="x_kiwib_haumaru_case" element="NULL" name="x_kiwib_haumaru_case" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">f9ea32b11bfae050533e0dc8ec4bcbff</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+            <sys_created_on>2021-03-10 20:19:22</sys_created_on>
+            <sys_id>b9ea72b11bfae050533e0dc8ec4bcb01</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+            <sys_updated_on>2021-03-10 20:19:22</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>customer_access_number</element>
+            <list_id display_value="x_kiwib_haumaru_case" element="NULL" name="x_kiwib_haumaru_case" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">f9ea32b11bfae050533e0dc8ec4bcbff</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+            <sys_created_on>2021-03-10 20:19:22</sys_created_on>
+            <sys_id>bdea72b11bfae050533e0dc8ec4bcb01</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+            <sys_updated_on>2021-03-10 20:19:22</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>method</element>
+            <list_id display_value="x_kiwib_haumaru_case" element="NULL" name="x_kiwib_haumaru_case" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">f9ea32b11bfae050533e0dc8ec4bcbff</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>4</position>
+            <sum>false</sum>
+            <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+            <sys_created_on>2021-03-10 20:19:22</sys_created_on>
+            <sys_id>b1ea72b11bfae050533e0dc8ec4bcb02</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+            <sys_updated_on>2021-03-10 20:19:22</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>state</element>
+            <list_id display_value="x_kiwib_haumaru_case" element="NULL" name="x_kiwib_haumaru_case" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">f9ea32b11bfae050533e0dc8ec4bcbff</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>5</position>
+            <sum>false</sum>
+            <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+            <sys_created_on>2021-03-10 20:19:22</sys_created_on>
+            <sys_id>b5ea72b11bfae050533e0dc8ec4bcb02</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+            <sys_updated_on>2021-03-10 20:19:22</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>category</element>
+            <list_id display_value="x_kiwib_haumaru_case" element="NULL" name="x_kiwib_haumaru_case" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">f9ea32b11bfae050533e0dc8ec4bcbff</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>6</position>
+            <sum>false</sum>
+            <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+            <sys_created_on>2021-03-10 20:19:22</sys_created_on>
+            <sys_id>b9ea72b11bfae050533e0dc8ec4bcb02</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+            <sys_updated_on>2021-03-10 20:19:22</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sub_category</element>
+            <list_id display_value="x_kiwib_haumaru_case" element="NULL" name="x_kiwib_haumaru_case" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">f9ea32b11bfae050533e0dc8ec4bcbff</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>7</position>
+            <sum>false</sum>
+            <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+            <sys_created_on>2021-03-10 20:19:22</sys_created_on>
+            <sys_id>bdea72b11bfae050533e0dc8ec4bcb02</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+            <sys_updated_on>2021-03-10 20:19:22</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>opened_at</element>
+            <list_id display_value="x_kiwib_haumaru_case" element="NULL" name="x_kiwib_haumaru_case" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">f9ea32b11bfae050533e0dc8ec4bcbff</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>8</position>
+            <sum>false</sum>
+            <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+            <sys_created_on>2021-03-10 20:19:22</sys_created_on>
+            <sys_id>b1ea72b11bfae050533e0dc8ec4bcb03</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+            <sys_updated_on>2021-03-10 20:19:22</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sys_updated_on</element>
+            <list_id display_value="x_kiwib_haumaru_case" element="NULL" name="x_kiwib_haumaru_case" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">f9ea32b11bfae050533e0dc8ec4bcbff</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>9</position>
+            <sum>false</sum>
+            <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+            <sys_created_on>2021-03-10 20:19:22</sys_created_on>
+            <sys_id>b5ea72b11bfae050533e0dc8ec4bcb03</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+            <sys_updated_on>2021-03-10 20:19:22</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>x_kiwib_haumaru_case</name>
+            <parent/>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+            <sys_created_on>2021-03-10 20:19:22</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f9ea32b11bfae050533e0dc8ec4bcbff</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_kiwib_haumaru_case</sys_name>
+            <sys_package display_value="Pae Haumaru" source="x_kiwib_haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Pae Haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_scope>
+            <sys_update_name>sys_ui_list_x_kiwib_haumaru_case_null</sys_update_name>
+            <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+            <sys_updated_on>2021-03-10 20:19:22</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>

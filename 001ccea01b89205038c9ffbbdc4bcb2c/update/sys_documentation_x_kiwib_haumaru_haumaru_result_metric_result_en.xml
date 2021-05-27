@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="metric_result" label="Metric Result" language="en" table="x_kiwib_haumaru_haumaru_result">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>metric_result</element>
+            <help/>
+            <hint/>
+            <label>Metric Result</label>
+            <language>en</language>
+            <name>x_kiwib_haumaru_haumaru_result</name>
+            <plural>Metric Results</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+            <sys_created_on>2021-04-08 22:23:58</sys_created_on>
+            <sys_id>e98da4171bd72818533e0dc8ec4bcbeb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Metric Result</sys_name>
+            <sys_package display_value="Pae Haumaru" source="x_kiwib_haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Pae Haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_scope>
+            <sys_update_name>sys_documentation_x_kiwib_haumaru_haumaru_result_metric_result_en</sys_update_name>
+            <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+            <sys_updated_on>2021-04-08 22:23:58</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

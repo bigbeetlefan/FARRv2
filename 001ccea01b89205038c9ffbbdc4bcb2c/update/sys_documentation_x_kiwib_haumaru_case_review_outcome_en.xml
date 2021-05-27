@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="review_outcome" label="Review outcome" language="en" table="x_kiwib_haumaru_case">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>review_outcome</element>
+            <help/>
+            <hint/>
+            <label>Review outcome</label>
+            <language>en</language>
+            <name>x_kiwib_haumaru_case</name>
+            <plural>Review outcomes</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+            <sys_created_on>2021-03-09 22:27:02</sys_created_on>
+            <sys_id>fd8e02691b762050533e0dc8ec4bcbfe</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Review outcome</sys_name>
+            <sys_package display_value="Pae Haumaru" source="x_kiwib_haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Pae Haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_scope>
+            <sys_update_name>sys_documentation_x_kiwib_haumaru_case_review_outcome_en</sys_update_name>
+            <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+            <sys_updated_on>2021-03-09 22:27:02</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>
