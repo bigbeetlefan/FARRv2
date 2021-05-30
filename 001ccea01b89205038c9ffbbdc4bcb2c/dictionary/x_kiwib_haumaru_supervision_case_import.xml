@@ -12,7 +12,6 @@
         <element attributes="edge_encryption_enabled=true,import_attribute_name=Interaction Type" label="Interaction Type" max_length="40" name="u_interaction_type" type="string"/>
         <element attributes="edge_encryption_enabled=true,import_attribute_name=Method" label="Method" max_length="40" name="u_method" type="string"/>
         <element attributes="edge_encryption_enabled=true,import_attribute_name=Product Category" label="Product Category" max_length="40" name="u_product_category" type="string"/>
-        <element label="Reviewer" max_length="20" name="u_reviewer" type="integer"/>
         <element attributes="edge_encryption_enabled=true,import_attribute_name=SubDivision Name" label="SubDivision Name" max_length="40" name="u_subdivision_name" type="string"/>
         <element attributes="edge_encryption_enabled=true,import_attribute_name=Sub Category" label="Sub Category" max_length="139" name="u_sub_category" type="string"/>
         <element attributes="edge_encryption_enabled=true,import_attribute_name=Team Name" label="Team Name" max_length="40" name="u_team_name" type="string"/>

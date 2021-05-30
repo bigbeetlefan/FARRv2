@@ -49,7 +49,7 @@
         <update_guid_history>44434ccb764a2450426501738550071f:-1844473056</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="Cause of error for prior question">fade5a2c1bdee490533e0dc8ec4bcb4c</sys_audit_delete>
+        <sys_audit_delete display_value="">fade5a2c1bdee490533e0dc8ec4bcb4c</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
         <sys_created_on>2021-02-10 00:33:04</sys_created_on>

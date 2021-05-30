@@ -49,7 +49,7 @@
         <update_guid_history>08434ccb8a4a2450eec30d2452f5104d:-321979453</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="Opportunity for improvement">be6996ac1b9ee490533e0dc8ec4bcbba</sys_audit_delete>
+        <sys_audit_delete display_value="">be6996ac1b9ee490533e0dc8ec4bcbba</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
         <sys_created_on>2021-02-10 00:09:17</sys_created_on>

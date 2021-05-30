@@ -1,13 +1,17 @@
-<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_page_property">
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_page_property">
     <sys_ux_page_property action="INSERT_OR_UPDATE">
         <choices/>
         <description>Include/exclude workspace notification</description>
         <name>ws_active_notification</name>
         <page display_value="Haumaru">8eb693321bc1241038c9ffbbdc4bcb4a</page>
+        <required_translations/>
+        <route/>
         <suffix/>
         <sys_class_name>sys_ux_page_property</sys_class_name>
         <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
         <sys_created_on>2020-12-17 01:04:58</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>global</sys_domain_path>
         <sys_id>c2b693321bc1241038c9ffbbdc4bcb4e</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>ws_active_notification</sys_name>

@@ -8,6 +8,7 @@
         <axis_max_color display_value="UI14 Blue Light">b0d449b3d7332100fa6c0c12ce610383</axis_max_color>
         <axis_min_color display_value="White">65b303c7a9fe3dba00629aff95ee3597</axis_min_color>
         <bar_unstack>false</bar_unstack>
+        <calendar/>
         <chart_background_color/>
         <chart_border_color/>
         <chart_border_radius>0</chart_border_radius>
@@ -49,6 +50,7 @@
         <filter table="x_kiwib_haumaru_haumaru_result">question.nameSTARTSWITHL1-Q1^question=597922ac1b522890533e0dc8ec4bcb56<item endquery="false" field="question.name" goto="false" newquery="false" operator="STARTSWITH" or="false" value="L1-Q1"/>
             <item display_table="asmt_metric" display_value="L1-Q1" endquery="false" field="question" goto="false" newquery="false" operator="=" or="false" value="597922ac1b522890533e0dc8ec4bcb56"/>
         </filter>
+        <formatting_configuration/>
         <from/>
         <funnel_neck_percent>30</funnel_neck_percent>
         <gauge_autoscale>true</gauge_autoscale>

@@ -49,7 +49,7 @@
         <update_guid_history>6b330ccb0c4a245088465f213f0dd291:-1130173169</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="Ongoing customer interaction with same adviser (i.e. MMM 1to1 relationship) ">637875a01b5ae490533e0dc8ec4bcbd5</sys_audit_delete>
+        <sys_audit_delete display_value="">637875a01b5ae490533e0dc8ec4bcbd5</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
         <sys_created_on>2021-02-09 21:45:26</sys_created_on>

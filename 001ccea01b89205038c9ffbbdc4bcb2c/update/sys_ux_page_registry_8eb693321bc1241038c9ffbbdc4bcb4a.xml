@@ -3,8 +3,10 @@
         <active>true</active>
         <admin_panel>06b693321bc1241038c9ffbbdc4bcb4a</admin_panel>
         <admin_panel_table>sys_aw_master_config</admin_panel_table>
+        <auth_routes/>
         <page display_value="Workspace Core">b70867ad0f603300bb57f4a1ff767e15</page>
         <path>workspace/haumaru</path>
+        <root_macroponent/>
         <sys_class_name>sys_ux_page_registry</sys_class_name>
         <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
         <sys_created_on>2020-12-17 01:04:58</sys_created_on>

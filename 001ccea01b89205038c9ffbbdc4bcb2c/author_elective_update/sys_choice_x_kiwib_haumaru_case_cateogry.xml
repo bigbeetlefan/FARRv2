@@ -25,6 +25,7 @@
             <language>en</language>
             <name>x_kiwib_haumaru_case</name>
             <sequence>0</sequence>
+            <synonyms/>
             <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
             <sys_created_on>2020-12-21 20:56:58</sys_created_on>
             <sys_domain>global</sys_domain>
@@ -44,6 +45,7 @@
             <language>en</language>
             <name>x_kiwib_haumaru_case</name>
             <sequence>1</sequence>
+            <synonyms/>
             <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
             <sys_created_on>2020-12-09 20:26:55</sys_created_on>
             <sys_domain>global</sys_domain>
@@ -63,6 +65,7 @@
             <language>en</language>
             <name>x_kiwib_haumaru_case</name>
             <sequence>2</sequence>
+            <synonyms/>
             <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
             <sys_created_on>2020-12-09 20:27:10</sys_created_on>
             <sys_domain>global</sys_domain>

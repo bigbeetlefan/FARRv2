@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_fix">
     <sys_script_fix action="INSERT_OR_UPDATE">
-        <active>true</active>
         <before>false</before>
         <description/>
-        <flush_cache>false</flush_cache>
         <name>(BL) Fix existing remedation task type</name>
         <record_for_rollback>false</record_for_rollback>
-        <run_once>true</run_once>
         <script><![CDATA[var grst = new GlideRecord('x_kiwib_haumaru_remediation_task');
 grst.addActiveQuery();
 grst.addQuery('remediation_task_type', '');

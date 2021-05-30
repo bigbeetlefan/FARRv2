@@ -25,6 +25,7 @@
             <language>en</language>
             <name>x_kiwib_haumaru_remediation_task</name>
             <sequence>0</sequence>
+            <synonyms/>
             <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
             <sys_created_on>2020-12-13 23:34:41</sys_created_on>
             <sys_domain>global</sys_domain>
@@ -44,6 +45,7 @@
             <language>en</language>
             <name>x_kiwib_haumaru_remediation_task</name>
             <sequence>1</sequence>
+            <synonyms/>
             <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
             <sys_created_on>2020-12-13 23:34:41</sys_created_on>
             <sys_domain>global</sys_domain>
@@ -63,6 +65,7 @@
             <language>en</language>
             <name>x_kiwib_haumaru_remediation_task</name>
             <sequence>2</sequence>
+            <synonyms/>
             <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
             <sys_created_on>2020-12-13 23:34:41</sys_created_on>
             <sys_domain>global</sys_domain>
@@ -82,6 +85,7 @@
             <language>en</language>
             <name>x_kiwib_haumaru_remediation_task</name>
             <sequence>3</sequence>
+            <synonyms/>
             <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
             <sys_created_on>2020-12-13 23:34:41</sys_created_on>
             <sys_domain>global</sys_domain>

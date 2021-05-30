@@ -49,7 +49,7 @@
         <update_guid_history>ac438ccb014a2450664deb28fbf02231:1534985083</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="Not done in accordance with KB practices/expectations - rude, no empathy ">0cd1aa241b122890533e0dc8ec4bcb53</sys_audit_delete>
+        <sys_audit_delete display_value="">0cd1aa241b122890533e0dc8ec4bcb53</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
         <sys_created_on>2021-02-10 00:45:58</sys_created_on>

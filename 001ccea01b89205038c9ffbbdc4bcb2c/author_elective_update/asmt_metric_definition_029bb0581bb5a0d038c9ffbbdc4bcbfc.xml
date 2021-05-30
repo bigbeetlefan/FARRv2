@@ -49,7 +49,7 @@
         <update_guid_history>8333c8cbe94a2450e32495328709736a:-1673415311</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="No explanation on different risk profile  ">4f0ad2201bdee490533e0dc8ec4bcb30</sys_audit_delete>
+        <sys_audit_delete display_value="">4f0ad2201bdee490533e0dc8ec4bcb30</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
         <sys_created_on>2021-02-10 00:12:02</sys_created_on>

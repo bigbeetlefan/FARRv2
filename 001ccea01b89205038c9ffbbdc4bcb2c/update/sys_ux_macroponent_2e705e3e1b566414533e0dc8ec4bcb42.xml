@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_macroponent">
     <sys_ux_macroponent action="INSERT_OR_UPDATE">
         <associated_types/>
+        <category>component</category>
         <component_dependencies/>
         <composition>[ {
   "elementId" : "ckliimlswxaaaaaaccddbhhffffctujjjgx",
@@ -103,10 +104,15 @@
   },
   "overrides" : null
 } ]</composition>
+        <da_relay_models/>
         <data/>
+        <dispatched_events/>
         <events/>
-        <extends display_value="Landing Page Template">19be392623033300f4b4c50947bf65ba</extends>
+        <extends display_value="Page Template">19be392623033300f4b4c50947bf65ba</extends>
+        <handled_events/>
         <interactions/>
+        <interfaces/>
+        <internal_event_mappings/>
         <layout>{
   "default" : {
     "type" : "rowColumn",
@@ -119,9 +125,12 @@
         <macroponent_dependencies/>
         <name>Home Page</name>
         <props/>
+        <required_translations/>
         <root_component/>
         <root_component_config/>
+        <root_component_definition/>
         <schema_version>1.0.0</schema_version>
+        <state_properties/>
         <sys_class_name>sys_ux_macroponent</sys_class_name>
         <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
         <sys_created_on>2021-02-16 23:16:34</sys_created_on>

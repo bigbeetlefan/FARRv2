@@ -3,7 +3,7 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>customer_case</element>
-            <list_id display_value="x_kiwib_haumaru_haumaru_result" element="NULL" name="x_kiwib_haumaru_haumaru_result" parent="NULL" relationship="NULL" sys_domain="global" view="fe6c14dc1b6b6458533e0dc8ec4bcbbf">d58c50501bab6458533e0dc8ec4bcbdb</list_id>
+            <list_id display_value="x_kiwib_haumaru_haumaru_result" element="NULL" name="x_kiwib_haumaru_haumaru_result" parent="NULL" relationship="NULL" sys_domain="global" view="d4b4303ddbf7e0d0cc43be37f496198f">d58c50501bab6458533e0dc8ec4bcbdb</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>0</position>
@@ -18,7 +18,7 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>reviewer</element>
-            <list_id display_value="x_kiwib_haumaru_haumaru_result" element="NULL" name="x_kiwib_haumaru_haumaru_result" parent="NULL" relationship="NULL" sys_domain="global" view="fe6c14dc1b6b6458533e0dc8ec4bcbbf">d58c50501bab6458533e0dc8ec4bcbdb</list_id>
+            <list_id display_value="x_kiwib_haumaru_haumaru_result" element="NULL" name="x_kiwib_haumaru_haumaru_result" parent="NULL" relationship="NULL" sys_domain="global" view="d4b4303ddbf7e0d0cc43be37f496198f">d58c50501bab6458533e0dc8ec4bcbdb</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>1</position>
@@ -33,7 +33,7 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>team_member</element>
-            <list_id display_value="x_kiwib_haumaru_haumaru_result" element="NULL" name="x_kiwib_haumaru_haumaru_result" parent="NULL" relationship="NULL" sys_domain="global" view="fe6c14dc1b6b6458533e0dc8ec4bcbbf">d58c50501bab6458533e0dc8ec4bcbdb</list_id>
+            <list_id display_value="x_kiwib_haumaru_haumaru_result" element="NULL" name="x_kiwib_haumaru_haumaru_result" parent="NULL" relationship="NULL" sys_domain="global" view="d4b4303ddbf7e0d0cc43be37f496198f">d58c50501bab6458533e0dc8ec4bcbdb</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>2</position>
@@ -48,7 +48,7 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>category</element>
-            <list_id display_value="x_kiwib_haumaru_haumaru_result" element="NULL" name="x_kiwib_haumaru_haumaru_result" parent="NULL" relationship="NULL" sys_domain="global" view="fe6c14dc1b6b6458533e0dc8ec4bcbbf">d58c50501bab6458533e0dc8ec4bcbdb</list_id>
+            <list_id display_value="x_kiwib_haumaru_haumaru_result" element="NULL" name="x_kiwib_haumaru_haumaru_result" parent="NULL" relationship="NULL" sys_domain="global" view="d4b4303ddbf7e0d0cc43be37f496198f">d58c50501bab6458533e0dc8ec4bcbdb</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>3</position>
@@ -63,7 +63,7 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>sub_category</element>
-            <list_id display_value="x_kiwib_haumaru_haumaru_result" element="NULL" name="x_kiwib_haumaru_haumaru_result" parent="NULL" relationship="NULL" sys_domain="global" view="fe6c14dc1b6b6458533e0dc8ec4bcbbf">d58c50501bab6458533e0dc8ec4bcbdb</list_id>
+            <list_id display_value="x_kiwib_haumaru_haumaru_result" element="NULL" name="x_kiwib_haumaru_haumaru_result" parent="NULL" relationship="NULL" sys_domain="global" view="d4b4303ddbf7e0d0cc43be37f496198f">d58c50501bab6458533e0dc8ec4bcbdb</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>4</position>
@@ -78,7 +78,7 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>product_category</element>
-            <list_id display_value="x_kiwib_haumaru_haumaru_result" element="NULL" name="x_kiwib_haumaru_haumaru_result" parent="NULL" relationship="NULL" sys_domain="global" view="fe6c14dc1b6b6458533e0dc8ec4bcbbf">d58c50501bab6458533e0dc8ec4bcbdb</list_id>
+            <list_id display_value="x_kiwib_haumaru_haumaru_result" element="NULL" name="x_kiwib_haumaru_haumaru_result" parent="NULL" relationship="NULL" sys_domain="global" view="d4b4303ddbf7e0d0cc43be37f496198f">d58c50501bab6458533e0dc8ec4bcbdb</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>5</position>
@@ -93,7 +93,7 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>review_method</element>
-            <list_id display_value="x_kiwib_haumaru_haumaru_result" element="NULL" name="x_kiwib_haumaru_haumaru_result" parent="NULL" relationship="NULL" sys_domain="global" view="fe6c14dc1b6b6458533e0dc8ec4bcbbf">d58c50501bab6458533e0dc8ec4bcbdb</list_id>
+            <list_id display_value="x_kiwib_haumaru_haumaru_result" element="NULL" name="x_kiwib_haumaru_haumaru_result" parent="NULL" relationship="NULL" sys_domain="global" view="d4b4303ddbf7e0d0cc43be37f496198f">d58c50501bab6458533e0dc8ec4bcbdb</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>6</position>
@@ -108,7 +108,7 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>instance</element>
-            <list_id display_value="x_kiwib_haumaru_haumaru_result" element="NULL" name="x_kiwib_haumaru_haumaru_result" parent="NULL" relationship="NULL" sys_domain="global" view="fe6c14dc1b6b6458533e0dc8ec4bcbbf">d58c50501bab6458533e0dc8ec4bcbdb</list_id>
+            <list_id display_value="x_kiwib_haumaru_haumaru_result" element="NULL" name="x_kiwib_haumaru_haumaru_result" parent="NULL" relationship="NULL" sys_domain="global" view="d4b4303ddbf7e0d0cc43be37f496198f">d58c50501bab6458533e0dc8ec4bcbdb</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>7</position>
@@ -123,7 +123,7 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>metric_result</element>
-            <list_id display_value="x_kiwib_haumaru_haumaru_result" element="NULL" name="x_kiwib_haumaru_haumaru_result" parent="NULL" relationship="NULL" sys_domain="global" view="fe6c14dc1b6b6458533e0dc8ec4bcbbf">d58c50501bab6458533e0dc8ec4bcbdb</list_id>
+            <list_id display_value="x_kiwib_haumaru_haumaru_result" element="NULL" name="x_kiwib_haumaru_haumaru_result" parent="NULL" relationship="NULL" sys_domain="global" view="d4b4303ddbf7e0d0cc43be37f496198f">d58c50501bab6458533e0dc8ec4bcbdb</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>8</position>
@@ -138,7 +138,7 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>question_category</element>
-            <list_id display_value="x_kiwib_haumaru_haumaru_result" element="NULL" name="x_kiwib_haumaru_haumaru_result" parent="NULL" relationship="NULL" sys_domain="global" view="fe6c14dc1b6b6458533e0dc8ec4bcbbf">d58c50501bab6458533e0dc8ec4bcbdb</list_id>
+            <list_id display_value="x_kiwib_haumaru_haumaru_result" element="NULL" name="x_kiwib_haumaru_haumaru_result" parent="NULL" relationship="NULL" sys_domain="global" view="d4b4303ddbf7e0d0cc43be37f496198f">d58c50501bab6458533e0dc8ec4bcbdb</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>9</position>
@@ -153,7 +153,7 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>question</element>
-            <list_id display_value="x_kiwib_haumaru_haumaru_result" element="NULL" name="x_kiwib_haumaru_haumaru_result" parent="NULL" relationship="NULL" sys_domain="global" view="fe6c14dc1b6b6458533e0dc8ec4bcbbf">d58c50501bab6458533e0dc8ec4bcbdb</list_id>
+            <list_id display_value="x_kiwib_haumaru_haumaru_result" element="NULL" name="x_kiwib_haumaru_haumaru_result" parent="NULL" relationship="NULL" sys_domain="global" view="d4b4303ddbf7e0d0cc43be37f496198f">d58c50501bab6458533e0dc8ec4bcbdb</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>10</position>
@@ -168,7 +168,7 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>question_wording</element>
-            <list_id display_value="x_kiwib_haumaru_haumaru_result" element="NULL" name="x_kiwib_haumaru_haumaru_result" parent="NULL" relationship="NULL" sys_domain="global" view="fe6c14dc1b6b6458533e0dc8ec4bcbbf">d58c50501bab6458533e0dc8ec4bcbdb</list_id>
+            <list_id display_value="x_kiwib_haumaru_haumaru_result" element="NULL" name="x_kiwib_haumaru_haumaru_result" parent="NULL" relationship="NULL" sys_domain="global" view="d4b4303ddbf7e0d0cc43be37f496198f">d58c50501bab6458533e0dc8ec4bcbdb</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>11</position>
@@ -183,7 +183,7 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>answer</element>
-            <list_id display_value="x_kiwib_haumaru_haumaru_result" element="NULL" name="x_kiwib_haumaru_haumaru_result" parent="NULL" relationship="NULL" sys_domain="global" view="fe6c14dc1b6b6458533e0dc8ec4bcbbf">d58c50501bab6458533e0dc8ec4bcbdb</list_id>
+            <list_id display_value="x_kiwib_haumaru_haumaru_result" element="NULL" name="x_kiwib_haumaru_haumaru_result" parent="NULL" relationship="NULL" sys_domain="global" view="d4b4303ddbf7e0d0cc43be37f496198f">d58c50501bab6458533e0dc8ec4bcbdb</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>12</position>
@@ -198,7 +198,7 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>answer_value</element>
-            <list_id display_value="x_kiwib_haumaru_haumaru_result" element="NULL" name="x_kiwib_haumaru_haumaru_result" parent="NULL" relationship="NULL" sys_domain="global" view="fe6c14dc1b6b6458533e0dc8ec4bcbbf">d58c50501bab6458533e0dc8ec4bcbdb</list_id>
+            <list_id display_value="x_kiwib_haumaru_haumaru_result" element="NULL" name="x_kiwib_haumaru_haumaru_result" parent="NULL" relationship="NULL" sys_domain="global" view="d4b4303ddbf7e0d0cc43be37f496198f">d58c50501bab6458533e0dc8ec4bcbdb</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>13</position>
@@ -213,7 +213,7 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>sys_created_on</element>
-            <list_id display_value="x_kiwib_haumaru_haumaru_result" element="NULL" name="x_kiwib_haumaru_haumaru_result" parent="NULL" relationship="NULL" sys_domain="global" view="fe6c14dc1b6b6458533e0dc8ec4bcbbf">d58c50501bab6458533e0dc8ec4bcbdb</list_id>
+            <list_id display_value="x_kiwib_haumaru_haumaru_result" element="NULL" name="x_kiwib_haumaru_haumaru_result" parent="NULL" relationship="NULL" sys_domain="global" view="d4b4303ddbf7e0d0cc43be37f496198f">d58c50501bab6458533e0dc8ec4bcbdb</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>14</position>
@@ -250,7 +250,7 @@
             <sys_updated_by>sturne04</sys_updated_by>
             <sys_updated_on>2021-04-11 23:43:36</sys_updated_on>
             <sys_user/>
-            <view display_value="Rpt1c4a5cd41b6b6458533e0dc8ec4bcb2a" name="RPT1c4a5cd41b6b6458533e0dc8ec4bcb2a">fe6c14dc1b6b6458533e0dc8ec4bcbbf</view>
+            <view display_value="Rpt1c4a5cd41b6b6458533e0dc8ec4bcb2a" name="RPT1c4a5cd41b6b6458533e0dc8ec4bcb2a">d4b4303ddbf7e0d0cc43be37f496198f</view>
             <view_name/>
         </sys_ui_list>
     </sys_ui_list>

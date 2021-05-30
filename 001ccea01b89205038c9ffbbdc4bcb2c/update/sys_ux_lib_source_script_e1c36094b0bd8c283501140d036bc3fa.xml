@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_lib_source_script">
     <sys_ux_lib_source_script action="INSERT_OR_UPDATE">
+        <config_option/>
         <engine>6</engine>
         <externals/>
         <inner_components/>
