@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_fix">
     <sys_script_fix action="INSERT_OR_UPDATE">
-        <active>true</active>
         <before>false</before>
         <description/>
-        <flush_cache>false</flush_cache>
         <name>(BL) Generate survey result to past case</name>
         <record_for_rollback>false</record_for_rollback>
-        <run_once>true</run_once>
         <script><![CDATA[var mRes = new GlideRecord('asmt_metric_result');
 mRes.addEncodedQuery('instance.metric_type=941cf8581bb5a0d038c9ffbbdc4bcb5e^ORinstance.metric_type=dc5b17681b45605038c9ffbbdc4bcb5a^instance.state=complete');
 //mRes.addEncodedQuery('instance=211ab8db1b5b2818533e0dc8ec4bcbda');

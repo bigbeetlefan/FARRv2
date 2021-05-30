@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_fix">
     <sys_script_fix action="INSERT_OR_UPDATE">
-        <active>false</active>
         <before>false</before>
         <description/>
-        <flush_cache>false</flush_cache>
         <name>Survey answers</name>
         <record_for_rollback>false</record_for_rollback>
-        <run_once>false</run_once>
         <script><![CDATA[var cur = new GlideRecord('asmt_assessment_instance');
 cur.get('0fe365f5db712410ac891505059619b6');
 var log = '................starting...............';

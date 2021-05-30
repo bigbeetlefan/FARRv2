@@ -8,6 +8,7 @@
         <axis_max_color display_value="UI14 Blue Light">b0d449b3d7332100fa6c0c12ce610383</axis_max_color>
         <axis_min_color display_value="White">65b303c7a9fe3dba00629aff95ee3597</axis_min_color>
         <bar_unstack>true</bar_unstack>
+        <calendar/>
         <chart_background_color/>
         <chart_border_color/>
         <chart_border_radius>0</chart_border_radius>
@@ -31,7 +32,7 @@
         <column/>
         <compute_percent>aggregate</compute_percent>
         <content/>
-        <created_by_user display_value="Bing Liu">bf2ba013db639410c8491505059619a0</created_by_user>
+        <created_by_user display_value="">107a2c5f1b239410b6f3ebd6ec4bcb71</created_by_user>
         <custom_chart_size>false</custom_chart_size>
         <custom_chart_title_position>false</custom_chart_title_position>
         <custom_config>{"transforms":[{"transform":{"transform":"Reference","name":"chart-subjects"}}]}</custom_config>
@@ -47,6 +48,7 @@
         <field>assigned_to</field>
         <field_list>number,priority,state,assigned_to,short_description,sys_class_name</field_list>
         <filter/>
+        <formatting_configuration/>
         <from/>
         <funnel_neck_percent>30</funnel_neck_percent>
         <gauge_autoscale>true</gauge_autoscale>

@@ -49,7 +49,7 @@
         <update_guid_history>e3330ccb884a245014c0943dfc34fe1f:-1764630044</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="Unlikely to make repayments, get penalties">294896281b9ee490533e0dc8ec4bcb51</sys_audit_delete>
+        <sys_audit_delete display_value="">294896281b9ee490533e0dc8ec4bcb51</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
         <sys_created_on>2021-02-10 00:04:18</sys_created_on>

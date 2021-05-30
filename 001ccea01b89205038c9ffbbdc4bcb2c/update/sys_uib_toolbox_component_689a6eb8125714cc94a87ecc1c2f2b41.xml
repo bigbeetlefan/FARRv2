@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_uib_toolbox_component">
     <sys_uib_toolbox_component action="INSERT_OR_UPDATE">
         <description>A description of my component</description>
+        <external_configuration_sources/>
         <icon>document-outline</icon>
         <label>My Component</label>
         <macroponent display_value="My Component">19a8cacf3fee59dc89f11dc8cfade1bc</macroponent>

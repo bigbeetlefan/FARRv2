@@ -12,7 +12,8 @@ HaumaruSurveyAPI.prototype = Object.extendsObject(sn_portal_surveys.SPSurveyAPI,
 	initialize: function() {
 	},
 
-	loadSurvey2: function(caseId) {			
+	loadSurvey2: function(caseId) {	
+
 		var data = {};
 		var surveyGR = new GlideRecord('asmt_assessment_instance');
 		surveyGR.addQuery('task_id', caseId.toString());
@@ -23,7 +24,6 @@ HaumaruSurveyAPI.prototype = Object.extendsObject(sn_portal_surveys.SPSurveyAPI,
 		if(!surveyGR.next()){
 			return data;
 		}
-		kbSleep(3000);
 		var typeId = surveyGR.metric_type.toString();
 		var surveyId = surveyGR.sys_id.toString();
 		/*
@@ -419,12 +419,6 @@ HaumaruSurveyAPI.prototype = Object.extendsObject(sn_portal_surveys.SPSurveyAPI,
 			return template;
 		}
 
-
-		function kbSleep(ms) {
-			var unixtime_ms = new Date().getTime();
-			while(new Date().getTime() < unixtime_ms + ms) {};
-		}
-
 		function AssessmentQuestion(gr) {
 			this.sys_id = gr.getValue('sys_id');
 			this.metric = gr.getValue('metric');
@@ -688,13 +682,13 @@ HaumaruSurveyAPI.prototype = Object.extendsObject(sn_portal_surveys.SPSurveyAPI,
         <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
         <sys_created_on>2020-12-17 19:30:34</sys_created_on>
         <sys_id>ee43dfc7dbcde810ac89150505961923</sys_id>
-        <sys_mod_count>48</sys_mod_count>
+        <sys_mod_count>43</sys_mod_count>
         <sys_name>HaumaruSurveyAPI</sys_name>
         <sys_package display_value="Pae Haumaru" source="x_kiwib_haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Pae Haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_scope>
         <sys_update_name>sys_script_include_ee43dfc7dbcde810ac89150505961923</sys_update_name>
         <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
-        <sys_updated_on>2021-05-26 00:59:31</sys_updated_on>
+        <sys_updated_on>2021-03-04 21:58:45</sys_updated_on>
     </sys_script_include>
 </record_update>

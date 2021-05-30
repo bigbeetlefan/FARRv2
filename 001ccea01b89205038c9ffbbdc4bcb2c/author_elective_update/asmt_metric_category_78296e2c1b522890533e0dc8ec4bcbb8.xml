@@ -57,7 +57,7 @@
         <update_guid_history>d929ae2ce9522890d2c4db9edcf8441f:-1345446433,cd296e2c555228905ef4ad4408b62afb:2082468638,01296e2c22522890fe58553b3b785aed:1215416413,41296e2cd3522890e5ffe9ec0cbc80e8:348364188,41296e2c465228906f96b296cb6a85e3:-518688037,cd296e2c9152289060648bad01d09cd1:-1385740262,3c296e2c6a522890b0efdf9417ffc8bd:2042174809,b4296e2cb8522890c535c577bd539dba:-1345446433</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="Question 6">dc0d68d11b9aec90533e0dc8ec4bcb6d</sys_audit_delete>
+        <sys_audit_delete display_value="">dc0d68d11b9aec90533e0dc8ec4bcb6d</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
         <sys_created_on>2021-02-12 00:11:04</sys_created_on>

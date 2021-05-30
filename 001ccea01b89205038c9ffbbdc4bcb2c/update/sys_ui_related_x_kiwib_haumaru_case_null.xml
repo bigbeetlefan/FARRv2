@@ -2,45 +2,31 @@
     <sys_ui_related sys_domain="global" table="x_kiwib_haumaru_case" version="2" view="">
         <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
             <filter/>
-            <list_id display_value="Supervision Case - Default view" name="x_kiwib_haumaru_case" related_list="NULL" sys_domain="global" view="Default view">f72c0ef21be36c10533e0dc8ec4bcb6d</list_id>
+            <list_id display_value="Supervision Case - Default view" name="x_kiwib_haumaru_case" related_list="NULL" sys_domain="global" view="Default view">ffe126281b4d205038c9ffbbdc4bcb90</list_id>
             <order_by/>
             <position>0</position>
-            <related_list>REL:813ac2be1ba36c10533e0dc8ec4bcb23</related_list>
+            <related_list>x_kiwib_haumaru_remediation_task.parent</related_list>
             <sys_class_name>sys_ui_related_list_entry</sys_class_name>
             <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
-            <sys_created_on>2021-04-20 02:16:17</sys_created_on>
-            <sys_id>fb2c0ef21be36c10533e0dc8ec4bcb6e</sys_id>
+            <sys_created_on>2020-12-09 21:28:01</sys_created_on>
+            <sys_id>bfe126281b4d205038c9ffbbdc4bcb91</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
-            <sys_updated_on>2021-04-20 02:16:17</sys_updated_on>
+            <sys_updated_on>2020-12-09 21:28:01</sys_updated_on>
         </sys_ui_related_list_entry>
         <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
             <filter/>
-            <list_id display_value="Supervision Case - Default view" name="x_kiwib_haumaru_case" related_list="NULL" sys_domain="global" view="Default view">f72c0ef21be36c10533e0dc8ec4bcb6d</list_id>
+            <list_id display_value="Supervision Case - Default view" name="x_kiwib_haumaru_case" related_list="NULL" sys_domain="global" view="Default view">ffe126281b4d205038c9ffbbdc4bcb90</list_id>
             <order_by/>
             <position>1</position>
-            <related_list>REL:310c4eb21be36c10533e0dc8ec4bcb84</related_list>
-            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
-            <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
-            <sys_created_on>2021-04-20 02:16:17</sys_created_on>
-            <sys_id>772c0ef21be36c10533e0dc8ec4bcb6f</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
-            <sys_updated_on>2021-04-20 02:16:17</sys_updated_on>
-        </sys_ui_related_list_entry>
-        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
-            <filter/>
-            <list_id display_value="Supervision Case - Default view" name="x_kiwib_haumaru_case" related_list="NULL" sys_domain="global" view="Default view">f72c0ef21be36c10533e0dc8ec4bcb6d</list_id>
-            <order_by/>
-            <position>2</position>
             <related_list>asmt_assessment_instance.task_id</related_list>
             <sys_class_name>sys_ui_related_list_entry</sys_class_name>
             <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
-            <sys_created_on>2021-04-20 02:16:17</sys_created_on>
-            <sys_id>fb2c0ef21be36c10533e0dc8ec4bcb6f</sys_id>
+            <sys_created_on>2020-12-09 21:28:01</sys_created_on>
+            <sys_id>37e126281b4d205038c9ffbbdc4bcb92</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
-            <sys_updated_on>2021-04-20 02:16:17</sys_updated_on>
+            <sys_updated_on>2020-12-09 21:28:01</sys_updated_on>
         </sys_ui_related_list_entry>
         <sys_ui_related_list action="INSERT_OR_UPDATE">
             <calculated_name>Supervision Case - Default view</calculated_name>
@@ -51,10 +37,10 @@
             <related_list/>
             <sys_class_name>sys_ui_related_list</sys_class_name>
             <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
-            <sys_created_on>2021-04-20 02:16:17</sys_created_on>
+            <sys_created_on>2020-12-09 21:28:01</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>f72c0ef21be36c10533e0dc8ec4bcb6d</sys_id>
+            <sys_id>ffe126281b4d205038c9ffbbdc4bcb90</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>Supervision Case - Default view</sys_name>
             <sys_package display_value="Pae Haumaru" source="x_kiwib_haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_package>
@@ -62,7 +48,7 @@
             <sys_scope display_value="Pae Haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_scope>
             <sys_update_name>sys_ui_related_x_kiwib_haumaru_case_null</sys_update_name>
             <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
-            <sys_updated_on>2021-04-20 02:16:17</sys_updated_on>
+            <sys_updated_on>2020-12-09 21:28:01</sys_updated_on>
             <sys_user/>
             <view display_value="Default view" name="NULL">Default view</view>
             <view_name/>

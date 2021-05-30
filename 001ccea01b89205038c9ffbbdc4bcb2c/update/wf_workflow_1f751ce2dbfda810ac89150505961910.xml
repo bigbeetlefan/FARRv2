@@ -104,7 +104,7 @@
         <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
         <sys_updated_on>2021-03-04 23:06:19</sys_updated_on>
         <value/>
-        <variable display_value="">d6d378c20a0a0b9b01bbd16b1f3b7105</variable>
+        <variable display_value="Timezone field">d6d378c20a0a0b9b01bbd16b1f3b7105</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
@@ -118,7 +118,7 @@
         <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
         <sys_updated_on>2021-03-04 23:06:19</sys_updated_on>
         <value>80</value>
-        <variable display_value="">c36369760a0a0ba973b49249d16250b3</variable>
+        <variable display_value="Percentage">c36369760a0a0ba973b49249d16250b3</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
@@ -132,7 +132,7 @@
         <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
         <sys_updated_on>2021-03-04 23:06:19</sys_updated_on>
         <value/>
-        <variable display_value="">d7242d200a0a0b5f008f535603a17bc8</variable>
+        <variable display_value="Relative duration">d7242d200a0a0b5f008f535603a17bc8</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
@@ -146,7 +146,7 @@
         <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
         <sys_updated_on>2021-03-04 23:06:19</sys_updated_on>
         <value/>
-        <variable display_value="">d7277ef40a0a0b5f00355fe11ecee145</variable>
+        <variable display_value="Modifier">d7277ef40a0a0b5f00355fe11ecee145</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
@@ -160,7 +160,7 @@
         <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
         <sys_updated_on>2021-03-04 23:06:19</sys_updated_on>
         <value/>
-        <variable display_value="">d67e76010a0a0b9b01146faa9f93fd86</variable>
+        <variable display_value="Timer type">d67e76010a0a0b9b01146faa9f93fd86</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
@@ -174,7 +174,7 @@
         <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
         <sys_updated_on>2021-03-04 23:06:19</sys_updated_on>
         <value/>
-        <variable display_value="">d6d1791a0a0a0b9b01eda7c8dbc013da</variable>
+        <variable display_value="Schedule field">d6d1791a0a0a0b9b01eda7c8dbc013da</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
@@ -188,7 +188,7 @@
         <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
         <sys_updated_on>2021-03-04 23:06:19</sys_updated_on>
         <value/>
-        <variable display_value="">d67ff5da0a0a0b9b00b230016b2f5203</variable>
+        <variable display_value="Timer field">d67ff5da0a0a0b9b00b230016b2f5203</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
@@ -202,7 +202,7 @@
         <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
         <sys_updated_on>2021-03-04 23:06:19</sys_updated_on>
         <value/>
-        <variable display_value="">d6d1f7ef0a0a0b9b0189a9e672795167</variable>
+        <variable display_value="Timezone type">d6d1f7ef0a0a0b9b0189a9e672795167</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
@@ -216,7 +216,7 @@
         <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
         <sys_updated_on>2021-03-04 23:06:19</sys_updated_on>
         <value/>
-        <variable display_value="">60eadd8b73270010491d235f04f6a76a</variable>
+        <variable display_value="User Specified Timezone">60eadd8b73270010491d235f04f6a76a</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
@@ -230,7 +230,7 @@
         <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
         <sys_updated_on>2021-03-04 23:06:19</sys_updated_on>
         <value/>
-        <variable display_value="">d6cec3ed0a0a0b9b00c9bbdb5fdda4e3</variable>
+        <variable display_value="Schedule type">d6cec3ed0a0a0b9b00c9bbdb5fdda4e3</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
@@ -244,7 +244,7 @@
         <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
         <sys_updated_on>2021-03-04 23:06:19</sys_updated_on>
         <value/>
-        <variable display_value="">d6d378c20a0a0b9b01bbd16b1f3b7105</variable>
+        <variable display_value="Timezone field">d6d378c20a0a0b9b01bbd16b1f3b7105</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
@@ -258,7 +258,7 @@
         <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
         <sys_updated_on>2021-03-04 23:06:19</sys_updated_on>
         <value/>
-        <variable display_value="">d6d1f7ef0a0a0b9b0189a9e672795167</variable>
+        <variable display_value="Timezone type">d6d1f7ef0a0a0b9b0189a9e672795167</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
@@ -272,7 +272,7 @@
         <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
         <sys_updated_on>2021-03-04 23:06:19</sys_updated_on>
         <value/>
-        <variable display_value="">d67ff5da0a0a0b9b00b230016b2f5203</variable>
+        <variable display_value="Timer field">d67ff5da0a0a0b9b00b230016b2f5203</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
@@ -286,7 +286,7 @@
         <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
         <sys_updated_on>2021-03-04 23:06:19</sys_updated_on>
         <value/>
-        <variable display_value="">d6d1791a0a0a0b9b01eda7c8dbc013da</variable>
+        <variable display_value="Schedule field">d6d1791a0a0a0b9b01eda7c8dbc013da</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
@@ -300,7 +300,7 @@
         <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
         <sys_updated_on>2021-03-04 23:06:19</sys_updated_on>
         <value/>
-        <variable display_value="">d67e76010a0a0b9b01146faa9f93fd86</variable>
+        <variable display_value="Timer type">d67e76010a0a0b9b01146faa9f93fd86</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
@@ -314,7 +314,7 @@
         <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
         <sys_updated_on>2021-03-04 23:06:19</sys_updated_on>
         <value/>
-        <variable display_value="">d7277ef40a0a0b5f00355fe11ecee145</variable>
+        <variable display_value="Modifier">d7277ef40a0a0b5f00355fe11ecee145</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
@@ -328,7 +328,7 @@
         <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
         <sys_updated_on>2021-03-04 23:06:19</sys_updated_on>
         <value/>
-        <variable display_value="">d7242d200a0a0b5f008f535603a17bc8</variable>
+        <variable display_value="Relative duration">d7242d200a0a0b5f008f535603a17bc8</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
@@ -342,7 +342,7 @@
         <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
         <sys_updated_on>2021-03-04 23:06:19</sys_updated_on>
         <value/>
-        <variable display_value="">d6cec3ed0a0a0b9b00c9bbdb5fdda4e3</variable>
+        <variable display_value="Schedule type">d6cec3ed0a0a0b9b00c9bbdb5fdda4e3</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
@@ -356,7 +356,7 @@
         <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
         <sys_updated_on>2021-03-04 23:06:19</sys_updated_on>
         <value>80</value>
-        <variable display_value="">c36369760a0a0ba973b49249d16250b3</variable>
+        <variable display_value="Percentage">c36369760a0a0ba973b49249d16250b3</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
@@ -370,7 +370,7 @@
         <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
         <sys_updated_on>2021-03-04 23:06:19</sys_updated_on>
         <value/>
-        <variable display_value="">60eadd8b73270010491d235f04f6a76a</variable>
+        <variable display_value="User Specified Timezone">60eadd8b73270010491d235f04f6a76a</variable>
     </sys_variable_value>
     <wf_condition action="INSERT_OR_UPDATE">
         <activity display_value="80% SLA">a097ac80dbbea8d022483a83e2961985</activity>
@@ -535,7 +535,7 @@
         <sys_updated_on>2021-03-04 23:12:01</sys_updated_on>
         <value>var remTsk = current.task.getRefRecord();&#13;
 gs.eventQueue('x_kiwib_haumaru.task_SLA_80',remTsk,current.task.supervisor,'');</value>
-        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+        <variable display_value="Script">c35ddef20a0a0ba96248a7090eccd518</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
@@ -550,7 +550,7 @@ gs.eventQueue('x_kiwib_haumaru.task_SLA_80',remTsk,current.task.supervisor,'');<
         <sys_updated_on>2021-03-04 23:12:01</sys_updated_on>
         <value>var remTsk = current.task.getRefRecord();&#13;
 gs.eventQueue('x_kiwib_haumaru.task_SLA_80',remTsk,current.task.supervisor,'');</value>
-        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+        <variable display_value="Script">c35ddef20a0a0ba96248a7090eccd518</variable>
     </sys_variable_value>
     <wf_condition action="INSERT_OR_UPDATE">
         <activity display_value="Generate event for 80%">3b9720c0dbbea8d022483a83e296194c</activity>
@@ -615,7 +615,7 @@ gs.eventQueue('x_kiwib_haumaru.task_SLA_80',remTsk,current.task.supervisor,'');<
         <sys_updated_on>2021-03-04 23:12:40</sys_updated_on>
         <value>var remTsk = current.task.getRefRecord();&#13;
 gs.eventQueue('x_kiwib_haumaru.task_SLA_breached',remTsk,current.task.supervisor,'');</value>
-        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+        <variable display_value="Script">c35ddef20a0a0ba96248a7090eccd518</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
@@ -630,7 +630,7 @@ gs.eventQueue('x_kiwib_haumaru.task_SLA_breached',remTsk,current.task.supervisor
         <sys_updated_on>2021-03-04 23:12:40</sys_updated_on>
         <value>var remTsk = current.task.getRefRecord();&#13;
 gs.eventQueue('x_kiwib_haumaru.task_SLA_breached',remTsk,current.task.supervisor,'');</value>
-        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+        <variable display_value="Script">c35ddef20a0a0ba96248a7090eccd518</variable>
     </sys_variable_value>
     <wf_condition action="INSERT_OR_UPDATE">
         <activity display_value="Generate event for breached">26e82c44dbbea8d022483a83e2961930</activity>
@@ -696,7 +696,7 @@ gs.eventQueue('x_kiwib_haumaru.task_SLA_breached',remTsk,current.task.supervisor
         <value>// Set the variable 'answer' to true or false to indicate if the condition has been met or not.&#13;
 answer = true;&#13;
 </value>
-        <variable display_value="">c35debce0a0a0ba96248a709440cf31a</variable>
+        <variable display_value="Condition script">c35debce0a0a0ba96248a709440cf31a</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
@@ -710,7 +710,7 @@ answer = true;&#13;
         <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
         <sys_updated_on>2021-03-04 23:06:18</sys_updated_on>
         <value>has_breached=true^EQ</value>
-        <variable display_value="">c35dc4cd0a0a0ba96248a70990c1ac54</variable>
+        <variable display_value="Condition">c35dc4cd0a0a0ba96248a70990c1ac54</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
@@ -724,7 +724,7 @@ answer = true;&#13;
         <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
         <sys_updated_on>2021-03-04 23:06:18</sys_updated_on>
         <value>has_breached=true^EQ</value>
-        <variable display_value="">c35dc4cd0a0a0ba96248a70990c1ac54</variable>
+        <variable display_value="Condition">c35dc4cd0a0a0ba96248a70990c1ac54</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
@@ -740,7 +740,7 @@ answer = true;&#13;
         <value>// Set the variable 'answer' to true or false to indicate if the condition has been met or not.&#13;
 answer = true;&#13;
 </value>
-        <variable display_value="">c35debce0a0a0ba96248a709440cf31a</variable>
+        <variable display_value="Condition script">c35debce0a0a0ba96248a709440cf31a</variable>
     </sys_variable_value>
     <wf_condition action="INSERT_OR_UPDATE">
         <activity display_value="SLA Breached">a497e880dbbea8d022483a83e296199d</activity>

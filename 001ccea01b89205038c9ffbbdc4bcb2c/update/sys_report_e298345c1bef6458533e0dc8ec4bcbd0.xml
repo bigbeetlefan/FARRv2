@@ -8,6 +8,7 @@
         <axis_max_color display_value="UI14 Blue Light">b0d449b3d7332100fa6c0c12ce610383</axis_max_color>
         <axis_min_color display_value="White">65b303c7a9fe3dba00629aff95ee3597</axis_min_color>
         <bar_unstack>false</bar_unstack>
+        <calendar/>
         <chart_background_color/>
         <chart_border_color/>
         <chart_border_radius>0</chart_border_radius>
@@ -31,7 +32,7 @@
         <column/>
         <compute_percent>aggregate</compute_percent>
         <content/>
-        <created_by_user display_value="Stuart Turner">3b4df834db206c50621cc1cd049619a6</created_by_user>
+        <created_by_user display_value="">31b04d7c1bac64105cff43bdcc4bcb4a</created_by_user>
         <custom_chart_size>false</custom_chart_size>
         <custom_chart_title_position>false</custom_chart_title_position>
         <custom_config>{"transforms":[{"transform":{"transform":"Reference","name":"chart-subjects"}}]}</custom_config>
@@ -50,6 +51,7 @@
             <item display_value="2" endquery="false" field="parent.state" goto="false" newquery="false" operator="=" or="false" value="2"/>
             <item endquery="false" field="sys_created_on" goto="false" newquery="false" operator="BETWEEN" or="false" value="javascript:gs.dateGenerate('2021-04-01','00:00:00')@javascript:gs.dateGenerate('2021-04-12','00:00:00')"/>
         </filter>
+        <formatting_configuration/>
         <from/>
         <funnel_neck_percent>30</funnel_neck_percent>
         <gauge_autoscale>true</gauge_autoscale>

@@ -1,19 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_macroponent">
     <sys_ux_macroponent action="INSERT_OR_UPDATE">
         <associated_types>d8899a0473000010f7353c78caf6a750,c1251a89db4c1010793ddf6b5e96199c</associated_types>
+        <category>component</category>
         <component_dependencies/>
         <composition>[]</composition>
+        <da_relay_models/>
         <data/>
+        <dispatched_events/>
         <events/>
         <extends/>
+        <handled_events/>
         <interactions/>
+        <interfaces/>
+        <internal_event_mappings/>
         <layout>{}</layout>
         <macroponent_dependencies/>
         <name>My Component</name>
         <props>[]</props>
+        <required_translations/>
         <root_component display_value="kiwib-survey-viewer">149492a863502053c83969836e20ec79</root_component>
         <root_component_config>{}</root_component_config>
+        <root_component_definition/>
         <schema_version>1.0.0</schema_version>
+        <state_properties/>
         <sys_class_name>sys_ux_macroponent</sys_class_name>
         <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
         <sys_created_on>2021-02-16 01:43:35</sys_created_on>

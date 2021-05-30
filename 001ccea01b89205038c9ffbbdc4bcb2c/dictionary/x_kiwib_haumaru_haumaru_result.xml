@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element label="Haumaru Result" max_length="40" name="x_kiwib_haumaru_haumaru_result" sizeclass="12488" type="collection">
+    <element label="Haumaru Result" max_length="40" name="x_kiwib_haumaru_haumaru_result" sizeclass="160887" type="collection">
         <element label="Answer" max_length="254" name="answer" type="string"/>
         <element default="current.answer" label="Answer choice" max_length="32" name="answer_choice" reference="asmt_metric_definition" reference_qual="sys_scope=001ccea01b89205038c9ffbbdc4bcb2c^EQ" reference_qual_condition="sys_scope=001ccea01b89205038c9ffbbdc4bcb2c^EQ" type="reference"/>
         <element label="Answer value" max_length="40" name="answer_value" type="string"/>
