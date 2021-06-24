@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>my_team</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>(KB) Calculate Cases - myTeam</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+   if ( isLoading || newValue === '') {
+      return;
+   }
+
+   //check start and end date
+	var emptyResult = {'neg_completed': 0,'neg_advice_given': 0,'exc_case': 0,'std_case': 0,'real_time': 0,'retro': 0,'role_play': 0,'other': 0,'checker': 0, 'open_reps': 0, 'close_reps': 0, 'open_cust': 0, 'close_cust': 0, 'missed_sla':0, 'overdue_sla': 0, 'task_coaching': 0, 'task_inform_reps': 0, 'task_discuss_reps': 0, 'task_training': 0, 'task_customer_action': 0, 'task_checker': 0, 'task_moderation': 0};
+	var startDate = g_form.getValue('report_start_date');	
+	var endDate = g_form.getValue('report_end_date');	
+	
+	//g_form.addInfoMessage(newValue + '-' + endDate + '-' + teamMembers);
+	//newValue && endDate && teamMembers
+	if(newValue != '' && endDate != '' && startDate != ''){
+		var ga = new GlideAjax("x_kiwib_haumaru.KBHaumaruAjax");
+		ga.addParam('sysparm_name', 'allCalculations');
+		ga.addParam('sysparm_start_date', startDate);
+		ga.addParam('sysparm_end_date', endDate);
+		ga.addParam('sysparm_team_members',	newValue);
+		ga.getXML(getResponse);
+	}else{
+		setFormValue(emptyResult);
+	}
+	
+	function getResponse(response){
+
+		var answers = response.responseXML.documentElement.getAttribute("answer");
+		var answerObj = JSON.parse(answers);		
+		//alert(answers);
+		if(answers){
+			//{'neg_completed': 0,'neg_advice_given': 0,'exc_case': 0,'std_case': 0,'real_time': 0,'retro': 0,'role_play': 0,'other': 0,'checker': 0};
+			setFormValue(answerObj);			
+		}
+	}
+
+	function setFormValue(valueObj){
+		g_form.setValue('negative_assurance_assessments_completed', valueObj.neg_completed);
+		g_form.setValue('negative_assurance_advice_giving_interaction', valueObj.neg_advice_given);
+		g_form.setValue('exception_case_identified', valueObj.exc_case);
+		g_form.setValue('standard_assessments_completed', valueObj.std_case);
+		g_form.setValue('standard_real_time_count', valueObj.real_time);
+		g_form.setValue('standard_retrospective_count', valueObj.retro);
+		g_form.setValue('standard_role_play_count', valueObj.role_play);
+		g_form.setValue('standard_other_count', valueObj.other);
+		g_form.setValue('checks_conducted', valueObj.checker);
+		g_form.setValue('open_reps_remediations', valueObj.open_reps);
+		g_form.setValue('closed_reps_remediations', valueObj.close_reps);
+		g_form.setValue('open_cust_remediations', valueObj.open_cust);
+		g_form.setValue('closed_cust_remediations', valueObj.close_cust);
+		g_form.setValue('missed_reps_sla', valueObj.missed_sla);
+		g_form.setValue('overdue_cust_remediations', valueObj.overdue_sla);
+		g_form.setValue('provide_coaching_count', valueObj.task_coaching);
+		g_form.setValue('inform_nominated_reps_count', valueObj.task_inform_reps);
+		g_form.setValue('discuss_with_nominated_reps_count', valueObj.task_discuss_reps);
+		g_form.setValue('provide_refresher_training', valueObj.task_training);
+		g_form.addInfoMessage('Result has been updated.');
+	}
+   
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+        <sys_created_on>2021-06-03 22:15:43</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>eea449151b2c3c50533e0dc8ec4bcb7a</sys_id>
+        <sys_mod_count>17</sys_mod_count>
+        <sys_name>(KB) Calculate Cases - myTeam</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Pae Haumaru" source="x_kiwib_haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pae Haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_scope>
+        <sys_update_name>sys_script_client_eea449151b2c3c50533e0dc8ec4bcb7a</sys_update_name>
+        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+        <sys_updated_on>2021-06-23 04:45:36</sys_updated_on>
+        <table>x_kiwib_haumaru_pae_huamaru_team_summary</table>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

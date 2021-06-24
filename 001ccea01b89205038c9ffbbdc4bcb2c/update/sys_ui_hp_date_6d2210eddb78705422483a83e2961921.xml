@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_hp_date">
+    <sys_ui_hp_date action="INSERT_OR_UPDATE">
+        <date_field>sys_updated_on</date_field>
+        <date_table>x_kiwib_haumaru_case</date_table>
+        <publisher_reference display_value="Date Range">6581906ddb78705422483a83e2961998</publisher_reference>
+        <sys_class_name>sys_ui_hp_date</sys_class_name>
+        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+        <sys_created_on>2021-06-16 23:31:30</sys_created_on>
+        <sys_id>6d2210eddb78705422483a83e2961921</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>6581906ddb78705422483a83e2961998</sys_name>
+        <sys_package display_value="Pae Haumaru" source="x_kiwib_haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pae Haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_scope>
+        <sys_update_name>sys_ui_hp_date_6d2210eddb78705422483a83e2961921</sys_update_name>
+        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+        <sys_updated_on>2021-06-16 23:31:30</sys_updated_on>
+    </sys_ui_hp_date>
+</record_update>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="Supervision - Check the Checker Cases" section_id="73f3cba41b607450533e0dc8ec4bcbd2" sys_domain="global" table="x_kiwib_haumaru_pae_huamaru_team_summary" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>checks_conducted</element>
+            <position>0</position>
+            <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+            <sys_created_on>2021-06-04 05:17:26</sys_created_on>
+            <sys_id>4c35e2151b20bc50533e0dc8ec4bcbbb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Supervision - Check the Checker Cases" display_value="Supervision - Check the Checker Cases" name="x_kiwib_haumaru_pae_huamaru_team_summary" sys_domain="global" view="Default view">73f3cba41b607450533e0dc8ec4bcbd2</sys_ui_section>
+            <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+            <sys_updated_on>2021-06-04 05:17:26</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>1</position>
+            <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+            <sys_created_on>2021-06-04 05:17:26</sys_created_on>
+            <sys_id>c435e2151b20bc50533e0dc8ec4bcbbc</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Supervision - Check the Checker Cases" display_value="Supervision - Check the Checker Cases" name="x_kiwib_haumaru_pae_huamaru_team_summary" sys_domain="global" view="Default view">73f3cba41b607450533e0dc8ec4bcbd2</sys_ui_section>
+            <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+            <sys_updated_on>2021-06-04 05:17:26</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>unresolved_differences</element>
+            <position>2</position>
+            <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+            <sys_created_on>2021-06-04 05:17:26</sys_created_on>
+            <sys_id>4c35e2151b20bc50533e0dc8ec4bcbbc</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Supervision - Check the Checker Cases" display_value="Supervision - Check the Checker Cases" name="x_kiwib_haumaru_pae_huamaru_team_summary" sys_domain="global" view="Default view">73f3cba41b607450533e0dc8ec4bcbd2</sys_ui_section>
+            <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+            <sys_updated_on>2021-06-04 05:17:26</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Supervision - Check the Checker Cases</caption>
+            <header>false</header>
+            <name>x_kiwib_haumaru_pae_huamaru_team_summary</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+            <sys_created_on>2021-06-01 23:36:35</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>73f3cba41b607450533e0dc8ec4bcbd2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_kiwib_haumaru_pae_huamaru_team_summary</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Pae Haumaru" source="x_kiwib_haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Pae Haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_scope>
+            <sys_update_name>sys_ui_section_73f3cba41b607450533e0dc8ec4bcbd2</sys_update_name>
+            <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+            <sys_updated_on>2021-06-01 23:36:35</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="products" table="x_kiwib_haumaru_pae_huamaru_team_summary" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>products</element>
+            <name>x_kiwib_haumaru_pae_huamaru_team_summary</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+            <sys_created_on>2021-06-20 22:06:01</sys_created_on>
+            <sys_id>0a7568fe1bfcf050533e0dc8ec4bcb13</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>products</sys_name>
+            <sys_package display_value="Pae Haumaru" source="x_kiwib_haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Pae Haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_scope>
+            <sys_update_name>sys_choice_x_kiwib_haumaru_pae_huamaru_team_summary_products</sys_update_name>
+            <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+            <sys_updated_on>2021-06-20 22:06:01</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>products</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Transactional</label>
+            <language>en</language>
+            <name>x_kiwib_haumaru_pae_huamaru_team_summary</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+            <sys_created_on>2021-06-21 05:04:35</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a94506f61bb47450533e0dc8ec4bcbad</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+            <sys_updated_on>2021-06-21 05:04:35</sys_updated_on>
+            <value>transactional</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>products</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Saving</label>
+            <language>en</language>
+            <name>x_kiwib_haumaru_pae_huamaru_team_summary</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+            <sys_created_on>2021-06-21 05:04:35</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>254506f61bb47450533e0dc8ec4bcbc8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+            <sys_updated_on>2021-06-21 05:04:35</sys_updated_on>
+            <value>saving</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>products</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Overdraft</label>
+            <language>en</language>
+            <name>x_kiwib_haumaru_pae_huamaru_team_summary</name>
+            <sequence>2</sequence>
+            <synonyms/>
+            <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+            <sys_created_on>2021-06-21 05:04:35</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a54506f61bb47450533e0dc8ec4bcbc9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+            <sys_updated_on>2021-06-21 05:04:35</sys_updated_on>
+            <value>overdraft</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>products</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Credit card</label>
+            <language>en</language>
+            <name>x_kiwib_haumaru_pae_huamaru_team_summary</name>
+            <sequence>3</sequence>
+            <synonyms/>
+            <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+            <sys_created_on>2021-06-21 05:04:35</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>294506f61bb47450533e0dc8ec4bcbca</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+            <sys_updated_on>2021-06-21 05:04:35</sys_updated_on>
+            <value>credit_card</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>products</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Personal loan</label>
+            <language>en</language>
+            <name>x_kiwib_haumaru_pae_huamaru_team_summary</name>
+            <sequence>4</sequence>
+            <synonyms/>
+            <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+            <sys_created_on>2021-06-21 05:04:35</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a94506f61bb47450533e0dc8ec4bcbcb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+            <sys_updated_on>2021-06-21 05:04:35</sys_updated_on>
+            <value>personal_loan</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>products</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Insurance</label>
+            <language>en</language>
+            <name>x_kiwib_haumaru_pae_huamaru_team_summary</name>
+            <sequence>5</sequence>
+            <synonyms/>
+            <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+            <sys_created_on>2021-06-21 05:04:35</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>2d4506f61bb47450533e0dc8ec4bcbcc</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+            <sys_updated_on>2021-06-21 05:04:35</sys_updated_on>
+            <value>insurance</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>products</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Home loan</label>
+            <language>en</language>
+            <name>x_kiwib_haumaru_pae_huamaru_team_summary</name>
+            <sequence>6</sequence>
+            <synonyms/>
+            <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+            <sys_created_on>2021-06-21 05:04:35</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ad4506f61bb47450533e0dc8ec4bcbcd</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+            <sys_updated_on>2021-06-21 05:04:35</sys_updated_on>
+            <value>home_loan</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>products</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>KiwiSaver</label>
+            <language>en</language>
+            <name>x_kiwib_haumaru_pae_huamaru_team_summary</name>
+            <sequence>7</sequence>
+            <synonyms/>
+            <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+            <sys_created_on>2021-06-21 05:04:35</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>214506f61bb47450533e0dc8ec4bcbcf</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+            <sys_updated_on>2021-06-21 05:04:35</sys_updated_on>
+            <value>kiwisaver</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

@@ -22,7 +22,7 @@
         <resume_condition/>
         <retroactive>true</retroactive>
         <retroactive_pause>true</retroactive_pause>
-        <schedule display_value="24 x 7">38fa64edc0a8016400f4a5724b0434b8</schedule>
+        <schedule/>
         <schedule_source>sla_definition</schedule_source>
         <schedule_source_field/>
         <set_start_to>sys_created_on</set_start_to>

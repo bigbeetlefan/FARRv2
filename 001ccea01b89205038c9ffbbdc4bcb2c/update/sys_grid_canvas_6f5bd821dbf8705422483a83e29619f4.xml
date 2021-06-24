@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_grid_canvas">
+    <sys_grid_canvas action="INSERT_OR_UPDATE">
+        <legacy_page display_value="PA Remediation Tasks Summaries">ab5bd821dbf8705422483a83e29619f3</legacy_page>
+        <name>PA Pae Haumaru Team Sum - New Tab 2</name>
+        <sys_class_name>sys_grid_canvas</sys_class_name>
+        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+        <sys_created_on>2021-06-17 00:09:27</sys_created_on>
+        <sys_id>6f5bd821dbf8705422483a83e29619f4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>PA Pae Haumaru Team Sum - New Tab 2</sys_name>
+        <sys_package display_value="Pae Haumaru" source="x_kiwib_haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pae Haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_scope>
+        <sys_update_name>sys_grid_canvas_6f5bd821dbf8705422483a83e29619f4</sys_update_name>
+        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+        <sys_updated_on>2021-06-17 00:09:27</sys_updated_on>
+    </sys_grid_canvas>
+</record_update>

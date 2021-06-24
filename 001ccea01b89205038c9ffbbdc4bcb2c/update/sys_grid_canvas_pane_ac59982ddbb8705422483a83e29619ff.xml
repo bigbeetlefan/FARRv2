@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_grid_canvas_pane">
+    <sys_grid_canvas_pane action="INSERT_OR_UPDATE">
+        <grid_canvas display_value="PA Pae Haumaru Team Sum - New Tab">73dcc4addb38705422483a83e29619f0</grid_canvas>
+        <height>16</height>
+        <portal_widget display_value="Created 17-06-2021 12:00:31">6c59982ddbb8705422483a83e29619fc</portal_widget>
+        <posx>6</posx>
+        <posy>18</posy>
+        <sys_class_name>sys_grid_canvas_pane</sys_class_name>
+        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+        <sys_created_on>2021-06-17 00:00:31</sys_created_on>
+        <sys_id>ac59982ddbb8705422483a83e29619ff</sys_id>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_name>73dcc4addb38705422483a83e29619f0</sys_name>
+        <sys_package display_value="Pae Haumaru" source="x_kiwib_haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pae Haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_scope>
+        <sys_update_name>sys_grid_canvas_pane_ac59982ddbb8705422483a83e29619ff</sys_update_name>
+        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+        <sys_updated_on>2021-06-17 03:36:48</sys_updated_on>
+        <width>3</width>
+    </sys_grid_canvas_pane>
+</record_update>

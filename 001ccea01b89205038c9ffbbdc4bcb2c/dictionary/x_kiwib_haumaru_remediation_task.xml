@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element audit="true" extends="task" label="Remediation Task" max_length="40" name="x_kiwib_haumaru_remediation_task" sizeclass="728" text_index="true" type="collection">
+    <element audit="true" extends="task" label="Remediation Task" max_length="40" name="x_kiwib_haumaru_remediation_task" sizeclass="775" text_index="true" type="collection">
         <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Team member" max_length="32" name="advisor" reference="sys_user" type="reference"/>
         <element attributes="edge_encryption_enabled=true" choice="1" label="Closure reason" max_length="40" name="closure_code" type="string">
             <choice>
@@ -7,7 +7,7 @@
                 <element inactive_on_update="false" label="Cancelled" sequence="1" value="cancelled"/>
             </choice>
         </element>
-        <element attributes="edge_encryption_enabled=true" label="Closure date" max_length="40" name="closure_datetime" type="glide_date_time"/>
+        <element attributes="edge_encryption_enabled=true" label="Closure date" max_length="40" name="closure_datetime" read_only="true" type="glide_date_time"/>
         <element attributes="edge_encryption_enabled=true" label="Closure notes" max_length="4000" name="closure_notes" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Customer Remediation Action" max_length="40" name="customer_action" type="boolean"/>
         <element choice="1" label="Moderation outcome" max_length="40" name="moderation_outcome" type="choice">

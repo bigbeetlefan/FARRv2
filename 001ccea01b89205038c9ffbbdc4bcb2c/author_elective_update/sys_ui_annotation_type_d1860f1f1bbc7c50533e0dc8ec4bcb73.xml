@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_annotation_type">
+    <sys_ui_annotation_type action="DELETE">
+        <active>true</active>
+        <name>Line Separator</name>
+        <omit_spacer>true</omit_spacer>
+        <style>border-top: 1px solid yellow;</style>
+        <sys_class_name>sys_ui_annotation_type</sys_class_name>
+        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+        <sys_created_on>2021-06-22 23:06:58</sys_created_on>
+        <sys_id>d1860f1f1bbc7c50533e0dc8ec4bcb73</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Line Separator</sys_name>
+        <sys_package display_value="Pae Haumaru" source="x_kiwib_haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pae Haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_scope>
+        <sys_update_name>sys_ui_annotation_type_d1860f1f1bbc7c50533e0dc8ec4bcb73</sys_update_name>
+        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+        <sys_updated_on>2021-06-22 23:26:57</sys_updated_on>
+    </sys_ui_annotation_type>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Pae Haumaru">001ccea01b89205038c9ffbbdc4bcb2c</application>
+        <file_path/>
+        <instance_id>5eff1e92db012f4c0e785d00cf961905</instance_id>
+        <instance_name>kiwibankdev</instance_name>
+        <name>sys_ui_annotation_type_d1860f1f1bbc7c50533e0dc8ec4bcb73</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_annotation_type"><sys_ui_annotation_type action="INSERT_OR_UPDATE"><active>true</active><name>Line Separator</name><omit_spacer>true</omit_spacer><style>border-top: 1px solid yellow;</style><sys_class_name>sys_ui_annotation_type</sys_class_name><sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by><sys_created_on>2021-06-22 23:06:58</sys_created_on><sys_id>d1860f1f1bbc7c50533e0dc8ec4bcb73</sys_id><sys_mod_count>4</sys_mod_count><sys_name>Line Separator</sys_name><sys_package display_value="Pae Haumaru" source="x_kiwib_haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_package><sys_policy/><sys_scope display_value="Pae Haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_scope><sys_update_name>sys_ui_annotation_type_d1860f1f1bbc7c50533e0dc8ec4bcb73</sys_update_name><sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by><sys_updated_on>2021-06-22 23:26:57</sys_updated_on></sys_ui_annotation_type></record_update>]]></payload>
+        <payload_hash>1068560373</payload_hash>
+        <record_name>Line Separator</record_name>
+        <reverted_from/>
+        <source>c2b240081ba03c10533e0dc8ec4bcbb3</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+        <sys_created_on>2021-06-22 23:26:57</sys_created_on>
+        <sys_id>532bc71f1bfc7c50533e0dc8ec4bcb21</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17a360c5d850000001</sys_recorded_at>
+        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+        <sys_updated_on>2021-06-22 23:26:57</sys_updated_on>
+        <type>Form Annotation Type</type>
+        <update_guid>d72bc71fdcfc7c500b55cf0804e0b020</update_guid>
+        <update_guid_history>d72bc71fdcfc7c500b55cf0804e0b020:1068560373,bfba871f23fc7c50146f2c8fe1f7ef99:-707586004,bc88c71700fc7c502a7ab7dd1e4f11cc:1746907270,9318cf93abfc7c507438455d390c082c:-1483092795,ae968f5fe8bc7c50f732a2855aa924dd:245660377</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+        <sys_created_on>2021-06-22 23:28:03</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_annotation_type">sys_ui_annotation_type</sys_db_object>
+        <sys_id>60849fb76ce040e48311f2ccb5d5d090</sys_id>
+        <sys_metadata>d1860f1f1bbc7c50533e0dc8ec4bcb73</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Line Separator</sys_name>
+        <sys_package display_value="Pae Haumaru" source="x_kiwib_haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Pae Haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_scope>
+        <sys_scope_delete display_value="">02f82d1e9f0948b0802900399bacbfa4</sys_scope_delete>
+        <sys_update_name>sys_ui_annotation_type_d1860f1f1bbc7c50533e0dc8ec4bcb73</sys_update_name>
+        <sys_update_version display_value="sys_ui_annotation_type_d1860f1f1bbc7c50533e0dc8ec4bcb73">532bc71f1bfc7c50533e0dc8ec4bcb21</sys_update_version>
+        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+        <sys_updated_on>2021-06-22 23:28:03</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_hp_publisher">
+    <sys_ui_hp_publisher action="INSERT_OR_UPDATE">
+        <allow_database_view_filter>true</allow_database_view_filter>
+        <allow_extended_table>true</allow_extended_table>
+        <boolean_field/>
+        <boolean_table/>
+        <date_filter>135_Current hour@javascript:gs.hoursAgoStart(0)@javascript:gs.hoursAgoEnd(0),150_Current minute@javascript:gs.minutesAgoStart(0)@javascript:gs.minutesAgoEnd(0),060_Last 12 months@javascript:gs.monthsAgoStart(12)@javascript:gs.endOfThisMonth(),130_Last 120 days@javascript:gs.daysAgoStart(120)@javascript:gs.daysAgoEnd(0),160_Last 15 minutes@javascript:gs.minutesAgoStart(15)@javascript:gs.minutesAgoEnd(0),145_Last 2 hours@javascript:gs.hoursAgo(2)@javascript:gs.hoursAgo(0),075_Last 2 quarters@javascript:gs.quartersAgoStart(1)@javascript:gs.endOfThisQuarter(),105_Last 2 years@javascript:gs.beginningOfLastYear()@javascript:gs.endOfThisYear(),045_Last 3 months@javascript:gs.monthsAgoStart(3)@javascript:gs.endOfThisMonth(),115_Last 30 days@javascript:gs.daysAgoStart(30)@javascript:gs.daysAgoEnd(0),165_Last 30 minutes@javascript:gs.minutesAgoStart(30)@javascript:gs.minutesAgoEnd(0),170_Last 45 minutes@javascript:gs.minutesAgoStart(45)@javascript:gs.minutesAgoEnd(0),050_Last 6 months@javascript:gs.monthsAgoStart(6)@javascript:gs.endOfThisMonth(),120_Last 60 days@javascript:gs.daysAgoStart(60)@javascript:gs.daysAgoEnd(0),110_Last 7 days@javascript:gs.daysAgoStart(7)@javascript:gs.daysAgoEnd(0),055_Last 9 months@javascript:gs.monthsAgoStart(9)@javascript:gs.endOfThisMonth(),125_Last 90 days@javascript:gs.daysAgoStart(90)@javascript:gs.daysAgoEnd(0),210_Last fiscal year@javascript:new Sncdemo_dfGetFiscalFilter().getBeginningOfLastYear()@javascript:new Sncdemo_dfGetFiscalFilter().getEndOfLastYear(),140_Last hour@javascript:gs.hoursAgoStart(1)@javascript:gs.hoursAgoEnd(1),155_Last minute@javascript:gs.minutesAgoStart(1)@javascript:gs.minutesAgoEnd(1),035_Last month@javascript:gs.beginningOfLastMonth()@javascript:gs.endOfLastMonth(),070_Last quarter@javascript:gs.quartersAgoStart(1)@javascript:gs.quartersAgoEnd(1),020_Last week@javascript:gs.beginningOfLastWeek()@javascript:gs.endOfLastWeek(),100_Last year@javascript:gs.beginningOfLastYear()@javascript:gs.endOfLastYear(),085_Next 2 quarters@javascript:gs.quartersAgoStart(-1)@javascript:gs.quartersAgoEnd(-2),190_Next 30 days@javascript:gs.daysAgoStart(0)@javascript:gs.daysAgoEnd(-30),200_Next 90 days@javascript:gs.daysAgoStart(0)@javascript:gs.daysAgoEnd(-90),230_Next fiscal year@javascript:new Sncdemo_dfGetFiscalFilter().getBeginningOfNextYear()@javascript:new Sncdemo_dfGetFiscalFilter().getEndOfNextYear(),040_Next month@javascript:gs.beginningOfNextMonth()@javascript:gs.endOfNextMonth(),080_Next quarter@javascript:gs.quartersAgoStart(-1)@javascript:gs.quartersAgoEnd(-1),025_Next week@javascript:gs.beginningOfNextWeek()@javascript:gs.endOfNextWeek(),095_Next year@javascript:gs.beginningOfNextYear()@javascript:gs.endOfNextYear(),175_One year ago@javascript:gs.monthsAgo(12)@javascript:gs.endOfThisMonth(),220_This fiscal year@javascript:new Sncdemo_dfGetFiscalFilter().getBeginningOfThisYear()@javascript:new Sncdemo_dfGetFiscalFilter().getEndOfThisYear(),030_This month@javascript:gs.beginningOfThisMonth()@javascript:gs.endOfThisMonth(),065_This quarter@javascript:gs.beginningOfThisQuarter()@javascript:gs.endOfThisQuarter(),015_This week@javascript:gs.beginningOfThisWeek()@javascript:gs.endOfThisWeek(),090_This year@javascript:gs.beginningOfThisYear()@javascript:gs.endOfThisYear(),001_Today@javascript:gs.daysAgoStart(0)@javascript:gs.daysAgoEnd(0),010_Tomorrow@javascript:gs.daysAgoStart(-1)@javascript:gs.daysAgoEnd(-1),180_Year to date@javascript:gs.beginningOfThisYear()@javascript:gs.beginningOfToday(),180_Year to go@javascript:gs.beginningOfToday()@javascript:gs.endOfThisYear(),005_Yesterday@javascript:gs.daysAgoStart(1)@javascript:gs.daysAgoEnd(1)</date_filter>
+        <default_boolean_field/>
+        <default_choice/>
+        <default_date_filter>115_Last 30 days@javascript:gs.daysAgoStart(30)@javascript:gs.daysAgoEnd(0)</default_date_filter>
+        <default_reference_field_value/>
+        <description/>
+        <exclusion_choice_list/>
+        <look_up_name/>
+        <name>Date Range</name>
+        <reference_conditions/>
+        <reference_table/>
+        <remove_all_option>false</remove_all_option>
+        <source_field/>
+        <source_table/>
+        <sys_class_name>sys_ui_hp_publisher</sys_class_name>
+        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+        <sys_created_on>2021-06-16 23:28:10</sys_created_on>
+        <sys_id>6581906ddb78705422483a83e2961998</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Date Range</sys_name>
+        <sys_package display_value="Pae Haumaru" source="x_kiwib_haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pae Haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_scope>
+        <sys_update_name>sys_ui_hp_publisher_6581906ddb78705422483a83e2961998</sys_update_name>
+        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+        <sys_updated_on>2021-06-16 23:39:55</sys_updated_on>
+        <type>3</type>
+        <ui_control_type>2</ui_control_type>
+    </sys_ui_hp_publisher>
+</record_update>

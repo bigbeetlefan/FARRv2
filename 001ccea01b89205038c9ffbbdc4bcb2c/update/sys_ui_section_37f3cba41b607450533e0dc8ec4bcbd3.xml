@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="Analysis" section_id="37f3cba41b607450533e0dc8ec4bcbd3" sys_domain="global" table="x_kiwib_haumaru_pae_huamaru_team_summary" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>products</element>
+            <position>0</position>
+            <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+            <sys_created_on>2021-06-08 21:54:34</sys_created_on>
+            <sys_id>39cf2aba1b6870d0533e0dc8ec4bcb04</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Analysis" display_value="Analysis" name="x_kiwib_haumaru_pae_huamaru_team_summary" sys_domain="global" view="Default view">37f3cba41b607450533e0dc8ec4bcbd3</sys_ui_section>
+            <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+            <sys_updated_on>2021-06-08 21:54:34</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>questions</element>
+            <position>1</position>
+            <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+            <sys_created_on>2021-06-08 21:54:35</sys_created_on>
+            <sys_id>f1cf2aba1b6870d0533e0dc8ec4bcb05</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Analysis" display_value="Analysis" name="x_kiwib_haumaru_pae_huamaru_team_summary" sys_domain="global" view="Default view">37f3cba41b607450533e0dc8ec4bcbd3</sys_ui_section>
+            <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+            <sys_updated_on>2021-06-08 21:54:35</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>2</position>
+            <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+            <sys_created_on>2021-06-08 21:54:35</sys_created_on>
+            <sys_id>79cf2aba1b6870d0533e0dc8ec4bcb05</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Analysis" display_value="Analysis" name="x_kiwib_haumaru_pae_huamaru_team_summary" sys_domain="global" view="Default view">37f3cba41b607450533e0dc8ec4bcbd3</sys_ui_section>
+            <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+            <sys_updated_on>2021-06-08 21:54:35</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>products_concerns</element>
+            <position>3</position>
+            <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+            <sys_created_on>2021-06-08 21:54:35</sys_created_on>
+            <sys_id>fdcf2aba1b6870d0533e0dc8ec4bcb05</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Analysis" display_value="Analysis" name="x_kiwib_haumaru_pae_huamaru_team_summary" sys_domain="global" view="Default view">37f3cba41b607450533e0dc8ec4bcbd3</sys_ui_section>
+            <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+            <sys_updated_on>2021-06-08 21:54:35</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>questions_concerns</element>
+            <position>4</position>
+            <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+            <sys_created_on>2021-06-08 21:54:35</sys_created_on>
+            <sys_id>75cf2aba1b6870d0533e0dc8ec4bcb06</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Analysis" display_value="Analysis" name="x_kiwib_haumaru_pae_huamaru_team_summary" sys_domain="global" view="Default view">37f3cba41b607450533e0dc8ec4bcbd3</sys_ui_section>
+            <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+            <sys_updated_on>2021-06-08 21:54:35</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>5</position>
+            <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+            <sys_created_on>2021-06-08 21:54:35</sys_created_on>
+            <sys_id>f9cf2aba1b6870d0533e0dc8ec4bcb06</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Analysis" display_value="Analysis" name="x_kiwib_haumaru_pae_huamaru_team_summary" sys_domain="global" view="Default view">37f3cba41b607450533e0dc8ec4bcbd3</sys_ui_section>
+            <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+            <sys_updated_on>2021-06-08 21:54:35</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>additional_analysis_feedback</element>
+            <position>6</position>
+            <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+            <sys_created_on>2021-06-08 21:54:35</sys_created_on>
+            <sys_id>71cf2aba1b6870d0533e0dc8ec4bcb07</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Analysis" display_value="Analysis" name="x_kiwib_haumaru_pae_huamaru_team_summary" sys_domain="global" view="Default view">37f3cba41b607450533e0dc8ec4bcbd3</sys_ui_section>
+            <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+            <sys_updated_on>2021-06-08 21:54:35</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Analysis</caption>
+            <header>false</header>
+            <name>x_kiwib_haumaru_pae_huamaru_team_summary</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+            <sys_created_on>2021-06-01 23:36:35</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>37f3cba41b607450533e0dc8ec4bcbd3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_kiwib_haumaru_pae_huamaru_team_summary</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Pae Haumaru" source="x_kiwib_haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Pae Haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_scope>
+            <sys_update_name>sys_ui_section_37f3cba41b607450533e0dc8ec4bcbd3</sys_update_name>
+            <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+            <sys_updated_on>2021-06-01 23:36:35</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

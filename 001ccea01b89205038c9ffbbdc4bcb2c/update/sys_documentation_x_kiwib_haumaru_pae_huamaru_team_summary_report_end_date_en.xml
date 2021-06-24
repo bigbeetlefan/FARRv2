@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="report_end_date" label="Report end date" language="en" table="x_kiwib_haumaru_pae_huamaru_team_summary">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>report_end_date</element>
+            <help/>
+            <hint/>
+            <label>Report end date</label>
+            <language>en</language>
+            <name>x_kiwib_haumaru_pae_huamaru_team_summary</name>
+            <plural>Report end dates</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+            <sys_created_on>2021-06-01 22:23:04</sys_created_on>
+            <sys_id>b623b2281bac3450533e0dc8ec4bcb71</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Report end date</sys_name>
+            <sys_package display_value="Pae Haumaru" source="x_kiwib_haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Pae Haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_scope>
+            <sys_update_name>sys_documentation_x_kiwib_haumaru_pae_huamaru_team_summary_report_end_date_en</sys_update_name>
+            <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+            <sys_updated_on>2021-06-01 22:23:04</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

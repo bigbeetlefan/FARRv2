@@ -41,7 +41,44 @@ KBHaumaruUtil.prototype = {
 		return res;		
 	},
 	
-	getSearchQueryString: function(userId){
+	getDirectReportIdsAndMe: function(userId){
+		var userSysId = '';
+		
+		if(userId){
+			userSysId = userId;
+		}else{
+			userSysId = gs.getUserID();
+		}
+		var allDRReportSysIds = this.getDirectReportIds(userId);
+		
+		allDRReportSysIds.push(userSysId);		
+		
+		return allDRReportSysIds.toString();	
+		
+	},
+
+	getDirectReportIds: function(userId){
+		var allDirectReports = [];
+		var userSysId = '';
+
+		if(userId){
+			userSysId = userId;
+		}else{
+			userSysId = gs.getUserID();
+		}
+		var userGr = new GlideRecord('sys_user');
+		userGr.addQuery('manager', userSysId);
+		userGr.query();
+		while(userGr.next()){
+			var userIdStr = userGr.sys_id.toString();
+			allDirectReports.push(userIdStr);					
+		}
+		
+		return allDirectReports;
+		
+	},
+
+	getTeamMembersSysIds: function(userId){
 		var allDirectReports = [];
 		if(userId){
 			allDirectReports.push(userId);
@@ -52,7 +89,7 @@ KBHaumaruUtil.prototype = {
 		var i;			
 		//var qryStr = 'assigned_to='+ gs.getUserID();
 		//var userGr = gs.getUser();
-		
+
 		for(i=0; i<this.MAX_LEVEL; i++){
 			var _directReports = [];
 			var userGr = new GlideRecord('sys_user');
@@ -67,14 +104,18 @@ KBHaumaruUtil.prototype = {
 			if(currentLevel.length < 1){
 				break;
 			}
-			
+
 		}
-		
-		return 'assigned_toIN' + allDirectReports.toString();
-// 		return "assigned_to=9278605edbd0f3005f19446b3a961981^^ORsupervisor=84cecabddb9073005f19446b3a96194a";
-// 		stateIN1,2,3,7
+		return allDirectReports.toString();
 	},
-	
+
+	getSearchQueryString: function(userId){
+
+		var directReportsIds = this.getTeamMembersSysIds(userId);		
+		return 'assigned_toIN' + directReportsIds;
+
+	},
+
 	getTaskSearchQueryString: function(userId){
 		var allDirectReports = [];
 		if(userId){
@@ -86,7 +127,7 @@ KBHaumaruUtil.prototype = {
 		var i;			
 		//var qryStr = 'assigned_to='+ gs.getUserID();
 		//var userGr = gs.getUser();
-		
+
 		for(i=0; i<this.MAX_LEVEL; i++){
 			var _directReports = [];
 			var userGr = new GlideRecord('sys_user');
@@ -101,15 +142,15 @@ KBHaumaruUtil.prototype = {
 			if(currentLevel.length < 1){
 				break;
 			}
-			
+
 		}
-		
+
 		//return 'supervisor=' + allDirectReports.toString();
 		return 'assigned_toIN' + allDirectReports.toString() + '^ORsupervisorIN' + allDirectReports.toString();
-// 		return "assigned_to=9278605edbd0f3005f19446b3a961981^ORsupervisor=84cecabddb9073005f19446b3a96194a";
-// 		stateIN1,2,3,7
+		// 		return "assigned_to=9278605edbd0f3005f19446b3a961981^ORsupervisor=84cecabddb9073005f19446b3a96194a";
+		// 		stateIN1,2,3,7
 	},
-	
+
 	hasCheckTheChecker: function(caseId){		
 		var astm = new GlideRecord('x_kiwib_haumaru_remediation_task');
 		astm.addQuery('parent', caseId);
@@ -120,14 +161,14 @@ KBHaumaruUtil.prototype = {
 		}
 		return false;
 	},
-	
+
 
 	getAllSurveyAnswers: function(instanceId){
 		var allAnswers = {
 			firstLevel : [],
 			otherLevel : []
 		};
-		
+
 		var answers = new GlideRecord('asmt_assessment_instance_question'); //asmt_assessment_instance_question
 		answers.addQuery('instance', instanceId);
 		var answers2 = answers.addQuery('value', '!=', '');
@@ -156,7 +197,7 @@ KBHaumaruUtil.prototype = {
 		}		
 		return allAnswers;
 	},
-	
+
 	startWorkflow: function(workflowName, current) {
 		var wfg = new global.Workflow();
 		wfg.startFlow(wfg.getWorkflowFromName(workflowName), current, current.operation(), {});
@@ -173,7 +214,7 @@ KBHaumaruUtil.prototype = {
 		}
 
 		return property;
-	},
+	},	
 
 	type: 'KBHaumaruUtil'
 };]]></script>
@@ -181,13 +222,13 @@ KBHaumaruUtil.prototype = {
         <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
         <sys_created_on>2020-12-09 21:40:33</sys_created_on>
         <sys_id>47a426ec1b4d205038c9ffbbdc4bcb0a</sys_id>
-        <sys_mod_count>55</sys_mod_count>
+        <sys_mod_count>65</sys_mod_count>
         <sys_name>KBHaumaruUtil</sys_name>
         <sys_package display_value="Pae Haumaru" source="x_kiwib_haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Pae Haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_scope>
         <sys_update_name>sys_script_include_47a426ec1b4d205038c9ffbbdc4bcb0a</sys_update_name>
         <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
-        <sys_updated_on>2021-05-05 20:16:00</sys_updated_on>
+        <sys_updated_on>2021-06-21 01:26:46</sys_updated_on>
     </sys_script_include>
 </record_update>

@@ -1,0 +1,1632 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update node_type="sys_portal_page" unload_date="2021-06-24 04:18:04">
+    <sys_portal_page action="INSERT_OR_UPDATE">
+        <layout/>
+        <order/>
+        <read_roles>snc_internal</read_roles>
+        <roles/>
+        <selectable>false</selectable>
+        <sys_class_name>sys_portal_page</sys_class_name>
+        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+        <sys_created_on>2021-06-16 23:06:07</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>b7dcc4addb38705422483a83e29619ee</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>PA Supervision Case Summaries</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Pae Haumaru" source="x_kiwib_haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pae Haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_scope>
+        <sys_update_name>sys_portal_page_b7dcc4addb38705422483a83e29619ee</sys_update_name>
+        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+        <sys_updated_on>2021-06-17 00:09:53</sys_updated_on>
+        <title>PA Supervision Case Summaries</title>
+        <user/>
+        <view>pa_pae_haumaru_team_sum_-_new_tab</view>
+        <related_items_node>
+            <sys_portal action="INSERT_OR_UPDATE">
+                <dropzone/>
+                <offset/>
+                <page display_value="PA Supervision Case Summaries">b7dcc4addb38705422483a83e29619ee</page>
+                <summary>FARR - Negative assurance cases by review method count</summary>
+                <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                <sys_created_on>2021-06-16 23:20:49</sys_created_on>
+                <sys_id>0f3054a9db78705422483a83e2961965</sys_id>
+                <sys_mod_count>1</sys_mod_count>
+                <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                <sys_updated_on>2021-06-16 23:20:49</sys_updated_on>
+                <related_items_node>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>renderer</name>
+                        <portal_section display_value="Created 17-06-2021 11:20:49">0f3054a9db78705422483a83e2961965</portal_section>
+                        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                        <sys_created_on>2021-06-16 23:20:49</sys_created_on>
+                        <sys_id>033054a9db78705422483a83e2961967</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                        <sys_updated_on>2021-06-16 23:20:49</sys_updated_on>
+                        <value>com.glide.ui.portal.RenderReport</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>report_type</name>
+                        <portal_section display_value="Created 17-06-2021 11:20:49">0f3054a9db78705422483a83e2961965</portal_section>
+                        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                        <sys_created_on>2021-06-16 23:20:49</sys_created_on>
+                        <sys_id>0f3054a9db78705422483a83e2961967</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                        <sys_updated_on>2021-06-16 23:20:49</sys_updated_on>
+                        <value>single_score</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>sys_id</name>
+                        <portal_section display_value="Created 17-06-2021 11:20:49">0f3054a9db78705422483a83e2961965</portal_section>
+                        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                        <sys_created_on>2021-06-16 23:20:49</sys_created_on>
+                        <sys_id>473054a9db78705422483a83e2961966</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                        <sys_updated_on>2021-06-16 23:20:49</sys_updated_on>
+                        <value>d3001c29db78705422483a83e2961928</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>can_subscribe</name>
+                        <portal_section display_value="Created 17-06-2021 11:20:49">0f3054a9db78705422483a83e2961965</portal_section>
+                        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                        <sys_created_on>2021-06-16 23:20:49</sys_created_on>
+                        <sys_id>4b3054a9db78705422483a83e2961967</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                        <sys_updated_on>2021-06-16 23:20:49</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>show_header</name>
+                        <portal_section display_value="Created 17-06-2021 11:20:49">0f3054a9db78705422483a83e2961965</portal_section>
+                        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                        <sys_created_on>2021-06-16 23:34:02</sys_created_on>
+                        <sys_id>70435061dbb8705422483a83e2961923</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                        <sys_updated_on>2021-06-16 23:34:02</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>subscriber_widget</name>
+                        <portal_section display_value="Created 17-06-2021 11:20:49">0f3054a9db78705422483a83e2961965</portal_section>
+                        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                        <sys_created_on>2021-06-16 23:34:02</sys_created_on>
+                        <sys_id>70435061dbb8705422483a83e2961924</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                        <sys_updated_on>2021-06-16 23:34:02</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title_align</name>
+                        <portal_section display_value="Created 17-06-2021 11:20:49">0f3054a9db78705422483a83e2961965</portal_section>
+                        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                        <sys_created_on>2021-06-16 23:34:02</sys_created_on>
+                        <sys_id>74435061dbb8705422483a83e2961923</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                        <sys_updated_on>2021-06-16 23:34:02</sys_updated_on>
+                        <value>left</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>filter_indicator</name>
+                        <portal_section display_value="Created 17-06-2021 11:20:49">0f3054a9db78705422483a83e2961965</portal_section>
+                        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                        <sys_created_on>2021-06-16 23:34:02</sys_created_on>
+                        <sys_id>74435061dbb8705422483a83e2961924</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                        <sys_updated_on>2021-06-16 23:34:02</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>show_border</name>
+                        <portal_section display_value="Created 17-06-2021 11:20:49">0f3054a9db78705422483a83e2961965</portal_section>
+                        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                        <sys_created_on>2021-06-16 23:34:02</sys_created_on>
+                        <sys_id>78435061dbb8705422483a83e2961923</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                        <sys_updated_on>2021-06-16 23:34:02</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>real_time</name>
+                        <portal_section display_value="Created 17-06-2021 11:20:49">0f3054a9db78705422483a83e2961965</portal_section>
+                        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                        <sys_created_on>2021-06-16 23:34:02</sys_created_on>
+                        <sys_id>78435061dbb8705422483a83e2961924</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                        <sys_updated_on>2021-06-16 23:34:02</sys_updated_on>
+                        <value>false</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>show_title</name>
+                        <portal_section display_value="Created 17-06-2021 11:20:49">0f3054a9db78705422483a83e2961965</portal_section>
+                        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                        <sys_created_on>2021-06-16 23:34:02</sys_created_on>
+                        <sys_id>7c435061dbb8705422483a83e2961922</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                        <sys_updated_on>2021-06-16 23:34:02</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>publisher_widget</name>
+                        <portal_section display_value="Created 17-06-2021 11:20:49">0f3054a9db78705422483a83e2961965</portal_section>
+                        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                        <sys_created_on>2021-06-16 23:34:02</sys_created_on>
+                        <sys_id>7c435061dbb8705422483a83e2961923</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                        <sys_updated_on>2021-06-16 23:34:02</sys_updated_on>
+                        <value>false</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>can_real_time</name>
+                        <portal_section display_value="Created 17-06-2021 11:20:49">0f3054a9db78705422483a83e2961965</portal_section>
+                        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                        <sys_created_on>2021-06-16 23:20:49</sys_created_on>
+                        <sys_id>873054a9db78705422483a83e2961967</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                        <sys_updated_on>2021-06-16 23:20:49</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>is_using_database_view</name>
+                        <portal_section display_value="Created 17-06-2021 11:20:49">0f3054a9db78705422483a83e2961965</portal_section>
+                        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                        <sys_created_on>2021-06-16 23:20:49</sys_created_on>
+                        <sys_id>8f3054a9db78705422483a83e2961968</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                        <sys_updated_on>2021-06-16 23:20:49</sys_updated_on>
+                        <value>false</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>help_text_window</name>
+                        <portal_section display_value="Created 17-06-2021 11:20:49">0f3054a9db78705422483a83e2961965</portal_section>
+                        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                        <sys_created_on>2021-06-16 23:20:49</sys_created_on>
+                        <sys_id>c33054a9db78705422483a83e2961967</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                        <sys_updated_on>2021-06-16 23:20:49</sys_updated_on>
+                        <value>report_widget_description</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title</name>
+                        <portal_section display_value="Created 17-06-2021 11:20:49">0f3054a9db78705422483a83e2961965</portal_section>
+                        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                        <sys_created_on>2021-06-16 23:20:49</sys_created_on>
+                        <sys_id>cf3054a9db78705422483a83e2961967</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                        <sys_updated_on>2021-06-16 23:20:49</sys_updated_on>
+                        <value>FARR - Negative assurance cases by review method count</value>
+                    </sys_portal_preferences>
+                </related_items_node>
+            </sys_portal>
+            <sys_portal action="INSERT_OR_UPDATE">
+                <dropzone/>
+                <offset/>
+                <page display_value="PA Supervision Case Summaries">b7dcc4addb38705422483a83e29619ee</page>
+                <summary>FARR - Open Supervision Cases by Product Count</summary>
+                <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                <sys_created_on>2021-06-17 00:00:31</sys_created_on>
+                <sys_id>6c59982ddbb8705422483a83e29619fc</sys_id>
+                <sys_mod_count>1</sys_mod_count>
+                <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                <sys_updated_on>2021-06-17 00:00:31</sys_updated_on>
+                <related_items_node>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>help_text_window</name>
+                        <portal_section display_value="Created 17-06-2021 12:00:31">6c59982ddbb8705422483a83e29619fc</portal_section>
+                        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                        <sys_created_on>2021-06-17 00:00:31</sys_created_on>
+                        <sys_id>2459982ddbb8705422483a83e29619fe</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                        <sys_updated_on>2021-06-17 00:00:31</sys_updated_on>
+                        <value>report_widget_description</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>renderer</name>
+                        <portal_section display_value="Created 17-06-2021 12:00:31">6c59982ddbb8705422483a83e29619fc</portal_section>
+                        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                        <sys_created_on>2021-06-17 00:00:31</sys_created_on>
+                        <sys_id>6059982ddbb8705422483a83e29619fe</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                        <sys_updated_on>2021-06-17 00:00:31</sys_updated_on>
+                        <value>com.glide.ui.portal.RenderReport</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>subscriber_widget</name>
+                        <portal_section display_value="Created 17-06-2021 12:00:31">6c59982ddbb8705422483a83e29619fc</portal_section>
+                        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                        <sys_created_on>2021-06-17 00:07:21</sys_created_on>
+                        <sys_id>64ea5821dbf8705422483a83e2961934</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                        <sys_updated_on>2021-06-17 00:07:21</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>filter_indicator</name>
+                        <portal_section display_value="Created 17-06-2021 12:00:31">6c59982ddbb8705422483a83e29619fc</portal_section>
+                        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                        <sys_created_on>2021-06-17 00:07:21</sys_created_on>
+                        <sys_id>68ea5821dbf8705422483a83e2961934</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                        <sys_updated_on>2021-06-17 00:07:21</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title</name>
+                        <portal_section display_value="Created 17-06-2021 12:00:31">6c59982ddbb8705422483a83e29619fc</portal_section>
+                        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                        <sys_created_on>2021-06-17 00:00:31</sys_created_on>
+                        <sys_id>6c59982ddbb8705422483a83e29619fe</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                        <sys_updated_on>2021-06-17 00:00:31</sys_updated_on>
+                        <value>FARR - Open Supervision Cases by Product Count</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>real_time</name>
+                        <portal_section display_value="Created 17-06-2021 12:00:31">6c59982ddbb8705422483a83e29619fc</portal_section>
+                        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                        <sys_created_on>2021-06-17 00:07:21</sys_created_on>
+                        <sys_id>6cea5821dbf8705422483a83e2961934</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                        <sys_updated_on>2021-06-17 00:07:21</sys_updated_on>
+                        <value>false</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title_align</name>
+                        <portal_section display_value="Created 17-06-2021 12:00:31">6c59982ddbb8705422483a83e29619fc</portal_section>
+                        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                        <sys_created_on>2021-06-17 00:07:21</sys_created_on>
+                        <sys_id>a0ea5421dbf8705422483a83e2961944</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                        <sys_updated_on>2021-06-17 00:07:21</sys_updated_on>
+                        <value>left</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>sys_id</name>
+                        <portal_section display_value="Created 17-06-2021 12:00:31">6c59982ddbb8705422483a83e29619fc</portal_section>
+                        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                        <sys_created_on>2021-06-17 00:00:31</sys_created_on>
+                        <sys_id>a459982ddbb8705422483a83e29619fd</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                        <sys_updated_on>2021-06-17 00:00:31</sys_updated_on>
+                        <value>7409582ddbb8705422483a83e2961906</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>show_border</name>
+                        <portal_section display_value="Created 17-06-2021 12:00:31">6c59982ddbb8705422483a83e29619fc</portal_section>
+                        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                        <sys_created_on>2021-06-17 00:07:21</sys_created_on>
+                        <sys_id>a4ea5421dbf8705422483a83e2961944</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                        <sys_updated_on>2021-06-17 00:07:21</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>report_type</name>
+                        <portal_section display_value="Created 17-06-2021 12:00:31">6c59982ddbb8705422483a83e29619fc</portal_section>
+                        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                        <sys_created_on>2021-06-17 00:00:31</sys_created_on>
+                        <sys_id>a859982ddbb8705422483a83e29619fe</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                        <sys_updated_on>2021-06-17 00:00:31</sys_updated_on>
+                        <value>pie</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>show_title</name>
+                        <portal_section display_value="Created 17-06-2021 12:00:31">6c59982ddbb8705422483a83e29619fc</portal_section>
+                        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                        <sys_created_on>2021-06-17 00:07:21</sys_created_on>
+                        <sys_id>a8ea5421dbf8705422483a83e2961943</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                        <sys_updated_on>2021-06-17 00:07:21</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>publisher_widget</name>
+                        <portal_section display_value="Created 17-06-2021 12:00:31">6c59982ddbb8705422483a83e29619fc</portal_section>
+                        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                        <sys_created_on>2021-06-17 00:07:21</sys_created_on>
+                        <sys_id>a8ea5421dbf8705422483a83e2961944</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                        <sys_updated_on>2021-06-17 00:07:21</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>show_header</name>
+                        <portal_section display_value="Created 17-06-2021 12:00:31">6c59982ddbb8705422483a83e29619fc</portal_section>
+                        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                        <sys_created_on>2021-06-17 00:07:21</sys_created_on>
+                        <sys_id>acea5421dbf8705422483a83e2961943</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                        <sys_updated_on>2021-06-17 00:07:21</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>can_subscribe</name>
+                        <portal_section display_value="Created 17-06-2021 12:00:31">6c59982ddbb8705422483a83e29619fc</portal_section>
+                        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                        <sys_created_on>2021-06-17 00:00:31</sys_created_on>
+                        <sys_id>e459982ddbb8705422483a83e29619fe</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                        <sys_updated_on>2021-06-17 00:00:31</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                </related_items_node>
+            </sys_portal>
+            <sys_portal action="INSERT_OR_UPDATE">
+                <dropzone/>
+                <offset/>
+                <page display_value="PA Supervision Case Summaries">b7dcc4addb38705422483a83e29619ee</page>
+                <summary>Date Range</summary>
+                <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                <sys_created_on>2021-06-16 23:26:24</sys_created_on>
+                <sys_id>70815c2ddb78705422483a83e296197e</sys_id>
+                <sys_mod_count>3</sys_mod_count>
+                <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                <sys_updated_on>2021-06-16 23:38:48</sys_updated_on>
+                <related_items_node>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>publisher_widget</name>
+                        <portal_section display_value="Created 17-06-2021 11:26:24">70815c2ddb78705422483a83e296197e</portal_section>
+                        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                        <sys_created_on>2021-06-16 23:26:24</sys_created_on>
+                        <sys_id>3c815c2ddb78705422483a83e296197f</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                        <sys_updated_on>2021-06-16 23:26:24</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>can_publish</name>
+                        <portal_section display_value="Created 17-06-2021 11:26:24">70815c2ddb78705422483a83e296197e</portal_section>
+                        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                        <sys_created_on>2021-06-16 23:26:24</sys_created_on>
+                        <sys_id>78815c2ddb78705422483a83e296197f</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                        <sys_updated_on>2021-06-16 23:26:24</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>renderer</name>
+                        <portal_section display_value="Created 17-06-2021 11:26:24">70815c2ddb78705422483a83e296197e</portal_section>
+                        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                        <sys_created_on>2021-06-16 23:26:24</sys_created_on>
+                        <sys_id>b4815c2ddb78705422483a83e296197f</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                        <sys_updated_on>2021-06-16 23:26:24</sys_updated_on>
+                        <value>com.glideapp.home.RenderHomepagePublishers</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>sys_id</name>
+                        <portal_section display_value="Created 17-06-2021 11:26:24">70815c2ddb78705422483a83e296197e</portal_section>
+                        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                        <sys_created_on>2021-06-16 23:26:24</sys_created_on>
+                        <sys_id>b8815c2ddb78705422483a83e296197e</sys_id>
+                        <sys_mod_count>1</sys_mod_count>
+                        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                        <sys_updated_on>2021-06-16 23:28:10</sys_updated_on>
+                        <value>6581906ddb78705422483a83e2961998</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>type</name>
+                        <portal_section display_value="Created 17-06-2021 11:26:24">70815c2ddb78705422483a83e296197e</portal_section>
+                        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                        <sys_created_on>2021-06-16 23:26:24</sys_created_on>
+                        <sys_id>bc815c2ddb78705422483a83e2961980</sys_id>
+                        <sys_mod_count>1</sys_mod_count>
+                        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                        <sys_updated_on>2021-06-16 23:28:10</sys_updated_on>
+                        <value>sys_ui_hp_publisher</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title</name>
+                        <portal_section display_value="Created 17-06-2021 11:26:24">70815c2ddb78705422483a83e296197e</portal_section>
+                        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                        <sys_created_on>2021-06-16 23:26:24</sys_created_on>
+                        <sys_id>fc815c2ddb78705422483a83e296197f</sys_id>
+                        <sys_mod_count>2</sys_mod_count>
+                        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                        <sys_updated_on>2021-06-16 23:38:48</sys_updated_on>
+                        <value>Date Range</value>
+                    </sys_portal_preferences>
+                </related_items_node>
+            </sys_portal>
+            <sys_portal action="INSERT_OR_UPDATE">
+                <dropzone/>
+                <offset/>
+                <page display_value="PA Supervision Case Summaries">b7dcc4addb38705422483a83e29619ee</page>
+                <summary>FARR - Standard cases by review method</summary>
+                <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                <sys_created_on>2021-06-16 23:07:00</sys_created_on>
+                <sys_id>7c1d04eddb38705422483a83e29619a4</sys_id>
+                <sys_mod_count>2</sys_mod_count>
+                <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                <sys_updated_on>2021-06-16 23:13:22</sys_updated_on>
+                <related_items_node>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title</name>
+                        <portal_section display_value="Created 17-06-2021 11:07:00">7c1d04eddb38705422483a83e29619a4</portal_section>
+                        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                        <sys_created_on>2021-06-16 23:07:01</sys_created_on>
+                        <sys_id>3c1d04eddb38705422483a83e29619a6</sys_id>
+                        <sys_mod_count>1</sys_mod_count>
+                        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                        <sys_updated_on>2021-06-16 23:13:22</sys_updated_on>
+                        <value>FARR - Standard cases by review method</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>show_border</name>
+                        <portal_section display_value="Created 17-06-2021 11:07:00">7c1d04eddb38705422483a83e29619a4</portal_section>
+                        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                        <sys_created_on>2021-06-16 23:34:11</sys_created_on>
+                        <sys_id>7243d021dbb8705422483a83e29619de</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                        <sys_updated_on>2021-06-16 23:34:11</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>show_title</name>
+                        <portal_section display_value="Created 17-06-2021 11:07:00">7c1d04eddb38705422483a83e29619a4</portal_section>
+                        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                        <sys_created_on>2021-06-16 23:34:11</sys_created_on>
+                        <sys_id>7643d021dbb8705422483a83e29619dd</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                        <sys_updated_on>2021-06-16 23:34:11</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>publisher_widget</name>
+                        <portal_section display_value="Created 17-06-2021 11:07:00">7c1d04eddb38705422483a83e29619a4</portal_section>
+                        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                        <sys_created_on>2021-06-16 23:34:11</sys_created_on>
+                        <sys_id>7643d021dbb8705422483a83e29619de</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                        <sys_updated_on>2021-06-16 23:34:11</sys_updated_on>
+                        <value>false</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>can_subscribe</name>
+                        <portal_section display_value="Created 17-06-2021 11:07:00">7c1d04eddb38705422483a83e29619a4</portal_section>
+                        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                        <sys_created_on>2021-06-16 23:07:01</sys_created_on>
+                        <sys_id>781d04eddb38705422483a83e29619a6</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                        <sys_updated_on>2021-06-16 23:07:01</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>show_header</name>
+                        <portal_section display_value="Created 17-06-2021 11:07:00">7c1d04eddb38705422483a83e29619a4</portal_section>
+                        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                        <sys_created_on>2021-06-16 23:34:11</sys_created_on>
+                        <sys_id>7a43d021dbb8705422483a83e29619dd</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                        <sys_updated_on>2021-06-16 23:34:11</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>subscriber_widget</name>
+                        <portal_section display_value="Created 17-06-2021 11:07:00">7c1d04eddb38705422483a83e29619a4</portal_section>
+                        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                        <sys_created_on>2021-06-16 23:34:11</sys_created_on>
+                        <sys_id>7a43d021dbb8705422483a83e29619de</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                        <sys_updated_on>2021-06-16 23:34:11</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title_align</name>
+                        <portal_section display_value="Created 17-06-2021 11:07:00">7c1d04eddb38705422483a83e29619a4</portal_section>
+                        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                        <sys_created_on>2021-06-16 23:34:11</sys_created_on>
+                        <sys_id>7e43d021dbb8705422483a83e29619dd</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                        <sys_updated_on>2021-06-16 23:34:11</sys_updated_on>
+                        <value>left</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>filter_indicator</name>
+                        <portal_section display_value="Created 17-06-2021 11:07:00">7c1d04eddb38705422483a83e29619a4</portal_section>
+                        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                        <sys_created_on>2021-06-16 23:34:11</sys_created_on>
+                        <sys_id>7e43d021dbb8705422483a83e29619de</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                        <sys_updated_on>2021-06-16 23:34:11</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>help_text_window</name>
+                        <portal_section display_value="Created 17-06-2021 11:07:00">7c1d04eddb38705422483a83e29619a4</portal_section>
+                        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                        <sys_created_on>2021-06-16 23:07:00</sys_created_on>
+                        <sys_id>b41d04eddb38705422483a83e29619a6</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                        <sys_updated_on>2021-06-16 23:07:00</sys_updated_on>
+                        <value>report_widget_description</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>renderer</name>
+                        <portal_section display_value="Created 17-06-2021 11:07:00">7c1d04eddb38705422483a83e29619a4</portal_section>
+                        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                        <sys_created_on>2021-06-16 23:07:00</sys_created_on>
+                        <sys_id>f01d04eddb38705422483a83e29619a6</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                        <sys_updated_on>2021-06-16 23:07:00</sys_updated_on>
+                        <value>com.glide.ui.portal.RenderReport</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>real_time</name>
+                        <portal_section display_value="Created 17-06-2021 11:07:00">7c1d04eddb38705422483a83e29619a4</portal_section>
+                        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                        <sys_created_on>2021-06-16 23:34:11</sys_created_on>
+                        <sys_id>f2435061dbb8705422483a83e29619c4</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                        <sys_updated_on>2021-06-16 23:34:11</sys_updated_on>
+                        <value>false</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>sys_id</name>
+                        <portal_section display_value="Created 17-06-2021 11:07:00">7c1d04eddb38705422483a83e29619a4</portal_section>
+                        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                        <sys_created_on>2021-06-16 23:07:00</sys_created_on>
+                        <sys_id>f41d04eddb38705422483a83e29619a5</sys_id>
+                        <sys_mod_count>1</sys_mod_count>
+                        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                        <sys_updated_on>2021-06-16 23:13:22</sys_updated_on>
+                        <value>f58e40a1db78705422483a83e29619ce</value>
+                    </sys_portal_preferences>
+                </related_items_node>
+            </sys_portal>
+            <sys_portal action="INSERT_OR_UPDATE">
+                <dropzone/>
+                <offset/>
+                <page display_value="PA Supervision Case Summaries">b7dcc4addb38705422483a83e29619ee</page>
+                <summary>FARR - Completed Supervision Cases by Product</summary>
+                <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                <sys_created_on>2021-06-17 00:05:03</sys_created_on>
+                <sys_id>8b5a90eddbb8705422483a83e2961973</sys_id>
+                <sys_mod_count>1</sys_mod_count>
+                <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                <sys_updated_on>2021-06-17 00:05:03</sys_updated_on>
+                <related_items_node>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>can_subscribe</name>
+                        <portal_section display_value="Created 17-06-2021 12:05:03">8b5a90eddbb8705422483a83e2961973</portal_section>
+                        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                        <sys_created_on>2021-06-17 00:05:03</sys_created_on>
+                        <sys_id>075a90eddbb8705422483a83e2961975</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                        <sys_updated_on>2021-06-17 00:05:03</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>show_title</name>
+                        <portal_section display_value="Created 17-06-2021 12:05:03">8b5a90eddbb8705422483a83e2961973</portal_section>
+                        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                        <sys_created_on>2021-06-17 00:07:15</sys_created_on>
+                        <sys_id>13da5ceddbb8705422483a83e29619ce</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                        <sys_updated_on>2021-06-17 00:07:15</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>help_text_window</name>
+                        <portal_section display_value="Created 17-06-2021 12:05:03">8b5a90eddbb8705422483a83e2961973</portal_section>
+                        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                        <sys_created_on>2021-06-17 00:05:03</sys_created_on>
+                        <sys_id>435a90eddbb8705422483a83e2961975</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                        <sys_updated_on>2021-06-17 00:05:03</sys_updated_on>
+                        <value>report_widget_description</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>show_border</name>
+                        <portal_section display_value="Created 17-06-2021 12:05:03">8b5a90eddbb8705422483a83e2961973</portal_section>
+                        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                        <sys_created_on>2021-06-17 00:07:15</sys_created_on>
+                        <sys_id>53da5ceddbb8705422483a83e29619cf</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                        <sys_updated_on>2021-06-17 00:07:15</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>real_time</name>
+                        <portal_section display_value="Created 17-06-2021 12:05:03">8b5a90eddbb8705422483a83e2961973</portal_section>
+                        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                        <sys_created_on>2021-06-17 00:07:15</sys_created_on>
+                        <sys_id>53da5ceddbb8705422483a83e29619d0</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                        <sys_updated_on>2021-06-17 00:07:15</sys_updated_on>
+                        <value>false</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>publisher_widget</name>
+                        <portal_section display_value="Created 17-06-2021 12:05:03">8b5a90eddbb8705422483a83e2961973</portal_section>
+                        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                        <sys_created_on>2021-06-17 00:07:15</sys_created_on>
+                        <sys_id>57da5ceddbb8705422483a83e29619cf</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                        <sys_updated_on>2021-06-17 00:07:15</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>show_header</name>
+                        <portal_section display_value="Created 17-06-2021 12:05:03">8b5a90eddbb8705422483a83e2961973</portal_section>
+                        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                        <sys_created_on>2021-06-17 00:07:15</sys_created_on>
+                        <sys_id>5bda5ceddbb8705422483a83e29619ce</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                        <sys_updated_on>2021-06-17 00:07:15</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>subscriber_widget</name>
+                        <portal_section display_value="Created 17-06-2021 12:05:03">8b5a90eddbb8705422483a83e2961973</portal_section>
+                        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                        <sys_created_on>2021-06-17 00:07:15</sys_created_on>
+                        <sys_id>5bda5ceddbb8705422483a83e29619cf</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                        <sys_updated_on>2021-06-17 00:07:15</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title_align</name>
+                        <portal_section display_value="Created 17-06-2021 12:05:03">8b5a90eddbb8705422483a83e2961973</portal_section>
+                        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                        <sys_created_on>2021-06-17 00:07:15</sys_created_on>
+                        <sys_id>5fda5ceddbb8705422483a83e29619ce</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                        <sys_updated_on>2021-06-17 00:07:15</sys_updated_on>
+                        <value>left</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>filter_indicator</name>
+                        <portal_section display_value="Created 17-06-2021 12:05:03">8b5a90eddbb8705422483a83e2961973</portal_section>
+                        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                        <sys_created_on>2021-06-17 00:07:15</sys_created_on>
+                        <sys_id>5fda5ceddbb8705422483a83e29619cf</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                        <sys_updated_on>2021-06-17 00:07:15</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title</name>
+                        <portal_section display_value="Created 17-06-2021 12:05:03">8b5a90eddbb8705422483a83e2961973</portal_section>
+                        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                        <sys_created_on>2021-06-17 00:05:03</sys_created_on>
+                        <sys_id>8b5a90eddbb8705422483a83e2961975</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                        <sys_updated_on>2021-06-17 00:05:03</sys_updated_on>
+                        <value>FARR - Completed Supervision Cases by Product</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>renderer</name>
+                        <portal_section display_value="Created 17-06-2021 12:05:03">8b5a90eddbb8705422483a83e2961973</portal_section>
+                        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                        <sys_created_on>2021-06-17 00:05:03</sys_created_on>
+                        <sys_id>8f5a90eddbb8705422483a83e2961974</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                        <sys_updated_on>2021-06-17 00:05:03</sys_updated_on>
+                        <value>com.glide.ui.portal.RenderReport</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>sys_id</name>
+                        <portal_section display_value="Created 17-06-2021 12:05:03">8b5a90eddbb8705422483a83e2961973</portal_section>
+                        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                        <sys_created_on>2021-06-17 00:05:03</sys_created_on>
+                        <sys_id>c35a90eddbb8705422483a83e2961974</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                        <sys_updated_on>2021-06-17 00:05:03</sys_updated_on>
+                        <value>043a58addbb8705422483a83e29619b8</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>report_type</name>
+                        <portal_section display_value="Created 17-06-2021 12:05:03">8b5a90eddbb8705422483a83e2961973</portal_section>
+                        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                        <sys_created_on>2021-06-17 00:05:03</sys_created_on>
+                        <sys_id>c75a90eddbb8705422483a83e2961975</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                        <sys_updated_on>2021-06-17 00:05:03</sys_updated_on>
+                        <value>pie</value>
+                    </sys_portal_preferences>
+                </related_items_node>
+            </sys_portal>
+            <sys_portal action="INSERT_OR_UPDATE">
+                <dropzone/>
+                <offset/>
+                <page display_value="PA Supervision Case Summaries">b7dcc4addb38705422483a83e29619ee</page>
+                <summary>FARR - Open Supervision Cases</summary>
+                <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                <sys_created_on>2021-06-16 23:43:18</sys_created_on>
+                <sys_id>90659c25dbb8705422483a83e2961930</sys_id>
+                <sys_mod_count>1</sys_mod_count>
+                <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                <sys_updated_on>2021-06-16 23:43:18</sys_updated_on>
+                <related_items_node>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>can_subscribe</name>
+                        <portal_section display_value="Created 17-06-2021 11:43:18">90659c25dbb8705422483a83e2961930</portal_section>
+                        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                        <sys_created_on>2021-06-16 23:43:18</sys_created_on>
+                        <sys_id>10659c25dbb8705422483a83e2961932</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                        <sys_updated_on>2021-06-16 23:43:18</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>sys_id</name>
+                        <portal_section display_value="Created 17-06-2021 11:43:18">90659c25dbb8705422483a83e2961930</portal_section>
+                        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                        <sys_created_on>2021-06-16 23:43:18</sys_created_on>
+                        <sys_id>1c659c25dbb8705422483a83e2961930</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                        <sys_updated_on>2021-06-16 23:43:18</sys_updated_on>
+                        <value>23359825dbb8705422483a83e29619f1</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title_align</name>
+                        <portal_section display_value="Created 17-06-2021 11:43:18">90659c25dbb8705422483a83e2961930</portal_section>
+                        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                        <sys_created_on>2021-06-17 00:07:36</sys_created_on>
+                        <sys_id>50fa5ceddbb8705422483a83e29619d2</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                        <sys_updated_on>2021-06-17 00:07:36</sys_updated_on>
+                        <value>left</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>filter_indicator</name>
+                        <portal_section display_value="Created 17-06-2021 11:43:18">90659c25dbb8705422483a83e2961930</portal_section>
+                        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                        <sys_created_on>2021-06-17 00:07:36</sys_created_on>
+                        <sys_id>50fa5ceddbb8705422483a83e29619d3</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                        <sys_updated_on>2021-06-17 00:07:36</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>is_using_database_view</name>
+                        <portal_section display_value="Created 17-06-2021 11:43:18">90659c25dbb8705422483a83e2961930</portal_section>
+                        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                        <sys_created_on>2021-06-16 23:43:18</sys_created_on>
+                        <sys_id>54659c25dbb8705422483a83e2961933</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                        <sys_updated_on>2021-06-16 23:43:18</sys_updated_on>
+                        <value>false</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>show_border</name>
+                        <portal_section display_value="Created 17-06-2021 11:43:18">90659c25dbb8705422483a83e2961930</portal_section>
+                        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                        <sys_created_on>2021-06-17 00:07:36</sys_created_on>
+                        <sys_id>54fa5ceddbb8705422483a83e29619d2</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                        <sys_updated_on>2021-06-17 00:07:36</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>real_time</name>
+                        <portal_section display_value="Created 17-06-2021 11:43:18">90659c25dbb8705422483a83e2961930</portal_section>
+                        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                        <sys_created_on>2021-06-17 00:07:36</sys_created_on>
+                        <sys_id>54fa5ceddbb8705422483a83e29619d3</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                        <sys_updated_on>2021-06-17 00:07:36</sys_updated_on>
+                        <value>false</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>show_title</name>
+                        <portal_section display_value="Created 17-06-2021 11:43:18">90659c25dbb8705422483a83e2961930</portal_section>
+                        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                        <sys_created_on>2021-06-17 00:07:36</sys_created_on>
+                        <sys_id>58fa5ceddbb8705422483a83e29619d1</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                        <sys_updated_on>2021-06-17 00:07:36</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>publisher_widget</name>
+                        <portal_section display_value="Created 17-06-2021 11:43:18">90659c25dbb8705422483a83e2961930</portal_section>
+                        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                        <sys_created_on>2021-06-17 00:07:36</sys_created_on>
+                        <sys_id>58fa5ceddbb8705422483a83e29619d2</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                        <sys_updated_on>2021-06-17 00:07:36</sys_updated_on>
+                        <value>false</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>can_real_time</name>
+                        <portal_section display_value="Created 17-06-2021 11:43:18">90659c25dbb8705422483a83e2961930</portal_section>
+                        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                        <sys_created_on>2021-06-16 23:43:18</sys_created_on>
+                        <sys_id>5c659c25dbb8705422483a83e2961931</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                        <sys_updated_on>2021-06-16 23:43:18</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>show_header</name>
+                        <portal_section display_value="Created 17-06-2021 11:43:18">90659c25dbb8705422483a83e2961930</portal_section>
+                        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                        <sys_created_on>2021-06-17 00:07:36</sys_created_on>
+                        <sys_id>5cfa5ceddbb8705422483a83e29619d1</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                        <sys_updated_on>2021-06-17 00:07:36</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>subscriber_widget</name>
+                        <portal_section display_value="Created 17-06-2021 11:43:18">90659c25dbb8705422483a83e2961930</portal_section>
+                        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                        <sys_created_on>2021-06-17 00:07:36</sys_created_on>
+                        <sys_id>5cfa5ceddbb8705422483a83e29619d2</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                        <sys_updated_on>2021-06-17 00:07:36</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title</name>
+                        <portal_section display_value="Created 17-06-2021 11:43:18">90659c25dbb8705422483a83e2961930</portal_section>
+                        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                        <sys_created_on>2021-06-16 23:43:18</sys_created_on>
+                        <sys_id>94659c25dbb8705422483a83e2961932</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                        <sys_updated_on>2021-06-16 23:43:18</sys_updated_on>
+                        <value>FARR - Open Supervision Cases</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>help_text_window</name>
+                        <portal_section display_value="Created 17-06-2021 11:43:18">90659c25dbb8705422483a83e2961930</portal_section>
+                        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                        <sys_created_on>2021-06-16 23:43:18</sys_created_on>
+                        <sys_id>98659c25dbb8705422483a83e2961931</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                        <sys_updated_on>2021-06-16 23:43:18</sys_updated_on>
+                        <value>report_widget_description</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>report_type</name>
+                        <portal_section display_value="Created 17-06-2021 11:43:18">90659c25dbb8705422483a83e2961930</portal_section>
+                        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                        <sys_created_on>2021-06-16 23:43:18</sys_created_on>
+                        <sys_id>d0659c25dbb8705422483a83e2961932</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                        <sys_updated_on>2021-06-16 23:43:18</sys_updated_on>
+                        <value>single_score</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>renderer</name>
+                        <portal_section display_value="Created 17-06-2021 11:43:18">90659c25dbb8705422483a83e2961930</portal_section>
+                        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                        <sys_created_on>2021-06-16 23:43:18</sys_created_on>
+                        <sys_id>d4659c25dbb8705422483a83e2961931</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                        <sys_updated_on>2021-06-16 23:43:18</sys_updated_on>
+                        <value>com.glide.ui.portal.RenderReport</value>
+                    </sys_portal_preferences>
+                </related_items_node>
+            </sys_portal>
+            <sys_portal action="INSERT_OR_UPDATE">
+                <dropzone/>
+                <offset/>
+                <page display_value="PA Supervision Case Summaries">b7dcc4addb38705422483a83e29619ee</page>
+                <summary>FARR - Standard cased by review method count</summary>
+                <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                <sys_created_on>2021-06-16 23:13:41</sys_created_on>
+                <sys_id>aa9e8ca1db78705422483a83e2961948</sys_id>
+                <sys_mod_count>2</sys_mod_count>
+                <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                <sys_updated_on>2021-06-16 23:15:02</sys_updated_on>
+                <related_items_node>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>show_title</name>
+                        <portal_section display_value="Created 17-06-2021 11:13:41">aa9e8ca1db78705422483a83e2961948</portal_section>
+                        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                        <sys_created_on>2021-06-16 23:33:54</sys_created_on>
+                        <sys_id>2633d021dbb8705422483a83e2961984</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                        <sys_updated_on>2021-06-16 23:33:54</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title</name>
+                        <portal_section display_value="Created 17-06-2021 11:13:41">aa9e8ca1db78705422483a83e2961948</portal_section>
+                        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                        <sys_created_on>2021-06-16 23:13:41</sys_created_on>
+                        <sys_id>2a9e8ca1db78705422483a83e296194a</sys_id>
+                        <sys_mod_count>1</sys_mod_count>
+                        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                        <sys_updated_on>2021-06-16 23:15:02</sys_updated_on>
+                        <value>FARR - Standard cased by review method count</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title_align</name>
+                        <portal_section display_value="Created 17-06-2021 11:13:41">aa9e8ca1db78705422483a83e2961948</portal_section>
+                        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                        <sys_created_on>2021-06-16 23:33:54</sys_created_on>
+                        <sys_id>6233d021dbb8705422483a83e2961985</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                        <sys_updated_on>2021-06-16 23:33:54</sys_updated_on>
+                        <value>left</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>filter_indicator</name>
+                        <portal_section display_value="Created 17-06-2021 11:13:41">aa9e8ca1db78705422483a83e2961948</portal_section>
+                        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                        <sys_created_on>2021-06-16 23:33:54</sys_created_on>
+                        <sys_id>6233d021dbb8705422483a83e2961986</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                        <sys_updated_on>2021-06-16 23:33:54</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>show_border</name>
+                        <portal_section display_value="Created 17-06-2021 11:13:41">aa9e8ca1db78705422483a83e2961948</portal_section>
+                        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                        <sys_created_on>2021-06-16 23:33:54</sys_created_on>
+                        <sys_id>6633d021dbb8705422483a83e2961985</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                        <sys_updated_on>2021-06-16 23:33:54</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>real_time</name>
+                        <portal_section display_value="Created 17-06-2021 11:13:41">aa9e8ca1db78705422483a83e2961948</portal_section>
+                        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                        <sys_created_on>2021-06-16 23:33:54</sys_created_on>
+                        <sys_id>6633d021dbb8705422483a83e2961986</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                        <sys_updated_on>2021-06-16 23:33:54</sys_updated_on>
+                        <value>false</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>can_subscribe</name>
+                        <portal_section display_value="Created 17-06-2021 11:13:41">aa9e8ca1db78705422483a83e2961948</portal_section>
+                        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                        <sys_created_on>2021-06-16 23:13:41</sys_created_on>
+                        <sys_id>669e8ca1db78705422483a83e296194a</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                        <sys_updated_on>2021-06-16 23:13:41</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>publisher_widget</name>
+                        <portal_section display_value="Created 17-06-2021 11:13:41">aa9e8ca1db78705422483a83e2961948</portal_section>
+                        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                        <sys_created_on>2021-06-16 23:33:54</sys_created_on>
+                        <sys_id>6a33d021dbb8705422483a83e2961985</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                        <sys_updated_on>2021-06-16 23:33:54</sys_updated_on>
+                        <value>false</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>show_header</name>
+                        <portal_section display_value="Created 17-06-2021 11:13:41">aa9e8ca1db78705422483a83e2961948</portal_section>
+                        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                        <sys_created_on>2021-06-16 23:33:54</sys_created_on>
+                        <sys_id>6e33d021dbb8705422483a83e2961984</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                        <sys_updated_on>2021-06-16 23:33:54</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>subscriber_widget</name>
+                        <portal_section display_value="Created 17-06-2021 11:13:41">aa9e8ca1db78705422483a83e2961948</portal_section>
+                        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                        <sys_created_on>2021-06-16 23:33:54</sys_created_on>
+                        <sys_id>6e33d021dbb8705422483a83e2961985</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                        <sys_updated_on>2021-06-16 23:33:54</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>help_text_window</name>
+                        <portal_section display_value="Created 17-06-2021 11:13:41">aa9e8ca1db78705422483a83e2961948</portal_section>
+                        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                        <sys_created_on>2021-06-16 23:13:41</sys_created_on>
+                        <sys_id>a29e8ca1db78705422483a83e296194a</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                        <sys_updated_on>2021-06-16 23:13:41</sys_updated_on>
+                        <value>report_widget_description</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>sys_id</name>
+                        <portal_section display_value="Created 17-06-2021 11:13:41">aa9e8ca1db78705422483a83e2961948</portal_section>
+                        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                        <sys_created_on>2021-06-16 23:13:41</sys_created_on>
+                        <sys_id>e29e8ca1db78705422483a83e2961949</sys_id>
+                        <sys_mod_count>1</sys_mod_count>
+                        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                        <sys_updated_on>2021-06-16 23:15:02</sys_updated_on>
+                        <value>d6ee0065db78705422483a83e2961992</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>renderer</name>
+                        <portal_section display_value="Created 17-06-2021 11:13:41">aa9e8ca1db78705422483a83e2961948</portal_section>
+                        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                        <sys_created_on>2021-06-16 23:13:41</sys_created_on>
+                        <sys_id>ee9e8ca1db78705422483a83e2961949</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                        <sys_updated_on>2021-06-16 23:13:41</sys_updated_on>
+                        <value>com.glide.ui.portal.RenderReport</value>
+                    </sys_portal_preferences>
+                </related_items_node>
+            </sys_portal>
+            <sys_portal action="INSERT_OR_UPDATE">
+                <dropzone/>
+                <offset/>
+                <page display_value="PA Supervision Case Summaries">b7dcc4addb38705422483a83e29619ee</page>
+                <summary>FARR - Negative cases by review method</summary>
+                <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                <sys_created_on>2021-06-16 23:21:41</sys_created_on>
+                <sys_id>b36050e9db78705422483a83e29619b2</sys_id>
+                <sys_mod_count>1</sys_mod_count>
+                <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                <sys_updated_on>2021-06-16 23:21:41</sys_updated_on>
+                <related_items_node>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>report_type</name>
+                        <portal_section display_value="Created 17-06-2021 11:21:41">b36050e9db78705422483a83e29619b2</portal_section>
+                        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                        <sys_created_on>2021-06-16 23:21:41</sys_created_on>
+                        <sys_id>376050e9db78705422483a83e29619b3</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                        <sys_updated_on>2021-06-16 23:21:41</sys_updated_on>
+                        <value>bar</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>can_subscribe</name>
+                        <portal_section display_value="Created 17-06-2021 11:21:41">b36050e9db78705422483a83e29619b2</portal_section>
+                        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                        <sys_created_on>2021-06-16 23:21:41</sys_created_on>
+                        <sys_id>736050e9db78705422483a83e29619b3</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                        <sys_updated_on>2021-06-16 23:21:41</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>show_title</name>
+                        <portal_section display_value="Created 17-06-2021 11:21:41">b36050e9db78705422483a83e29619b2</portal_section>
+                        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                        <sys_created_on>2021-06-16 23:34:14</sys_created_on>
+                        <sys_id>a3439421dbb8705422483a83e29619ba</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                        <sys_updated_on>2021-06-16 23:34:14</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>publisher_widget</name>
+                        <portal_section display_value="Created 17-06-2021 11:21:41">b36050e9db78705422483a83e29619b2</portal_section>
+                        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                        <sys_created_on>2021-06-16 23:34:14</sys_created_on>
+                        <sys_id>a3439421dbb8705422483a83e29619bb</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                        <sys_updated_on>2021-06-16 23:34:14</sys_updated_on>
+                        <value>false</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>show_header</name>
+                        <portal_section display_value="Created 17-06-2021 11:21:41">b36050e9db78705422483a83e29619b2</portal_section>
+                        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                        <sys_created_on>2021-06-16 23:34:14</sys_created_on>
+                        <sys_id>a7439421dbb8705422483a83e29619ba</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                        <sys_updated_on>2021-06-16 23:34:14</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>subscriber_widget</name>
+                        <portal_section display_value="Created 17-06-2021 11:21:41">b36050e9db78705422483a83e29619b2</portal_section>
+                        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                        <sys_created_on>2021-06-16 23:34:14</sys_created_on>
+                        <sys_id>a7439421dbb8705422483a83e29619bb</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                        <sys_updated_on>2021-06-16 23:34:14</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title_align</name>
+                        <portal_section display_value="Created 17-06-2021 11:21:41">b36050e9db78705422483a83e29619b2</portal_section>
+                        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                        <sys_created_on>2021-06-16 23:34:14</sys_created_on>
+                        <sys_id>ab439421dbb8705422483a83e29619ba</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                        <sys_updated_on>2021-06-16 23:34:14</sys_updated_on>
+                        <value>left</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>filter_indicator</name>
+                        <portal_section display_value="Created 17-06-2021 11:21:41">b36050e9db78705422483a83e29619b2</portal_section>
+                        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                        <sys_created_on>2021-06-16 23:34:14</sys_created_on>
+                        <sys_id>ab439421dbb8705422483a83e29619bb</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                        <sys_updated_on>2021-06-16 23:34:14</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>show_border</name>
+                        <portal_section display_value="Created 17-06-2021 11:21:41">b36050e9db78705422483a83e29619b2</portal_section>
+                        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                        <sys_created_on>2021-06-16 23:34:14</sys_created_on>
+                        <sys_id>af439421dbb8705422483a83e29619ba</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                        <sys_updated_on>2021-06-16 23:34:14</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>real_time</name>
+                        <portal_section display_value="Created 17-06-2021 11:21:41">b36050e9db78705422483a83e29619b2</portal_section>
+                        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                        <sys_created_on>2021-06-16 23:34:14</sys_created_on>
+                        <sys_id>af439421dbb8705422483a83e29619bb</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                        <sys_updated_on>2021-06-16 23:34:14</sys_updated_on>
+                        <value>false</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>sys_id</name>
+                        <portal_section display_value="Created 17-06-2021 11:21:41">b36050e9db78705422483a83e29619b2</portal_section>
+                        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                        <sys_created_on>2021-06-16 23:21:41</sys_created_on>
+                        <sys_id>b76050e9db78705422483a83e29619b2</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                        <sys_updated_on>2021-06-16 23:21:41</sys_updated_on>
+                        <value>4b50d0e9db78705422483a83e2961983</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>help_text_window</name>
+                        <portal_section display_value="Created 17-06-2021 11:21:41">b36050e9db78705422483a83e29619b2</portal_section>
+                        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                        <sys_created_on>2021-06-16 23:21:41</sys_created_on>
+                        <sys_id>bf6050e9db78705422483a83e29619b2</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                        <sys_updated_on>2021-06-16 23:21:41</sys_updated_on>
+                        <value>report_widget_description</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title</name>
+                        <portal_section display_value="Created 17-06-2021 11:21:41">b36050e9db78705422483a83e29619b2</portal_section>
+                        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                        <sys_created_on>2021-06-16 23:21:41</sys_created_on>
+                        <sys_id>f76050e9db78705422483a83e29619b3</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                        <sys_updated_on>2021-06-16 23:21:41</sys_updated_on>
+                        <value>FARR - Negative cases by review method</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>renderer</name>
+                        <portal_section display_value="Created 17-06-2021 11:21:41">b36050e9db78705422483a83e29619b2</portal_section>
+                        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                        <sys_created_on>2021-06-16 23:21:41</sys_created_on>
+                        <sys_id>fb6050e9db78705422483a83e29619b2</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                        <sys_updated_on>2021-06-16 23:21:41</sys_updated_on>
+                        <value>com.glide.ui.portal.RenderReport</value>
+                    </sys_portal_preferences>
+                </related_items_node>
+            </sys_portal>
+            <sys_portal action="INSERT_OR_UPDATE">
+                <dropzone/>
+                <offset/>
+                <page display_value="PA Supervision Case Summaries">b7dcc4addb38705422483a83e29619ee</page>
+                <summary>FARR - Open Supervision Cases</summary>
+                <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                <sys_created_on>2021-06-16 23:48:17</sys_created_on>
+                <sys_id>d986d0e5dbb8705422483a83e2961933</sys_id>
+                <sys_mod_count>1</sys_mod_count>
+                <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                <sys_updated_on>2021-06-16 23:48:17</sys_updated_on>
+                <related_items_node>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title</name>
+                        <portal_section display_value="Created 17-06-2021 11:48:17">d986d0e5dbb8705422483a83e2961933</portal_section>
+                        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                        <sys_created_on>2021-06-16 23:48:17</sys_created_on>
+                        <sys_id>1186d0e5dbb8705422483a83e2961935</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                        <sys_updated_on>2021-06-16 23:48:17</sys_updated_on>
+                        <value>FARR - Open Supervision Cases</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>renderer</name>
+                        <portal_section display_value="Created 17-06-2021 11:48:17">d986d0e5dbb8705422483a83e2961933</portal_section>
+                        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                        <sys_created_on>2021-06-16 23:48:17</sys_created_on>
+                        <sys_id>1586d0e5dbb8705422483a83e2961934</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                        <sys_updated_on>2021-06-16 23:48:17</sys_updated_on>
+                        <value>com.glide.ui.portal.RenderReport</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>show_header</name>
+                        <portal_section display_value="Created 17-06-2021 11:48:17">d986d0e5dbb8705422483a83e2961933</portal_section>
+                        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                        <sys_created_on>2021-06-17 00:07:31</sys_created_on>
+                        <sys_id>53ea9021dbf8705422483a83e2961923</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                        <sys_updated_on>2021-06-17 00:07:31</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>subscriber_widget</name>
+                        <portal_section display_value="Created 17-06-2021 11:48:17">d986d0e5dbb8705422483a83e2961933</portal_section>
+                        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                        <sys_created_on>2021-06-17 00:07:31</sys_created_on>
+                        <sys_id>53ea9021dbf8705422483a83e2961924</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                        <sys_updated_on>2021-06-17 00:07:31</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title_align</name>
+                        <portal_section display_value="Created 17-06-2021 11:48:17">d986d0e5dbb8705422483a83e2961933</portal_section>
+                        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                        <sys_created_on>2021-06-17 00:07:31</sys_created_on>
+                        <sys_id>57ea9021dbf8705422483a83e2961923</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                        <sys_updated_on>2021-06-17 00:07:31</sys_updated_on>
+                        <value>left</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>filter_indicator</name>
+                        <portal_section display_value="Created 17-06-2021 11:48:17">d986d0e5dbb8705422483a83e2961933</portal_section>
+                        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                        <sys_created_on>2021-06-17 00:07:31</sys_created_on>
+                        <sys_id>57ea9021dbf8705422483a83e2961924</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                        <sys_updated_on>2021-06-17 00:07:31</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>show_border</name>
+                        <portal_section display_value="Created 17-06-2021 11:48:17">d986d0e5dbb8705422483a83e2961933</portal_section>
+                        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                        <sys_created_on>2021-06-17 00:07:31</sys_created_on>
+                        <sys_id>5bea9021dbf8705422483a83e2961923</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                        <sys_updated_on>2021-06-17 00:07:31</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>real_time</name>
+                        <portal_section display_value="Created 17-06-2021 11:48:17">d986d0e5dbb8705422483a83e2961933</portal_section>
+                        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                        <sys_created_on>2021-06-17 00:07:31</sys_created_on>
+                        <sys_id>5bea9021dbf8705422483a83e2961924</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                        <sys_updated_on>2021-06-17 00:07:31</sys_updated_on>
+                        <value>false</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>report_type</name>
+                        <portal_section display_value="Created 17-06-2021 11:48:17">d986d0e5dbb8705422483a83e2961933</portal_section>
+                        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                        <sys_created_on>2021-06-16 23:48:17</sys_created_on>
+                        <sys_id>5d86d0e5dbb8705422483a83e2961934</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                        <sys_updated_on>2021-06-16 23:48:17</sys_updated_on>
+                        <value>bar</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>show_title</name>
+                        <portal_section display_value="Created 17-06-2021 11:48:17">d986d0e5dbb8705422483a83e2961933</portal_section>
+                        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                        <sys_created_on>2021-06-17 00:07:31</sys_created_on>
+                        <sys_id>5fea9021dbf8705422483a83e2961922</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                        <sys_updated_on>2021-06-17 00:07:31</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>publisher_widget</name>
+                        <portal_section display_value="Created 17-06-2021 11:48:17">d986d0e5dbb8705422483a83e2961933</portal_section>
+                        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                        <sys_created_on>2021-06-17 00:07:31</sys_created_on>
+                        <sys_id>5fea9021dbf8705422483a83e2961923</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                        <sys_updated_on>2021-06-17 00:07:31</sys_updated_on>
+                        <value>false</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>can_subscribe</name>
+                        <portal_section display_value="Created 17-06-2021 11:48:17">d986d0e5dbb8705422483a83e2961933</portal_section>
+                        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                        <sys_created_on>2021-06-16 23:48:17</sys_created_on>
+                        <sys_id>9986d0e5dbb8705422483a83e2961934</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                        <sys_updated_on>2021-06-16 23:48:17</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>help_text_window</name>
+                        <portal_section display_value="Created 17-06-2021 11:48:17">d986d0e5dbb8705422483a83e2961933</portal_section>
+                        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                        <sys_created_on>2021-06-16 23:48:17</sys_created_on>
+                        <sys_id>d586d0e5dbb8705422483a83e2961934</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                        <sys_updated_on>2021-06-16 23:48:17</sys_updated_on>
+                        <value>report_widget_description</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>sys_id</name>
+                        <portal_section display_value="Created 17-06-2021 11:48:17">d986d0e5dbb8705422483a83e2961933</portal_section>
+                        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                        <sys_created_on>2021-06-16 23:48:17</sys_created_on>
+                        <sys_id>dd86d0e5dbb8705422483a83e2961933</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                        <sys_updated_on>2021-06-16 23:48:17</sys_updated_on>
+                        <value>e42658a5dbb8705422483a83e2961922</value>
+                    </sys_portal_preferences>
+                </related_items_node>
+            </sys_portal>
+            <sys_portal action="INSERT_OR_UPDATE">
+                <dropzone/>
+                <offset/>
+                <page display_value="PA Supervision Case Summaries">b7dcc4addb38705422483a83e29619ee</page>
+                <summary>FARR - Completed Supervision Case Questions</summary>
+                <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                <sys_created_on>2021-06-17 03:30:10</sys_created_on>
+                <sys_id>e749c1ad1bbc3010533e0dc8ec4bcbf9</sys_id>
+                <sys_mod_count>2</sys_mod_count>
+                <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                <sys_updated_on>2021-06-17 03:32:53</sys_updated_on>
+                <related_items_node>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>help_text_window</name>
+                        <portal_section display_value="Created 17-06-2021 15:30:10">e749c1ad1bbc3010533e0dc8ec4bcbf9</portal_section>
+                        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                        <sys_created_on>2021-06-17 03:30:10</sys_created_on>
+                        <sys_id>2349c1ad1bbc3010533e0dc8ec4bcbfb</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                        <sys_updated_on>2021-06-17 03:30:10</sys_updated_on>
+                        <value>report_widget_description</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>sys_id</name>
+                        <portal_section display_value="Created 17-06-2021 15:30:10">e749c1ad1bbc3010533e0dc8ec4bcbf9</portal_section>
+                        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                        <sys_created_on>2021-06-17 03:30:10</sys_created_on>
+                        <sys_id>6349c1ad1bbc3010533e0dc8ec4bcbfa</sys_id>
+                        <sys_mod_count>1</sys_mod_count>
+                        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                        <sys_updated_on>2021-06-17 03:32:53</sys_updated_on>
+                        <value>47e9c1611bfc3010533e0dc8ec4bcbaf</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>renderer</name>
+                        <portal_section display_value="Created 17-06-2021 15:30:10">e749c1ad1bbc3010533e0dc8ec4bcbf9</portal_section>
+                        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                        <sys_created_on>2021-06-17 03:30:10</sys_created_on>
+                        <sys_id>6f49c1ad1bbc3010533e0dc8ec4bcbfa</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                        <sys_updated_on>2021-06-17 03:30:10</sys_updated_on>
+                        <value>com.glide.ui.portal.RenderReport</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>show_title</name>
+                        <portal_section display_value="Created 17-06-2021 15:30:10">e749c1ad1bbc3010533e0dc8ec4bcbf9</portal_section>
+                        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                        <sys_created_on>2021-06-17 03:41:57</sys_created_on>
+                        <sys_id>840c41691bfc3010533e0dc8ec4bcbe5</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                        <sys_updated_on>2021-06-17 03:41:57</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title</name>
+                        <portal_section display_value="Created 17-06-2021 15:30:10">e749c1ad1bbc3010533e0dc8ec4bcbf9</portal_section>
+                        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                        <sys_created_on>2021-06-17 03:30:10</sys_created_on>
+                        <sys_id>a749c1ad1bbc3010533e0dc8ec4bcbfb</sys_id>
+                        <sys_mod_count>1</sys_mod_count>
+                        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                        <sys_updated_on>2021-06-17 03:32:53</sys_updated_on>
+                        <value>FARR - Completed Supervision Case Questions</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title_align</name>
+                        <portal_section display_value="Created 17-06-2021 15:30:10">e749c1ad1bbc3010533e0dc8ec4bcbf9</portal_section>
+                        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                        <sys_created_on>2021-06-17 03:41:57</sys_created_on>
+                        <sys_id>c00c41691bfc3010533e0dc8ec4bcbe6</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                        <sys_updated_on>2021-06-17 03:41:57</sys_updated_on>
+                        <value>left</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>filter_indicator</name>
+                        <portal_section display_value="Created 17-06-2021 15:30:10">e749c1ad1bbc3010533e0dc8ec4bcbf9</portal_section>
+                        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                        <sys_created_on>2021-06-17 03:41:57</sys_created_on>
+                        <sys_id>c00c41691bfc3010533e0dc8ec4bcbe7</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                        <sys_updated_on>2021-06-17 03:41:57</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>show_border</name>
+                        <portal_section display_value="Created 17-06-2021 15:30:10">e749c1ad1bbc3010533e0dc8ec4bcbf9</portal_section>
+                        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                        <sys_created_on>2021-06-17 03:41:57</sys_created_on>
+                        <sys_id>c40c41691bfc3010533e0dc8ec4bcbe6</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                        <sys_updated_on>2021-06-17 03:41:57</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>real_time</name>
+                        <portal_section display_value="Created 17-06-2021 15:30:10">e749c1ad1bbc3010533e0dc8ec4bcbf9</portal_section>
+                        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                        <sys_created_on>2021-06-17 03:41:57</sys_created_on>
+                        <sys_id>c40c41691bfc3010533e0dc8ec4bcbe7</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                        <sys_updated_on>2021-06-17 03:41:57</sys_updated_on>
+                        <value>false</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>publisher_widget</name>
+                        <portal_section display_value="Created 17-06-2021 15:30:10">e749c1ad1bbc3010533e0dc8ec4bcbf9</portal_section>
+                        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                        <sys_created_on>2021-06-17 03:41:57</sys_created_on>
+                        <sys_id>c80c41691bfc3010533e0dc8ec4bcbe6</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                        <sys_updated_on>2021-06-17 03:41:57</sys_updated_on>
+                        <value>false</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>show_header</name>
+                        <portal_section display_value="Created 17-06-2021 15:30:10">e749c1ad1bbc3010533e0dc8ec4bcbf9</portal_section>
+                        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                        <sys_created_on>2021-06-17 03:41:57</sys_created_on>
+                        <sys_id>cc0c41691bfc3010533e0dc8ec4bcbe5</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                        <sys_updated_on>2021-06-17 03:41:57</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>subscriber_widget</name>
+                        <portal_section display_value="Created 17-06-2021 15:30:10">e749c1ad1bbc3010533e0dc8ec4bcbf9</portal_section>
+                        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                        <sys_created_on>2021-06-17 03:41:57</sys_created_on>
+                        <sys_id>cc0c41691bfc3010533e0dc8ec4bcbe6</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                        <sys_updated_on>2021-06-17 03:41:57</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>can_subscribe</name>
+                        <portal_section display_value="Created 17-06-2021 15:30:10">e749c1ad1bbc3010533e0dc8ec4bcbf9</portal_section>
+                        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+                        <sys_created_on>2021-06-17 03:30:10</sys_created_on>
+                        <sys_id>e349c1ad1bbc3010533e0dc8ec4bcbfb</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+                        <sys_updated_on>2021-06-17 03:30:10</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                </related_items_node>
+            </sys_portal>
+        </related_items_node>
+    </sys_portal_page>
+</record_update>

@@ -26,11 +26,11 @@
         <duration/>
         <field_validation/>
         <mandatory>true</mandatory>
-        <max>1901</max>
+        <max>1000</max>
         <max_weight/>
         <method>assessment</method>
         <metric_type display_value="Advisor Assessment">dc5b17681b45605038c9ffbbdc4bcb5a</metric_type>
-        <min>1901</min>
+        <min>1000</min>
         <name>L2-Q3</name>
         <order>215</order>
         <plugin/>
@@ -49,14 +49,14 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>1411b6c1dbe2685022483a83e2961962</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>L2-Q3</sys_name>
         <sys_package display_value="Pae Haumaru" source="x_kiwib_haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_package>
         <sys_policy/>
         <sys_scope display_value="Pae Haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_scope>
         <sys_update_name>asmt_metric_1411b6c1dbe2685022483a83e2961962</sys_update_name>
         <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
-        <sys_updated_on>2021-02-24 01:26:23</sys_updated_on>
+        <sys_updated_on>2021-06-11 00:37:49</sys_updated_on>
         <template/>
         <weight>10</weight>
     </asmt_metric>

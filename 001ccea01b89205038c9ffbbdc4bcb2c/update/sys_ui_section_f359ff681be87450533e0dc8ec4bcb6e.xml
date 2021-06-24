@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="Supervision - Standard Cases" section_id="f359ff681be87450533e0dc8ec4bcb6e" sys_domain="global" table="x_kiwib_haumaru_pae_huamaru_team_summary" version="3" view="workspace">
+        <sys_ui_annotation action="INSERT_OR_UPDATE">
+            <is_plain_text>false</is_plain_text>
+            <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+            <sys_created_on>2021-06-22 23:58:50</sys_created_on>
+            <sys_id>d272d3971b70bc50533e0dc8ec4bcbce</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+            <sys_updated_on>2021-06-22 23:58:50</sys_updated_on>
+            <text/>
+            <type/>
+        </sys_ui_annotation>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>standard_assessments_completed</element>
+            <position>0</position>
+            <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+            <sys_created_on>2021-06-22 23:58:50</sys_created_on>
+            <sys_id>5a72d3971b70bc50533e0dc8ec4bcbe3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Supervision - Standard Cases" display_value="Supervision - Standard Cases" name="x_kiwib_haumaru_pae_huamaru_team_summary" sys_domain="global" view="09c1d05edb2133005f19446b3a961945">f359ff681be87450533e0dc8ec4bcb6e</sys_ui_section>
+            <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+            <sys_updated_on>2021-06-22 23:58:50</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>1</position>
+            <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+            <sys_created_on>2021-06-22 23:58:50</sys_created_on>
+            <sys_id>de72d3971b70bc50533e0dc8ec4bcbe3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Supervision - Standard Cases" display_value="Supervision - Standard Cases" name="x_kiwib_haumaru_pae_huamaru_team_summary" sys_domain="global" view="09c1d05edb2133005f19446b3a961945">f359ff681be87450533e0dc8ec4bcb6e</sys_ui_section>
+            <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+            <sys_updated_on>2021-06-22 23:58:50</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>d272d3971b70bc50533e0dc8ec4bcbce</element>
+            <position>2</position>
+            <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+            <sys_created_on>2021-06-22 23:58:50</sys_created_on>
+            <sys_id>5672d3971b70bc50533e0dc8ec4bcbe4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Supervision - Standard Cases" display_value="Supervision - Standard Cases" name="x_kiwib_haumaru_pae_huamaru_team_summary" sys_domain="global" view="09c1d05edb2133005f19446b3a961945">f359ff681be87450533e0dc8ec4bcb6e</sys_ui_section>
+            <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+            <sys_updated_on>2021-06-22 23:58:50</sys_updated_on>
+            <sys_user/>
+            <type>annotation</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>3</position>
+            <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+            <sys_created_on>2021-06-22 23:58:50</sys_created_on>
+            <sys_id>da72d3971b70bc50533e0dc8ec4bcbe4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Supervision - Standard Cases" display_value="Supervision - Standard Cases" name="x_kiwib_haumaru_pae_huamaru_team_summary" sys_domain="global" view="09c1d05edb2133005f19446b3a961945">f359ff681be87450533e0dc8ec4bcb6e</sys_ui_section>
+            <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+            <sys_updated_on>2021-06-22 23:58:50</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.begin_split</element>
+            <position>4</position>
+            <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+            <sys_created_on>2021-06-22 23:58:50</sys_created_on>
+            <sys_id>5272d3971b70bc50533e0dc8ec4bcbe5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Supervision - Standard Cases" display_value="Supervision - Standard Cases" name="x_kiwib_haumaru_pae_huamaru_team_summary" sys_domain="global" view="09c1d05edb2133005f19446b3a961945">f359ff681be87450533e0dc8ec4bcb6e</sys_ui_section>
+            <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+            <sys_updated_on>2021-06-22 23:58:50</sys_updated_on>
+            <sys_user/>
+            <type>.begin_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>standard_real_time_count</element>
+            <position>5</position>
+            <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+            <sys_created_on>2021-06-22 23:58:50</sys_created_on>
+            <sys_id>d672d3971b70bc50533e0dc8ec4bcbe5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Supervision - Standard Cases" display_value="Supervision - Standard Cases" name="x_kiwib_haumaru_pae_huamaru_team_summary" sys_domain="global" view="09c1d05edb2133005f19446b3a961945">f359ff681be87450533e0dc8ec4bcb6e</sys_ui_section>
+            <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+            <sys_updated_on>2021-06-22 23:58:50</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>6</position>
+            <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+            <sys_created_on>2021-06-22 23:58:50</sys_created_on>
+            <sys_id>5e72d3971b70bc50533e0dc8ec4bcbe5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Supervision - Standard Cases" display_value="Supervision - Standard Cases" name="x_kiwib_haumaru_pae_huamaru_team_summary" sys_domain="global" view="09c1d05edb2133005f19446b3a961945">f359ff681be87450533e0dc8ec4bcb6e</sys_ui_section>
+            <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+            <sys_updated_on>2021-06-22 23:58:50</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>standard_real_time_target_met</element>
+            <position>7</position>
+            <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+            <sys_created_on>2021-06-22 23:58:50</sys_created_on>
+            <sys_id>d272d3971b70bc50533e0dc8ec4bcbe6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Supervision - Standard Cases" display_value="Supervision - Standard Cases" name="x_kiwib_haumaru_pae_huamaru_team_summary" sys_domain="global" view="09c1d05edb2133005f19446b3a961945">f359ff681be87450533e0dc8ec4bcb6e</sys_ui_section>
+            <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+            <sys_updated_on>2021-06-22 23:58:50</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>8</position>
+            <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+            <sys_created_on>2021-06-22 23:58:50</sys_created_on>
+            <sys_id>5a72d3971b70bc50533e0dc8ec4bcbe6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Supervision - Standard Cases" display_value="Supervision - Standard Cases" name="x_kiwib_haumaru_pae_huamaru_team_summary" sys_domain="global" view="09c1d05edb2133005f19446b3a961945">f359ff681be87450533e0dc8ec4bcb6e</sys_ui_section>
+            <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+            <sys_updated_on>2021-06-22 23:58:50</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>standard_real_time_comment</element>
+            <position>9</position>
+            <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+            <sys_created_on>2021-06-22 23:58:50</sys_created_on>
+            <sys_id>de72d3971b70bc50533e0dc8ec4bcbe6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Supervision - Standard Cases" display_value="Supervision - Standard Cases" name="x_kiwib_haumaru_pae_huamaru_team_summary" sys_domain="global" view="09c1d05edb2133005f19446b3a961945">f359ff681be87450533e0dc8ec4bcb6e</sys_ui_section>
+            <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+            <sys_updated_on>2021-06-22 23:58:50</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.begin_split</element>
+            <position>10</position>
+            <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+            <sys_created_on>2021-06-22 23:58:50</sys_created_on>
+            <sys_id>5672d3971b70bc50533e0dc8ec4bcbe7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Supervision - Standard Cases" display_value="Supervision - Standard Cases" name="x_kiwib_haumaru_pae_huamaru_team_summary" sys_domain="global" view="09c1d05edb2133005f19446b3a961945">f359ff681be87450533e0dc8ec4bcb6e</sys_ui_section>
+            <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+            <sys_updated_on>2021-06-22 23:58:50</sys_updated_on>
+            <sys_user/>
+            <type>.begin_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>standard_retrospective_count</element>
+            <position>11</position>
+            <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+            <sys_created_on>2021-06-22 23:58:50</sys_created_on>
+            <sys_id>da72d3971b70bc50533e0dc8ec4bcbe7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Supervision - Standard Cases" display_value="Supervision - Standard Cases" name="x_kiwib_haumaru_pae_huamaru_team_summary" sys_domain="global" view="09c1d05edb2133005f19446b3a961945">f359ff681be87450533e0dc8ec4bcb6e</sys_ui_section>
+            <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+            <sys_updated_on>2021-06-22 23:58:50</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>12</position>
+            <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+            <sys_created_on>2021-06-22 23:58:50</sys_created_on>
+            <sys_id>5272d3971b70bc50533e0dc8ec4bcbe8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Supervision - Standard Cases" display_value="Supervision - Standard Cases" name="x_kiwib_haumaru_pae_huamaru_team_summary" sys_domain="global" view="09c1d05edb2133005f19446b3a961945">f359ff681be87450533e0dc8ec4bcb6e</sys_ui_section>
+            <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+            <sys_updated_on>2021-06-22 23:58:50</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>standard_retrospective_target_met</element>
+            <position>13</position>
+            <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+            <sys_created_on>2021-06-22 23:58:50</sys_created_on>
+            <sys_id>d672d3971b70bc50533e0dc8ec4bcbe8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Supervision - Standard Cases" display_value="Supervision - Standard Cases" name="x_kiwib_haumaru_pae_huamaru_team_summary" sys_domain="global" view="09c1d05edb2133005f19446b3a961945">f359ff681be87450533e0dc8ec4bcb6e</sys_ui_section>
+            <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+            <sys_updated_on>2021-06-22 23:58:50</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>14</position>
+            <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+            <sys_created_on>2021-06-22 23:58:50</sys_created_on>
+            <sys_id>5e72d3971b70bc50533e0dc8ec4bcbe8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Supervision - Standard Cases" display_value="Supervision - Standard Cases" name="x_kiwib_haumaru_pae_huamaru_team_summary" sys_domain="global" view="09c1d05edb2133005f19446b3a961945">f359ff681be87450533e0dc8ec4bcb6e</sys_ui_section>
+            <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+            <sys_updated_on>2021-06-22 23:58:50</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>standard_retrospective_comment</element>
+            <position>15</position>
+            <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+            <sys_created_on>2021-06-22 23:58:50</sys_created_on>
+            <sys_id>d272d3971b70bc50533e0dc8ec4bcbe9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Supervision - Standard Cases" display_value="Supervision - Standard Cases" name="x_kiwib_haumaru_pae_huamaru_team_summary" sys_domain="global" view="09c1d05edb2133005f19446b3a961945">f359ff681be87450533e0dc8ec4bcb6e</sys_ui_section>
+            <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+            <sys_updated_on>2021-06-22 23:58:50</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.begin_split</element>
+            <position>16</position>
+            <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+            <sys_created_on>2021-06-22 23:58:50</sys_created_on>
+            <sys_id>5a72d3971b70bc50533e0dc8ec4bcbe9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Supervision - Standard Cases" display_value="Supervision - Standard Cases" name="x_kiwib_haumaru_pae_huamaru_team_summary" sys_domain="global" view="09c1d05edb2133005f19446b3a961945">f359ff681be87450533e0dc8ec4bcb6e</sys_ui_section>
+            <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+            <sys_updated_on>2021-06-22 23:58:50</sys_updated_on>
+            <sys_user/>
+            <type>.begin_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>standard_role_play_count</element>
+            <position>17</position>
+            <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+            <sys_created_on>2021-06-22 23:58:50</sys_created_on>
+            <sys_id>de72d3971b70bc50533e0dc8ec4bcbe9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Supervision - Standard Cases" display_value="Supervision - Standard Cases" name="x_kiwib_haumaru_pae_huamaru_team_summary" sys_domain="global" view="09c1d05edb2133005f19446b3a961945">f359ff681be87450533e0dc8ec4bcb6e</sys_ui_section>
+            <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+            <sys_updated_on>2021-06-22 23:58:50</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>18</position>
+            <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+            <sys_created_on>2021-06-22 23:58:50</sys_created_on>
+            <sys_id>5672d3971b70bc50533e0dc8ec4bcbea</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Supervision - Standard Cases" display_value="Supervision - Standard Cases" name="x_kiwib_haumaru_pae_huamaru_team_summary" sys_domain="global" view="09c1d05edb2133005f19446b3a961945">f359ff681be87450533e0dc8ec4bcb6e</sys_ui_section>
+            <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+            <sys_updated_on>2021-06-22 23:58:50</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>standard_role_play_target_met</element>
+            <position>19</position>
+            <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+            <sys_created_on>2021-06-22 23:58:50</sys_created_on>
+            <sys_id>da72d3971b70bc50533e0dc8ec4bcbea</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Supervision - Standard Cases" display_value="Supervision - Standard Cases" name="x_kiwib_haumaru_pae_huamaru_team_summary" sys_domain="global" view="09c1d05edb2133005f19446b3a961945">f359ff681be87450533e0dc8ec4bcb6e</sys_ui_section>
+            <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+            <sys_updated_on>2021-06-22 23:58:50</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>20</position>
+            <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+            <sys_created_on>2021-06-22 23:58:50</sys_created_on>
+            <sys_id>5272d3971b70bc50533e0dc8ec4bcbeb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Supervision - Standard Cases" display_value="Supervision - Standard Cases" name="x_kiwib_haumaru_pae_huamaru_team_summary" sys_domain="global" view="09c1d05edb2133005f19446b3a961945">f359ff681be87450533e0dc8ec4bcb6e</sys_ui_section>
+            <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+            <sys_updated_on>2021-06-22 23:58:50</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>standard_role_play_comment</element>
+            <position>21</position>
+            <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+            <sys_created_on>2021-06-22 23:58:50</sys_created_on>
+            <sys_id>d672d3971b70bc50533e0dc8ec4bcbeb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Supervision - Standard Cases" display_value="Supervision - Standard Cases" name="x_kiwib_haumaru_pae_huamaru_team_summary" sys_domain="global" view="09c1d05edb2133005f19446b3a961945">f359ff681be87450533e0dc8ec4bcb6e</sys_ui_section>
+            <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+            <sys_updated_on>2021-06-22 23:58:50</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.begin_split</element>
+            <position>22</position>
+            <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+            <sys_created_on>2021-06-22 23:58:50</sys_created_on>
+            <sys_id>5e72d3971b70bc50533e0dc8ec4bcbeb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Supervision - Standard Cases" display_value="Supervision - Standard Cases" name="x_kiwib_haumaru_pae_huamaru_team_summary" sys_domain="global" view="09c1d05edb2133005f19446b3a961945">f359ff681be87450533e0dc8ec4bcb6e</sys_ui_section>
+            <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+            <sys_updated_on>2021-06-22 23:58:50</sys_updated_on>
+            <sys_user/>
+            <type>.begin_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>standard_other_count</element>
+            <position>23</position>
+            <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+            <sys_created_on>2021-06-22 23:58:50</sys_created_on>
+            <sys_id>d272d3971b70bc50533e0dc8ec4bcbec</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Supervision - Standard Cases" display_value="Supervision - Standard Cases" name="x_kiwib_haumaru_pae_huamaru_team_summary" sys_domain="global" view="09c1d05edb2133005f19446b3a961945">f359ff681be87450533e0dc8ec4bcb6e</sys_ui_section>
+            <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+            <sys_updated_on>2021-06-22 23:58:50</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>24</position>
+            <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+            <sys_created_on>2021-06-22 23:58:50</sys_created_on>
+            <sys_id>5a72d3971b70bc50533e0dc8ec4bcbec</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Supervision - Standard Cases" display_value="Supervision - Standard Cases" name="x_kiwib_haumaru_pae_huamaru_team_summary" sys_domain="global" view="09c1d05edb2133005f19446b3a961945">f359ff681be87450533e0dc8ec4bcb6e</sys_ui_section>
+            <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+            <sys_updated_on>2021-06-22 23:58:50</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>standard_other_target_met</element>
+            <position>25</position>
+            <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+            <sys_created_on>2021-06-22 23:58:50</sys_created_on>
+            <sys_id>de72d3971b70bc50533e0dc8ec4bcbec</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Supervision - Standard Cases" display_value="Supervision - Standard Cases" name="x_kiwib_haumaru_pae_huamaru_team_summary" sys_domain="global" view="09c1d05edb2133005f19446b3a961945">f359ff681be87450533e0dc8ec4bcb6e</sys_ui_section>
+            <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+            <sys_updated_on>2021-06-22 23:58:50</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>26</position>
+            <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+            <sys_created_on>2021-06-22 23:58:50</sys_created_on>
+            <sys_id>5672d3971b70bc50533e0dc8ec4bcbed</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Supervision - Standard Cases" display_value="Supervision - Standard Cases" name="x_kiwib_haumaru_pae_huamaru_team_summary" sys_domain="global" view="09c1d05edb2133005f19446b3a961945">f359ff681be87450533e0dc8ec4bcb6e</sys_ui_section>
+            <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+            <sys_updated_on>2021-06-22 23:58:50</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>standard_other_comment</element>
+            <position>27</position>
+            <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+            <sys_created_on>2021-06-22 23:58:50</sys_created_on>
+            <sys_id>da72d3971b70bc50533e0dc8ec4bcbed</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Supervision - Standard Cases" display_value="Supervision - Standard Cases" name="x_kiwib_haumaru_pae_huamaru_team_summary" sys_domain="global" view="09c1d05edb2133005f19446b3a961945">f359ff681be87450533e0dc8ec4bcb6e</sys_ui_section>
+            <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+            <sys_updated_on>2021-06-22 23:58:50</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Supervision - Standard Cases</caption>
+            <header>false</header>
+            <name>x_kiwib_haumaru_pae_huamaru_team_summary</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+            <sys_created_on>2021-06-02 03:29:48</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f359ff681be87450533e0dc8ec4bcb6e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_kiwib_haumaru_pae_huamaru_team_summary</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Pae Haumaru" source="x_kiwib_haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Pae Haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_scope>
+            <sys_update_name>sys_ui_section_f359ff681be87450533e0dc8ec4bcb6e</sys_update_name>
+            <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+            <sys_updated_on>2021-06-02 03:29:48</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Workspace" name="workspace">09c1d05edb2133005f19446b3a961945</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

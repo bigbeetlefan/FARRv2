@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_number">
+    <sys_number action="INSERT_OR_UPDATE">
+        <category display_value="" name="x_kiwib_haumaru_pae_huamaru_team_summary">x_kiwib_haumaru_pae_huamaru_team_summary</category>
+        <maximum_digits>7</maximum_digits>
+        <number>10000</number>
+        <prefix>REV</prefix>
+        <sys_class_name>sys_number</sys_class_name>
+        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+        <sys_created_on>2021-06-16 02:23:08</sys_created_on>
+        <sys_id>b7503f451b34bc14533e0dc8ec4bcb2f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>REV</sys_name>
+        <sys_package display_value="Pae Haumaru" source="x_kiwib_haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pae Haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_scope>
+        <sys_update_name>sys_number_b7503f451b34bc14533e0dc8ec4bcb2f</sys_update_name>
+        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+        <sys_updated_on>2021-06-16 02:23:08</sys_updated_on>
+    </sys_number>
+</record_update>

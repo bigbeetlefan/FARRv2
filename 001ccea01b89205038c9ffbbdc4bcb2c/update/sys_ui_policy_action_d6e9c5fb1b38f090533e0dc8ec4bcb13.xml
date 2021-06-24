@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action">
+    <sys_ui_policy_action action="INSERT_OR_UPDATE">
+        <cleared>false</cleared>
+        <disabled>true</disabled>
+        <field>products_concerns</field>
+        <mandatory>ignore</mandatory>
+        <sys_class_name>sys_ui_policy_action</sys_class_name>
+        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+        <sys_created_on>2021-06-24 03:19:09</sys_created_on>
+        <sys_id>d6e9c5fb1b38f090533e0dc8ec4bcb13</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>products_concerns</sys_name>
+        <sys_package display_value="Pae Haumaru" source="x_kiwib_haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pae Haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_scope>
+        <sys_update_name>sys_ui_policy_action_d6e9c5fb1b38f090533e0dc8ec4bcb13</sys_update_name>
+        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+        <sys_updated_on>2021-06-24 03:19:09</sys_updated_on>
+        <table>x_kiwib_haumaru_pae_huamaru_team_summary</table>
+        <ui_policy display_value="(KB) Readonly when Complete or cancelled">09be38f31bb4f090533e0dc8ec4bcb0e</ui_policy>
+        <visible>ignore</visible>
+    </sys_ui_policy_action>
+</record_update>

@@ -8,7 +8,7 @@
         </cancel_condition>
         <collection>x_kiwib_haumaru_remediation_task</collection>
         <condition_class/>
-        <duration>1970-01-01 00:05:00</duration>
+        <duration>1970-01-06 00:00:00</duration>
         <duration_type/>
         <enable_logging>false</enable_logging>
         <flow/>
@@ -22,7 +22,7 @@
         <resume_condition/>
         <retroactive>true</retroactive>
         <retroactive_pause>true</retroactive_pause>
-        <schedule display_value="24 x 7">38fa64edc0a8016400f4a5724b0434b8</schedule>
+        <schedule/>
         <schedule_source>sla_definition</schedule_source>
         <schedule_source_field/>
         <set_start_to>sys_created_on</set_start_to>
@@ -39,7 +39,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>08f78eb1dbb52410ac891505059619ac</sys_id>
-        <sys_mod_count>12</sys_mod_count>
+        <sys_mod_count>13</sys_mod_count>
         <sys_name>Remediation SLA 5 Days</sys_name>
         <sys_overrides/>
         <sys_package display_value="Pae Haumaru" source="x_kiwib_haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_package>
@@ -47,7 +47,7 @@
         <sys_scope display_value="Pae Haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_scope>
         <sys_update_name>contract_sla_08f78eb1dbb52410ac891505059619ac</sys_update_name>
         <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
-        <sys_updated_on>2021-03-31 21:25:43</sys_updated_on>
+        <sys_updated_on>2021-06-04 00:23:37</sys_updated_on>
         <target/>
         <timezone/>
         <timezone_source>task.caller_id.time_zone</timezone_source>

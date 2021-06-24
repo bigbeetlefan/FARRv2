@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Team Summary" max_length="40" name="x_kiwib_haumaru_pae_huamaru_team_summary" sizeclass="9" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Anything else, to be included, excluded or highlighted to ORC or management" max_length="1000" name="additional_analysis_feedback" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Any other feedback from the customer contacts or remediation actions?" max_length="1000" name="additional_trend_feedback" type="string"/>
+        <element label="Checks conducted" max_length="40" name="checks_conducted" read_only="true" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" label="Check the checker comment" max_length="1000" name="check_checker_comment" type="string"/>
+        <element default="0" label="Closed remediations" max_length="40" name="closed_cust_remediations" read_only="true" type="integer"/>
+        <element default="0" label="Closed remediations" max_length="40" name="closed_reps_remediations" read_only="true" type="integer"/>
+        <element default="0" label="Discuss with nominated rep" max_length="40" name="discuss_with_nominated_reps_count" read_only="true" type="integer"/>
+        <element label="Exception case identified" max_length="40" name="exception_case_identified" read_only="true" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" label="Exception case SLA comment" max_length="1000" name="exception_case_sla_comment" type="string"/>
+        <element default="0" label="Inform the nominated rep./Correct  customer record" max_length="40" name="inform_nominated_reps_count" read_only="true" type="integer"/>
+        <element default="0" label="Missed SLA" max_length="40" name="missed_reps_sla" read_only="true" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" label="Why missed?" max_length="1000" name="missed_sla_reasons" type="string"/>
+        <element attributes="no_add_me=true,no_email=true" default="javascript: new x_kiwib_haumaru.KBHaumaruUtil().getDirectReportIdsAndMe(); " label="My team" max_length="4000" name="my_team" reference="sys_user" reference_qual="javascript: 'sys_id=' + current.reporter + '^ORmanager=' + current.reporter + '^managerISNOTEMPTY'" type="glide_list" use_reference_qualifier="advanced"/>
+        <element label="Negative assurance advice giving interaction" max_length="40" name="negative_assurance_advice_giving_interaction" read_only="true" type="integer"/>
+        <element choice="1" label="Are all negative assurance remediation tasks completed" max_length="40" name="negative_assurance_advice_giving_target_met" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Yes" sequence="0" value="yes"/>
+                <element inactive_on_update="false" label="No" sequence="1" value="no"/>
+            </choice>
+        </element>
+        <element label="Negative assurance assessments completed" max_length="40" name="negative_assurance_assessments_completed" read_only="true" type="integer"/>
+        <element label="Negative assurance case comment" max_length="1000" name="negative_assurance_case_comment" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Negative Assurance interaction comment" max_length="1000" name="negative_assurance_interaction_comment" type="string"/>
+        <element choice="1" label="Negative assurance target met" max_length="40" name="negative_assurance_target_met" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Yes" sequence="0" value="yes"/>
+                <element inactive_on_update="false" label="No" sequence="1" value="no"/>
+            </choice>
+        </element>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" display="true" label="Number" max_length="40" name="number" read_only="true" type="string"/>
+        <element default="0" label="Open remediations" max_length="40" name="open_cust_remediations" read_only="true" type="integer"/>
+        <element default="0" label="Open remediations" max_length="40" name="open_reps_remediations" read_only="true" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" label="Why overdue?" max_length="1000" name="overdue_cust_reasons" type="string"/>
+        <element default="0" label="Overdue remediations" max_length="40" name="overdue_cust_remediations" read_only="true" type="integer"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" choice="3" choice_field="product" choice_table="x_kiwib_haumaru_case" label="Products" max_length="1024" name="products" reference="x_kiwib_haumaru_pae_haumaru_choices" reference_qual="table=x_kiwib_haumaru_pae_huamaru_team_summary^table_field=products^EQ" reference_qual_condition="table=x_kiwib_haumaru_pae_huamaru_team_summary^table_field=products^EQ" type="glide_list">
+            <choice>
+                <element inactive_on_update="false" label="Transactional" sequence="0" value="transactional"/>
+                <element inactive_on_update="false" label="Saving" sequence="1" value="saving"/>
+                <element inactive_on_update="false" label="Overdraft" sequence="2" value="overdraft"/>
+                <element inactive_on_update="false" label="Credit card" sequence="3" value="credit_card"/>
+                <element inactive_on_update="false" label="Personal loan" sequence="4" value="personal_loan"/>
+                <element inactive_on_update="false" label="Insurance" sequence="5" value="insurance"/>
+                <element inactive_on_update="false" label="Home loan" sequence="6" value="home_loan"/>
+                <element inactive_on_update="false" label="KiwiSaver" sequence="7" value="kiwisaver"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Product concerns" max_length="1000" name="products_concerns" type="string"/>
+        <element default="0" label="Provide coaching" max_length="40" name="provide_coaching_count" read_only="true" type="integer"/>
+        <element default="0" label="Provide refresher training" max_length="40" name="provide_refresher_training" read_only="true" type="integer"/>
+        <element attributes="no_sort=true,slushbucket_ref_no_expand=true" label="Questions" max_length="1024" name="questions" reference="x_kiwib_haumaru_pae_haumaru_choices" reference_qual="table=x_kiwib_haumaru_pae_huamaru_team_summary^table_field=questions^EQ" reference_qual_condition="table=x_kiwib_haumaru_pae_huamaru_team_summary^table_field=questions^EQ" type="glide_list"/>
+        <element attributes="edge_encryption_enabled=true" label="Questions concerns" max_length="1000" name="questions_concerns" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="All Remediations inside the SLA" max_length="40" name="remediation_inside_sla" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Yes" sequence="0" value="yes"/>
+                <element inactive_on_update="false" label="No" sequence="1" value="no"/>
+            </choice>
+        </element>
+        <element attributes="encode_utf8=false" default="javascript:gs.getUserID()" dynamic_default_value="2fd8e97bef3221002841f7f775c0fbc1" label="Reporter" max_length="32" name="reporter" reference="sys_user" type="reference" use_dynamic_default="true"/>
+        <element label="Report end date" max_length="40" name="report_end_date" type="glide_date"/>
+        <element label="Report start date" max_length="40" name="report_start_date" type="glide_date"/>
+        <element label="Review title" max_length="250" name="review_title" type="string"/>
+        <element label="Assessments completed" max_length="40" name="standard_assessments_completed" read_only="true" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" label="Other comment" max_length="1000" name="standard_other_comment" type="string"/>
+        <element label="Other" max_length="40" name="standard_other_count" read_only="true" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Other target met" max_length="40" name="standard_other_target_met" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Yes" sequence="0" value="yes"/>
+                <element inactive_on_update="false" label="No" sequence="1" value="no"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Real time comment" max_length="1000" name="standard_real_time_comment" type="string"/>
+        <element label="Real time" max_length="40" name="standard_real_time_count" read_only="true" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Real time target met" max_length="40" name="standard_real_time_target_met" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Yes" sequence="0" value="yes"/>
+                <element inactive_on_update="false" label="No" sequence="1" value="no"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Retrospective comment" max_length="1000" name="standard_retrospective_comment" type="string"/>
+        <element label="Retrospective" max_length="40" name="standard_retrospective_count" read_only="true" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Retrospective target met" max_length="40" name="standard_retrospective_target_met" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Yes" sequence="0" value="yes"/>
+                <element inactive_on_update="false" label="No" sequence="1" value="no"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Role play comment" max_length="1000" name="standard_role_play_comment" type="string"/>
+        <element label="Role play" max_length="40" name="standard_role_play_count" read_only="true" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Role play target met" max_length="40" name="standard_role_play_target_met" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Yes" sequence="0" value="yes"/>
+                <element inactive_on_update="false" label="No" sequence="1" value="no"/>
+            </choice>
+        </element>
+        <element choice="1" default="0" label="State" max_length="40" name="state" read_only="true" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Draft" sequence="1" value="0"/>
+                <element inactive_on_update="false" label="Complete" sequence="2" value="3"/>
+                <element inactive_on_update="false" label="Cancelled" sequence="3" value="7"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Unresolved differences" max_length="40" name="unresolved_differences" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Yes" sequence="0" value="yes"/>
+                <element inactive_on_update="false" label="No" sequence="1" value="no"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="reporter"/>
+        </index>
+    </element>
+</database>
