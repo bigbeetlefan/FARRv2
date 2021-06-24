@@ -41,7 +41,8 @@
 
 		if(answers){
 			//{'neg_completed': 0,'neg_advice_given': 0,'exc_case': 0,'std_case': 0,'real_time': 0,'retro': 0,'role_play': 0,'other': 0,'checker': 0};
-			setFormValue(answerObj);			
+			setFormValue(answerObj);	
+			g_form.addInfoMessage('Result has been updated.');
 		}
 	}
 
@@ -65,7 +66,7 @@
 		g_form.setValue('inform_nominated_reps_count', valueObj.task_inform_reps);
 		g_form.setValue('discuss_with_nominated_reps_count', valueObj.task_discuss_reps);
 		g_form.setValue('provide_refresher_training', valueObj.task_training);
-		g_form.addInfoMessage('Result has been updated.');
+		
 	}
 
 }]]></script>
@@ -75,7 +76,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>8bb509591b2c3c50533e0dc8ec4bcbcd</sys_id>
-        <sys_mod_count>15</sys_mod_count>
+        <sys_mod_count>16</sys_mod_count>
         <sys_name>(KB) Calculate Cases - end date</sys_name>
         <sys_overrides/>
         <sys_package display_value="Pae Haumaru" source="x_kiwib_haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_package>
@@ -83,7 +84,7 @@
         <sys_scope display_value="Pae Haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_scope>
         <sys_update_name>sys_script_client_8bb509591b2c3c50533e0dc8ec4bcbcd</sys_update_name>
         <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
-        <sys_updated_on>2021-06-23 04:43:41</sys_updated_on>
+        <sys_updated_on>2021-06-24 20:45:43</sys_updated_on>
         <table>x_kiwib_haumaru_pae_huamaru_team_summary</table>
         <type>onChange</type>
         <ui_type>10</ui_type>

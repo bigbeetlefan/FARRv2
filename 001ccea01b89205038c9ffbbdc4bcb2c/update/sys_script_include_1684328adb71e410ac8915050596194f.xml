@@ -77,7 +77,6 @@ KBHaumaruAjax.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
 			return true;
 		}
 
-
 	},
 
 	addCheckCheckerTask: function(){
@@ -98,7 +97,6 @@ KBHaumaruAjax.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
 		taskGr.time_frame = '1';
 		taskGr.description = 'Enable consistency when it comes to interpretation of diligent care reviews. Enabling an environment to challenge, learn and develop quality supervision that we can assure is driving the same outcomes and behaviours across all who conduct it.';
 		return taskGr.insert();
-
 
 	},
 
@@ -223,14 +221,6 @@ KBHaumaruAjax.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
 					}
 				}				
 			}
-			
-			//Task SLA calculation
-// 			var searchQueryStr = 'sla=aadcd0e01b51ec1038c9ffbbdc4bcb56^ORsla=2fd36abadb4d6810ac891505059619f9^ORsla=241562fadb4d6810ac891505059619fc^ORsla=08f78eb1dbb52410ac891505059619ac^has_breached=true^stage!=cancelled^task.ref_x_kiwib_haumaru_remediation_task.supervisor.sys_idIN' + teamMembers + '^sys_updated_on<=' + endDate + '^sys_updated_on>=' + startDate;
-// 			var taskSlaGr = new GlideRecord('task_sla');
-// 			taskSlaGr.addEncodedQuery(searchQueryStr);
-// 			taskSlaGr.query();
-// 			while(taskSlaGr.next()){}
-			
 			
 			
 		}
@@ -387,13 +377,13 @@ KBHaumaruAjax.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
         <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
         <sys_created_on>2021-01-20 21:28:32</sys_created_on>
         <sys_id>1684328adb71e410ac8915050596194f</sys_id>
-        <sys_mod_count>64</sys_mod_count>
+        <sys_mod_count>65</sys_mod_count>
         <sys_name>KBHaumaruAjax</sys_name>
         <sys_package display_value="Pae Haumaru" source="x_kiwib_haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Pae Haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_scope>
         <sys_update_name>sys_script_include_1684328adb71e410ac8915050596194f</sys_update_name>
         <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
-        <sys_updated_on>2021-06-22 23:52:48</sys_updated_on>
+        <sys_updated_on>2021-06-24 21:07:44</sys_updated_on>
     </sys_script_include>
 </record_update>
