@@ -12,7 +12,7 @@
         <license_category>none</license_category>
         <license_definition/>
         <license_model>none</license_model>
-        <logo/>
+        <logo>9a03f0cd1b8174d0533e0dc8ec4bcbec</logo>
         <menu/>
         <name>Pae Haumaru</name>
         <private>false</private>
@@ -22,22 +22,61 @@
         <scoped_administration>false</scoped_administration>
         <short_description/>
         <source>x_kiwib_haumaru</source>
-        <store_correlation_id>REPOAPP0000410891</store_correlation_id>
+        <store_correlation_id>REPOAPP0000410892</store_correlation_id>
         <store_url/>
         <sys_class_name>sys_app</sys_class_name>
         <sys_code/>
         <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
         <sys_created_on>2020-12-09 19:52:28</sys_created_on>
         <sys_id>001ccea01b89205038c9ffbbdc4bcb2c</sys_id>
-        <sys_mod_count>26</sys_mod_count>
+        <sys_mod_count>29</sys_mod_count>
         <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
-        <sys_updated_on>2021-06-27 22:41:35</sys_updated_on>
+        <sys_updated_on>2021-06-27 22:52:17</sys_updated_on>
         <template/>
         <trackable>true</trackable>
         <uninstall_blocked>false</uninstall_blocked>
         <user_role/>
         <vendor/>
         <vendor_prefix/>
-        <version>1.1.3</version>
+        <version>1.1.4</version>
     </sys_app>
+    <sys_attachment action="INSERT_OR_UPDATE">
+        <average_image_color>#66cc66</average_image_color>
+        <chunk_size_bytes>700000</chunk_size_bytes>
+        <compressed>true</compressed>
+        <content_type>image/png</content_type>
+        <file_name>logo</file_name>
+        <hash>5a04e3d169be1bb399040388626c493a11961f074201ba527370b1f8ab613eab</hash>
+        <image_height>225</image_height>
+        <image_width>225</image_width>
+        <size_bytes>3268</size_bytes>
+        <size_compressed>3267</size_compressed>
+        <state>available</state>
+        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+        <sys_created_on>2021-06-27 22:51:36</sys_created_on>
+        <sys_id>9a03f0cd1b8174d0533e0dc8ec4bcbec</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+        <sys_updated_on>2021-06-27 22:51:36</sys_updated_on>
+        <table_name>ZZ_YYsys_app</table_name>
+        <table_sys_id>001ccea01b89205038c9ffbbdc4bcb2c</table_sys_id>
+    </sys_attachment>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>H4sIAAAAAAAAAA==</data>
+        <length>16</length>
+        <position>0</position>
+        <sys_attachment display_value="logo" sys_id="9a03f0cd1b8174d0533e0dc8ec4bcbec">9a03f0cd1b8174d0533e0dc8ec4bcbec</sys_attachment>
+        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+        <sys_created_on>2021-06-27 22:51:36</sys_created_on>
+        <sys_id>da03f0cd1b8174d0533e0dc8ec4bcbec</sys_id>
+    </sys_attachment_doc>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>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</data>
+        <length>4344</length>
+        <position>1</position>
+        <sys_attachment display_value="logo" sys_id="9a03f0cd1b8174d0533e0dc8ec4bcbec">9a03f0cd1b8174d0533e0dc8ec4bcbec</sys_attachment>
+        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+        <sys_created_on>2021-06-27 22:51:36</sys_created_on>
+        <sys_id>5e03f0cd1b8174d0533e0dc8ec4bcbec</sys_id>
+    </sys_attachment_doc>
 </record_update>

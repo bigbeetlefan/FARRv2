@@ -122,7 +122,10 @@ KBHaumaruAjax.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
 		var endDate = new GlideDateTime(_endDate);
 
 		var teamMembers = this.getParameter('sysparm_team_members');
+		
+		//First setup an empty record
 		var result = {'neg_completed': 0,'neg_advice_given': 0,'exc_case': 0,'std_case': 0,'real_time': 0,'retro': 0,'role_play': 0,'other': 0,'checker': 0, 'open_reps': 0, 'close_reps': 0, 'open_cust': 0, 'close_cust': 0, 'missed_sla':0, 'overdue_sla': 0, 'task_coaching': 0, 'task_inform_reps': 0, 'task_discuss_reps': 0, 'task_training': 0, 'task_customer_action': 0, 'task_checker': 0, 'task_moderation': 0};
+		
 		if(startDate && endDate && teamMembers){
 			var caseGr = new GlideRecord('x_kiwib_haumaru_case');
 			//caseGr.addQuery('sys_created_on', '>=', startDate);
@@ -374,13 +377,13 @@ KBHaumaruAjax.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
         <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
         <sys_created_on>2021-01-20 21:28:32</sys_created_on>
         <sys_id>1684328adb71e410ac8915050596194f</sys_id>
-        <sys_mod_count>70</sys_mod_count>
+        <sys_mod_count>71</sys_mod_count>
         <sys_name>KBHaumaruAjax</sys_name>
         <sys_package display_value="Pae Haumaru" source="x_kiwib_haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Pae Haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_scope>
         <sys_update_name>sys_script_include_1684328adb71e410ac8915050596194f</sys_update_name>
         <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
-        <sys_updated_on>2021-06-27 22:38:35</sys_updated_on>
+        <sys_updated_on>2021-06-27 22:51:13</sys_updated_on>
     </sys_script_include>
 </record_update>
