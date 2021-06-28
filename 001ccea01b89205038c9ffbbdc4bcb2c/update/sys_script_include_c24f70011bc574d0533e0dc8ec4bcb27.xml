@@ -2,13 +2,13 @@
     <sys_script_include action="INSERT_OR_UPDATE">
         <access>public</access>
         <active>false</active>
-        <api_name>x_kiwib_haumaru.KBHaumaruAjaxBackup</api_name>
+        <api_name>x_kiwib_haumaru.KBHaumaruAjax</api_name>
         <caller_access/>
         <client_callable>true</client_callable>
-        <description>Updated on 28/06 11:29</description>
-        <name>KBHaumaruAjaxBackup</name>
-        <script><![CDATA[var KBHaumaruAjaxBackup = Class.create();
-KBHaumaruAjaxBackup.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+        <description/>
+        <name>KBHaumaruAjax</name>
+        <script><![CDATA[var KBHaumaruAjax = Class.create();
+KBHaumaruAjax.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
 
 	getDRSysids: function(){
 		var userId = gs.getUserID();
@@ -17,7 +17,7 @@ KBHaumaruAjaxBackup.prototype = Object.extendsObject(global.AbstractAjaxProcesso
 		var idString = idStr.replace('assigned_toIN','');
 		return idString;
 	},	
-	
+
 	getAssessmentState: function(){
 		var caseId = this.getParameter('sysparm_caseid');
 		var astm = new GlideRecord('asmt_assessment_instance');
@@ -122,10 +122,10 @@ KBHaumaruAjaxBackup.prototype = Object.extendsObject(global.AbstractAjaxProcesso
 		var endDate = new GlideDateTime(_endDate);
 
 		var teamMembers = this.getParameter('sysparm_team_members');
-		
+
 		//First setup an empty record
 		var result = {'neg_completed': 0,'neg_advice_given': 0,'exc_case': 0,'std_case': 0,'real_time': 0,'retro': 0,'role_play': 0,'other': 0,'checker': 0, 'open_reps': 0, 'close_reps': 0, 'open_cust': 0, 'close_cust': 0, 'missed_sla':0, 'overdue_sla': 0, 'task_coaching': 0, 'task_inform_reps': 0, 'task_discuss_reps': 0, 'task_training': 0, 'task_customer_action': 0, 'task_checker': 0, 'task_moderation': 0};
-		
+
 		if(startDate && endDate && teamMembers){
 			var caseGr = new GlideRecord('x_kiwib_haumaru_case');
 			//caseGr.addQuery('sys_created_on', '>=', startDate);
@@ -178,51 +178,75 @@ KBHaumaruAjaxBackup.prototype = Object.extendsObject(global.AbstractAjaxProcesso
 			taskGrCount.query();  
 			while(taskGrCount.next()) {				
 				if(taskGrCount.remediation_task_type == '2'){ //Check the checker type
-					if(taskGrCount.sys_updated_on >= startDate && taskGrCount.sys_updated_on <= endDate && taskGrCount.remediation_action != '7'){
+					if(taskGrCount.closure_datetime >= startDate && taskGrCount.closure_datetime <= endDate && taskGrCount.remediation_action != '7'){
 						result.checker++;
 					}				
 				}else{
-					//There is no date checking, these may need a date for it.
-					if(taskGrCount.remediation_action == '1'){
-						result.task_coaching++;
-					}else if(taskGrCount.remediation_action == '3'){
-						result.task_inform_reps++;
-					}else if(taskGrCount.remediation_action == '4'){
-						result.task_discuss_reps++;
-					}else if(taskGrCount.remediation_action == '5'){
-						result.task_training++;
-					}else if(taskGrCount.remediation_action == '6'){
-						result.task_checker++;
-					}else if(taskGrCount.remediation_action == '2'){
-						result.task_customer_action++;
-					}else{
-						result.task_moderation++;
+					//use created date for the date range.
+					if(taskGrCount.sys_created_on >= startDate && taskGrCount.sys_created_on <= endDate){
+
+						if(taskGrCount.remediation_action == '1'){
+							result.task_coaching++;
+						}else if(taskGrCount.remediation_action == '3'){
+							result.task_inform_reps++;
+						}else if(taskGrCount.remediation_action == '4'){
+							result.task_discuss_reps++;
+						}else if(taskGrCount.remediation_action == '5'){
+							result.task_training++;
+						}else if(taskGrCount.remediation_action == '6'){
+							result.task_checker++;
+						}else if(taskGrCount.remediation_action == '2'){
+							result.task_customer_action++;
+						}else{
+							result.task_moderation++;
+						}
 					}
-					
+
 					if(taskGrCount.state == '1' || taskGrCount.state == '0'){ //open Remediation task
+						var slaGr = new GlideRecord('task_sla');
 						if(taskGrCount.remediation_action == '2'){ //customer action required
-							result.open_cust++;
+							result.open_cust++;	
+
+							slaGr.addQuery('task', taskGrCount.sys_id);
+							slaGr.addQuery('has_breached', true);
+							slaGr.query();
+							if(slaGr.next()){
+								result.overdue_sla++;
+							}
 						}else{ //Inform the nominated rep
-							result.open_reps++;
-						}
-						if(taskGrCount.due_date < new GlideDate().getDisplayValue()){
-							result.missed_sla++;
+							result.open_reps++;							
+							slaGr.addQuery('task', taskGrCount.sys_id);
+							slaGr.addQuery('has_breached', true);
+							slaGr.query();
+							if(slaGr.next()){
+								result.missed_sla++;
+							}
 						}
 					}
-					if(taskGrCount.state == '3'){ //closed remediation task
+
+					if(taskGrCount.closure_datetime >= startDate && taskGrCount.closure_datetime <= endDate && taskGrCount.state == '3'){ //closed remediation task
+						var slaGr2 = new GlideRecord('task_sla');
 						if(taskGrCount.remediation_action == '2'){ //customer action required
-							result.close_cust++;
+							result.close_cust++;							
+							slaGr2.addQuery('task', taskGrCount.sys_id);
+							slaGr2.addQuery('has_breached', true);
+							slaGr2.query();
+							if(slaGr2.next()){
+								result.overdue_sla++;
+							}
 						}else{ //Inform the nominated rep
 							result.close_reps++;
+							slaGr2.addQuery('task', taskGrCount.sys_id);
+							slaGr2.addQuery('has_breached', true);
+							slaGr2.query();
+							if(slaGr2.next()){
+								result.missed_sla++;
+							}
 						}
-						if(taskGrCount.due_date < new GlideDate().getDisplayValue()){
-							result.overdue_sla++;
-						}
+
 					}
-				}				
+				}
 			}
-			
-			
 		}
 
 		var jsonStr = JSON.stringify(result);//JSON formatted string
@@ -371,19 +395,19 @@ KBHaumaruAjaxBackup.prototype = Object.extendsObject(global.AbstractAjaxProcesso
 		return true;
 	},
 
-	type: 'KBHaumaruAjaxBackup'
+	type: 'KBHaumaruAjax'
 });]]></script>
         <sys_class_name>sys_script_include</sys_class_name>
         <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
         <sys_created_on>2021-06-27 23:45:07</sys_created_on>
         <sys_id>c24f70011bc574d0533e0dc8ec4bcb27</sys_id>
-        <sys_mod_count>2</sys_mod_count>
-        <sys_name>KBHaumaruAjaxBackup</sys_name>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>KBHaumaruAjax</sys_name>
         <sys_package display_value="Pae Haumaru" source="x_kiwib_haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Pae Haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_scope>
         <sys_update_name>sys_script_include_c24f70011bc574d0533e0dc8ec4bcb27</sys_update_name>
         <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
-        <sys_updated_on>2021-06-28 01:37:20</sys_updated_on>
+        <sys_updated_on>2021-06-28 02:01:26</sys_updated_on>
     </sys_script_include>
 </record_update>
