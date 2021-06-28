@@ -1,13 +1,13 @@
-<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+<?xml version="1.0" encoding="UTF-8"?><record_update>
     <sys_script_include action="DELETE">
-        <access>public</access>
-        <active>false</active>
-        <api_name>x_kiwib_haumaru.KBHaumaruAjaxOLD</api_name>
-        <caller_access/>
-        <client_callable>true</client_callable>
-        <description>Updated on 28/06 11:29</description>
-        <name>KBHaumaruAjaxOLD</name>
-        <script><![CDATA[var KBHaumaruAjaxOLD = Class.create();
+<access>public</access>
+<active>false</active>
+<api_name>x_kiwib_haumaru.KBHaumaruAjaxOLD</api_name>
+<caller_access/>
+<client_callable>true</client_callable>
+<description>Updated on 28/06 11:29</description>
+<name>KBHaumaruAjaxOLD</name>
+<script><![CDATA[var KBHaumaruAjaxOLD = Class.create();
 KBHaumaruAjaxOLD.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
 
 	getDRSysids: function(){
@@ -373,19 +373,19 @@ KBHaumaruAjaxOLD.prototype = Object.extendsObject(global.AbstractAjaxProcessor, 
 
 	type: 'KBHaumaruAjaxOLD'
 });]]></script>
-        <sys_class_name>sys_script_include</sys_class_name>
-        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
-        <sys_created_on>2021-01-20 21:28:32</sys_created_on>
-        <sys_id>1684328adb71e410ac8915050596194f</sys_id>
-        <sys_mod_count>76</sys_mod_count>
-        <sys_name>KBHaumaruAjaxOLD</sys_name>
-        <sys_package display_value="Pae Haumaru" source="x_kiwib_haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_package>
-        <sys_policy/>
-        <sys_scope display_value="Pae Haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_scope>
-        <sys_update_name>sys_script_include_1684328adb71e410ac8915050596194f</sys_update_name>
-        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
-        <sys_updated_on>2021-06-28 02:35:13</sys_updated_on>
-    </sys_script_include>
+<sys_class_name>sys_script_include</sys_class_name>
+<sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+<sys_created_on>2021-01-20 21:28:32</sys_created_on>
+<sys_id>1684328adb71e410ac8915050596194f</sys_id>
+<sys_mod_count>76</sys_mod_count>
+<sys_name>KBHaumaruAjaxOLD</sys_name>
+<sys_package display_value="Pae Haumaru" source="x_kiwib_haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_package>
+<sys_policy>read</sys_policy>
+<sys_scope display_value="Pae Haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_scope>
+<sys_update_name>sys_script_include_1684328adb71e410ac8915050596194f</sys_update_name>
+<sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+<sys_updated_on>2021-06-28 02:35:13</sys_updated_on>
+</sys_script_include>
     <sys_update_version action="INSERT_OR_UPDATE">
         <action>DELETE</action>
         <application display_value="Pae Haumaru">001ccea01b89205038c9ffbbdc4bcb2c</application>
@@ -393,7 +393,15 @@ KBHaumaruAjaxOLD.prototype = Object.extendsObject(global.AbstractAjaxProcessor, 
         <instance_id>5eff1e92db012f4c0e785d00cf961905</instance_id>
         <instance_name>kiwibankdev</instance_name>
         <name>sys_script_include_1684328adb71e410ac8915050596194f</name>
-        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;public&lt;/access&gt;&lt;active&gt;false&lt;/active&gt;&lt;api_name&gt;x_kiwib_haumaru.KBHaumaruAjaxOLD&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;true&lt;/client_callable&gt;&lt;description&gt;Updated on 28/06 11:29&lt;/description&gt;&lt;name&gt;KBHaumaruAjaxOLD&lt;/name&gt;&lt;script&gt;&lt;![CDATA[var KBHaumaruAjaxOLD = Class.create();
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;
+&lt;access&gt;public&lt;/access&gt;
+&lt;active&gt;false&lt;/active&gt;
+&lt;api_name&gt;x_kiwib_haumaru.KBHaumaruAjaxOLD&lt;/api_name&gt;
+&lt;caller_access/&gt;
+&lt;client_callable&gt;true&lt;/client_callable&gt;
+&lt;description&gt;Updated on 28/06 11:29&lt;/description&gt;
+&lt;name&gt;KBHaumaruAjaxOLD&lt;/name&gt;
+&lt;script&gt;&lt;![CDATA[var KBHaumaruAjaxOLD = Class.create();
 KBHaumaruAjaxOLD.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
 
 	getDRSysids: function(){
@@ -758,29 +766,42 @@ KBHaumaruAjaxOLD.prototype = Object.extendsObject(global.AbstractAjaxProcessor, 
 	},
 
 	type: 'KBHaumaruAjaxOLD'
-});]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;Bing.Liu@kiwibank.co.nz&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-01-20 21:28:32&lt;/sys_created_on&gt;&lt;sys_id&gt;1684328adb71e410ac8915050596194f&lt;/sys_id&gt;&lt;sys_mod_count&gt;76&lt;/sys_mod_count&gt;&lt;sys_name&gt;KBHaumaruAjaxOLD&lt;/sys_name&gt;&lt;sys_package display_value="Pae Haumaru" source="x_kiwib_haumaru"&gt;001ccea01b89205038c9ffbbdc4bcb2c&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Pae Haumaru"&gt;001ccea01b89205038c9ffbbdc4bcb2c&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_1684328adb71e410ac8915050596194f&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;Bing.Liu@kiwibank.co.nz&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-06-28 02:35:13&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
-        <payload_hash>369329103</payload_hash>
+});]]&gt;&lt;/script&gt;
+&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;
+&lt;sys_created_by&gt;Bing.Liu@kiwibank.co.nz&lt;/sys_created_by&gt;
+&lt;sys_created_on&gt;2021-01-20 21:28:32&lt;/sys_created_on&gt;
+&lt;sys_id&gt;1684328adb71e410ac8915050596194f&lt;/sys_id&gt;
+&lt;sys_mod_count&gt;76&lt;/sys_mod_count&gt;
+&lt;sys_name&gt;KBHaumaruAjaxOLD&lt;/sys_name&gt;
+&lt;sys_package display_value="Pae Haumaru" source="x_kiwib_haumaru"&gt;001ccea01b89205038c9ffbbdc4bcb2c&lt;/sys_package&gt;
+&lt;sys_policy&gt;read&lt;/sys_policy&gt;
+&lt;sys_scope display_value="Pae Haumaru"&gt;001ccea01b89205038c9ffbbdc4bcb2c&lt;/sys_scope&gt;
+&lt;sys_update_name&gt;sys_script_include_1684328adb71e410ac8915050596194f&lt;/sys_update_name&gt;
+&lt;sys_updated_by&gt;Bing.Liu@kiwibank.co.nz&lt;/sys_updated_by&gt;
+&lt;sys_updated_on&gt;2021-06-28 02:35:13&lt;/sys_updated_on&gt;
+&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>718578674</payload_hash>
         <record_name>KBHaumaruAjaxOLD</record_name>
         <reverted_from/>
-        <source>7916edc11b81b4d0533e0dc8ec4bcbd9</source>
+        <source>f6c721491b81b4d0533e0dc8ec4bcbe5</source>
         <source_table>sys_update_set</source_table>
         <state>previous</state>
         <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
-        <sys_created_on>2021-06-28 02:35:13</sys_created_on>
-        <sys_id>793665051b81b4d0533e0dc8ec4bcb4e</sys_id>
+        <sys_created_on>2021-06-28 03:05:44</sys_created_on>
+        <sys_id>703da18d1bc1b4d0533e0dc8ec4bcb2f</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_recorded_at>17a507884f10000001</sys_recorded_at>
+        <sys_recorded_at>17a509476640000001</sys_recorded_at>
         <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
-        <sys_updated_on>2021-06-28 02:35:13</sys_updated_on>
+        <sys_updated_on>2021-06-28 03:05:44</sys_updated_on>
         <type>Script Include</type>
-        <update_guid>71366505a281b4d0881a74eaec64384e</update_guid>
-        <update_guid_history>71366505a281b4d0881a74eaec64384e:369329103,ad24214db041b4d08c06ba4b511837d9:-1620744173,b604edc97641b4d0220662e5d3ed5d67:-1972521341,cac0e5015841b4d0989c8136b2114159:-1980113800,e47ed9813701b4d09b6394cfb5d5a9ed:362469058,1e98d181facd74d0f29a5ba71549e6bb:1022927925,e70e7cc9a68574d0cbabefbdd3ebbede:244804664,33cb3001ec8574d019e66f314023cdce:-999691750,cabbf0417f8574d01fab471acd49bd1a:1932161316,24f2384157c174d030fe3b1a6d2a4968:332863808,2b00f809e38174d04aa84333ab8dae7c:-1599639842,80dca44df64174d06ab6e384a9aef5be:925247407,330f718440c9f4904e5514f8fc9f356e:2103908142,91a3054004cdb49093d28c74f08ddeb8:-1155197884,8893c94c398db4909dc7b5b5f93ade4f:-346312192,d37efc004e8db490c163647bee791e00:-1155197884,4a1197dfae30bc50bbbc9ff3e002d269:717048147,44a0db9fed30bc50eb2192715a8f23e4:2146812139,3f9ec71b3e30bc508cbb2f665ccf5295:233484287,9b6e4fd73e30bc50a5b5b124742f5e19:-456220057,49d3cf9fc87c7c508056a6f5b8696c20:-1768437403,0d8faa8b223c78507ece4be7c4bedfd1:-288983271,5e2a620b1df878509f6b856433bfed0b:-1715141751,84f8314fd33078509fb01533d4919707:307126505,9387b1cf62fc38502cd185ec2f6c6bb6:-1530152597,b6b335871ffc3850f823fd8758a5b15b:-1562357611,b0b0ad39dafc3410a2bfbc5dedadb39f:852811069,4d34f0b570743410473c5891ffb71d6c:-659466746,00f334753b7434101e619aba5d4ed40b:-897209176,20186d6f496878d05df7e296b96897e8:-68186560,0407e2323d2870d0be71967a930190e1:376094004,f2a6eefed1e470d06b9a85622df9a6df:982352429,7ae562be96e470d002e7f9f27d544bc8:-760676250,5767eda281687c90ca9ade4e5523d0a6:176882008,e6b62962c4687c9095847b8301fd27d5:-1966673240,050c81d96e6c3c504967f143853f200a:-1254632926,c1309d0198ac785045f0e0fc9bed7b6b:1088630750,9cfdc549936c7850593179707fa0907a:-2106023927,0c6d89c5506c7850f733839b702a4cf2:-772086486,2f5ac94db32c78508339fa6b865df598:-9449038,2e6fb8cd73a8785076e61398df145816:-1559127672,3be530cd2b287850fd1ec49fe9a239f9:-2094687641,cf05b80dcf28785024606b3502548105:949517430,653f20c54ce47850f3f71bf10e3be720:821914779,11082441daa47850f5c38446cac8e95e:-836631493,ee416fa4c3e474500b485fdfb82c6886:305968242,7c26ac0ceca83c107be80567424a2883:0,bc26ac0cb0a83c10054cacbeb2c65d7f:1647498930</update_guid_history>
+        <update_guid>383da18d23c1b4d066646cd89575492e</update_guid>
+        <update_guid_history>383da18d23c1b4d066646cd89575492e:718578674,35b7ed09f581b4d06fea0095dd1705ab:-2002039467,71366505a281b4d0881a74eaec64384e:369329103,ad24214db041b4d08c06ba4b511837d9:-1620744173,b604edc97641b4d0220662e5d3ed5d67:-1972521341,cac0e5015841b4d0989c8136b2114159:-1980113800,e47ed9813701b4d09b6394cfb5d5a9ed:362469058,1e98d181facd74d0f29a5ba71549e6bb:1022927925,e70e7cc9a68574d0cbabefbdd3ebbede:244804664,33cb3001ec8574d019e66f314023cdce:-999691750,cabbf0417f8574d01fab471acd49bd1a:1932161316,24f2384157c174d030fe3b1a6d2a4968:332863808,2b00f809e38174d04aa84333ab8dae7c:-1599639842,80dca44df64174d06ab6e384a9aef5be:925247407,330f718440c9f4904e5514f8fc9f356e:2103908142,91a3054004cdb49093d28c74f08ddeb8:-1155197884,8893c94c398db4909dc7b5b5f93ade4f:-346312192,d37efc004e8db490c163647bee791e00:-1155197884,4a1197dfae30bc50bbbc9ff3e002d269:717048147,44a0db9fed30bc50eb2192715a8f23e4:2146812139,3f9ec71b3e30bc508cbb2f665ccf5295:233484287,9b6e4fd73e30bc50a5b5b124742f5e19:-456220057,49d3cf9fc87c7c508056a6f5b8696c20:-1768437403,0d8faa8b223c78507ece4be7c4bedfd1:-288983271,5e2a620b1df878509f6b856433bfed0b:-1715141751,84f8314fd33078509fb01533d4919707:307126505,9387b1cf62fc38502cd185ec2f6c6bb6:-1530152597,b6b335871ffc3850f823fd8758a5b15b:-1562357611,b0b0ad39dafc3410a2bfbc5dedadb39f:852811069,4d34f0b570743410473c5891ffb71d6c:-659466746,00f334753b7434101e619aba5d4ed40b:-897209176,20186d6f496878d05df7e296b96897e8:-68186560,0407e2323d2870d0be71967a930190e1:376094004,f2a6eefed1e470d06b9a85622df9a6df:982352429,7ae562be96e470d002e7f9f27d544bc8:-760676250,5767eda281687c90ca9ade4e5523d0a6:176882008,e6b62962c4687c9095847b8301fd27d5:-1966673240,050c81d96e6c3c504967f143853f200a:-1254632926,c1309d0198ac785045f0e0fc9bed7b6b:1088630750,9cfdc549936c7850593179707fa0907a:-2106023927,0c6d89c5506c7850f733839b702a4cf2:-772086486,2f5ac94db32c78508339fa6b865df598:-9449038,2e6fb8cd73a8785076e61398df145816:-1559127672,3be530cd2b287850fd1ec49fe9a239f9:-2094687641,cf05b80dcf28785024606b3502548105:949517430,653f20c54ce47850f3f71bf10e3be720:821914779,11082441daa47850f5c38446cac8e95e:-836631493,ee416fa4c3e474500b485fdfb82c6886:305968242,7c26ac0ceca83c107be80567424a2883:0,bc26ac0cb0a83c10054cacbeb2c65d7f:1647498930</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
         <sys_audit_delete/>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
-        <sys_created_on>2021-06-28 02:41:46</sys_created_on>
+        <sys_created_on>2021-06-28 03:07:15</sys_created_on>
         <sys_db_object display_value="" name="sys_script_include">sys_script_include</sys_db_object>
         <sys_id>12ecd1fa22bc4e25911eba9413982a91</sys_id>
         <sys_metadata>1684328adb71e410ac8915050596194f</sys_metadata>
@@ -788,12 +809,12 @@ KBHaumaruAjaxOLD.prototype = Object.extendsObject(global.AbstractAjaxProcessor, 
         <sys_name>KBHaumaruAjaxOLD</sys_name>
         <sys_package display_value="Pae Haumaru" source="x_kiwib_haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_package>
         <sys_parent/>
-        <sys_policy/>
+        <sys_policy>read</sys_policy>
         <sys_scope display_value="Pae Haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_scope>
         <sys_scope_delete display_value="">02f82d1e9f0948b0802900399bacbfa4</sys_scope_delete>
         <sys_update_name>sys_script_include_1684328adb71e410ac8915050596194f</sys_update_name>
-        <sys_update_version display_value="sys_script_include_1684328adb71e410ac8915050596194f">793665051b81b4d0533e0dc8ec4bcb4e</sys_update_version>
+        <sys_update_version display_value="sys_script_include_1684328adb71e410ac8915050596194f">703da18d1bc1b4d0533e0dc8ec4bcb2f</sys_update_version>
         <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
-        <sys_updated_on>2021-06-28 02:41:46</sys_updated_on>
+        <sys_updated_on>2021-06-28 03:07:15</sys_updated_on>
     </sys_metadata_delete>
 </record_update>
