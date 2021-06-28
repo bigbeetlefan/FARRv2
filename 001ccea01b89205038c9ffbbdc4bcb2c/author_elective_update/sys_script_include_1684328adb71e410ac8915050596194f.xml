@@ -1,0 +1,847 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="DELETE">
+        <access>public</access>
+        <active>false</active>
+        <api_name>x_kiwib_haumaru.KBHaumaruAjax_OLD</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description>Updated on 28/06 11:29</description>
+        <name>KBHaumaruAjax_OLD</name>
+        <script><![CDATA[var KBHaumaruAjax_OLD = Class.create();
+KBHaumaruAjax_OLD.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+
+	getDRSysids: function(){
+		var userId = gs.getUserID();
+		var farrUtil = new KBHaumaruUtil();
+		var idStr = farrUtil.getSearchQueryString(userId);
+		var idString = idStr.replace('assigned_toIN','');
+		return idString;
+	},	
+
+	getAssessmentState: function(){
+		var caseId = this.getParameter('sysparm_caseid');
+		var astm = new GlideRecord('asmt_assessment_instance');
+		astm.addQuery('task_id', caseId);
+		var astm2 = astm.addQuery('state','ready');
+		astm2.addOrCondition('state','wip');
+		astm.query();
+		if(astm.next()){
+			return false;
+		}
+		return true;
+	},
+
+	anyOpenTask: function(){
+		var caseId = this.getParameter('sysparm_caseid');
+		var astm = new GlideRecord('x_kiwib_haumaru_remediation_task');
+		astm.addQuery('parent', caseId);
+		astm.addQuery('active', true);
+		astm.query();
+		if(astm.next()){
+			return true;
+		}
+		return false;
+	},	
+
+	cancelAssessment: function(){
+		var caseId = this.getParameter('sysparm_caseid');
+		var astm = new GlideRecord('asmt_assessment_instance');
+		astm.addQuery('task_id', caseId);		
+		astm.query();
+		if(astm.next()){
+			astm.state = 'canceled';
+			astm.update();
+			return true;
+		}
+		return true;
+	},
+
+	remediatSurvey: function(){
+		var caseId = this.getParameter('sysparm_caseid');
+		var astm = new GlideRecord('asmt_assessment_instance');
+		//astm.addQuery('trigger_table', '');
+		//astm.addQuery('trigger_id', '');
+		astm.addQuery('task_id', caseId);
+		//var astm2 = astm.addQuery('state','complete');
+		//astm2.addOrCondition('state','canceled');
+		astm.orderByDesc('sys_created_on');
+		astm.setLimit(1);
+		astm.query();
+		if(astm.next()){
+			if(astm.state == 'complete'){
+				return this._generateRemediationTask(caseId,astm.sys_id.toString());
+			}else{
+				return false;
+			}			
+		}else{
+			return true;
+		}
+
+	},
+
+	addCheckCheckerTask: function(){
+		var caseId = this.getParameter('sysparm_caseid');
+		var caseGr = new GlideRecord('x_kiwib_haumaru_case');
+		caseGr.get(caseId);
+
+		var taskGr = new GlideRecord('x_kiwib_haumaru_remediation_task');
+		taskGr.initialize();
+		taskGr.supervision_case = caseId;
+		taskGr.parent = caseId;
+		taskGr.product = caseGr.product;
+		taskGr.advisor = caseGr.assigned_to;
+		taskGr.assigned_to = gs.getUserID();
+		taskGr.supervisor = gs.getUserID();
+		taskGr.remediation_task_type = '2';
+		taskGr.remediation_action = '6';
+		taskGr.time_frame = '1';
+		taskGr.description = 'Enable consistency when it comes to interpretation of diligent care reviews. Enabling an environment to challenge, learn and develop quality supervision that we can assure is driving the same outcomes and behaviours across all who conduct it.';
+		return taskGr.insert();
+
+	},
+
+
+	countDirectReports: function(){
+		var userSysId = this.getParameter('sysparm_user_sys_ids');
+		var count = new GlideAggregate('sys_user');
+		count.addEncodedQuery('managerIN' + userSysId);
+		count.addAggregate('COUNT');
+		count.query();
+		var directRpts = 0;
+		if (count.next()){
+			directRpts = count.getAggregate('COUNT');
+		}   
+		return directRpts;
+	},
+
+	allCalculations: function(){
+		var _startDate = this.getParameter('sysparm_start_date');
+		var _endDate = this.getParameter('sysparm_end_date');
+
+		var startDate = new GlideDateTime(_startDate);
+		var endDate = new GlideDateTime(_endDate);
+
+		var teamMembers = this.getParameter('sysparm_team_members');
+
+		//First setup an empty record
+		var result = {'neg_completed': 0,'neg_advice_given': 0,'exc_case': 0,'std_case': 0,'real_time': 0,'retro': 0,'role_play': 0,'other': 0,'checker': 0, 'open_reps': 0, 'close_reps': 0, 'open_cust': 0, 'close_cust': 0, 'missed_sla':0, 'overdue_sla': 0, 'task_coaching': 0, 'task_inform_reps': 0, 'task_discuss_reps': 0, 'task_training': 0, 'task_customer_action': 0, 'task_checker': 0, 'task_moderation': 0};
+
+		if(startDate && endDate && teamMembers){
+			var caseGr = new GlideRecord('x_kiwib_haumaru_case');
+			//caseGr.addQuery('sys_created_on', '>=', startDate);
+			//caseGr.addQuery('sys_created_on', '<=', endDate);
+			caseGr.addQuery('assigned_to','IN',teamMembers);
+			caseGr.query();
+
+			while(caseGr.next()){
+				//Check all exception cases Open and Close
+				if(caseGr.category == 'exception'){
+					if(caseGr.sys_created_on >= startDate && caseGr.sys_created_on <= endDate){
+						result.exc_case++;
+					}
+				}else{ //Below are all supervision category					
+
+					//When case is closed/Remediation/In progress
+					if(caseGr.state == '3' || caseGr.state == '2' || caseGr.state == '1'){
+						if(caseGr.sub_category == 'negative_assurance'){
+							if(caseGr.closed_date_time >= startDate && caseGr.closed_date_time <= endDate){
+								result.neg_completed++;
+								if(caseGr.review_outcome == 'advice_given'){
+									result.neg_advice_given++;
+								}
+							}							
+						}else{
+							if(caseGr.assessment_completed >= startDate && caseGr.assessment_completed <= endDate){
+								result.std_case++;
+								if(caseGr.method == 'retrospective'){
+									result.retro++;
+								}
+								if(caseGr.method == 'real_time'){
+									result.real_time++;
+								}
+								if(caseGr.method == 'role_play'){
+									result.role_play++;
+								}
+								if(caseGr.method == 'other'){
+									result.other++;
+								}
+							}										
+						}
+
+					}
+				}
+			}
+
+			//Remediation Calculation
+			var taskGrCount = new GlideRecord('x_kiwib_haumaru_remediation_task');			
+			taskGrCount.addQuery('supervisor','IN', teamMembers);		
+			taskGrCount.query();  
+			while(taskGrCount.next()) {				
+				if(taskGrCount.remediation_task_type == '2'){ //Check the checker type
+					if(taskGrCount.closure_datetime >= startDate && taskGrCount.closure_datetime <= endDate && taskGrCount.remediation_action != '7'){
+						result.checker++;
+					}				
+				}else{
+					//use created date for the date range.
+					if(taskGrCount.sys_created_on >= startDate && taskGrCount.sys_created_on <= endDate){
+
+						if(taskGrCount.remediation_action == '1'){
+							result.task_coaching++;
+						}else if(taskGrCount.remediation_action == '3'){
+							result.task_inform_reps++;
+						}else if(taskGrCount.remediation_action == '4'){
+							result.task_discuss_reps++;
+						}else if(taskGrCount.remediation_action == '5'){
+							result.task_training++;
+						}else if(taskGrCount.remediation_action == '6'){
+							result.task_checker++;
+						}else if(taskGrCount.remediation_action == '2'){
+							result.task_customer_action++;
+						}else{
+							result.task_moderation++;
+						}
+					}
+
+					if(taskGrCount.state == '1' || taskGrCount.state == '0'){ //open Remediation task
+						var slaGr = new GlideRecord('task_sla');
+						if(taskGrCount.remediation_action == '2'){ //customer action required
+							result.open_cust++;	
+
+							slaGr.addQuery('task', taskGrCount.sys_id);
+							slaGr.addQuery('has_breached', true);
+							slaGr.query();
+							if(slaGr.next()){
+								result.overdue_sla++;
+							}
+						}else{ //Inform the nominated rep
+							result.open_reps++;							
+							slaGr.addQuery('task', taskGrCount.sys_id);
+							slaGr.addQuery('has_breached', true);
+							slaGr.query();
+							if(slaGr.next()){
+								result.missed_sla++;
+							}
+						}
+					}
+
+					if(taskGrCount.closure_datetime >= startDate && taskGrCount.closure_datetime <= endDate && taskGrCount.state == '3'){ //closed remediation task
+						var slaGr2 = new GlideRecord('task_sla');
+						if(taskGrCount.remediation_action == '2'){ //customer action required
+							result.close_cust++;							
+							slaGr2.addQuery('task', taskGrCount.sys_id);
+							slaGr2.addQuery('has_breached', true);
+							slaGr2.query();
+							if(slaGr2.next()){
+								result.overdue_sla++;
+							}
+						}else{ //Inform the nominated rep
+							result.close_reps++;
+							slaGr2.addQuery('task', taskGrCount.sys_id);
+							slaGr2.addQuery('has_breached', true);
+							slaGr2.query();
+							if(slaGr2.next()){
+								result.missed_sla++;
+							}
+						}
+
+					}
+				}
+			}
+		}
+
+		var jsonStr = JSON.stringify(result);//JSON formatted string
+		return jsonStr;
+	},
+
+	_generateRemediationTask: function(caseId,instanceId){
+		// Add your code here
+		if(!instanceId){
+			return false;
+		}
+
+		var answers = new KBHaumaruUtil().getAllSurveyAnswers(instanceId);
+		var firstLevel = answers.firstLevel;
+		var otherLevel = answers.otherLevel;
+		var secondLevel = [];
+
+		var firstlen = firstLevel.length; 
+		if(firstlen > 0){
+			for(var i=0; i<firstlen; i++){	
+				var secondRecord = otherLevel.filter(function(element) {return element.parent === firstLevel[i].metric; })[0];
+				if(secondRecord){
+					secondLevel.push(secondRecord);
+				}
+			}
+		}else{
+			return false;			
+		}
+		var secondLen = secondLevel.length;
+		/*
+		Most the question answer has value of 4 digits, e.g. 1201
+		1st Digit: is too set the order of the answer selection
+		2nd Digit: is to set remediation action dropdown: coaching(1), customer(2), etc...
+		3rd Digit: is to set the time frame for the remediation task
+		4th Digit: is to determine the customer remediation task is required 1 is yes, 0 is no
+		*/
+		if(secondLen > 0){
+			var caseGr = new GlideRecord('x_kiwib_haumaru_case');					
+			caseGr.get(caseId);
+			var numTask = 0;
+			var groupedAnswers = {};
+
+			for(var n=0; n<secondLen; n++){	
+				if(secondLevel[n].actual_value){
+					var valStr = secondLevel[n].actual_value.toString();
+					if(valStr && valStr.substring(1) != '000' && valStr.length > 3){
+
+						/* Generate Grouped Task */
+						var remTask = {};
+						remTask.parent = caseId;
+						remTask.supervisor = caseGr.assigned_to;
+						remTask.advisor = caseGr.advisor;
+						remTask.product = caseGr.product;
+						remTask.assigned_to = caseGr.assigned_to;
+						var firstLevelRecord = firstLevel.filter(function(element) { return element.metric === secondLevel[n].parent; })[0];
+						var secondLevelRecord = otherLevel.filter(function(element) { return element.parent === secondLevel[n].metric;})[0];
+						remTask.description = firstLevelRecord.category + ': ' + firstLevelRecord.question + '\nAnswer: ' + firstLevelRecord.string_value + '\nReason: ' + secondLevel[n].string_value;
+						if(secondLevelRecord && secondLevelRecord.string_value != ''){
+							remTask.description += ' - ' + secondLevelRecord.string_value;
+						}
+						remTask.description += '\n\n';
+						var secondDigit = valStr.substring(1,2);
+
+						//Group by 2nd digit
+						if(secondDigit != '0'){	
+							numTask++;
+							remTask.remediation_action = secondDigit;
+							remTask.time_frame = valStr.substring(2,3);
+							remTask.customer_action = valStr.substring(3,4);
+
+							if(!groupedAnswers[secondDigit]){
+								groupedAnswers[secondDigit] = {};
+								groupedAnswers[secondDigit].parent = remTask.parent;
+								groupedAnswers[secondDigit].supervisor = remTask.supervisor;
+								groupedAnswers[secondDigit].advisor = remTask.advisor;
+								groupedAnswers[secondDigit].product = remTask.product;
+								groupedAnswers[secondDigit].assigned_to = remTask.assigned_to;
+								groupedAnswers[secondDigit].time_frame = remTask.time_frame;
+								if(secondDigit != '9'){
+									groupedAnswers[secondDigit].remediation_action = remTask.remediation_action;
+								}else{
+									groupedAnswers[secondDigit].remediation_action = '';
+									groupedAnswers[secondDigit].time_frame = '';
+								}
+								groupedAnswers[secondDigit].customer_action = remTask.customer_action;
+								groupedAnswers[secondDigit].description = remTask.description;
+								//groupedAnswers[secondDigit] = remTask;
+							}else{
+								groupedAnswers[secondDigit].description += remTask.description;
+							}						
+
+						}
+
+						//group customer actions
+						if(valStr.substring(3,4) != '0'){
+							numTask++;
+							if(!groupedAnswers.customer){
+								groupedAnswers.customer = {};
+								groupedAnswers.customer.parent = remTask.parent;
+								groupedAnswers.customer.supervisor = remTask.supervisor;
+								groupedAnswers.customer.advisor = remTask.advisor;
+								groupedAnswers.customer.product = remTask.product;
+								groupedAnswers.customer.assigned_to = remTask.assigned_to;
+								groupedAnswers.customer.remediation_action = '2'; //Customer
+								groupedAnswers.customer.time_frame = '4';  //5 days
+								groupedAnswers.customer.customer_action = valStr.substring(3,4);
+								groupedAnswers.customer.description = 'Note: Customer action required.\n\n' + remTask.description;
+								//groupedAnswers.customer = remTask;
+							}else{
+								groupedAnswers.customer.description += remTask.description;
+							}
+						}//end of group customer action if					
+
+					}//end of substring(1) != 000
+
+				}//end of secondLevel[n].actual_value
+
+			}//end of for loop of secondLen 
+
+			for(var prop in groupedAnswers){
+				if(prop){
+					var newRemTask = new GlideRecord('x_kiwib_haumaru_remediation_task');
+					newRemTask.initialize();
+					newRemTask.parent = groupedAnswers[prop].parent;
+					newRemTask.supervisor = groupedAnswers[prop].supervisor;
+					newRemTask.advisor = groupedAnswers[prop].advisor;
+					newRemTask.product = groupedAnswers[prop].product;
+					newRemTask.assigned_to =groupedAnswers[prop].assigned_to;
+					newRemTask.description = groupedAnswers[prop].description;
+					newRemTask.remediation_action = groupedAnswers[prop].remediation_action;
+					newRemTask.time_frame = groupedAnswers[prop].time_frame;
+					newRemTask.customer_action = groupedAnswers[prop].customer_action;
+					newRemTask.insert();
+				}
+			}			
+		}//End of If secondLen > 0
+
+		//if there are task created then send email notification
+		if(numTask){
+			gs.eventQueue('x_kiwib_haumaru.haumaru.rem_task.insert',caseGr,caseId,instanceId);			
+		}
+
+		caseGr.comments = 'Assessment has been completed.';
+		//caseGr.state = '2'; //Remediation
+		caseGr.update();
+		return true;
+	},
+
+	type: 'KBHaumaruAjax_OLD'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+        <sys_created_on>2021-01-20 21:28:32</sys_created_on>
+        <sys_id>1684328adb71e410ac8915050596194f</sys_id>
+        <sys_mod_count>76</sys_mod_count>
+        <sys_name>KBHaumaruAjax_OLD</sys_name>
+        <sys_package display_value="Pae Haumaru" source="x_kiwib_haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Pae Haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_scope>
+        <sys_update_name>sys_script_include_1684328adb71e410ac8915050596194f</sys_update_name>
+        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+        <sys_updated_on>2021-06-28 02:01:16</sys_updated_on>
+    </sys_script_include>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Pae Haumaru">001ccea01b89205038c9ffbbdc4bcb2c</application>
+        <file_path/>
+        <instance_id>5eff1e92db012f4c0e785d00cf961905</instance_id>
+        <instance_name>kiwibankdev</instance_name>
+        <name>sys_script_include_1684328adb71e410ac8915050596194f</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;public&lt;/access&gt;&lt;active&gt;false&lt;/active&gt;&lt;api_name&gt;x_kiwib_haumaru.KBHaumaruAjax_OLD&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;true&lt;/client_callable&gt;&lt;description&gt;Updated on 28/06 11:29&lt;/description&gt;&lt;name&gt;KBHaumaruAjax_OLD&lt;/name&gt;&lt;script&gt;&lt;![CDATA[var KBHaumaruAjax_OLD = Class.create();
+KBHaumaruAjax_OLD.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+
+	getDRSysids: function(){
+		var userId = gs.getUserID();
+		var farrUtil = new KBHaumaruUtil();
+		var idStr = farrUtil.getSearchQueryString(userId);
+		var idString = idStr.replace('assigned_toIN','');
+		return idString;
+	},	
+
+	getAssessmentState: function(){
+		var caseId = this.getParameter('sysparm_caseid');
+		var astm = new GlideRecord('asmt_assessment_instance');
+		astm.addQuery('task_id', caseId);
+		var astm2 = astm.addQuery('state','ready');
+		astm2.addOrCondition('state','wip');
+		astm.query();
+		if(astm.next()){
+			return false;
+		}
+		return true;
+	},
+
+	anyOpenTask: function(){
+		var caseId = this.getParameter('sysparm_caseid');
+		var astm = new GlideRecord('x_kiwib_haumaru_remediation_task');
+		astm.addQuery('parent', caseId);
+		astm.addQuery('active', true);
+		astm.query();
+		if(astm.next()){
+			return true;
+		}
+		return false;
+	},	
+
+	cancelAssessment: function(){
+		var caseId = this.getParameter('sysparm_caseid');
+		var astm = new GlideRecord('asmt_assessment_instance');
+		astm.addQuery('task_id', caseId);		
+		astm.query();
+		if(astm.next()){
+			astm.state = 'canceled';
+			astm.update();
+			return true;
+		}
+		return true;
+	},
+
+	remediatSurvey: function(){
+		var caseId = this.getParameter('sysparm_caseid');
+		var astm = new GlideRecord('asmt_assessment_instance');
+		//astm.addQuery('trigger_table', '');
+		//astm.addQuery('trigger_id', '');
+		astm.addQuery('task_id', caseId);
+		//var astm2 = astm.addQuery('state','complete');
+		//astm2.addOrCondition('state','canceled');
+		astm.orderByDesc('sys_created_on');
+		astm.setLimit(1);
+		astm.query();
+		if(astm.next()){
+			if(astm.state == 'complete'){
+				return this._generateRemediationTask(caseId,astm.sys_id.toString());
+			}else{
+				return false;
+			}			
+		}else{
+			return true;
+		}
+
+	},
+
+	addCheckCheckerTask: function(){
+		var caseId = this.getParameter('sysparm_caseid');
+		var caseGr = new GlideRecord('x_kiwib_haumaru_case');
+		caseGr.get(caseId);
+
+		var taskGr = new GlideRecord('x_kiwib_haumaru_remediation_task');
+		taskGr.initialize();
+		taskGr.supervision_case = caseId;
+		taskGr.parent = caseId;
+		taskGr.product = caseGr.product;
+		taskGr.advisor = caseGr.assigned_to;
+		taskGr.assigned_to = gs.getUserID();
+		taskGr.supervisor = gs.getUserID();
+		taskGr.remediation_task_type = '2';
+		taskGr.remediation_action = '6';
+		taskGr.time_frame = '1';
+		taskGr.description = 'Enable consistency when it comes to interpretation of diligent care reviews. Enabling an environment to challenge, learn and develop quality supervision that we can assure is driving the same outcomes and behaviours across all who conduct it.';
+		return taskGr.insert();
+
+	},
+
+
+	countDirectReports: function(){
+		var userSysId = this.getParameter('sysparm_user_sys_ids');
+		var count = new GlideAggregate('sys_user');
+		count.addEncodedQuery('managerIN' + userSysId);
+		count.addAggregate('COUNT');
+		count.query();
+		var directRpts = 0;
+		if (count.next()){
+			directRpts = count.getAggregate('COUNT');
+		}   
+		return directRpts;
+	},
+
+	allCalculations: function(){
+		var _startDate = this.getParameter('sysparm_start_date');
+		var _endDate = this.getParameter('sysparm_end_date');
+
+		var startDate = new GlideDateTime(_startDate);
+		var endDate = new GlideDateTime(_endDate);
+
+		var teamMembers = this.getParameter('sysparm_team_members');
+
+		//First setup an empty record
+		var result = {'neg_completed': 0,'neg_advice_given': 0,'exc_case': 0,'std_case': 0,'real_time': 0,'retro': 0,'role_play': 0,'other': 0,'checker': 0, 'open_reps': 0, 'close_reps': 0, 'open_cust': 0, 'close_cust': 0, 'missed_sla':0, 'overdue_sla': 0, 'task_coaching': 0, 'task_inform_reps': 0, 'task_discuss_reps': 0, 'task_training': 0, 'task_customer_action': 0, 'task_checker': 0, 'task_moderation': 0};
+
+		if(startDate &amp;&amp; endDate &amp;&amp; teamMembers){
+			var caseGr = new GlideRecord('x_kiwib_haumaru_case');
+			//caseGr.addQuery('sys_created_on', '&gt;=', startDate);
+			//caseGr.addQuery('sys_created_on', '&lt;=', endDate);
+			caseGr.addQuery('assigned_to','IN',teamMembers);
+			caseGr.query();
+
+			while(caseGr.next()){
+				//Check all exception cases Open and Close
+				if(caseGr.category == 'exception'){
+					if(caseGr.sys_created_on &gt;= startDate &amp;&amp; caseGr.sys_created_on &lt;= endDate){
+						result.exc_case++;
+					}
+				}else{ //Below are all supervision category					
+
+					//When case is closed/Remediation/In progress
+					if(caseGr.state == '3' || caseGr.state == '2' || caseGr.state == '1'){
+						if(caseGr.sub_category == 'negative_assurance'){
+							if(caseGr.closed_date_time &gt;= startDate &amp;&amp; caseGr.closed_date_time &lt;= endDate){
+								result.neg_completed++;
+								if(caseGr.review_outcome == 'advice_given'){
+									result.neg_advice_given++;
+								}
+							}							
+						}else{
+							if(caseGr.assessment_completed &gt;= startDate &amp;&amp; caseGr.assessment_completed &lt;= endDate){
+								result.std_case++;
+								if(caseGr.method == 'retrospective'){
+									result.retro++;
+								}
+								if(caseGr.method == 'real_time'){
+									result.real_time++;
+								}
+								if(caseGr.method == 'role_play'){
+									result.role_play++;
+								}
+								if(caseGr.method == 'other'){
+									result.other++;
+								}
+							}										
+						}
+
+					}
+				}
+			}
+
+			//Remediation Calculation
+			var taskGrCount = new GlideRecord('x_kiwib_haumaru_remediation_task');			
+			taskGrCount.addQuery('supervisor','IN', teamMembers);		
+			taskGrCount.query();  
+			while(taskGrCount.next()) {				
+				if(taskGrCount.remediation_task_type == '2'){ //Check the checker type
+					if(taskGrCount.closure_datetime &gt;= startDate &amp;&amp; taskGrCount.closure_datetime &lt;= endDate &amp;&amp; taskGrCount.remediation_action != '7'){
+						result.checker++;
+					}				
+				}else{
+					//use created date for the date range.
+					if(taskGrCount.sys_created_on &gt;= startDate &amp;&amp; taskGrCount.sys_created_on &lt;= endDate){
+
+						if(taskGrCount.remediation_action == '1'){
+							result.task_coaching++;
+						}else if(taskGrCount.remediation_action == '3'){
+							result.task_inform_reps++;
+						}else if(taskGrCount.remediation_action == '4'){
+							result.task_discuss_reps++;
+						}else if(taskGrCount.remediation_action == '5'){
+							result.task_training++;
+						}else if(taskGrCount.remediation_action == '6'){
+							result.task_checker++;
+						}else if(taskGrCount.remediation_action == '2'){
+							result.task_customer_action++;
+						}else{
+							result.task_moderation++;
+						}
+					}
+
+					if(taskGrCount.state == '1' || taskGrCount.state == '0'){ //open Remediation task
+						var slaGr = new GlideRecord('task_sla');
+						if(taskGrCount.remediation_action == '2'){ //customer action required
+							result.open_cust++;	
+
+							slaGr.addQuery('task', taskGrCount.sys_id);
+							slaGr.addQuery('has_breached', true);
+							slaGr.query();
+							if(slaGr.next()){
+								result.overdue_sla++;
+							}
+						}else{ //Inform the nominated rep
+							result.open_reps++;							
+							slaGr.addQuery('task', taskGrCount.sys_id);
+							slaGr.addQuery('has_breached', true);
+							slaGr.query();
+							if(slaGr.next()){
+								result.missed_sla++;
+							}
+						}
+					}
+
+					if(taskGrCount.closure_datetime &gt;= startDate &amp;&amp; taskGrCount.closure_datetime &lt;= endDate &amp;&amp; taskGrCount.state == '3'){ //closed remediation task
+						var slaGr2 = new GlideRecord('task_sla');
+						if(taskGrCount.remediation_action == '2'){ //customer action required
+							result.close_cust++;							
+							slaGr2.addQuery('task', taskGrCount.sys_id);
+							slaGr2.addQuery('has_breached', true);
+							slaGr2.query();
+							if(slaGr2.next()){
+								result.overdue_sla++;
+							}
+						}else{ //Inform the nominated rep
+							result.close_reps++;
+							slaGr2.addQuery('task', taskGrCount.sys_id);
+							slaGr2.addQuery('has_breached', true);
+							slaGr2.query();
+							if(slaGr2.next()){
+								result.missed_sla++;
+							}
+						}
+
+					}
+				}
+			}
+		}
+
+		var jsonStr = JSON.stringify(result);//JSON formatted string
+		return jsonStr;
+	},
+
+	_generateRemediationTask: function(caseId,instanceId){
+		// Add your code here
+		if(!instanceId){
+			return false;
+		}
+
+		var answers = new KBHaumaruUtil().getAllSurveyAnswers(instanceId);
+		var firstLevel = answers.firstLevel;
+		var otherLevel = answers.otherLevel;
+		var secondLevel = [];
+
+		var firstlen = firstLevel.length; 
+		if(firstlen &gt; 0){
+			for(var i=0; i&lt;firstlen; i++){	
+				var secondRecord = otherLevel.filter(function(element) {return element.parent === firstLevel[i].metric; })[0];
+				if(secondRecord){
+					secondLevel.push(secondRecord);
+				}
+			}
+		}else{
+			return false;			
+		}
+		var secondLen = secondLevel.length;
+		/*
+		Most the question answer has value of 4 digits, e.g. 1201
+		1st Digit: is too set the order of the answer selection
+		2nd Digit: is to set remediation action dropdown: coaching(1), customer(2), etc...
+		3rd Digit: is to set the time frame for the remediation task
+		4th Digit: is to determine the customer remediation task is required 1 is yes, 0 is no
+		*/
+		if(secondLen &gt; 0){
+			var caseGr = new GlideRecord('x_kiwib_haumaru_case');					
+			caseGr.get(caseId);
+			var numTask = 0;
+			var groupedAnswers = {};
+
+			for(var n=0; n&lt;secondLen; n++){	
+				if(secondLevel[n].actual_value){
+					var valStr = secondLevel[n].actual_value.toString();
+					if(valStr &amp;&amp; valStr.substring(1) != '000' &amp;&amp; valStr.length &gt; 3){
+
+						/* Generate Grouped Task */
+						var remTask = {};
+						remTask.parent = caseId;
+						remTask.supervisor = caseGr.assigned_to;
+						remTask.advisor = caseGr.advisor;
+						remTask.product = caseGr.product;
+						remTask.assigned_to = caseGr.assigned_to;
+						var firstLevelRecord = firstLevel.filter(function(element) { return element.metric === secondLevel[n].parent; })[0];
+						var secondLevelRecord = otherLevel.filter(function(element) { return element.parent === secondLevel[n].metric;})[0];
+						remTask.description = firstLevelRecord.category + ': ' + firstLevelRecord.question + '\nAnswer: ' + firstLevelRecord.string_value + '\nReason: ' + secondLevel[n].string_value;
+						if(secondLevelRecord &amp;&amp; secondLevelRecord.string_value != ''){
+							remTask.description += ' - ' + secondLevelRecord.string_value;
+						}
+						remTask.description += '\n\n';
+						var secondDigit = valStr.substring(1,2);
+
+						//Group by 2nd digit
+						if(secondDigit != '0'){	
+							numTask++;
+							remTask.remediation_action = secondDigit;
+							remTask.time_frame = valStr.substring(2,3);
+							remTask.customer_action = valStr.substring(3,4);
+
+							if(!groupedAnswers[secondDigit]){
+								groupedAnswers[secondDigit] = {};
+								groupedAnswers[secondDigit].parent = remTask.parent;
+								groupedAnswers[secondDigit].supervisor = remTask.supervisor;
+								groupedAnswers[secondDigit].advisor = remTask.advisor;
+								groupedAnswers[secondDigit].product = remTask.product;
+								groupedAnswers[secondDigit].assigned_to = remTask.assigned_to;
+								groupedAnswers[secondDigit].time_frame = remTask.time_frame;
+								if(secondDigit != '9'){
+									groupedAnswers[secondDigit].remediation_action = remTask.remediation_action;
+								}else{
+									groupedAnswers[secondDigit].remediation_action = '';
+									groupedAnswers[secondDigit].time_frame = '';
+								}
+								groupedAnswers[secondDigit].customer_action = remTask.customer_action;
+								groupedAnswers[secondDigit].description = remTask.description;
+								//groupedAnswers[secondDigit] = remTask;
+							}else{
+								groupedAnswers[secondDigit].description += remTask.description;
+							}						
+
+						}
+
+						//group customer actions
+						if(valStr.substring(3,4) != '0'){
+							numTask++;
+							if(!groupedAnswers.customer){
+								groupedAnswers.customer = {};
+								groupedAnswers.customer.parent = remTask.parent;
+								groupedAnswers.customer.supervisor = remTask.supervisor;
+								groupedAnswers.customer.advisor = remTask.advisor;
+								groupedAnswers.customer.product = remTask.product;
+								groupedAnswers.customer.assigned_to = remTask.assigned_to;
+								groupedAnswers.customer.remediation_action = '2'; //Customer
+								groupedAnswers.customer.time_frame = '4';  //5 days
+								groupedAnswers.customer.customer_action = valStr.substring(3,4);
+								groupedAnswers.customer.description = 'Note: Customer action required.\n\n' + remTask.description;
+								//groupedAnswers.customer = remTask;
+							}else{
+								groupedAnswers.customer.description += remTask.description;
+							}
+						}//end of group customer action if					
+
+					}//end of substring(1) != 000
+
+				}//end of secondLevel[n].actual_value
+
+			}//end of for loop of secondLen 
+
+			for(var prop in groupedAnswers){
+				if(prop){
+					var newRemTask = new GlideRecord('x_kiwib_haumaru_remediation_task');
+					newRemTask.initialize();
+					newRemTask.parent = groupedAnswers[prop].parent;
+					newRemTask.supervisor = groupedAnswers[prop].supervisor;
+					newRemTask.advisor = groupedAnswers[prop].advisor;
+					newRemTask.product = groupedAnswers[prop].product;
+					newRemTask.assigned_to =groupedAnswers[prop].assigned_to;
+					newRemTask.description = groupedAnswers[prop].description;
+					newRemTask.remediation_action = groupedAnswers[prop].remediation_action;
+					newRemTask.time_frame = groupedAnswers[prop].time_frame;
+					newRemTask.customer_action = groupedAnswers[prop].customer_action;
+					newRemTask.insert();
+				}
+			}			
+		}//End of If secondLen &gt; 0
+
+		//if there are task created then send email notification
+		if(numTask){
+			gs.eventQueue('x_kiwib_haumaru.haumaru.rem_task.insert',caseGr,caseId,instanceId);			
+		}
+
+		caseGr.comments = 'Assessment has been completed.';
+		//caseGr.state = '2'; //Remediation
+		caseGr.update();
+		return true;
+	},
+
+	type: 'KBHaumaruAjax_OLD'
+});]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;Bing.Liu@kiwibank.co.nz&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-01-20 21:28:32&lt;/sys_created_on&gt;&lt;sys_id&gt;1684328adb71e410ac8915050596194f&lt;/sys_id&gt;&lt;sys_mod_count&gt;76&lt;/sys_mod_count&gt;&lt;sys_name&gt;KBHaumaruAjax_OLD&lt;/sys_name&gt;&lt;sys_package display_value="Pae Haumaru" source="x_kiwib_haumaru"&gt;001ccea01b89205038c9ffbbdc4bcb2c&lt;/sys_package&gt;&lt;sys_policy&gt;read&lt;/sys_policy&gt;&lt;sys_scope display_value="Pae Haumaru"&gt;001ccea01b89205038c9ffbbdc4bcb2c&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_1684328adb71e410ac8915050596194f&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;Bing.Liu@kiwibank.co.nz&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-06-28 02:01:16&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>362469058</payload_hash>
+        <record_name>KBHaumaruAjax_OLD</record_name>
+        <reverted_from/>
+        <source>4c5efcc91b8574d0533e0dc8ec4bcb69</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+        <sys_created_on>2021-06-28 02:01:16</sys_created_on>
+        <sys_id>ec7ed9811b01b4d0533e0dc8ec4bcbed</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17a505970b30000001</sys_recorded_at>
+        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+        <sys_updated_on>2021-06-28 02:01:16</sys_updated_on>
+        <type>Script Include</type>
+        <update_guid>e47ed9813701b4d09b6394cfb5d5a9ed</update_guid>
+        <update_guid_history>e47ed9813701b4d09b6394cfb5d5a9ed:362469058,1e98d181facd74d0f29a5ba71549e6bb:1022927925,e70e7cc9a68574d0cbabefbdd3ebbede:244804664,33cb3001ec8574d019e66f314023cdce:-999691750,cabbf0417f8574d01fab471acd49bd1a:1932161316,24f2384157c174d030fe3b1a6d2a4968:332863808,2b00f809e38174d04aa84333ab8dae7c:-1599639842,80dca44df64174d06ab6e384a9aef5be:925247407,330f718440c9f4904e5514f8fc9f356e:2103908142,91a3054004cdb49093d28c74f08ddeb8:-1155197884,8893c94c398db4909dc7b5b5f93ade4f:-346312192,d37efc004e8db490c163647bee791e00:-1155197884,4a1197dfae30bc50bbbc9ff3e002d269:717048147,44a0db9fed30bc50eb2192715a8f23e4:2146812139,3f9ec71b3e30bc508cbb2f665ccf5295:233484287,9b6e4fd73e30bc50a5b5b124742f5e19:-456220057,49d3cf9fc87c7c508056a6f5b8696c20:-1768437403,0d8faa8b223c78507ece4be7c4bedfd1:-288983271,5e2a620b1df878509f6b856433bfed0b:-1715141751,84f8314fd33078509fb01533d4919707:307126505,9387b1cf62fc38502cd185ec2f6c6bb6:-1530152597,b6b335871ffc3850f823fd8758a5b15b:-1562357611,b0b0ad39dafc3410a2bfbc5dedadb39f:852811069,4d34f0b570743410473c5891ffb71d6c:-659466746,00f334753b7434101e619aba5d4ed40b:-897209176,20186d6f496878d05df7e296b96897e8:-68186560,0407e2323d2870d0be71967a930190e1:376094004,f2a6eefed1e470d06b9a85622df9a6df:982352429,7ae562be96e470d002e7f9f27d544bc8:-760676250,5767eda281687c90ca9ade4e5523d0a6:176882008,e6b62962c4687c9095847b8301fd27d5:-1966673240,050c81d96e6c3c504967f143853f200a:-1254632926,c1309d0198ac785045f0e0fc9bed7b6b:1088630750,9cfdc549936c7850593179707fa0907a:-2106023927,0c6d89c5506c7850f733839b702a4cf2:-772086486,2f5ac94db32c78508339fa6b865df598:-9449038,2e6fb8cd73a8785076e61398df145816:-1559127672,3be530cd2b287850fd1ec49fe9a239f9:-2094687641,cf05b80dcf28785024606b3502548105:949517430,653f20c54ce47850f3f71bf10e3be720:821914779,11082441daa47850f5c38446cac8e95e:-836631493,ee416fa4c3e474500b485fdfb82c6886:305968242,7c26ac0ceca83c107be80567424a2883:0,bc26ac0cb0a83c10054cacbeb2c65d7f:1647498930</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+        <sys_created_on>2021-06-28 02:11:29</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_include">sys_script_include</sys_db_object>
+        <sys_id>12ecd1fa22bc4e25911eba9413982a91</sys_id>
+        <sys_metadata>1684328adb71e410ac8915050596194f</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>KBHaumaruAjax_OLD</sys_name>
+        <sys_package display_value="Pae Haumaru" source="x_kiwib_haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_package>
+        <sys_parent/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Pae Haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_scope>
+        <sys_scope_delete display_value="">02f82d1e9f0948b0802900399bacbfa4</sys_scope_delete>
+        <sys_update_name>sys_script_include_1684328adb71e410ac8915050596194f</sys_update_name>
+        <sys_update_version display_value="sys_script_include_1684328adb71e410ac8915050596194f">ec7ed9811b01b4d0533e0dc8ec4bcbed</sys_update_version>
+        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+        <sys_updated_on>2021-06-28 02:11:29</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
