@@ -40,8 +40,11 @@
         <message_html><![CDATA[<div><span style="font-size: 12pt;">Kia ora ${reporter.manager.first_name},</span></div>
 <div><br /></div>
 <div><br /><span style="font-size: 12pt;">${reporter.name}&nbsp;has completed their Team Summary report and have submitted it for your review. You can access this report using the link below.</span><br /><br /><span style="font-size: 12pt;">${mail_script:haumaru_ws_team_summary_uri}</span></div>
+<div><br /></div>
 <div><span style="font-size: 12pt;"><strong>Start date:</strong> ${report_start_date}</span></div>
-<div><span style="font-size: 12pt;"><strong>End date:</strong> ${report_end_date}</span><br /><br /><br /><br /><span style="font-size: 12pt;">If you have any questions regarding the report structureand prepopulated content please talk to your First-line Operational Risk &amp; Compliance (ORC) Representative.</span></div>
+<div><span style="font-size: 12pt;"><strong>End date:</strong> ${report_end_date}</span></div>
+<div><br /></div>
+<div><span style="font-size: 12pt;">If you have any questions regarding the report structureand prepopulated content please talk to your First-line Operational Risk &amp; Compliance (ORC) Representative.</span></div>
 <div><br /><br /><span style="font-size: 12pt;">Thanks</span></div>]]></message_html>
         <message_list/>
         <message_text/>
@@ -64,7 +67,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>5b4568731b70f090533e0dc8ec4bcb3a</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_name>(KB) Team summary manager approval</sys_name>
         <sys_overrides/>
         <sys_package display_value="Pae Haumaru" source="x_kiwib_haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_package>
@@ -72,7 +75,7 @@
         <sys_scope display_value="Pae Haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_scope>
         <sys_update_name>sysevent_email_action_5b4568731b70f090533e0dc8ec4bcb3a</sys_update_name>
         <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
-        <sys_updated_on>2021-06-28 00:57:46</sys_updated_on>
+        <sys_updated_on>2021-06-28 03:37:46</sys_updated_on>
         <sys_version>2</sys_version>
         <template display_value="(KB) User Email Template - Pae Haumaru">de9568731b70f090533e0dc8ec4bcb06</template>
         <type>email</type>

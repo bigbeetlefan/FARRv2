@@ -118,13 +118,16 @@ KBHaumaruAjax.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
 		var _startDate = this.getParameter('sysparm_start_date');
 		var _endDate = this.getParameter('sysparm_end_date');
 
-		var startDate = new GlideDateTime(_startDate);
-		var endDate = new GlideDateTime(_endDate);
-
+		var startDate = new GlideDateTime();
+		startDate.setDisplayValue(_startDate + ' 00:00:00');		
+		
+		var endDate = new GlideDateTime();
+		endDate.setDisplayValue(_endDate + ' 23:59:59');		 
+		
 		var teamMembers = this.getParameter('sysparm_team_members');
 
 		//First setup an empty record
-		var result = {'neg_completed': 0,'neg_advice_given': 0,'exc_case': 0,'std_case': 0,'real_time': 0,'retro': 0,'role_play': 0,'other': 0,'checker': 0, 'open_reps': 0, 'close_reps': 0, 'open_cust': 0, 'close_cust': 0, 'missed_sla':0, 'overdue_sla': 0, 'task_coaching': 0, 'task_inform_reps': 0, 'task_discuss_reps': 0, 'task_training': 0, 'task_customer_action': 0, 'task_checker': 0, 'task_moderation': 0};
+		var result = {'neg_completed': 0,'neg_advice_given': 0,'exc_case': 0,'std_case': 0,'real_time': 0,'retro': 0,'role_play': 0,'other': 0,'checker': 0, 'open_reps': 0, 'close_reps': 0, 'open_cust': 0, 'close_cust': 0, 'missed_sla':0, 'overdue_sla': 0, 'task_coaching': 0, 'task_inform_reps': 0, 'task_discuss_reps': 0, 'task_training': 0, 'task_customer_action': 0, 'task_checker': 0, 'task_moderation': 0, 'start_date': startDate, 'end_date': endDate};
 
 		if(startDate && endDate && teamMembers){
 			var caseGr = new GlideRecord('x_kiwib_haumaru_case');
@@ -234,7 +237,7 @@ KBHaumaruAjax.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
 							result.close_cust++;							
 							slaGr2.addQuery('task', taskGrCount.sys_id);
 							slaGr2.addQuery('has_breached', true);
-							slaGr.addQuery('stage', '!=', 'cancelled');
+							slaGr2.addQuery('stage', '!=', 'cancelled');
 							slaGr2.query();
 							if(slaGr2.next()){
 								result.overdue_sla++;
@@ -243,7 +246,7 @@ KBHaumaruAjax.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
 							result.close_reps++;
 							slaGr2.addQuery('task', taskGrCount.sys_id);
 							slaGr2.addQuery('has_breached', true);
-							slaGr.addQuery('stage', '!=', 'cancelled');
+							slaGr2.addQuery('stage', '!=', 'cancelled');
 							slaGr2.query();
 							if(slaGr2.next()){
 								result.missed_sla++;
@@ -407,13 +410,13 @@ KBHaumaruAjax.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
         <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
         <sys_created_on>2021-06-27 23:45:07</sys_created_on>
         <sys_id>c24f70011bc574d0533e0dc8ec4bcb27</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>16</sys_mod_count>
         <sys_name>KBHaumaruAjax</sys_name>
         <sys_package display_value="Pae Haumaru" source="x_kiwib_haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Pae Haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_scope>
         <sys_update_name>sys_script_include_c24f70011bc574d0533e0dc8ec4bcb27</sys_update_name>
         <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
-        <sys_updated_on>2021-06-28 03:32:37</sys_updated_on>
+        <sys_updated_on>2021-07-01 02:23:32</sys_updated_on>
     </sys_script_include>
 </record_update>

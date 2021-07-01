@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element label="Pae Haumaru Choices" max_length="40" name="x_kiwib_haumaru_pae_haumaru_choices" sizeclass="19" type="collection">
+    <element label="Pae Haumaru Choices" max_length="40" name="x_kiwib_haumaru_pae_haumaru_choices" sizeclass="20" type="collection">
         <element default="true" label="Active" max_length="40" name="active" type="boolean"/>
         <element display="true" label="Label" max_length="200" name="label" type="string"/>
         <element label="Order" max_length="40" name="order" type="integer"/>
