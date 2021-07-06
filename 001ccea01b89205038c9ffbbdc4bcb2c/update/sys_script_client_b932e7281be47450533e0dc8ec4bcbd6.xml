@@ -16,9 +16,11 @@
    }
 
    //Type appropriate comment here, and begin script below
+	var reporterSysId = g_form.getValue('reporter');
 	var ga = new GlideAjax("x_kiwib_haumaru.KBHaumaruAjax");
-	ga.addParam('sysparm_name', 'countDirectReports');
+	ga.addParam('sysparm_name', 'countTeamMembers');
 	ga.addParam('sysparm_user_sys_ids', newValue);
+	ga.addParam('sysparm_reporter', reporterSysId.toString());
 	ga.getXMLAnswer(function(response) {
 		if(response){
 			g_form.showFieldMsg('my_team', 'There are ' + response + ' reps.','info');
@@ -32,7 +34,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>b932e7281be47450533e0dc8ec4bcbd6</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_name>(KB) Display team direct reports</sys_name>
         <sys_overrides/>
         <sys_package display_value="Pae Haumaru" source="x_kiwib_haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_package>
@@ -40,7 +42,7 @@
         <sys_scope display_value="Pae Haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_scope>
         <sys_update_name>sys_script_client_b932e7281be47450533e0dc8ec4bcbd6</sys_update_name>
         <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
-        <sys_updated_on>2021-06-02 01:58:44</sys_updated_on>
+        <sys_updated_on>2021-07-06 01:31:06</sys_updated_on>
         <table>x_kiwib_haumaru_pae_huamaru_team_summary</table>
         <type>onChange</type>
         <ui_type>10</ui_type>

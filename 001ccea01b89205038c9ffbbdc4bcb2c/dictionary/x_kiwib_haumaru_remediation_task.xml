@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element audit="true" extends="task" label="Remediation Task" max_length="40" name="x_kiwib_haumaru_remediation_task" sizeclass="776" text_index="true" type="collection">
+    <element audit="true" extends="task" label="Remediation Task" max_length="40" name="x_kiwib_haumaru_remediation_task" sizeclass="792" text_index="true" type="collection">
         <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Team member" max_length="32" name="advisor" reference="sys_user" type="reference"/>
         <element attributes="edge_encryption_enabled=true" choice="1" label="Closure reason" max_length="40" name="closure_code" type="string">
             <choice>
@@ -19,7 +19,7 @@
                 <element inactive_on_update="false" label="Recommend redo training session, &amp; customer/adviser action required" sequence="5" value="5"/>
             </choice>
         </element>
-        <element attributes="edge_encryption_enabled=true" calculation="(function calculatedFieldValue(current) {&#10;&#10;&#9;// Add your code here&#10;&#9;//return current.parent.product;  // return the calculated value&#10;&#10;})(current);" choice="1" label="Product category" max_length="40" name="product" type="choice">
+        <element attributes="edge_encryption_enabled=true" calculation="(function calculatedFieldValue(current) {&#10;&#10;&#9;// Add your code here&#10;&#9;//return current.parent.product;  // return the calculated value&#10;&#10;})(current);" choice="1" label="Product category" mandatory="true" max_length="40" name="product" type="choice">
             <choice>
                 <element inactive_on_update="false" label="Transactional" sequence="1" value="transactional"/>
                 <element inactive_on_update="false" label="Saving" sequence="2" value="saving"/>
@@ -31,7 +31,7 @@
                 <element inactive_on_update="false" label="KiwiSaver" sequence="8" value="kiwisaver"/>
             </choice>
         </element>
-        <element attributes="edge_encryption_enabled=true" choice="1" dependent="remediation_task_type" dependent_on_field="remediation_task_type" label="Remediation action" max_length="40" name="remediation_action" type="string" use_dependent_field="true">
+        <element attributes="edge_encryption_enabled=true" choice="1" dependent="remediation_task_type" dependent_on_field="remediation_task_type" label="Remediation action" mandatory="true" max_length="40" name="remediation_action" type="string" use_dependent_field="true">
             <choice>
                 <element dependent_value="1" inactive_on_update="false" label="Provide coaching" sequence="0" value="1"/>
                 <element dependent_value="1" inactive_on_update="false" label="Customer action required" sequence="1" value="2"/>
@@ -50,7 +50,7 @@
         </element>
         <element default="javascript: current.parent" label="Supervision case" max_length="32" name="supervision_case" reference="x_kiwib_haumaru_case" type="reference"/>
         <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Reviewer" max_length="32" name="supervisor" reference="sys_user" type="reference"/>
-        <element attributes="edge_encryption_enabled=true" choice="1" label="Time frame" max_length="40" name="time_frame" type="string">
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Time frame" mandatory="true" max_length="40" name="time_frame" type="string">
             <choice>
                 <element inactive_on_update="false" label="1 Week" sequence="0" value="1"/>
                 <element inactive_on_update="false" label="2 Weeks" sequence="1" value="2"/>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="DELETE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>remediation_inside_sla</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>(KB) Number left align</name>
+        <order/>
+        <script><![CDATA[function onLoad() {
+   //Type appropriate comment here, and begin script below
+
+jQuery(".is-align-end .sn-el-input, .is-reversed .sn-el-input").css("text-align", "left");
+
+   
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+        <sys_created_on>2021-07-02 02:36:47</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>7d0b42521b813814533e0dc8ec4bcbc4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>(KB) Number left align</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Pae Haumaru" source="x_kiwib_haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pae Haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_scope>
+        <sys_update_name>sys_script_client_7d0b42521b813814533e0dc8ec4bcbc4</sys_update_name>
+        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+        <sys_updated_on>2021-07-02 02:36:47</sys_updated_on>
+        <table>x_kiwib_haumaru_pae_huamaru_team_summary</table>
+        <type>onLoad</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Pae Haumaru">001ccea01b89205038c9ffbbdc4bcb2c</application>
+        <file_path/>
+        <instance_id>5eff1e92db012f4c0e785d00cf961905</instance_id>
+        <instance_name>kiwibankdev</instance_name>
+        <name>sys_script_client_7d0b42521b813814533e0dc8ec4bcbc4</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description/&gt;&lt;field&gt;remediation_inside_sla&lt;/field&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;(KB) Number left align&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onLoad() {
+   //Type appropriate comment here, and begin script below
+
+jQuery(".is-align-end .sn-el-input, .is-reversed .sn-el-input").css("text-align", "left");
+
+   
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;Bing.Liu@kiwibank.co.nz&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-07-02 02:36:47&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;7d0b42521b813814533e0dc8ec4bcbc4&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;(KB) Number left align&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Pae Haumaru" source="x_kiwib_haumaru"&gt;001ccea01b89205038c9ffbbdc4bcb2c&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Pae Haumaru"&gt;001ccea01b89205038c9ffbbdc4bcb2c&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_7d0b42521b813814533e0dc8ec4bcbc4&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;Bing.Liu@kiwibank.co.nz&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-07-02 02:36:47&lt;/sys_updated_on&gt;&lt;table&gt;x_kiwib_haumaru_pae_huamaru_team_summary&lt;/table&gt;&lt;type&gt;onLoad&lt;/type&gt;&lt;ui_type&gt;10&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-363534657</payload_hash>
+        <record_name>(KB) Number left align</record_name>
+        <reverted_from/>
+        <source>ad9d29cd1bc1b4d0533e0dc8ec4bcbba</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+        <sys_created_on>2021-07-02 02:36:48</sys_created_on>
+        <sys_id>ffecc2521b813814533e0dc8ec4bcb22</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17a6513663d0000001</sys_recorded_at>
+        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+        <sys_updated_on>2021-07-02 02:36:48</sys_updated_on>
+        <type>Client Script</type>
+        <update_guid>b7ecc25271813814f10c64bb1f96a122</update_guid>
+        <update_guid_history>b7ecc25271813814f10c64bb1f96a122:-363534657</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+        <sys_created_on>2021-07-02 03:36:34</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_client">sys_script_client</sys_db_object>
+        <sys_id>6c858cb7b48e49b083e74ba7e8464c10</sys_id>
+        <sys_metadata>7d0b42521b813814533e0dc8ec4bcbc4</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>(KB) Number left align</sys_name>
+        <sys_package display_value="Pae Haumaru" source="x_kiwib_haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_package>
+        <sys_parent display_value="Team Summary">a5bceaa01b6c3450533e0dc8ec4bcb36</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Pae Haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_scope>
+        <sys_scope_delete display_value="">02f82d1e9f0948b0802900399bacbfa4</sys_scope_delete>
+        <sys_update_name>sys_script_client_7d0b42521b813814533e0dc8ec4bcbc4</sys_update_name>
+        <sys_update_version display_value="sys_script_client_7d0b42521b813814533e0dc8ec4bcbc4">ffecc2521b813814533e0dc8ec4bcb22</sys_update_version>
+        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+        <sys_updated_on>2021-07-02 03:36:34</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
