@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="DELETE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>false</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>false</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>asmt_assessment_instance</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition table="asmt_assessment_instance">metric_type=941cf8581bb5a0d038c9ffbbdc4bcb5e^ORmetric_type=dc5b17681b45605038c9ffbbdc4bcb5a^state=complete^EQ<item display_table="asmt_metric_type" display_value="Advisor Assessment" endquery="false" field="metric_type" goto="false" newquery="false" operator="=" or="false" value="941cf8581bb5a0d038c9ffbbdc4bcb5e"/>
+            <item display_table="asmt_metric_type" display_value="Advisor Assessment" endquery="false" field="metric_type" goto="false" newquery="false" operator="=" or="true" value="dc5b17681b45605038c9ffbbdc4bcb5a"/>
+            <item display_value="Complete" endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="complete"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>(KB) Generate Remediation Tasks</name>
+        <order>9999999</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+
+	// Add your code here
+	var answers = new x_kiwib_haumaru.KBHaumaruUtil().getAllSurveyAnswers(current.sys_id.toString());
+	var firstLevel = answers.firstLevel;
+	var otherLevel = answers.otherLevel;
+	var secondLevel = [];
+		
+	var firstlen = firstLevel.length; 
+	if(firstlen > 0){
+		for(var i=0; i<firstlen; i++){	
+			var secondRecord = otherLevel.filter(function(element) {return element.parent === firstLevel[i].metric; })[0];
+			if(secondRecord){
+				secondLevel.push(secondRecord);
+			}
+		}
+	}
+	var secondLen = secondLevel.length;
+	/*
+	Most the question answer has value of 4 digits, e.g. 1201
+	1st Digit: is too set the order of the answer selection
+	2nd Digit: is to get remediation action dropdown: coaching(1), customer(2), etc...
+	3rd Digit: is to set the time frame for the remediation task
+	4th Digit: is to determine the customer remediation task is required 1 is yes, 0 is no
+	*/
+	if(secondLen > 0){
+		var caseGr = new GlideRecord('x_kiwib_haumaru_case');					
+		caseGr.get(current.task_id.toString());
+		var numTask = 0;
+		var groupedAnswers = {};
+		
+		for(var n=0; n<secondLen; n++){	
+			if(secondLevel[n].actual_value){
+				var valStr = secondLevel[n].actual_value.toString();
+				if(valStr && valStr.substring(1) != '000' && valStr.length > 3){
+					
+					/* Generate Grouped Task */
+					var remTask = {};
+					remTask.parent = current.task_id.toString();
+					remTask.supervisor = caseGr.assigned_to;
+					remTask.advisor = caseGr.advisor;
+					remTask.product = caseGr.product;
+					remTask.assigned_to = caseGr.assigned_to;
+					var firstLevelRecord = firstLevel.filter(function(element) { return element.metric === secondLevel[n].parent; })[0];
+					var secondLevelRecord = otherLevel.filter(function(element) { return element.parent === secondLevel[n].metric;})[0];
+					remTask.description = firstLevelRecord.category + ': ' + firstLevelRecord.question + '\nAnswer: ' + firstLevelRecord.string_value + '\nReason: ' + secondLevel[n].string_value;
+					if(secondLevelRecord && secondLevelRecord.string_value != ''){
+						remTask.description += ' - ' + secondLevelRecord.string_value;
+					}
+					remTask.description += '\n\n';
+					var secondDigit = valStr.substring(1,2);
+					
+					//Group by 2nd digit
+					if(secondDigit != '0'){	
+						numTask++;
+						remTask.remediation_action = secondDigit;
+						remTask.time_frame = valStr.substring(2,3);
+						remTask.customer_action = valStr.substring(3,4);
+						
+						if(!groupedAnswers[secondDigit]){
+							groupedAnswers[secondDigit] = {};
+							groupedAnswers[secondDigit].parent = remTask.parent;
+							groupedAnswers[secondDigit].supervisor = remTask.supervisor;
+							groupedAnswers[secondDigit].advisor = remTask.advisor;
+							groupedAnswers[secondDigit].product = remTask.product;
+							groupedAnswers[secondDigit].assigned_to = remTask.assigned_to;
+							groupedAnswers[secondDigit].time_frame = remTask.time_frame;
+							if(secondDigit != '9'){
+								groupedAnswers[secondDigit].remediation_action = remTask.remediation_action;
+							}else{
+								groupedAnswers[secondDigit].remediation_action = '';
+								groupedAnswers[secondDigit].time_frame = '';
+							}							
+							groupedAnswers[secondDigit].customer_action = remTask.customer_action;
+							groupedAnswers[secondDigit].description = remTask.description + ' - FALSE !groupedAnswers[secondDigit]';
+							//groupedAnswers[secondDigit] = remTask;
+						}else{
+							groupedAnswers[secondDigit].description += remTask.description + ' - TRUE !groupedAnswers[secondDigit]';
+						}						
+						
+					}
+					
+					//group customer actions
+					if(valStr.substring(3,4) != '0'){
+						numTask++;
+						if(!groupedAnswers.customer){
+							groupedAnswers.customer = {};
+							groupedAnswers.customer.parent = remTask.parent;
+							groupedAnswers.customer.supervisor = remTask.supervisor;
+							groupedAnswers.customer.advisor = remTask.advisor;
+							groupedAnswers.customer.product = remTask.product;
+							groupedAnswers.customer.assigned_to = remTask.assigned_to;
+							groupedAnswers.customer.remediation_action = '3'; //Customer
+							groupedAnswers.customer.time_frame = '4'; //5 days
+							groupedAnswers.customer.customer_action = valStr.substring(3,4);
+							groupedAnswers.customer.description = 'Note: Customer action required.\n\n' + remTask.description;
+							//groupedAnswers.customer = remTask;
+						}else{
+							groupedAnswers.customer.description += remTask.description;
+						}
+					}//end of group customer action if					
+					
+				}//end of substring(1) != 000
+				
+			}//end of secondLevel[n].actual_value
+			
+		}//end of for loop of secondLen 
+		
+		for(var prop in groupedAnswers){
+			if(prop){
+				var newRemTask = new GlideRecord('x_kiwib_haumaru_remediation_task');
+				newRemTask.initialize();
+				newRemTask.parent = groupedAnswers[prop].parent;
+				newRemTask.supervisor = groupedAnswers[prop].supervisor;
+				newRemTask.advisor = groupedAnswers[prop].advisor;
+				newRemTask.product = groupedAnswers[prop].product;
+				newRemTask.assigned_to =groupedAnswers[prop].assigned_to;
+				newRemTask.description = groupedAnswers[prop].description;
+				newRemTask.remediation_action = groupedAnswers[prop].remediation_action;
+				newRemTask.time_frame = groupedAnswers[prop].time_frame;
+				newRemTask.customer_action = groupedAnswers[prop].customer_action;
+				newRemTask.insert();
+			}
+		}
+		
+		if(numTask > 0){
+			caseGr.comments = 'Assessment has been completed.';
+			//caseGr.state = '2'; //Remediation
+			caseGr.update();
+		}
+// 		else{
+// 			caseGr.state = '3'; //Closed
+// 			caseGr.closure_code = 'no_remediation';
+// 			caseGr.closed_date_time = new GlideDateTime().getDisplayValue();
+// 			caseGr.closure_notes = 'Auto Closed: No remediation required for this case.';
+// 			caseGr.update();
+// 		}
+	}
+
+
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+        <sys_created_on>2020-12-15 21:01:05</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>51e4d1a61b05601038c9ffbbdc4bcba8</sys_id>
+        <sys_mod_count>65</sys_mod_count>
+        <sys_name>(KB) Generate Remediation Tasks</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Pae Haumaru" source="x_kiwib_haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pae Haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_scope>
+        <sys_update_name>sys_script_51e4d1a61b05601038c9ffbbdc4bcba8</sys_update_name>
+        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+        <sys_updated_on>2021-02-15 00:55:04</sys_updated_on>
+        <template/>
+        <when>after</when>
+    </sys_script>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Pae Haumaru">001ccea01b89205038c9ffbbdc4bcb2c</application>
+        <file_path/>
+        <instance_id>5eff1e92db012f4c0e785d00cf961905</instance_id>
+        <instance_name>kiwibankdev</instance_name>
+        <name>sys_script_51e4d1a61b05601038c9ffbbdc4bcba8</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script"&gt;&lt;sys_script action="INSERT_OR_UPDATE"&gt;&lt;abort_action&gt;false&lt;/abort_action&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;action_delete&gt;false&lt;/action_delete&gt;&lt;action_insert&gt;false&lt;/action_insert&gt;&lt;action_query&gt;false&lt;/action_query&gt;&lt;action_update&gt;true&lt;/action_update&gt;&lt;active&gt;false&lt;/active&gt;&lt;add_message&gt;false&lt;/add_message&gt;&lt;advanced&gt;true&lt;/advanced&gt;&lt;change_fields&gt;false&lt;/change_fields&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;collection&gt;asmt_assessment_instance&lt;/collection&gt;&lt;condition/&gt;&lt;description/&gt;&lt;execute_function&gt;false&lt;/execute_function&gt;&lt;filter_condition table="asmt_assessment_instance"&gt;metric_type=941cf8581bb5a0d038c9ffbbdc4bcb5e^ORmetric_type=dc5b17681b45605038c9ffbbdc4bcb5a^state=complete^EQ&lt;item display_table="asmt_metric_type" display_value="Advisor Assessment" endquery="false" field="metric_type" goto="false" newquery="false" operator="=" or="false" value="941cf8581bb5a0d038c9ffbbdc4bcb5e"/&gt;&lt;item display_table="asmt_metric_type" display_value="Advisor Assessment" endquery="false" field="metric_type" goto="false" newquery="false" operator="=" or="true" value="dc5b17681b45605038c9ffbbdc4bcb5a"/&gt;&lt;item display_value="Complete" endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="complete"/&gt;&lt;item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/&gt;&lt;/filter_condition&gt;&lt;is_rest&gt;false&lt;/is_rest&gt;&lt;message/&gt;&lt;name&gt;(KB) Generate Remediation Tasks&lt;/name&gt;&lt;order&gt;9999999&lt;/order&gt;&lt;priority&gt;100&lt;/priority&gt;&lt;rest_method/&gt;&lt;rest_method_text/&gt;&lt;rest_service/&gt;&lt;rest_service_text/&gt;&lt;rest_variables/&gt;&lt;role_conditions/&gt;&lt;script&gt;&lt;![CDATA[(function executeRule(current, previous /*null when async*/) {
+
+	// Add your code here
+	var answers = new x_kiwib_haumaru.KBHaumaruUtil().getAllSurveyAnswers(current.sys_id.toString());
+	var firstLevel = answers.firstLevel;
+	var otherLevel = answers.otherLevel;
+	var secondLevel = [];
+		
+	var firstlen = firstLevel.length; 
+	if(firstlen &gt; 0){
+		for(var i=0; i&lt;firstlen; i++){	
+			var secondRecord = otherLevel.filter(function(element) {return element.parent === firstLevel[i].metric; })[0];
+			if(secondRecord){
+				secondLevel.push(secondRecord);
+			}
+		}
+	}
+	var secondLen = secondLevel.length;
+	/*
+	Most the question answer has value of 4 digits, e.g. 1201
+	1st Digit: is too set the order of the answer selection
+	2nd Digit: is to get remediation action dropdown: coaching(1), customer(2), etc...
+	3rd Digit: is to set the time frame for the remediation task
+	4th Digit: is to determine the customer remediation task is required 1 is yes, 0 is no
+	*/
+	if(secondLen &gt; 0){
+		var caseGr = new GlideRecord('x_kiwib_haumaru_case');					
+		caseGr.get(current.task_id.toString());
+		var numTask = 0;
+		var groupedAnswers = {};
+		
+		for(var n=0; n&lt;secondLen; n++){	
+			if(secondLevel[n].actual_value){
+				var valStr = secondLevel[n].actual_value.toString();
+				if(valStr &amp;&amp; valStr.substring(1) != '000' &amp;&amp; valStr.length &gt; 3){
+					
+					/* Generate Grouped Task */
+					var remTask = {};
+					remTask.parent = current.task_id.toString();
+					remTask.supervisor = caseGr.assigned_to;
+					remTask.advisor = caseGr.advisor;
+					remTask.product = caseGr.product;
+					remTask.assigned_to = caseGr.assigned_to;
+					var firstLevelRecord = firstLevel.filter(function(element) { return element.metric === secondLevel[n].parent; })[0];
+					var secondLevelRecord = otherLevel.filter(function(element) { return element.parent === secondLevel[n].metric;})[0];
+					remTask.description = firstLevelRecord.category + ': ' + firstLevelRecord.question + '\nAnswer: ' + firstLevelRecord.string_value + '\nReason: ' + secondLevel[n].string_value;
+					if(secondLevelRecord &amp;&amp; secondLevelRecord.string_value != ''){
+						remTask.description += ' - ' + secondLevelRecord.string_value;
+					}
+					remTask.description += '\n\n';
+					var secondDigit = valStr.substring(1,2);
+					
+					//Group by 2nd digit
+					if(secondDigit != '0'){	
+						numTask++;
+						remTask.remediation_action = secondDigit;
+						remTask.time_frame = valStr.substring(2,3);
+						remTask.customer_action = valStr.substring(3,4);
+						
+						if(!groupedAnswers[secondDigit]){
+							groupedAnswers[secondDigit] = {};
+							groupedAnswers[secondDigit].parent = remTask.parent;
+							groupedAnswers[secondDigit].supervisor = remTask.supervisor;
+							groupedAnswers[secondDigit].advisor = remTask.advisor;
+							groupedAnswers[secondDigit].product = remTask.product;
+							groupedAnswers[secondDigit].assigned_to = remTask.assigned_to;
+							groupedAnswers[secondDigit].time_frame = remTask.time_frame;
+							if(secondDigit != '9'){
+								groupedAnswers[secondDigit].remediation_action = remTask.remediation_action;
+							}else{
+								groupedAnswers[secondDigit].remediation_action = '';
+								groupedAnswers[secondDigit].time_frame = '';
+							}							
+							groupedAnswers[secondDigit].customer_action = remTask.customer_action;
+							groupedAnswers[secondDigit].description = remTask.description + ' - FALSE !groupedAnswers[secondDigit]';
+							//groupedAnswers[secondDigit] = remTask;
+						}else{
+							groupedAnswers[secondDigit].description += remTask.description + ' - TRUE !groupedAnswers[secondDigit]';
+						}						
+						
+					}
+					
+					//group customer actions
+					if(valStr.substring(3,4) != '0'){
+						numTask++;
+						if(!groupedAnswers.customer){
+							groupedAnswers.customer = {};
+							groupedAnswers.customer.parent = remTask.parent;
+							groupedAnswers.customer.supervisor = remTask.supervisor;
+							groupedAnswers.customer.advisor = remTask.advisor;
+							groupedAnswers.customer.product = remTask.product;
+							groupedAnswers.customer.assigned_to = remTask.assigned_to;
+							groupedAnswers.customer.remediation_action = '3'; //Customer
+							groupedAnswers.customer.time_frame = '4'; //5 days
+							groupedAnswers.customer.customer_action = valStr.substring(3,4);
+							groupedAnswers.customer.description = 'Note: Customer action required.\n\n' + remTask.description;
+							//groupedAnswers.customer = remTask;
+						}else{
+							groupedAnswers.customer.description += remTask.description;
+						}
+					}//end of group customer action if					
+					
+				}//end of substring(1) != 000
+				
+			}//end of secondLevel[n].actual_value
+			
+		}//end of for loop of secondLen 
+		
+		for(var prop in groupedAnswers){
+			if(prop){
+				var newRemTask = new GlideRecord('x_kiwib_haumaru_remediation_task');
+				newRemTask.initialize();
+				newRemTask.parent = groupedAnswers[prop].parent;
+				newRemTask.supervisor = groupedAnswers[prop].supervisor;
+				newRemTask.advisor = groupedAnswers[prop].advisor;
+				newRemTask.product = groupedAnswers[prop].product;
+				newRemTask.assigned_to =groupedAnswers[prop].assigned_to;
+				newRemTask.description = groupedAnswers[prop].description;
+				newRemTask.remediation_action = groupedAnswers[prop].remediation_action;
+				newRemTask.time_frame = groupedAnswers[prop].time_frame;
+				newRemTask.customer_action = groupedAnswers[prop].customer_action;
+				newRemTask.insert();
+			}
+		}
+		
+		if(numTask &gt; 0){
+			caseGr.comments = 'Assessment has been completed.';
+			//caseGr.state = '2'; //Remediation
+			caseGr.update();
+		}
+// 		else{
+// 			caseGr.state = '3'; //Closed
+// 			caseGr.closure_code = 'no_remediation';
+// 			caseGr.closed_date_time = new GlideDateTime().getDisplayValue();
+// 			caseGr.closure_notes = 'Auto Closed: No remediation required for this case.';
+// 			caseGr.update();
+// 		}
+	}
+
+
+})(current, previous);]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;Bing.Liu@kiwibank.co.nz&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-12-15 21:01:05&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;51e4d1a61b05601038c9ffbbdc4bcba8&lt;/sys_id&gt;&lt;sys_mod_count&gt;65&lt;/sys_mod_count&gt;&lt;sys_name&gt;(KB) Generate Remediation Tasks&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Pae Haumaru" source="x_kiwib_haumaru"&gt;001ccea01b89205038c9ffbbdc4bcb2c&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Pae Haumaru"&gt;001ccea01b89205038c9ffbbdc4bcb2c&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_51e4d1a61b05601038c9ffbbdc4bcba8&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;Bing.Liu@kiwibank.co.nz&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-02-15 00:55:04&lt;/sys_updated_on&gt;&lt;template/&gt;&lt;when&gt;after&lt;/when&gt;&lt;/sys_script&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-998354056</payload_hash>
+        <record_name>(KB) Generate Remediation Tasks</record_name>
+        <reverted_from/>
+        <source>c35078221b013010533e0dc8ec4bcb0f</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by/>
+        <sys_created_on>2021-07-02 14:30:48</sys_created_on>
+        <sys_id>210e373f1b0db450533e0dc8ec4bcb7d</sys_id>
+        <sys_mod_count/>
+        <sys_recorded_at>17a67a115c00000000</sys_recorded_at>
+        <sys_updated_by/>
+        <sys_updated_on/>
+        <type>Business Rule</type>
+        <update_guid>ed0e373f080db45032b7a8fe887bdd7c</update_guid>
+        <update_guid_history>ed0e373f080db45032b7a8fe887bdd7c:-998354056</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Bing.Liu@kiwibank.co.nz</sys_created_by>
+        <sys_created_on>2021-07-07 02:41:46</sys_created_on>
+        <sys_db_object display_value="" name="sys_script">sys_script</sys_db_object>
+        <sys_id>23a20b644fd44298a83cb4170a642e44</sys_id>
+        <sys_metadata>51e4d1a61b05601038c9ffbbdc4bcba8</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>(KB) Generate Remediation Tasks</sys_name>
+        <sys_package display_value="Pae Haumaru" source="x_kiwib_haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_package>
+        <sys_parent display_value="Asmt Assessment Instance">63c7eed2db812300642533f43a9619d8</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Pae Haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_scope>
+        <sys_scope_delete display_value="">02f82d1e9f0948b0802900399bacbfa4</sys_scope_delete>
+        <sys_update_name>sys_script_51e4d1a61b05601038c9ffbbdc4bcba8</sys_update_name>
+        <sys_update_version display_value="sys_script_51e4d1a61b05601038c9ffbbdc4bcba8">210e373f1b0db450533e0dc8ec4bcb7d</sys_update_version>
+        <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
+        <sys_updated_on>2021-07-07 02:41:46</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
