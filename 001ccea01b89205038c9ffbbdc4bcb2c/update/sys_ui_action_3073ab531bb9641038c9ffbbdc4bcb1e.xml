@@ -9,7 +9,7 @@
 	ga.addParam('sysparm_name', 'getAssessmentState');
 	ga.addParam('sysparm_caseid', g_form.getUniqueValue());
 	ga.getXMLAnswer(function(response) {
-		if(response === 'true' || response === true ){				
+		if(response === 'false' || response === false ){				
 			g_form.addErrorMessage('Please submit answers to all of the Advisor Assessment questions before selecting the "Close task" button.');
 		}else{
 			g_form.setValue('state', '3');	
@@ -49,7 +49,7 @@
 	ga.addParam('sysparm_name', 'getAssessmentState');
 	ga.addParam('sysparm_caseid', g_form.getUniqueValue());
 	ga.getXMLAnswer(function(response) {
-		if(response === 'true' || response === true ){
+		if(response === 'false' || response === false ){
 			//g_modal.alert('Please submit answers to all of the Advisor Assessment questions before selecting the "Assess case" button.');
 			g_form.addErrorMessage('Please submit answers to all of the Advisor Assessment questions before selecting the "Close task" button.');
 		}else{
@@ -69,7 +69,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>3073ab531bb9641038c9ffbbdc4bcb1e</sys_id>
-        <sys_mod_count>11</sys_mod_count>
+        <sys_mod_count>12</sys_mod_count>
         <sys_name>Close task</sys_name>
         <sys_overrides/>
         <sys_package display_value="Pae Haumaru" source="x_kiwib_haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_package>
@@ -77,7 +77,7 @@
         <sys_scope display_value="Pae Haumaru">001ccea01b89205038c9ffbbdc4bcb2c</sys_scope>
         <sys_update_name>sys_ui_action_3073ab531bb9641038c9ffbbdc4bcb1e</sys_update_name>
         <sys_updated_by>Bing.Liu@kiwibank.co.nz</sys_updated_by>
-        <sys_updated_on>2021-07-07 08:20:01</sys_updated_on>
+        <sys_updated_on>2021-07-07 20:30:45</sys_updated_on>
         <table>x_kiwib_haumaru_remediation_task</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>
